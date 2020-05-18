@@ -72,27 +72,39 @@ def partition(pairs, a, b, counts, n):
     entropies = {}
     for d in distributions.keys():
         sums[d] = np.sum(distributions[d])
-        try:
+        if sums[d] > 0:
             entropies[d] = entropy(distributions[d], base=2)
-        except:
+        else:
             entropies[d] = 0
 
     # get proportions for each distribution
     proportions = {}
-    proportions['pa'] = sums['pa'] / (sums['pa'] + sums['pac'])
-    proportions['pb'] = sums['pb'] / (sums['pb'] + sums['pbc'])
-    proportions['pab'] = sums['pab'] / (sums['pab'] + sums['pabc'])
-    proportions['pba'] = sums['pba'] / (sums['pba'] + sums['pbac'])
-
-    for d in ['pa', 'pb', 'pab', 'pba']:
+    dists = ['pa', 'pb', 'pab', 'pba']
+    for d in dists:
+        if (sums[d] + sums[d+'c']) > 0:
+            proportions[d] = sums[d] / (sums[d] + sums[d+'c'])
+        else:
+            proportions[d] = 0
         proportions[d+'c'] = 1 - proportions[d]
 
     # calc starting entropies
     start_ents = {}
-    start_ents['a'] = entropy(dfa['count_y'].values, base=2)
-    start_ents['ab'] = entropy(dfa['count_x'].values, base=2)
-    start_ents['b'] = entropy(dfb['count_y'].values, base=2)    
-    start_ents['ba'] = entropy(dfb['count_x'].values, base=2)
+    try:
+        start_ents['a'] = entropy(dfa['count_y'].values, base=2)
+    except:
+        start_ents['a'] = 0
+    try:
+        start_ents['ab'] = entropy(dfa['count_x'].values, base=2)
+    except:
+        start_ents['ab'] = 0
+    try:
+        start_ents['b'] = entropy(dfb['count_y'].values, base=2)
+    except:
+        start_ents['b'] = 0
+    try:
+        start_ents['ba'] = entropy(dfb['count_x'].values, base=2)
+    except:
+        start_ents['ba'] = 0
 
     # calc resulting entropies
     H = {}
