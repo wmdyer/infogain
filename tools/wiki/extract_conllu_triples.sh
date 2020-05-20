@@ -38,8 +38,8 @@ cat ids | tr ':' '\t' | gawk 'BEGIN{FS="\t"}{if($2+1 == $4 && $4+1==$6) print $1
 # convert IDs to words and select triples of interest
 join -t$'\t' -1 3 <(join -t$'\t' -1 2 <(join -t$'\t' <(cat ids | sort -k1,1) <(cat words | sort -k1,1) | sort -k2,2) <(cat words | sort -k1,1) | sort -k3,3) <(cat words | sort -k1,1) | cut -f4,5,6 | tr '\t' ',' | grep -E "(NOUN.*ADJ.*ADJ)|(ADJ.*NOUN.*ADJ)|(ADJ.*ADJ.*NOUN)" >> triples.csv
 
-# verify each row has 3 cols
-cat triples.csv | gawk 'BEGIN{FS=","}{if(NF==3) print $0}' > temp; mv temp triples.csv
+# verify each row has 3 cols and remove problematic chars
+cat triples.csv | gawk 'BEGIN{FS=","}{if(NF==3) print $0}' | tr -d '"' > temp; mv temp triples.csv
 
 # output counts of triples by type
 cat triples.csv | grep "NOUN.*ADJ.*ADJ" | wc -l | gawk 'BEGIN{FS="\t"}{print "NAA: " $1}'
