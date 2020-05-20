@@ -36,7 +36,7 @@ def process(pipeline, error, text):
         return processed
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='align subtrees')
+    parser = argparse.ArgumentParser(description='parse text file into conllu')
     parser.add_argument('-f', '--file', nargs=1, dest='f', required=True, help='text file')
     parser.add_argument('-m', '--model', nargs=1, dest='m', required=True, help='udpipe model')
     args = parser.parse_args()
