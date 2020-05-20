@@ -3,31 +3,20 @@ using information gain to describe adj order
 
 ## pipeline
 
-*1. download data*
-* [UD model](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3131)
-* [Wikipedia monolingual dump](https://linguatools.org/tools/corpora/wikipedia-monolingual-corpora/)
+*1. download conllu file(s)*
+*[CoNLL 2017 Shared Task - Automatically Annotated Raw Texts and Word Embeddings](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1989)
 
-*2. create text file from Wikipedia dump*
-```{bash}
-./tools/wiki/xml2txt.pl -nomath -notables <input>.xml <output>.txt
-```
-
-*3. create conllu file from text file*
-```{bash}
-python tools/wiki/make_conllu.py -f <file>.txt -m <model>.udpipe
-```
-
-*4. extract pairs from conllu file*
+*2. extract pairs from conllu file*
 ```{bash}
 ./tools/wiki/extract_conllu_pairs.sh <file>.conllu
 ```
 
-*5. extract triples from conllu file*
+*3. extract triples from conllu file*
 ```{bash}
 ./tools/wiki/extract_conllu_triples.sh <file>.conllu
 ```
 
-*6. score triples based on pairs*
+*4. score triples based on pairs*
 ```{bash}
 python src/partition.py -p <pairs>.csv -t <triples>.csv
 ```
