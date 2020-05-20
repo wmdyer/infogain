@@ -14,5 +14,8 @@ cat $file | grep "^[0-9][0-9]*"$'\t' | gawk 'BEGIN{FS="\t";C=0;W=""}{if($1=="1")
 # join ADJs and NOUNs, normalize, and count
 join -2 3 -t$'\t' <(cat a | sort -k1,1) <(cat a | sort -k3,3) | gawk 'BEGIN{FS="\t"}{print $5 FS $2}' | grep "ADJ.*NOUN" | tr '[A-Z]' '[a-z]' | sort | uniq -c | sed -e 's/^[ ]*//' | tr ' \t' ',' | sed -e 's|/adj||' | sed -e 's|/noun||' | gawk 'BEGIN{FS=","}{if($4=="") print $0}' >> pairs.csv
 
+# verify each row has 3 cols
+cat pairs.csv | gawk 'BEGIN{FS=","}{if(NF==3) print $0}' > temp; mv temp pairs.csv
+
 # clean up
 rm a
