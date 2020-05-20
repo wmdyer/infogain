@@ -29,10 +29,16 @@ tools/wiki/extract_conllu_triples.sh <conllu file>
 
 *6. score triples based on pairs*
 ```{bash}
-src/partition.py -p <pairs file> -t <triples file>
+python src/partition.py -p <pairs file> -t <triples file>
 ```
 
 ## evaluation
+To compare only *abn/ban*, *anb/bna*, and *nab/nba*:
 ```{bash}
-tools/accuracy.sh scores.csv
+tools/accuracy.sh <scores>
+```
+
+To compare attested order to all possible orders:
+```{bash}
+python tools/ranked_accuracy.py -f <scores>
 ```
