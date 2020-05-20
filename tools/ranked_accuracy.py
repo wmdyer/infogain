@@ -20,10 +20,10 @@ if __name__ == '__main__':
         results[o] = []
     
     for i,row in scores.iterrows():
-        prediction = row[0]
+        actual = row[0]
         igs = row[4:].values
-        predicted_value = igs[orders.index(prediction)]
-        deviation = list(np.sort(igs)).index(predicted_value)
+        actual_value = igs[orders.index(prediction)]
+        deviation = list(np.sort(igs)).index(actual_value)
         results[prediction].append(deviation)
 
     r = len(orders)
