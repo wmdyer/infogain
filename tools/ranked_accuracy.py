@@ -22,9 +22,9 @@ if __name__ == '__main__':
     for i,row in scores.iterrows():
         actual = row[0]
         igs = row[4:].values
-        actual_value = igs[orders.index(prediction)]
+        actual_value = igs[orders.index(actual)]
         deviation = list(np.sort(igs)).index(actual_value)
-        results[prediction].append(deviation)
+        results[actual].append(deviation)
 
     r = len(orders)
     for key in results.keys():
