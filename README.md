@@ -8,23 +8,23 @@ using information gain to describe adj order
 * [Wikipedia monolingual dump](https://linguatools.org/tools/corpora/wikipedia-monolingual-corpora/)
 
 *2. create text file from Wikipedia dump*
-  ```{bash}
-  tools/wiki/xml2txt.pl -nomath -notables <input>.xml <output>.txt
-  ```
+```{bash}
+./tools/wiki/xml2txt.pl -nomath -notables <input>.xml <output>.txt
+```
 
 *3. create conllu file from text file*
 ```{bash}
-tools/wiki/make_conllu.py <file>.txt
+python tools/wiki/make_conllu.py -f <file>.txt -m <model>.udpipe
 ```
 
 *4. extract pairs from conllu file*
 ```{bash}
-tools/wiki/extract_conllu_pairs.sh <file>.conllu
+./tools/wiki/extract_conllu_pairs.sh <file>.conllu
 ```
 
 *5. extract triples from conllu file*
 ```{bash}
-tools/wiki/extract_conllu_triples.sh <file>.conllu
+./tools/wiki/extract_conllu_triples.sh <file>.conllu
 ```
 
 *6. score triples based on pairs*
@@ -35,9 +35,8 @@ python src/partition.py -p <pairs>.csv -t <triples>.csv
 ## evaluation
 To compare only *abn* to *ban*, *anb* to *bna*, and *nab* to *nba*:
 ```{bash}
-tools/accuracy.sh <scores>.csv
+./tools/accuracy.sh <scores>.csv
 ```
-
 
 To compare attested order to all possible orders:
 ```{bash}
