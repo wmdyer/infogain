@@ -31,3 +31,8 @@ tools/wiki/extract_conllu_triples.sh <conllu file>
 ```{bash}
 src/partition.py -p <pairs file> -t <triples file>
 ```
+
+## evaluation
+```{bash}
+tools/accuracy.sh scores.csv
+```
