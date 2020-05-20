@@ -15,15 +15,19 @@ if __name__ == '__main__':
     scores = load_scores(filename)
 
     orders = list(scores.columns[4:])
-    results = []
+    results = {}
+    for o in orders:
+        results[o] = []
     
     for i,row in scores.iterrows():
         prediction = row[0]
         igs = row[4:].values
         predicted_value = igs[orders.index(prediction)]
         deviation = list(np.sort(igs)).index(predicted_value)
-        results.append(deviation)
+        results[prediction].append(deviation)
 
     r = len(orders)
-    avg = np.average(results)
-    print((r-avg)/r)
+    for key in results.keys():
+        if len(results[key]) > 0:
+            avg = np.average(results[key])
+            print(key, (r-avg)/r)
