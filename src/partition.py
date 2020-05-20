@@ -9,7 +9,7 @@ def load_triples(filename):
     return triples
 
 def load_pairs(filename):
-    pairs = pd.read_csv(filename, sep=",")
+    pairs = pd.read_csv(filename, sep=",", error_bad_lines=False, engine='python')
     pairs['count'] = 1
     pairs.dropna(inplace=True)
     return pairs
@@ -34,8 +34,8 @@ def partition(pairs, a, b, counts, n):
     if n != None:
         adjs_n = pairs.loc[pairs['nwf'] == n]['awf']
     else:
-        #adjs_n = pairs.loc[(pairs['nwf'].isin(nouns_a.values)) | (pairs['nwf'].isin(nouns_b.values))]['awf'].drop_duplicates()
-        adjs_n = pairs['awf'].drop_duplicates()
+        adjs_n = pairs.loc[(pairs['nwf'].isin(nouns_a.values)) | (pairs['nwf'].isin(nouns_b.values))]['awf'].drop_duplicates()
+        #adjs_n = pairs['awf'].drop_duplicates()
 
     # join adjs_a, adjs_n, and counts
     adjs = pd.merge(adjs_a, adjs_n, how='right', left_on=['awf'], right_on=['awf']).fillna(0).drop_duplicates()
@@ -139,6 +139,7 @@ if __name__ == '__main__':
         outfile = "scores.csv"
         
     outfile = open(outfile, 'w')
+    outfile.write("order,a,b,n,ig_abn,ig_ban,ig_anb,ig_bna,ig_nab,ig_nba\n")
 
     total = triples.shape[0]
 
@@ -164,27 +165,32 @@ if __name__ == '__main__':
         b = b.split('/')[0].lower()
         n = n.split('/')[0].lower()
 
-        if a != b:
+        # make sure adjs aren't the same and are in pairs data
+        if a != b and len(pairs.loc[pairs['awf'] == a]) > 0 and len(pairs.loc[pairs['awf'] == b]) > 0:
+            igs_pre = partition(pairs, a, b, counts, None)
+            igs_post = partition(pairs, a, b, counts, n)
 
-            if order == "abn" or order == "anb":
-                igs_pre = partition(pairs, a, b, counts, None)
+            outputs = []
 
-            if order == "anb" or order == "nab":
-                igs_post = partition(pairs, a, b, counts, n)
+            # ig_abn
+            outputs.append(igs_pre[0] + igs_pre[1])
 
-            # ig(abn) = ig(a-pre) + ig(ab-pre); ig(ban) = ig(b-pre) + ig(ba-pre)
-            if order == "abn":
-                tup = [igs_pre[0] + igs_pre[1], igs_pre[2] + igs_pre[3]]
+            # ig_ban
+            outputs.append(igs_pre[2] + igs_pre[3])
 
-            # ig(anb) = ig(a-pre) + ig(b-post); ig(bna) = ig(b-pre) + ig(a-post)
-            if order == "anb":
-                tup = [igs_pre[0] + igs_post[2], igs_pre[2] + igs_post[0]]
+            # ig_anb
+            outputs.append(igs_pre[0] + igs_post[2])
 
-            # ig(nab) = ig(a-post) + ig(ab-post); ig(nba) = ig(b-post) + ig(ba-post)
-            if order == "nab":
-                tup = [igs_post[0] + igs_post[1], igs_post[2] + igs_post[3]]
-                   
-            out = '\t'.join([order, a, b, n] + list(map(str, tup)))
+            # ig_bna
+            outputs.append(igs_pre[2] + igs_post[0])
+
+            # ig_nab
+            outputs.append(igs_post[0] + igs_post[1])
+
+            # ig_nba
+            outputs.append(igs_post[2] + igs_post[3])
+
+            out = ','.join([order, a, b, n] + list(map(str, outputs)))
                         
             print(str(i+1) + "/" + str(total), out)
             outfile.write(out + "\n")
