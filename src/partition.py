@@ -139,7 +139,7 @@ if __name__ == '__main__':
         outfile = "scores.csv"
         
     outfile = open(outfile, 'w')
-    outfile.write("order,a,b,n,ig_abn,ig_ban,ig_anb,ig_bna,ig_nab,ig_nba\n")
+    outfile.write("order,a,b,n,abn,ban,anb,bna,nab,nba\n")
 
     total = triples.shape[0]
 
