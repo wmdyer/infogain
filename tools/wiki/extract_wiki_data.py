@@ -6,13 +6,6 @@ import numpy as np
 
 MAX_LEN = 900000
 
-def print_progress(i, n):
-    j = (i+1) / n
-    sys.stdout.write('\r')
-    sys.stdout.write("[%-20s] %d%% N %d/%d " % ('='*int(20*j), 100*j, i, n))
-    sys.stdout.flush()
-    return i + 1
-
 def load_file(filename):
     texts = []
     text = ""
@@ -37,12 +30,10 @@ def parse(lang, texts):
     chunks = len(texts)
     for i,text in enumerate(texts):
         print("parsing chunk " + str(i+1) + "/" + str(chunks) + " ...")
-        an_pairs = []
         doc = nlp(text)
-        #total = len(doc.sents)
+        print(doc)
 
         for j, sent in enumerate(doc.sents):
-            #print_progress(j+1, total)
             noun_heads = {}
             for token in sent:
                 if token.pos_ == 'ADJ' and token.head.pos_ == 'NOUN' and token.dep_ == 'amod':
@@ -75,7 +66,7 @@ if __name__ == '__main__':
     texts = load_file(filename)
 
     # reset output file
-    outfile = open('raw_an_pairs.csv', 'w')
+    outfile = open('wiki.conllu', 'w')
     outfile.write("")
     outfile.close()
     
