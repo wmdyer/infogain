@@ -3,31 +3,21 @@ using information gain to describe adj order
 
 ## pipeline
 
-*1. download data*
-* [UD model](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-3131)
-* [Wikipedia monolingual dump](https://linguatools.org/tools/corpora/wikipedia-monolingual-corpora/)
+*1. download conllu file(s)*
 
-*2. create text file from Wikipedia dump*
-  ```{bash}
-  tools/wiki/xml2txt.pl -nomath -notables <input>.xml <output>.txt
-  ```
+[CoNLL 2017 Shared Task - Automatically Annotated Raw Texts and Word Embeddings](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1989)
 
-*3. create conllu file from text file*
+*2. extract pairs from conllu file*
 ```{bash}
-tools/wiki/make_conllu.py <file>.txt
+./tools/wiki/extract_conllu_pairs.sh <file>.conllu
 ```
 
-*4. extract pairs from conllu file*
+*3. extract triples from conllu file*
 ```{bash}
-tools/wiki/extract_conllu_pairs.sh <file>.conllu
+./tools/wiki/extract_conllu_triples.sh <file>.conllu
 ```
 
-*5. extract triples from conllu file*
-```{bash}
-tools/wiki/extract_conllu_triples.sh <file>.conllu
-```
-
-*6. score triples based on pairs*
+*4. score triples based on pairs*
 ```{bash}
 python src/partition.py -p <pairs>.csv -t <triples>.csv
 ```
@@ -35,9 +25,8 @@ python src/partition.py -p <pairs>.csv -t <triples>.csv
 ## evaluation
 To compare only *abn* to *ban*, *anb* to *bna*, and *nab* to *nba*:
 ```{bash}
-tools/accuracy.sh <scores>.csv
+./tools/accuracy.sh <scores>.csv
 ```
-
 
 To compare attested order to all possible orders:
 ```{bash}
