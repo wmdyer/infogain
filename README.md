@@ -4,7 +4,8 @@ using information gain to describe adj order
 ## pipeline
 
 *1. download conllu file(s)*
-*[CoNLL 2017 Shared Task - Automatically Annotated Raw Texts and Word Embeddings](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1989)
+
+[CoNLL 2017 Shared Task - Automatically Annotated Raw Texts and Word Embeddings](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1989)
 
 *2. extract pairs from conllu file*
 ```{bash}
