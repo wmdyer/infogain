@@ -9,7 +9,7 @@ using information gain to describe adj order
 
 *2. create text file from Wikipedia dump*
   ```{bash}
-  tools/wiki/xml2txt.pl <input xml file> <output text file>
+  tools/wiki/xml2txt.pl -nomath -notables <input xml file> <output text file>
   ```
 
 *3. create conllu file from text file*
