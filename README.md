@@ -9,30 +9,36 @@ using information gain to describe adj order
 
 *2. create text file from Wikipedia dump*
   ```{bash}
-  tools/wiki/xml2txt.pl -nomath -notables <input xml file> <output text file>
+  tools/wiki/xml2txt.pl -nomath -notables <input>.xml <output>.txt
   ```
 
 *3. create conllu file from text file*
 ```{bash}
-tools/wiki/make_conllu.py <text file>
+tools/wiki/make_conllu.py <file>.txt
 ```
 
 *4. extract pairs from conllu file*
 ```{bash}
-tools/wiki/extract_conllu_pairs.sh <conllu file>
+tools/wiki/extract_conllu_pairs.sh <file>.conllu
 ```
 
 *5. extract triples from conllu file*
 ```{bash}
-tools/wiki/extract_conllu_triples.sh <conllu file>
+tools/wiki/extract_conllu_triples.sh <file>.conllu
 ```
 
 *6. score triples based on pairs*
 ```{bash}
-src/partition.py -p <pairs file> -t <triples file>
+python src/partition.py -p <pairs>.csv -t <triples>.csv
 ```
 
 ## evaluation
+To compare only *abn/ban*, *anb/bna*, and *nab/nba*:
 ```{bash}
-tools/accuracy.sh scores.csv
+tools/accuracy.sh <scores>.csv
+```
+
+To compare attested order to all possible orders:
+```{bash}
+python tools/ranked_accuracy.py -f <scores>.csv
 ```
