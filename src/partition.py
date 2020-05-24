@@ -151,7 +151,7 @@ def score(triples, outfile):
         
     outfile = open(outfile, 'w')
     #outfile.write("order,a,b,n,abn,ban,anb,bna,nab,nba\n")
-    outfile.write("key1\tkey2\tsurface1\tsurface2\tmask\tattest\tig\tpmi\n")
+    outfile.write("key1\tsurface1\tkey2\tsurface2\tmask\tattest\tig\tpmi\n")
 
     total = len(triples.key.unique())
 
