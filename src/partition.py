@@ -1,17 +1,38 @@
-import sys
+import sys, argparse
 import pandas as pd
 import numpy as np
+from itertools import repeat
 from scipy.stats import entropy
-import argparse
+from scipy.special import softmax
+from math import log2
+
+def print_progress(i, n):
+    j = (i+1) / n
+    sys.stdout.write('\r')
+    sys.stdout.write("[%-20s] %d%% N %d/%d " % ('='*int(20*j), 100*j, i, n))
+    sys.stdout.flush()
+    return i + 1
 
 def load_triples(filename):
     triples = pd.read_csv(filename, sep=",", header=None)
+    triples['key'] = ""
+    triples['surface'] = ""
+    for i,row in triples.iterrows():
+        key = ','.join(sorted([row[0], row[1], row[2]]))
+        surface = ','.join([row[0], row[1], row[2]])
+        triples.at[i, 'key'] = key
+        triples.at[i, 'surface'] = surface
+    print("counting attested orders ...")
+    triples = triples.groupby(by=[0, 1, 2, 'key', 'surface']).size().reset_index(name='count')
     return triples
 
 def load_pairs(filename):
     pairs = pd.read_csv(filename, sep=",", error_bad_lines=False, engine='python')
-    pairs['count'] = 1
+    pairs['awf'] = pairs['awf'].str.lower()
+    pairs['nwf'] = pairs['nwf'].str.lower()
+    #pairs['count'] = 1
     pairs.dropna(inplace=True)
+    pairs = pairs.drop_duplicates()
     return pairs
 
 # pairs is adj-noun pairs, a is adj1, b is adj2, counts is count of adjs, n is noun or None
@@ -116,9 +137,155 @@ def partition(pairs, a, b, counts, n):
     # calc IG (percentage reduction)
     IG = {}
     for d in ['a', 'ab', 'b', 'ba']:
-        IG[d] = (start_ents[d] - H[d]) / start_ents[d]
-                
+        if start_ents[d] > 0:
+            if percentage:
+                IG[d] = (start_ents[d] - H[d]) / start_ents[d]
+            else:
+                IG[d] = start_ents[d] - H[d]                
+        else:
+            IG[d] = 0
+            
     return [IG['a'], IG['ab'], IG['b'], IG['ba']]
+
+def score(triples, outfile):
+        
+    outfile = open(outfile, 'w')
+    #outfile.write("order,a,b,n,abn,ban,anb,bna,nab,nba\n")
+    outfile.write("key1\tkey2\tsurface1\tsurface2\tmask\tattest\tig\tpmi\n")
+
+    total = len(triples.key.unique())
+
+    mask = []
+    mask.extend(repeat(np.sum(triples.loc[triples[2].str.contains('/NOUN')]['count'].values)/2, 2))
+    mask.extend(repeat(np.sum(triples.loc[triples[1].str.contains('/NOUN')]['count'].values)/2, 2))
+    mask.extend(repeat(np.sum(triples.loc[triples[0].str.contains('/NOUN')]['count'].values)/2, 2))    
+
+    print("scoring triples ...")
+    for k,key in enumerate(triples.key.unique()):
+        print_progress(k, total)
+        w1 = key.split(',')[0]
+        w2 = key.split(',')[1]
+        w3 = key.split(',')[2]
+        
+        if "NOUN" in w1:
+            n = w1
+            a = w2
+            b = w3
+        elif "NOUN" in w2:
+            a = w1
+            n = w2
+            b = w3
+        else:
+            a = w1
+            b = w2
+            n = w3
+
+        c = np.sum(pairs['count'].values)
+        pa = np.sum(pairs.loc[pairs['awf'] == a.split('/')[0].lower()]['count'].values) / c
+        pb = np.sum(pairs.loc[pairs['awf'] == b.split('/')[0].lower()]['count'].values) / c
+        pn = np.sum(pairs.loc[pairs['nwf'] == n.split('/')[0].lower()]['count'].values) / c
+
+        pan = np.sum(pairs.loc[(pairs['awf'] == a.split('/')[0].lower()) & (pairs['nwf'] == n.split('/')[0].lower())]['count'].values) / c
+        pbn = np.sum(pairs.loc[(pairs['awf'] == b.split('/')[0].lower()) & (pairs['nwf'] == n.split('/')[0].lower())]['count'].values) / c        
+        
+            
+        # make sure adjs aren't the same and are in pairs data
+        if a != b and pan > 0 and pbn > 0:
+            pmi_a = log2(pan/pa)
+            pmi_b = log2(pbn/pb)
+            
+            igs_pre = partition(pairs, a.split('/')[0].lower(), b.split('/')[0].lower(), counts, None)
+            igs_post = partition(pairs, a.split('/')[0].lower(), b.split('/')[0].lower(), counts, n.split('/')[0].lower())
+
+            surface = triples.loc[triples['key'] == key]
+            igs = []
+            perms = []
+            perms2 = []
+            masks = []
+
+            # ig_abn
+            igs.append(igs_pre[0] + igs_pre[1])
+            s = ','.join([a,b,n])
+            perms2.append(','.join([a,b,'N']))
+            try:
+                c = surface.loc[surface['surface'] == s]['count'].values[0]
+                perms.append([s, c])
+            except:
+                perms.append([s, 0])
+
+            # ig_ban
+            igs.append(igs_pre[2] + igs_pre[3])
+            s = ','.join([b,a,n])
+            perms2.append(','.join([b,a,'N']))            
+            try:
+                c = surface.loc[surface['surface'] == s]['count'].values[0]
+                perms.append([s, c])
+            except:
+                perms.append([s, 0])
+            
+            # ig_anb
+            igs.append(igs_pre[0] + igs_post[2])
+            s = ','.join([a,n,b])
+            perms2.append(','.join([a,'N',b]))            
+            try:
+                c = surface.loc[surface['surface'] == s]['count'].values[0]
+                perms.append([s, c])
+            except:
+                perms.append([s, 0])
+
+            # ig_bna
+            igs.append(igs_pre[2] + igs_post[0])
+            s = ','.join([b,n,a])
+            perms2.append(','.join([b,'N',a]))            
+            try:
+                c = surface.loc[surface['surface'] == s]['count'].values[0]
+                perms.append([s, c])
+            except:
+                perms.append([s, 0])
+
+            # ig_nab            
+            igs.append(igs_post[0] + igs_post[1])
+            s = ','.join([n,a,b])
+            perms2.append(','.join(['N',a,b]))            
+            try:
+                c = surface.loc[surface['surface'] == s]['count'].values[0]
+                perms.append([s, c])
+            except:
+                perms.append([s, 0])
+
+            # ig_nba
+            igs.append(igs_post[2] + igs_post[3])
+            s = ','.join([n,b,a])
+            perms2.append(','.join(['N',b,a]))            
+            try:
+                c = surface.loc[surface['surface'] == s]['count'].values[0]
+                perms.append([s, c])
+            except:
+                perms.append([s, 0])
+
+            ig_dist = 1-np.array(igs)
+            mask_dist = mask
+            try:
+                pmi_ab = pmi_a/pmi_b
+            except:
+                pmi_ab = 0
+            try:
+                pmi_ba = pmi_b/pmi_a
+            except:
+                pmi_ba = 0
+            pmi_dist = [pmi_ba, pmi_ab, 0, 0, pmi_ab, pmi_ba]
+            #perm_dist = softmax(np.array(perms)[:,1].astype(float))
+
+            key2 = ','.join(sorted([a.split('/')[0].lower() + '/ADJ', b.split('/')[0].lower() + '/ADJ','N']))
+            
+            for i,perm in enumerate(perms):
+                out = '\t'.join([key2, perms2[i], key, perm[0], str(mask_dist[i]), str(perm[1]), str(ig_dist[i]), str(pmi_dist[i])])      
+                #print(str(k) + "/" + str(total), out)
+                outfile.write(out + "\n")
+
+
+    outfile.close()
+        
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='partition adjective space')
@@ -130,70 +297,13 @@ if __name__ == '__main__':
     pairs = load_pairs(args.pairs[0])        
     counts = pd.pivot_table(pairs[['count', 'awf']], index=['awf'], values=['count', 'awf'], aggfunc=np.sum).dropna()  
 
-    print("loading triples from " + args.triples[0] + " ...")
+    print("load triples from " + args.triples[0] + " ...")
     triples = load_triples(args.triples[0])
 
     if 'triples' in args.triples[0]:
         outfile = args.triples[0].replace('triples', 'scores')
     else:
         outfile = "scores.csv"
-        
-    outfile = open(outfile, 'w')
-    outfile.write("order,a,b,n,abn,ban,anb,bna,nab,nba\n")
 
-    total = triples.shape[0]
-
-    for i,row in triples.iterrows():
-        if "NOUN" in row[0]:
-            n = row[0]            
-            a = row[1]
-            b = row[2]
-            order = "nab"
-        elif "NOUN" in row[1]:
-            a = row[0]
-            n = row[1]
-            b = row[2]
-            order = "anb"
-        else:
-            a = row[0]
-            b = row[1]
-            n = row[2]
-            order = "abn"
-
-        # just get lowercase wordforms
-        a = a.split('/')[0].lower()
-        b = b.split('/')[0].lower()
-        n = n.split('/')[0].lower()
-
-        # make sure adjs aren't the same and are in pairs data
-        if a != b and len(pairs.loc[pairs['awf'] == a]) > 0 and len(pairs.loc[pairs['awf'] == b]) > 0:
-            igs_pre = partition(pairs, a, b, counts, None)
-            igs_post = partition(pairs, a, b, counts, n)
-
-            outputs = []
-
-            # ig_abn
-            outputs.append(igs_pre[0] + igs_pre[1])
-
-            # ig_ban
-            outputs.append(igs_pre[2] + igs_pre[3])
-
-            # ig_anb
-            outputs.append(igs_pre[0] + igs_post[2])
-
-            # ig_bna
-            outputs.append(igs_pre[2] + igs_post[0])
-
-            # ig_nab
-            outputs.append(igs_post[0] + igs_post[1])
-
-            # ig_nba
-            outputs.append(igs_post[2] + igs_post[3])
-
-            out = ','.join([order, a, b, n] + list(map(str, outputs)))
-                        
-            print(str(i+1) + "/" + str(total), out)
-            outfile.write(out + "\n")
-
-    outfile.close()
-    
+    score(triples, outfile)
+    print("\n")
