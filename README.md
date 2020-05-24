@@ -19,9 +19,3 @@ using information gain to describe adj order
 ```{bash}
 python src/partition.py -p <pairs>.csv -t <triples>.csv
 ```
-
-## evaluation
-To compare only *abn* to *ban*, *anb* to *bna*, and *nab* to *nba*:
-```{bash}
-./tools/accuracy.sh <scores>.csv
-```
