@@ -18,8 +18,8 @@ def load_triples(filename):
     triples['key'] = ""
     triples['surface'] = ""
     for i,row in triples.iterrows():
-        key = ','.join(sorted([row[0], row[1], row[2]]))
-        surface = ','.join([row[0], row[1], row[2]])
+        key = ','.join(sorted([row[0].lower(), row[1].lower(), row[2].lower()]))
+        surface = ','.join([row[0].lower(), row[1].lower(), row[2].lower()])
         triples.at[i, 'key'] = key
         triples.at[i, 'surface'] = surface
     print("counting attested orders ...")
@@ -28,9 +28,9 @@ def load_triples(filename):
 
 def load_pairs(filename):
     pairs = pd.read_csv(filename, sep=",", error_bad_lines=False, engine='python')
-    pairs['awf'] = pairs['awf'].str.lower()
-    pairs['nwf'] = pairs['nwf'].str.lower()
-    #pairs['count'] = 1
+    pairs['awf'] = pairs['awf'].str.lower() + "/adj"
+    pairs['nwf'] = pairs['nwf'].str.lower() + "/noun"
+    pairs['count'] = 1
     pairs.dropna(inplace=True)
     pairs = pairs.drop_duplicates()
     return pairs
@@ -151,27 +151,28 @@ def score(triples, outfile):
         
     outfile = open(outfile, 'w')
     #outfile.write("order,a,b,n,abn,ban,anb,bna,nab,nba\n")
-    outfile.write("key1\tsurface1\tkey2\tsurface2\tmask\tattest\tig\tpmi\n")
+    outfile.write("key\tsurface\tmask\tattest\tig\n")
 
-    total = len(triples.key.unique())
-
+    # mask of corpus counts for each order type
     mask = []
     mask.extend(repeat(np.sum(triples.loc[triples[2].str.contains('/NOUN')]['count'].values)/2, 2))
     mask.extend(repeat(np.sum(triples.loc[triples[1].str.contains('/NOUN')]['count'].values)/2, 2))
-    mask.extend(repeat(np.sum(triples.loc[triples[0].str.contains('/NOUN')]['count'].values)/2, 2))    
+    mask.extend(repeat(np.sum(triples.loc[triples[0].str.contains('/NOUN')]['count'].values)/2, 2))
+
+    total = len(triples.key.unique())    
 
     print("scoring triples ...")
     for k,key in enumerate(triples.key.unique()):
-        print_progress(k, total)
+        print_progress(k+1, total)
         w1 = key.split(',')[0]
         w2 = key.split(',')[1]
         w3 = key.split(',')[2]
         
-        if "NOUN" in w1:
+        if "/noun" in w1:
             n = w1
             a = w2
             b = w3
-        elif "NOUN" in w2:
+        elif "/noun" in w2:
             a = w1
             n = w2
             b = w3
@@ -180,33 +181,35 @@ def score(triples, outfile):
             b = w2
             n = w3
 
-        c = np.sum(pairs['count'].values)
-        pa = np.sum(pairs.loc[pairs['awf'] == a.split('/')[0].lower()]['count'].values) / c
-        pb = np.sum(pairs.loc[pairs['awf'] == b.split('/')[0].lower()]['count'].values) / c
-        pn = np.sum(pairs.loc[pairs['nwf'] == n.split('/')[0].lower()]['count'].values) / c
+        #a = a.split('/')[0].lower()
+        #b = b.split('/')[0].lower()
+        #n = n.split('/')[0].lower()
 
-        pan = np.sum(pairs.loc[(pairs['awf'] == a.split('/')[0].lower()) & (pairs['nwf'] == n.split('/')[0].lower())]['count'].values) / c
-        pbn = np.sum(pairs.loc[(pairs['awf'] == b.split('/')[0].lower()) & (pairs['nwf'] == n.split('/')[0].lower())]['count'].values) / c        
+        #c = np.sum(pairs['count'].values)
+        #pa = np.sum(pairs.loc[pairs['awf'] == a]['count'].values) / c
+        #pb = np.sum(pairs.loc[pairs['awf'] == b]['count'].values) / c
+        #pn = np.sum(pairs.loc[pairs['nwf'] == n]['count'].values) / c
+
+        an = np.sum(pairs.loc[(pairs['awf'] == a) & (pairs['nwf'] == n)]['count'].values)
+        bn = np.sum(pairs.loc[(pairs['awf'] == b) & (pairs['nwf'] == n)]['count'].values)        
         
             
-        # make sure adjs aren't the same and are in pairs data
-        if a != b and pan > 0 and pbn > 0:
-            pmi_a = log2(pan/pa)
-            pmi_b = log2(pbn/pb)
+        # make sure adjs aren't the same and a/b/n are in pairs data
+        if a != b and an > 0 and bn > 0:
+            #pmi_a = log2(pan/pa)
+            #pmi_b = log2(pbn/pb)
             
-            igs_pre = partition(pairs, a.split('/')[0].lower(), b.split('/')[0].lower(), counts, None)
-            igs_post = partition(pairs, a.split('/')[0].lower(), b.split('/')[0].lower(), counts, n.split('/')[0].lower())
+            igs_pre = partition(pairs, a, b, counts, None)
+            igs_post = partition(pairs, a, b, counts, n.lower())
 
             surface = triples.loc[triples['key'] == key]
             igs = []
             perms = []
-            perms2 = []
             masks = []
 
             # ig_abn
             igs.append(igs_pre[0] + igs_pre[1])
             s = ','.join([a,b,n])
-            perms2.append(','.join([a,b,'N']))
             try:
                 c = surface.loc[surface['surface'] == s]['count'].values[0]
                 perms.append([s, c])
@@ -216,7 +219,6 @@ def score(triples, outfile):
             # ig_ban
             igs.append(igs_pre[2] + igs_pre[3])
             s = ','.join([b,a,n])
-            perms2.append(','.join([b,a,'N']))            
             try:
                 c = surface.loc[surface['surface'] == s]['count'].values[0]
                 perms.append([s, c])
@@ -226,7 +228,6 @@ def score(triples, outfile):
             # ig_anb
             igs.append(igs_pre[0] + igs_post[2])
             s = ','.join([a,n,b])
-            perms2.append(','.join([a,'N',b]))            
             try:
                 c = surface.loc[surface['surface'] == s]['count'].values[0]
                 perms.append([s, c])
@@ -236,7 +237,6 @@ def score(triples, outfile):
             # ig_bna
             igs.append(igs_pre[2] + igs_post[0])
             s = ','.join([b,n,a])
-            perms2.append(','.join([b,'N',a]))            
             try:
                 c = surface.loc[surface['surface'] == s]['count'].values[0]
                 perms.append([s, c])
@@ -246,7 +246,6 @@ def score(triples, outfile):
             # ig_nab            
             igs.append(igs_post[0] + igs_post[1])
             s = ','.join([n,a,b])
-            perms2.append(','.join(['N',a,b]))            
             try:
                 c = surface.loc[surface['surface'] == s]['count'].values[0]
                 perms.append([s, c])
@@ -256,33 +255,28 @@ def score(triples, outfile):
             # ig_nba
             igs.append(igs_post[2] + igs_post[3])
             s = ','.join([n,b,a])
-            perms2.append(','.join(['N',b,a]))            
             try:
                 c = surface.loc[surface['surface'] == s]['count'].values[0]
                 perms.append([s, c])
             except:
                 perms.append([s, 0])
 
-            ig_dist = 1-np.array(igs)
+            ig_dist = np.array(igs)
             mask_dist = mask
-            try:
-                pmi_ab = pmi_a/pmi_b
-            except:
-                pmi_ab = 0
-            try:
-                pmi_ba = pmi_b/pmi_a
-            except:
-                pmi_ba = 0
-            pmi_dist = [pmi_ba, pmi_ab, 0, 0, pmi_ab, pmi_ba]
-            #perm_dist = softmax(np.array(perms)[:,1].astype(float))
 
-            key2 = ','.join(sorted([a.split('/')[0].lower() + '/ADJ', b.split('/')[0].lower() + '/ADJ','N']))
+            #try:
+            #    pmi_ab = pmi_a/pmi_b
+            #except:
+            #    pmi_ab = 0
+            #try:
+            #    pmi_ba = pmi_b/pmi_a
+            #except:
+            #    pmi_ba = 0
+            #pmi_dist = [pmi_ba, pmi_ab, 0, 0, pmi_ab, pmi_ba]                
             
             for i,perm in enumerate(perms):
-                out = '\t'.join([key2, perms2[i], key, perm[0], str(mask_dist[i]), str(perm[1]), str(ig_dist[i]), str(pmi_dist[i])])      
-                #print(str(k) + "/" + str(total), out)
+                out = '\t'.join([key, perm[0], str(mask_dist[i]), str(perm[1]), str(ig_dist[i])])     
                 outfile.write(out + "\n")
-
 
     outfile.close()
         
