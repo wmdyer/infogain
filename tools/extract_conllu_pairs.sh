@@ -19,7 +19,7 @@ for file in $files
 do
     echo $file
     # get instances of wordforms that are ADJ/amod or NOUN, keyed as sentence:index
-    cat $file | tr -d '"/' | grep "^[0-9][0-9]*"$'\t' | gawk 'BEGIN{FS="\t";C=0;W=""}{if($1=="1") C+=1; if(($2!="_") && (($4=="ADJ" && $8=="amod") || ($4=="NOUN"))) print C":"$1 FS $2"/"$4 FS C":"$7}' >> a
+    cat $file | tr -d '"/' | grep "^[0-9][0-9]*"$'\t' | gawk 'BEGIN{FS="\t";C=0;W=""}{if($1=="1") C+=1; W=$2; if(($4=="ADJ" && $8=="amod") || ($4=="NOUN")) print C":"$1 FS W"/"$4 FS C":"$7}' >> a
 done
 
 # join ADJs and NOUNs, normalize, and count
@@ -32,6 +32,10 @@ cat pairs.csv | gawk 'BEGIN{FS=","}{if(NF==3) print $0}' > temp; mv temp pairs.c
 
 printf "\n"
 cat pairs.csv | wc -l
+
+# remove hapaxes
+cat pairs.csv | grep -v "^1," > pairs_no_hapax.csv
+cat pairs_no_hapax.csv | wc -l
 
 # clean up
 rm a
