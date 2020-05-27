@@ -19,3 +19,8 @@ using information gain to describe adj order
 ```{bash}
 python src/partition.py -p <pairs>.csv -t <triples>.csv
 ```
+
+## evaluation
+```{bash}
+python src/evaluate.py -f <scores>.csv [--mask]
+```
