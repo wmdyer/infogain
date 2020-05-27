@@ -51,7 +51,6 @@ def analyze(scores, domask):
             predicted = np.array([1-float(i)/sum(predicted) for i in predicted])
         else:
             predicted = 1-predicted
-        random = np.random.rand(len(attested))
         noskill = np.ones(len(attested))
 
         if domask:
@@ -62,31 +61,34 @@ def analyze(scores, domask):
 
             attested = attested*mask
             predicted = predicted*mask
-            random = random*mask
             noskill = noskill*mask
 
         attested = softmax(attested)
         predicted = softmax(predicted)
-        random = softmax(random)
         noskill = softmax(noskill)
             
         loss = cross_entropy(attested, predicted)
         loss_baseline = cross_entropy(attested, noskill)
-        loss_random = cross_entropy(attested, random)
 
         losses.append(loss)
         losses_baseline.append(loss_baseline)
-        losses_random.append(loss_random)        
 
         if loss < loss_baseline:
             accuracies.append(1)
         else:
             accuracies.append(0)
 
-        if loss_random < loss_baseline:
-            accuracies_random.append(1)
-        else:
-            accuracies_random.append(0)
+        for r in range(100):
+            random = np.random.rand(len(attested))
+            if domask:
+                random = random*mask
+            random = softmax(random)               
+            loss_random = cross_entropy(attested, random)
+            losses_random.append(loss_random)                    
+            if loss_random < loss_baseline:
+                accuracies_random.append(1)
+            else:
+                accuracies_random.append(0)
 
     print('')
 
