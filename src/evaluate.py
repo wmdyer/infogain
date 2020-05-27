@@ -20,25 +20,21 @@ def load_scores(filename):
     scores['surface'] = scores['surface'].str.lower()
     return scores
 
-def cross_entropy(targets, predictions):
+def cross_entropy2(targets, predictions):
     N = predictions.shape[0]
     ce = -np.sum(targets * np.log(predictions)) / N
     return ce
 
-def cross_entropy2(p, q):
-    #print(p[0]*log2(p[0]))
+def cross_entropy(p, q):
     return -sum([p[i]*log2(q[i]) for i in range(len(p))])
-#    s=0
-#    for i in range(len(p)):
-#        if q[i] > 0:
-#            s+=p[i]*log2(q[i])
-#    return -s
 
 def analyze(scores, domask):
 
     accuracies = []
+    accuracies_random = []    
     losses = []
     losses_baseline = []
+    losses_random = []
 
     predictor = 'ig'
 
@@ -50,7 +46,12 @@ def analyze(scores, domask):
         dist = pd.pivot_table(df[['surface', 'mask', 'attest', predictor]], index=['surface'], values=['mask', 'attest', 'surface', predictor], aggfunc=np.sum)
 
         attested = np.array(dist['attest'].values)
-        predicted = 1-np.array(dist[predictor].values)
+        predicted = dist[predictor].values
+        if sum(predicted) > 0:
+            predicted = np.array([1-float(i)/sum(predicted) for i in predicted])
+        else:
+            predicted = 1-predicted
+        random = np.random.rand(len(attested))
         noskill = np.ones(len(attested))
 
         if domask:
@@ -58,21 +59,34 @@ def analyze(scores, domask):
             mask = [float(i)/sum(mask) for i in mask]
             if i==0:
                 mdf = pd.DataFrame(df[['surface', 'mask']])
-            #mask = softmax(mask)
+
+            attested = attested*mask
+            predicted = predicted*mask
+            random = random*mask
+            noskill = noskill*mask
+
+        attested = softmax(attested)
+        predicted = softmax(predicted)
+        random = softmax(random)
+        noskill = softmax(noskill)
             
-            loss = cross_entropy(softmax(attested*mask), softmax(predicted*mask))
-            loss_baseline = cross_entropy(softmax(attested*mask), softmax(noskill*mask))
-        else:
-            loss = cross_entropy(softmax(attested), softmax(predicted))
-            loss_baseline = cross_entropy(softmax(attested), softmax(noskill))
+        loss = cross_entropy(attested, predicted)
+        loss_baseline = cross_entropy(attested, noskill)
+        loss_random = cross_entropy(attested, random)
+
+        losses.append(loss)
+        losses_baseline.append(loss_baseline)
+        losses_random.append(loss_random)        
 
         if loss < loss_baseline:
             accuracies.append(1)
         else:
             accuracies.append(0)
 
-        losses.append(loss)
-        losses_baseline.append(loss_baseline)
+        if loss_random < loss_baseline:
+            accuracies_random.append(1)
+        else:
+            accuracies_random.append(0)
 
     print('')
 
@@ -92,9 +106,12 @@ def analyze(scores, domask):
         print('\nmask', order)
 
     print('\n  number of triples', len(losses))
-    print(' pct above baseline', np.average(accuracies))
-    print('avg prediction loss', np.average(losses))
     print('  avg baseline loss', np.average(losses_baseline))
+    print('    avg random loss', np.average(losses_random))        
+    print('avg prediction loss', np.average(losses))
+    print('  random > baseline', np.average(accuracies_random))
+    print(' predict > baseline', np.average(accuracies))    
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='evaluate scores')
