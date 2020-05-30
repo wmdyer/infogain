@@ -4,6 +4,10 @@ using information gain to describe adj order
 ## source data
 [CoNLL 2017 Shared Task - Automatically Annotated Raw Texts and Word Embeddings](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1989)
 
+or
+
+[Universal Dependencies](https://github.com/UniversalDependencies)
+
 ## pipeline
 *1. extract pairs from conllu file*
 ```{bash}
