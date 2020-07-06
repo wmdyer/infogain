@@ -1,6 +1,6 @@
 if [ "$1" == "" ]
 then
-    echo "Usage: ./extract_conllu_pairs.sh <conllu files>"
+    echo "Usage: ./extract_conllu_pairs.sh <conllu files or language>"
     exit
 fi
 
@@ -8,18 +8,30 @@ printf "" > a
 printf "count,awf,nwf\n" > pairs.csv
 
 # if $1 doesn't exist, use $1 to grep through files; else use $@
-if [ "`ls | grep -w "$1"`" == "" ]
+if [ "`ls | grep "$1"`" != "" ]
 then
-    files="`ls | grep $1`"
+    files="$1"
+    if [ "$2" != "" ]
+    then
+	files="$@"
+    fi
 else
-    files="$@"
+    files=""
+    for dir in `ls ../../ud | grep "UD_$1-"`
+    do
+	for file in `ls ../../ud/$dir/ | grep conllu`
+	do
+	    files=$files" "
+	    files=$files"../../ud/$dir/$file"
+	done
+    done
 fi
 
 for file in $files
 do
     echo $file
     # get instances of wordforms that are ADJ/amod or NOUN, keyed as sentence:index
-    cat $file | tr -d '"/' | grep "^[0-9][0-9]*"$'\t' | gawk 'BEGIN{FS="\t";C=0;W=""}{if($1=="1") C+=1; W=$2; if(($4=="ADJ" && $8=="amod") || ($4=="NOUN")) print C":"$1 FS W"/"$4 FS C":"$7}' >> a
+    cat $file | tr -d ': "/_\*̥\$+\.\-' | grep "^[0-9][0-9]*"$'\t' | gawk 'BEGIN{FS="\t";C=0;W=""}{if($1=="1") C+=1; W=$2; if(($4=="ADJ" && $8=="amod") || ($4=="NOUN")) print C":"$1 FS W"/"$4 FS C":"$7}' >> a
 done
 
 # join ADJs and NOUNs, normalize, and count
@@ -28,7 +40,7 @@ join -2 3 -t$'\t' <(cat a | sort -k1,1) <(cat a | sort -k3,3) | gawk 'BEGIN{FS="
 
 # verify each row has 3 cols
 printf " validate"
-cat pairs.csv | gawk 'BEGIN{FS=","}{if(NF==3) print $0}' > temp; mv temp pairs.csv
+cat pairs.csv | gawk 'BEGIN{FS=","}{if(NF==3 && $1!="" && $2!="" && $3!="") print $0}' > temp; mv temp pairs.csv
 
 printf "\n"
 cat pairs.csv | wc -l

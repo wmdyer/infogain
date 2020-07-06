@@ -24,7 +24,7 @@ do
 
     # extract all wordforms and key them to sentence:index
     printf " words"
-    cat sents | gawk 'BEGIN{FS="\t";W=""}{if($3!="_") print $1":"$2 FS $3"/"$5}' > words
+    cat sents | gawk 'BEGIN{FS="\t"}{if($3!="_") print $1":"$2 FS $3"/"$5}' > words
 
     # extract all nouns
     printf " all_nouns"
