@@ -4,89 +4,69 @@ import numpy as np
 from itertools import repeat
 from scipy.stats import entropy
 from scipy.special import softmax
+from scipy.sparse import csr_matrix, diags
 from math import log2
+from itertools import permutations
 
-def print_progress(i, n):
+# use percentage of info gain rather than raw
+pct = False
+
+# print out data from IG calculations
+verbose = False
+
+# let nouns zero-out other nouns from adjacency matrix
+zero_noun = False
+
+# use weights in adjacency matrix, not just 1s
+weighted_adj = False
+
+# not hyperparameter, just lazy global to track whether noun has been encountered in sequence
+NOUN = False
+
+def print_progress(i, n, s):
     j = (i+1) / n
     sys.stdout.write('\r')
-    sys.stdout.write("[%-20s] %d%% N %d/%d " % ('='*int(20*j), 100*j, i, n))
+    sys.stdout.write("[%-20s] %d%% %d/%d (%s)" % ('='*int(20*j), 100*j, i, n, s))
     sys.stdout.flush()
     return i + 1
 
-def load_triples(filename):
-    triples = pd.read_csv(filename, sep=",", header=None)
-    triples['key'] = ""
-    triples['surface'] = ""
-    for i,row in triples.iterrows():
-        key = ','.join(sorted([row[0].lower(), row[1].lower(), row[2].lower()]))
-        surface = ','.join([row[0].lower(), row[1].lower(), row[2].lower()])
-        triples.at[i, 'key'] = key
-        triples.at[i, 'surface'] = surface
-    print("counting attested orders ...")
-    triples = triples.groupby(by=[0, 1, 2, 'key', 'surface']).size().reset_index(name='count')
-    return triples
+def load_seqs(filename):
+    seqs = pd.read_csv(filename, sep=",", header=None)
+
+    # generate permutations 'surface' for 'key'
+    seqs['key'] = ""
+    seqs['surface'] = ""
+    for i,row in seqs.iterrows():
+        try:
+            key = ','.join(sorted([row[0].lower(), row[1].lower(), row[2].lower()]))
+            surface = ','.join([row[0].lower(), row[1].lower(), row[2].lower()])
+        except:
+            key = ','.join(sorted([row[0].lower(), row[1].lower()]))
+            surface = ','.join([row[0].lower(), row[1].lower()])            
+        seqs.at[i, 'key'] = key
+        seqs.at[i, 'surface'] = surface
+    try:
+        seqs = seqs.groupby(by=[0, 1, 2, 'key', 'surface']).size().reset_index(name='count')
+    except:
+        seqs = seqs.groupby(by=[0, 1, 'key', 'surface']).size().reset_index(name='count')
+        
+    return seqs[['key', 'surface', 'count']]
 
 def load_pairs(filename):
     pairs = pd.read_csv(filename, sep=",", error_bad_lines=False, engine='python')
     pairs['awf'] = pairs['awf'].str.lower() + "/adj"
     pairs['nwf'] = pairs['nwf'].str.lower() + "/noun"
-    pairs['count'] = 1
+    if not weighted_adj:
+        pairs['count'] = 1
     pairs.dropna(inplace=True)
     pairs = pairs.drop_duplicates()
     return pairs
 
-# pairs is adj-noun pairs, a is adj1, b is adj2, counts is count of adjs, n is noun or None
-def partition(pairs, a, b, counts, n):
-
-    # define whether IG should be a pct of starting entropy
-    percentage = True
-
-    # get counts of adjs that overlap adj a
-    nouns_a = pairs.loc[pairs['awf'] == a]['nwf']
-    adjs_a = pairs.loc[pairs['nwf'].isin(nouns_a)]
-    adjs_a = pd.pivot_table(adjs_a[['count', 'awf']], index=['awf'], values=['count', 'awf'], aggfunc=np.sum)
-
-    # get counts of adjs that overlap adj b
-    nouns_b = pairs.loc[pairs['awf'] == b]['nwf']
-    adjs_b = pairs.loc[pairs['nwf'].isin(nouns_b)]
-    adjs_b = pd.pivot_table(adjs_b[['count', 'awf']], index=['awf'], values=['count', 'awf'], aggfunc=np.sum)
-
-    # if noun is specified, change domain to just adjs associated to noun n
-    if n != None:
-        adjs_n = pairs.loc[pairs['nwf'] == n]['awf']
-    else:
-        adjs_n = pairs.loc[(pairs['nwf'].isin(nouns_a.values)) | (pairs['nwf'].isin(nouns_b.values))]['awf'].drop_duplicates()
-        #adjs_n = pairs['awf'].drop_duplicates()
-
-    # join adjs_a, adjs_n, and counts
-    adjs = pd.merge(adjs_a, adjs_n, how='right', left_on=['awf'], right_on=['awf']).fillna(0).drop_duplicates()
-    dfa = pd.merge(adjs, counts, how='left', left_on=['awf'], right_index=True).fillna(0).drop_duplicates()
-
-    # join adjs_b, adjs_n, and counts
-    adjs = pd.merge(adjs_b, adjs_n, how='right', left_on=['awf'], right_on=['awf']).fillna(0).drop_duplicates()
-    dfb = pd.merge(adjs, counts, how='left', left_on=['awf'], right_index=True).fillna(0).drop_duplicates()
-
-    dfa.set_index('awf', inplace=True)
-    dfb.set_index('awf', inplace=True)
-
-    dfa['pa'] = dfa['count_x']
-    dfa['pac'] = (dfa['count_y'] - dfa['count_x'])
-        
-    dfb['pb'] = dfb['count_x']
-    dfb['pbc'] = (dfb['count_y'] - dfb['count_x'])
-        
-    dfa['pab'] = dfa['pa'] * (dfb['count_x']/dfb['count_y'])
-    dfa['pabc'] = dfa['pa'] * ((dfb['count_y'] - dfb['count_x'])/dfb['count_y'])
-        
-    dfb['pba'] = dfb['pb'] * (dfa['count_x']/dfa['count_y'])
-    dfb['pbac'] = dfb['pb'] * ((dfa['count_y'] - dfa['count_x'])/dfa['count_y'])
-    
+def h(df, dfc):
     # get distributions
     distributions = {}
-    for d in ['pa', 'pac', 'pab', 'pabc']:
-        distributions[d] = np.nan_to_num(dfa[d].values, 0)
-    for d in ['pb', 'pbc', 'pba', 'pbac']:
-        distributions[d] = np.nan_to_num(dfb[d].values, 0)
+    distributions['p'] = df
+    distributions['pc'] = dfc
 
     # get sums and entropies for each distribution
     sums = {}
@@ -100,7 +80,7 @@ def partition(pairs, a, b, counts, n):
 
     # get proportions for each distribution
     proportions = {}
-    dists = ['pa', 'pb', 'pab', 'pba']
+    dists = ['p']
     for d in dists:
         if (sums[d] + sums[d+'c']) > 0:
             proportions[d] = sums[d] / (sums[d] + sums[d+'c'])
@@ -108,196 +88,168 @@ def partition(pairs, a, b, counts, n):
             proportions[d] = 0
         proportions[d+'c'] = 1 - proportions[d]
 
-    # calc starting entropies
-    start_ents = {}
-    try:
-        start_ents['a'] = entropy(dfa['count_y'].values, base=2)
-    except:
-        start_ents['a'] = 0
-    try:
-        start_ents['ab'] = entropy(dfa['count_x'].values, base=2)
-    except:
-        start_ents['ab'] = 0
-    try:
-        start_ents['b'] = entropy(dfb['count_y'].values, base=2)
-    except:
-        start_ents['b'] = 0
-    try:
-        start_ents['ba'] = entropy(dfb['count_x'].values, base=2)
-    except:
-        start_ents['ba'] = 0
+    if verbose:
+        print('distributions', distributions)
+        print('sums', sums)        
+        print('proportions', proportions)
+        print('entropies', entropies)
 
-    # calc resulting entropies
-    H = {}
-    H['a'] = proportions['pa'] * entropies['pa'] + proportions['pac'] * entropies['pac']
-    H['ab'] = proportions['pab'] * entropies['pab'] + proportions['pabc'] * entropies['pabc']
-    H['b'] = proportions['pb'] * entropies['pb'] + proportions['pbc'] * entropies['pbc']
-    H['ba'] = proportions['pba'] * entropies['pba'] + proportions['pbac'] * entropies['pbac']
 
-    # calc IG (percentage reduction)
-    IG = {}
-    for d in ['a', 'ab', 'b', 'ba']:
-        if start_ents[d] > 0:
-            if percentage:
-                IG[d] = (start_ents[d] - H[d]) / start_ents[d]
-            else:
-                IG[d] = start_ents[d] - H[d]                
-        else:
-            IG[d] = 0
+    # return finish entropy
+    h = proportions['p'] * entropies['p'] + proportions['pc'] * entropies['pc']
+
+    return h
+
+
+# binary entropy calculation (not currently used)
+def bin_h(dist):
+    ents = []
+    for i in dist:
+        ents.append(entropy([i, 1-i], base=2))
+    return np.sum(ents)
+
+# main partition routing (wordlist is either adjs or nouns, m is prob dist, a is adjacency matrix, a_prime is how a changes over time, w is word to partition on, and pos is w's part-of-speech)
+def partition(wordlist, m, a, a_prime, w, pos):
+    global NOUN
+
+    # get prior distribution
+    pre = np.squeeze(np.asarray(a_prime.sum(axis=1)))
+
+    if pos == 'adj':
+
+        # multiply a_prime by adj row and re-sparsify
+        x = wordlist.index(w)
+        a_prime = a_prime.multiply(m[x]).tocsr()
+
+        if zero_noun and NOUN:
+            # multiply a_prime again if noun rows have been zeroed-out
+            ratio = np.squeeze(np.asarray(a.multiply(m[x]).sum(axis=1))) / np.squeeze(np.asarray(a.sum(axis=1)))
+            a_prime = a_prime.multiply(ratio.reshape(-1,1)).tocsr()
             
-    return [IG['a'], IG['ab'], IG['b'], IG['ba']]
+    elif pos == 'noun':
+        y = wordlist.index(w)
 
-def score(triples, outfile):
+        if zero_noun:
+            # use diagonal matrix multiplation to zero out rows other than y
+            NOUN = True
+            zeros = np.zeros(a_prime.shape[1])
+            zeros[y] = 1
+            D = diags(zeros)
+            a_prime = a_prime * D
+        else:
+            # multiply a_prime by noun col and re-sparsify
+            a_prime = a_prime.multiply(m[:,y].reshape(-1,1)).tocsr()
+
+    # calculate IG
+    post_y = np.squeeze(np.asarray(a_prime.sum(axis=1)*1.0))
+    post_n = pre - post_y
+
+    if np.sum(pre) > 0:
+        start_ent = entropy(pre, base=2)
+    else:
+        start_ent = 0
+    finish_ent = h(post_y, post_n)
+
+    if not pct or start_ent == 0:
+        ig = start_ent - finish_ent
+    else:
+        ig = (start_ent - finish_ent)/start_ent
         
+    return ig, a_prime
+
+
+def score(adjs, nouns, table, seqs, outfile):
+    global NOUN
     outfile = open(outfile, 'w')
-    #outfile.write("order,a,b,n,abn,ban,anb,bna,nab,nba\n")
-    outfile.write("key\tsurface\tmask\tattest\tig\n")
+    outstr = "key\tsurface\ttemplate\tattest\tig_sum\tig_ent\tigs\n"
+    outfile.write(outstr)
+    n = len(seqs.key.unique())
+    m = (table > 0) * 1
+    a = csr_matrix(table).tocsr()
 
-    # mask of corpus counts for each order type
-    mask = []
-    mask.extend(repeat(np.sum(triples.loc[triples[2].str.contains('/NOUN')]['count'].values)/2, 2))
-    mask.extend(repeat(np.sum(triples.loc[triples[1].str.contains('/NOUN')]['count'].values)/2, 2))
-    mask.extend(repeat(np.sum(triples.loc[triples[0].str.contains('/NOUN')]['count'].values)/2, 2))
+    print('scoring ...')
+    an = 0    
+    if n < 5:
+        global verbose
+        verbose = True
 
-    total = len(triples.key.unique())    
+    for k,key in enumerate(seqs.key.unique()):
+        if not verbose: print_progress(k+1, n, an)
+        words = key.split(',')
 
-    print("scoring triples ...")
-    for k,key in enumerate(triples.key.unique()):
-        print_progress(k+1, total)
-        w1 = key.split(',')[0]
-        w2 = key.split(',')[1]
-        w3 = key.split(',')[2]
-        
-        if "/noun" in w1:
-            n = w1
-            a = w2
-            b = w3
-        elif "/noun" in w2:
-            a = w1
-            n = w2
-            b = w3
-        else:
-            a = w1
-            b = w2
-            n = w3
+        analyze = True
+        for w in words:
+            if "/adj" in w and not w in adjs:
+                analyze = False
+            elif "/noun" in w and not w in nouns:
+                analyze = False
+        if analyze:
+            out = []
+            for perm in list(permutations(words)):
+                igs = []
+                a_prime = a
+                NOUN = False                
+                template = ""
+                for w in perm:
+                    if verbose:
+                        print('\n'+w)
+                    if "/adj" in w and w in adjs:
+                        iga, a_prime = partition(adjs, m, a, a_prime, w, 'adj')
+                        igs.append(iga)
+                        template += "A"
+                    if "/noun" in w and w in nouns:
+                        ign, a_prime = partition(nouns, m, a, a_prime, w, 'noun')
+                        igs.append(ign)
+                        template += "N"
 
-        #a = a.split('/')[0].lower()
-        #b = b.split('/')[0].lower()
-        #n = n.split('/')[0].lower()
+                # if each word has an IG score, calculate entropy of IG scores
+                if len(igs) == len(words):
+                    surface = ','.join(perm)                
+                    try:
+                        attest = seqs.loc[seqs['surface'] == surface]['count'].values[0]
+                    except:
+                        attest = 0
 
-        #c = np.sum(pairs['count'].values)
-        #pa = np.sum(pairs.loc[pairs['awf'] == a]['count'].values) / c
-        #pb = np.sum(pairs.loc[pairs['awf'] == b]['count'].values) / c
-        #pn = np.sum(pairs.loc[pairs['nwf'] == n]['count'].values) / c
+                    if template == "NA":
+                        template = "AN"
 
-        an = np.sum(pairs.loc[(pairs['awf'] == a) & (pairs['nwf'] == n)]['count'].values)
-        bn = np.sum(pairs.loc[(pairs['awf'] == b) & (pairs['nwf'] == n)]['count'].values)        
-        
-            
-        # make sure adjs aren't the same and a/b/n are in pairs data
-        if a != b and an > 0 and bn > 0:
-            #pmi_a = log2(pan/pa)
-            #pmi_b = log2(pbn/pb)
-            
-            igs_pre = partition(pairs, a, b, counts, None)
-            igs_post = partition(pairs, a, b, counts, n.lower())
+                    if np.sum(igs) > 0:
+                        ent = entropy(igs, base=2)
+                    else:
+                        ent = 0
+                    
+                    out.append('\t'.join([key, ','.join(perm), template, str(attest), str(np.sum(igs)), str(ent), ','.join(map(str,igs))]) + "\n")
 
-            surface = triples.loc[triples['key'] == key]
-            igs = []
-            perms = []
-            masks = []
-
-            # ig_abn
-            igs.append(igs_pre[0] + igs_pre[1])
-            s = ','.join([a,b,n])
-            try:
-                c = surface.loc[surface['surface'] == s]['count'].values[0]
-                perms.append([s, c])
-            except:
-                perms.append([s, 0])
-
-            # ig_ban
-            igs.append(igs_pre[2] + igs_pre[3])
-            s = ','.join([b,a,n])
-            try:
-                c = surface.loc[surface['surface'] == s]['count'].values[0]
-                perms.append([s, c])
-            except:
-                perms.append([s, 0])
-            
-            # ig_anb
-            igs.append(igs_pre[0] + igs_post[2])
-            s = ','.join([a,n,b])
-            try:
-                c = surface.loc[surface['surface'] == s]['count'].values[0]
-                perms.append([s, c])
-            except:
-                perms.append([s, 0])
-
-            # ig_bna
-            igs.append(igs_pre[2] + igs_post[0])
-            s = ','.join([b,n,a])
-            try:
-                c = surface.loc[surface['surface'] == s]['count'].values[0]
-                perms.append([s, c])
-            except:
-                perms.append([s, 0])
-
-            # ig_nab            
-            igs.append(igs_post[0] + igs_post[1])
-            s = ','.join([n,a,b])
-            try:
-                c = surface.loc[surface['surface'] == s]['count'].values[0]
-                perms.append([s, c])
-            except:
-                perms.append([s, 0])
-
-            # ig_nba
-            igs.append(igs_post[2] + igs_post[3])
-            s = ','.join([n,b,a])
-            try:
-                c = surface.loc[surface['surface'] == s]['count'].values[0]
-                perms.append([s, c])
-            except:
-                perms.append([s, 0])
-
-            ig_dist = np.array(igs)
-            mask_dist = mask
-
-            #try:
-            #    pmi_ab = pmi_a/pmi_b
-            #except:
-            #    pmi_ab = 0
-            #try:
-            #    pmi_ba = pmi_b/pmi_a
-            #except:
-            #    pmi_ba = 0
-            #pmi_dist = [pmi_ba, pmi_ab, 0, 0, pmi_ab, pmi_ba]                
-            
-            for i,perm in enumerate(perms):
-                out = '\t'.join([key, perm[0], str(mask_dist[i]), str(perm[1]), str(ig_dist[i])])     
-                outfile.write(out + "\n")
+                # only write to outfile if all permutations have scores
+                if len(out) == len(list(permutations(words))):
+                    for line in out:
+                        outfile.write(line)
+                    an += 1
 
     outfile.close()
+
+    
         
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='partition adjective space')
     parser.add_argument('-p', '--pairs', nargs=1, dest='pairs', required=True, help='comma-delimited file of adj-noun pairs [awf,nwf]')    
-    parser.add_argument('-t', '--triples', nargs=1, dest='triples', required=True, help='comma-delimited file of adj-adj-noun triples (no header)')
+    parser.add_argument('-s', '--sequences', nargs=1, dest='seqs', required=True, help='comma-delimited file of sequences (no header)')
     args = parser.parse_args()
 
-    print("loading pairs from " + args.pairs[0] + " ...")
+    print("processing " + args.pairs[0] + " ...")
     pairs = load_pairs(args.pairs[0])        
-    counts = pd.pivot_table(pairs[['count', 'awf']], index=['awf'], values=['count', 'awf'], aggfunc=np.sum).dropna()  
 
-    print("load triples from " + args.triples[0] + " ...")
-    triples = load_triples(args.triples[0])
+    print("processing " + args.seqs[0] + " ...")
+    seqs = load_seqs(args.seqs[0])
 
-    if 'triples' in args.triples[0]:
-        outfile = args.triples[0].replace('triples', 'scores')
-    else:
-        outfile = "scores.csv"
+    print("calculating probabilities ...")
+    pairs = pairs.reindex(pairs.index.repeat(pairs['count']))
+    mdf = pd.crosstab(pairs.awf, pairs.nwf)
+    nouns = list(mdf.columns)
+    adjs = list(mdf.index)
+    table = mdf.values
 
-    score(triples, outfile)
-    print("\n")
+    score(adjs, nouns, table, seqs, "scores.temp")
+    print('')
+
