@@ -31,5 +31,5 @@ python src/partition.py -p <pairs>.csv -s <sequences>.csv
 
 ## evaluation
 ```{bash}
-python src/regress.py -tr <scores>.csv [--plot --all]
+python src/regress.py -tr <scores>.csv -m <ig_sum or ig_ent> [--plot --all]
 ```
