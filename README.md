@@ -8,25 +8,36 @@ or
 
 [Universal Dependencies](https://github.com/UniversalDependencies)
 
-## pipeline
-*1. extract semantic pairs from conllu file*
+## training
+*1. extract NPs from conllu file*
 ```{bash}
-./tools/wiki/extract_conllu_pairs.sh <file>.conllu
+./tools/wiki/extract_conllu_nps.sh <file>.conllu
 ```
 
-*2. extract syntactic sequences from conllu file*
+*2. cluster*
 ```{bash}
-./tools/wiki/extract_conllu_syntactic_pairs.sh <file>.conllu
-```
-or
-
-```{bash}
-./tools/wiki/extract_conllu_triples.sh <file>.conllu
+cat nps.tsv | tr '\t,' '\n' | sort -u > words
+join <(cat words | sort -k1,1) <(cat <vectors> | sort -k1,1) > vecs
+python ./src/cluster.py -v vecs -w words -k 500 -c 0.25
 ```
 
-*3. score sequences based on pairs*
+*3. train*
 ```{bash}
-python src/partition.py -p <pairs>.csv -s <sequences>.csv
+python ./src/train.py -n nps.tsv -c clusters.csv -fn 20 -fl 2
+```
+
+## testing
+
+*1. test on AN/NA pairs*
+```{bash}
+./tools/extract_conllu_pairs.sh <file>.conllu
+python ./src/test.py -s pairs.csv
+```
+
+*2. test on AAN triples*
+```{bash}
+./tools/extract_conllu_triples.sh <file>.conllu
+python ./src/test.py -s triples.csv
 ```
 
 ## evaluation
