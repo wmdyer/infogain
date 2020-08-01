@@ -1,53 +1,91 @@
 if [ "$1" == "" ]
 then
-    echo "Usage: ./extract_conllu_pairs.sh <conllu files or language>"
+    echo "Usage: ./extract_conllu_pairs.csv <conllu files>"
     exit
 fi
 
-printf "" > a
-printf "count,awf,nwf\n" > pairs.csv
+printf "" > pairs.csv
 
 # if $1 doesn't exist, use $1 to grep through files; else use $@
-if [ "`ls | grep "$1"`" != "" ]
+if [ "`ls | grep -w "$1"`" == "" ]
 then
-    files="$1"
-    if [ "$2" != "" ]
-    then
-	files="$@"
-    fi
+    files="`ls | grep $1`"
 else
-    files=""
-    for dir in `ls ../../ud | grep "UD_$1-"`
-    do
-	for file in `ls ../../ud/$dir/ | grep conllu`
-	do
-	    files=$files" "
-	    files=$files"../../ud/$dir/$file"
-	done
-    done
+    files="$@"
 fi
 
 for file in $files
 do
     echo $file
-    # get instances of wordforms that are ADJ/amod or NOUN, keyed as sentence:index
-    cat $file | tr -d ': "/_\*̥\$+\.\-' | grep "^[0-9][0-9]*"$'\t' | gawk 'BEGIN{FS="\t";C=0;W=""}{if($1=="1") C+=1; W=$2; if(($4=="ADJ" && $8=="amod") || ($4=="NOUN")) print C":"$1 FS W"/"$4 FS C":"$7}' >> a
+
+    # add sentence IDs
+    printf " sents"
+    cat $file | grep "^[0-9][0-9]*"$'\t' | gawk 'BEGIN{FS="\t";S=0}{if($1=="1") S++; print S FS $0}' > sents
+
+    # extract all wordforms and key them to sentence:index
+    printf " words"
+    cat sents | gawk 'BEGIN{FS="\t"}{if($3!="_") print $1":"$2 FS $3"/"$5}' > words
+
+    # extract all nouns
+    printf " all_nouns"
+    cat sents | gawk 'BEGIN{FS="\t"}{if($5=="NOUN") print $1":"$2 FS $1":"$8}' > all_nouns
+
+    # extract all adjectives
+    printf " all_adjs"
+    cat sents | gawk 'BEGIN{FS="\t"}{if($5=="ADJ" && $9=="amod") print $1":"$2 FS $1":"$8}' > all_adjs
+
+    # extract all dependent-head pairs
+    printf " children"
+    cat sents | gawk 'BEGIN{FS="\t"}{print $1":"$2 FS $1":"$8}' > children
+
+    # join children and all adjs -- if resulting line has only two fields, it's a childless adj
+    printf " childless"
+    join -t$'\t' -1 2 -a2 <(cat children | sort -k2,2) <(cat all_adjs | sort -k1,1) | gawk 'BEGIN{FS="\t"}{if(NF==2) print $0}' > childless
+
+    # get nouns with only one dependents
+    printf " noun_1_dep"
+    join -t$'\t' -1 2 <(cat children | sort -k2,2) <(cat all_nouns | cut -f1 | sort -k1,1) | sort -k1,1 | gawk 'BEGIN{FS="\t";S=""}{if(S!=$1) printf "\n" $1; printf "\t" $2}{S=$1};END{printf "\n"}' | gawk 'BEGIN{FS="\t"}{if(NF==2) print $1}' > nouns_1_deps
+    
+    # modify childless so its head nouns are only nouns with 1 deps
+    printf " childless"
+    join -t$'\t' -2 2 <(cat nouns_1_deps | sort -k1,1) <(cat childless | sort -k2,2) | gawk 'BEGIN{FS="\t"}{print $2 FS $1}' > temp; mv temp childless
+
+    # get postnominal adjs
+    #printf " ids1"
+    #cat childless | gawk 'BEGIN{FS="\t"}{print $2 FS $1}' | sort -k1,1 | gawk 'BEGIN{FS="\t";H=""}{if($1!=H){printf "\n"$1}; printf FS $2}{H=$1}' | gawk 'BEGIN{FS="\t"}{if(NF==2) print $0}' > ids
+
+    # get prenominal adjs
+    printf " ids2"
+    cat childless | gawk 'BEGIN{FS="\t"}{print $1 FS $2}' | sort -k1,1 | gawk 'BEGIN{FS="\t";H=""}{if($2!=H){printf "\n"$2}; printf FS $1}{H=$2}' | gawk 'BEGIN{FS="\t"}{if(NF==2) print $0}' >> ids
+    
+    # join adjs to their head noun and split into pairs
+    printf " ids3"
+    cat ids | sort -u | tr '\t' '\n' | tr ':' '\t' | sort -k1,1 -nk2,2 | tr '\t' ':' | gawk 'BEGIN{FS=":";S=""}{if(S!=$1) printf "\n"; printf "\t" $1":"$2}{S=$1};END{printf "\n"}' | sed -e 's/^\t//' | sed -e 's/\([0-9:]*\)\t\([0-9:]*\)\t\([0-9:]*\)\t/\1\t\2\n/g' | grep ":" > temp; mv temp ids
+    
+    # make sure word indices are consecutive
+    printf " ids4"
+    cat ids | tr ':' '\t' | gawk 'BEGIN{FS="\t"}{if($2+1 == $4) print $1":"$2 FS $3":"$4}' > temp; mv temp ids
+    
+    # convert IDs to words and select pairs of interest
+    printf " pairs1"
+    join -t$'\t' -1 2 <(join -t$'\t' <(cat ids | sort -k1,1) <(cat words | sort -k1,1) | sort -k2,2) <(cat words | sort -k1,1) | cut -f3,4 | tr '\t' ',' | grep -E "(NOUN.*ADJ)|(ADJ.*NOUN)" >> pairs.csv
+
+    printf "\n"
 done
 
-# join ADJs and NOUNs, normalize, and count
-printf "join"
-join -2 3 -t$'\t' <(cat a | sort -k1,1) <(cat a | sort -k3,3) | gawk 'BEGIN{FS="\t"}{print $5 FS $2}' | grep "ADJ.*NOUN" | sort | uniq -c | sed -e 's/^[ ]*//' | tr ' \t' ',' | sed -e 's|/ADJ||' | sed -e 's|/NOUN||' | gawk 'BEGIN{FS=","}{if($4=="") print $0}' >> pairs.csv
-
-# verify each row has 3 cols
-printf " validate"
-cat pairs.csv | gawk 'BEGIN{FS=","}{if(NF==3 && $1!="" && $2!="" && $3!="") print $0}' > temp; mv temp pairs.csv
-
-printf "\n"
-cat pairs.csv | wc -l
-
-# remove hapaxes
-cat pairs.csv | grep -v "^1," > pairs_no_hapax.csv
-cat pairs_no_hapax.csv | wc -l
+# verify each row has 2 cols and normalize
+echo "validate"
+cat pairs.csv | gawk 'BEGIN{FS=","}{if(NF==2) print $0}' | tr -d '"' | sort > temp; mv temp pairs.csv
+    
+# output counts of triples by type
+cat pairs.csv | grep "NOUN.*ADJ" | wc -l | gawk 'BEGIN{FS="\t"}{print "NA: " $1}'
+cat pairs.csv | grep "ADJ.*NOUN" | wc -l | gawk 'BEGIN{FS="\t"}{print "AN: " $1}'
 
 # clean up
-rm a
+rm sents
+rm all_adjs
+rm children
+rm childless
+rm ids
+rm nouns_1_deps
+rm words
