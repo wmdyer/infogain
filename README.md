@@ -3,15 +3,13 @@ using information gain to describe adj order
 
 ## source data
 
-*1. CoNLLU files*
+*CoNLLU files*
 
 [CoNLL 2017 Shared Task - Automatically Annotated Raw Texts and Word Embeddings](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1989)
 
-or
-
 [Universal Dependencies](https://github.com/UniversalDependencies)
 
-*2. Word embeddings*
+*Word embeddings*
 
 [fastText](https://fasttext.cc/docs/en/crawl-vectors.html)
 
