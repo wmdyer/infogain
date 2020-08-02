@@ -11,7 +11,7 @@ or
 
 [Universal Dependencies](https://github.com/UniversalDependencies)
 
-*2. Word embeddings *
+*2. Word embeddings*
 
 [fastText](https://fasttext.cc/docs/en/crawl-vectors.html)
 
