@@ -20,7 +20,7 @@ using information gain to describe adj order
 ./tools/extract_conllu_nps.sh <file>.conllu
 ```
 
-*2. cluster*
+*2. cluster (optional)*
 ```{bash}
 cat nps.tsv | cut -f2,3 | tr '\t,' '\n' | sort -u > words
 join <(cat words | sort -k1,1) <(cat <vectors> | sort -k1,1) > vecs
@@ -34,14 +34,14 @@ python ./src/train.py -n nps.tsv [-c clusters.csv] [-fn 100] [-fl -1]
 
 ## testing
 
-*1. test on AN/NA pairs*
+*test on AN/NA pairs*
 ```{bash}
 ./tools/extract_conllu_pairs.sh <file>.conllu
 python ./src/test.py -s <file>.csv
 mv scores.temp scores_pairs.csv
 ```
 
-*2. test on AAN triples*
+*test on AAN triples*
 ```{bash}
 ./tools/extract_conllu_triples.sh <file>.conllu
 python ./src/test.py -s triples.csv
