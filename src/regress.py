@@ -73,8 +73,8 @@ def preprocess(scores, templates, run_all, metric):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='evaluate scores')
     parser.add_argument('-tr', '--train', nargs=1, dest='train', required=True, help='tab-delimited scores file for training')
-    parser.add_argument('-m', '--metric', nargs=1, dest='metric', required=True, help='metric [sum||ent]')    
-    parser.add_argument('-te', '--test', nargs=1, dest='test', required=False, help='tab-delimited scores file for testing')
+    parser.add_argument('-m', '--metric', nargs=1, dest='metric', required=True, help='metric [ig_sum or ig_ent]')    
+    parser.add_argument('-te', '--test', nargs=1, dest='test', required=False, help='tab-delimited scores file for hold-out testing')
     parser.add_argument('--plot', dest='plot', default=False, action='store_true', required=False, help='make plots')
     parser.add_argument('--all', dest='run_all', default=False, action='store_true', required=False, help='run all')        
     args = parser.parse_args()
