@@ -235,6 +235,6 @@ if __name__ == '__main__':
     print("loading " + args.seqs[0] + " ...")
     seqs = load_seqs(args.seqs[0], cl, CLUST_ADJ)
 
-    score(nouns, adjs, a_orig, probs, seqs, cl, "scores.temp")
+    score(nouns, adjs, a_orig, probs, seqs, cl, "scores.tsv")
     print('')
 
