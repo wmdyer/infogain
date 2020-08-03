@@ -2,31 +2,50 @@
 using information gain to describe adj order
 
 ## source data
-[CoNLL 2017 Shared Task - Automatically Annotated Raw Texts and Word Embeddings](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1989)
 
-or
+*CoNLLU files*
 
-[Universal Dependencies](https://github.com/UniversalDependencies)
+ >[CoNLL 2017 Shared Task - Automatically Annotated Raw Texts and Word Embeddings](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1989)
+ 
+ >[Universal Dependencies](https://github.com/UniversalDependencies)
 
-## pipeline
-*1. extract semantic pairs from conllu file*
+*Word embeddings*
+
+ >[fastText](https://fasttext.cc/docs/en/crawl-vectors.html)
+
+
+## training
+*1. extract NPs from conllu file*
 ```{bash}
-./tools/wiki/extract_conllu_pairs.sh <file>.conllu
+./tools/extract_conllu_nps.sh <file>.conllu
 ```
 
-*2. extract syntactic sequences from conllu file*
+*2. cluster*
 ```{bash}
-./tools/wiki/extract_conllu_syntactic_pairs.sh <file>.conllu
-```
-or
-
-```{bash}
-./tools/wiki/extract_conllu_triples.sh <file>.conllu
+cat nps.tsv | cut -f2,3 | tr '\t,' '\n' | sort -u > words
+join <(cat words | sort -k1,1) <(cat <vectors> | sort -k1,1) > vecs
+python ./src/cluster.py -v vecs -w words [-k <num_clusters>] [-c <pct_pca>]
 ```
 
-*3. score sequences based on pairs*
+*3. train*
 ```{bash}
-python src/partition.py -p <pairs>.csv -s <sequences>.csv
+python ./src/train.py -n nps.tsv [-c clusters.csv] [-fn 100] [-fl -1]
+```
+
+## testing
+
+*1. test on AN/NA pairs*
+```{bash}
+./tools/extract_conllu_pairs.sh <file>.conllu
+python ./src/test.py -s <file>.csv
+mv scores.temp scores_pairs.csv
+```
+
+*2. test on AAN triples*
+```{bash}
+./tools/extract_conllu_triples.sh <file>.conllu
+python ./src/test.py -s triples.csv
+mv scores.temp scores_triples.csv
 ```
 
 ## evaluation
