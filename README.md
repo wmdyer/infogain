@@ -24,12 +24,12 @@ using information gain to describe adj order
 ```{bash}
 cat nps.tsv | cut -f2,3 | tr '\t,' '\n' | sort -u > words
 join <(cat words | sort -k1,1) <(cat <vectors> | sort -k1,1) > vecs
-python ./src/cluster.py -v vecs -w words -k <num_clusters> -c <pct_pca>
+python ./src/cluster.py -v vecs -w words [-k <num_clusters>] [-c <pct_pca>]
 ```
 
 *3. train*
 ```{bash}
-python ./src/train.py -n nps.tsv -c clusters.csv -fn 20 -fl 2
+python ./src/train.py -n nps.tsv [-c clusters.csv] [-fn 100] [-fl -1]
 ```
 
 ## testing
@@ -37,7 +37,7 @@ python ./src/train.py -n nps.tsv -c clusters.csv -fn 20 -fl 2
 *1. test on AN/NA pairs*
 ```{bash}
 ./tools/extract_conllu_pairs.sh <file>.conllu
-python ./src/test.py -s pairs.csv
+python ./src/test.py -s <file>.csv
 mv scores.temp scores_pairs.csv
 ```
 
