@@ -131,16 +131,17 @@ if __name__ == '__main__':
                 x_ = sm.add_constant(x_dev)                
                 y_pred = result.predict(x_)
                 logistic = True
+                print("\nVALIDATING ...")
+                print(classification_report(y_dev, np.digitize(y_pred, bins=[0.5])))                
             except:
-                model = sm.OLS(y_train, x_train).fit()
-                y_pred = model.predict(x_train)
-                print(model.summary())
+                print('not enough data')
+                #model = sm.OLS(y_train, x_train).fit()
+                #y_pred = model.predict(x_train)
+                #print(model.summary())
 
-                y_pred = model.predict(x_dev)
-                logistic = False
+                #y_pred = model.predict(x_dev)
+                #logistic = False
 
-            print("\nVALIDATING ...")
-            print(classification_report(y_dev, np.digitize(y_pred, bins=[0.5])))
 
             if args.plot:
                 print("\nPLOTTING REGRESSION...")
