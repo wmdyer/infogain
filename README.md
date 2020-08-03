@@ -1,6 +1,13 @@
 # infogain
 using information gain to describe adj order
 
+## using pre-trained model
+```{bash}
+cd data/fr
+python ../../src/test.py -s triples.csv
+python ../../src/regress.py -tr scores.tsv -m ig_ent
+```
+
 ## source data
 
 *CoNLLU files*
@@ -38,17 +45,18 @@ python ./src/train.py -n nps.tsv [-c clusters.csv] [-fn 100] [-fl -1]
 ```{bash}
 ./tools/extract_conllu_pairs.sh <file>.conllu
 python ./src/test.py -s <file>.csv
-mv scores.temp scores_pairs.csv
+mv scores.tsv scores_pairs.tsv
 ```
 
 *test on AAN triples*
 ```{bash}
 ./tools/extract_conllu_triples.sh <file>.conllu
-python ./src/test.py -s triples.csv
-mv scores.temp scores_triples.csv
+python ./src/test.py -s <file>.csv
+mv scores.tsv scores_triples.tsv
 ```
 
 ## evaluation
 ```{bash}
-python src/regress.py -tr <scores>.csv -m <ig_sum or ig_ent> [--plot --all]
+python src/regress.py -tr <scores>.tsv -m <ig_sum or ig_ent> [--plot --all]
 ```
+
