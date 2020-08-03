@@ -22,9 +22,9 @@ do
     printf " sents"
     cat $file | grep "^[0-9][0-9]*"$'\t' | gawk 'BEGIN{FS="\t";S=0}{if($1=="1") S++; print S FS $0}' > sents
 
-    # extract all wordforms and key them to sentence:index
+    # extract all lemmas and key them to sentence:index
     printf " words"
-    cat sents | gawk 'BEGIN{FS="\t"}{if($3!="_") print $1":"$2 FS $3"/"$5}' > words
+    cat sents | gawk 'BEGIN{FS="\t"}{if($3!="_") print $1":"$2 FS $4"/"$5}' > words
 
     # extract all nouns
     printf " all_nouns"
