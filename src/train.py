@@ -3,12 +3,12 @@ import pandas as pd
 import numpy as np
 from textdistance import levenshtein
 from itertools import repeat
-from scipy.stats import entropy
+from scipy.stats import entropy, zscore
 from scipy.special import softmax
 from scipy.sparse import csr_matrix, diags
 from math import log2, exp
 from itertools import permutations, chain, combinations
-#from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics.pairwise import cosine_similarity
 from numpy.linalg import norm
 from sklearn.preprocessing import binarize
 
@@ -16,7 +16,7 @@ from sklearn.preprocessing import binarize
 VERBOSE = False
 
 # use weighted probabilities
-WEIGHTED_PROBS = True
+WEIGHTED_PROBS = False
 
 # maximum number of feature vectors (can also be set with -fn argument)
 MAX_VEC_NUM = 20
@@ -26,6 +26,12 @@ MAX_VEC_LEN = 2
 
 # use full powerset of all possible features, not just attested ones
 POWERSET = False
+
+# probability normalization
+NORMALIZATION = 'sum'
+
+# cluster adjectives
+CLUST_ADJ = False
 
 def print_progress(i, n):
     j = (i+1) / n
@@ -38,41 +44,44 @@ def load_clusters(filename):
     clusters = pd.read_csv(filename, sep=",", error_bad_lines=False, engine='python').drop_duplicates()
     return clusters
 
-def load_nps(filename, clusters, cl):
+def load_nps(filename, clusters, cl, clust_adj):
     nps = pd.read_csv(filename, sep="\t", error_bad_lines=False, engine='python', header=None)
     nps.columns = ['count', 'noun', 'adjs']
     nps['noun'] = nps['noun'].str.lower()
     nps['adjs'] = nps['adjs'].str.lower()
 
-    # change nouns and adjs to their clusters
+    # change nouns to their clusters
     if len(clusters) > 0:
-        print('converting wordforms to clusters ...')
+        print('converting nouns to clusters ...')
         nps = pd.merge(nps, clusters, how='inner', left_on=['noun'], right_on=['wf'])
         del nps['noun']
         del nps['wf']        
         nps = nps.rename(columns={"cl": "noun"})
         nps = nps.astype({'noun': 'str'})
 
-        total = len(nps)
-        for i,row in nps.iterrows():
-            print_progress(i+1, total)
-            astring = ""
-            try:
-                for w in row['adjs'].split(','):
-                    try:
-                        acl = cl[w]
-                        if len(astring) > 0:
-                            astring += ","
-                        astring += str(acl)
-                    except:
-                        pass
-            except:
-                pass
+        # change adjectives to their clusters
+        if clust_adj:
+            print('converting adjs to clusters ...')            
+            total = len(nps)
+            for i,row in nps.iterrows():
+                print_progress(i+1, total)
+                astring = ""
+                try:
+                    for w in row['adjs'].split(','):
+                        try:
+                            acl = cl[w]
+                            if len(astring) > 0:
+                                astring += ","
+                            astring += str(acl)
+                        except:
+                            pass
+                except:
+                    pass
 
-            nps.at[i, 'adjs'] = astring
+                nps.at[i, 'adjs'] = astring
 
-        print('')
-        nps = nps.loc[nps['adjs'] != ""]
+            print('')
+            nps = nps.loc[nps['adjs'] != ""]
 
     # recalculate count column (probably a more efficient way to do this, but this works)
     nps = nps.reindex(nps.index.repeat(nps['count']))
@@ -114,6 +123,7 @@ def process_nps(nps, max_vec_len, max_vec_num):
         df = nps.loc[nps['noun'] == noun]
 
         # calculate this noun's list of adjectives
+        vector = [0] * len(adjectives)        
         if POWERSET:
             noun_adjs = adjectives
         else:
@@ -134,6 +144,8 @@ def process_nps(nps, max_vec_len, max_vec_num):
                     probs.append(1)
                 a.append(vector)
                 nouns.append(noun)
+                if max_vec_num > -1 and j > max_vec_num:
+                    break                
                 
             if max_vec_num != 0:
                 pset = get_powerset(noun_adjs, max_vec_len)
@@ -174,7 +186,7 @@ def process_nps(nps, max_vec_len, max_vec_num):
             probs[p] = (norm(attested-vec[:,None], axis=0, ord=2).max()/attested.shape[0])**2
 
             # use cosine similarity
-            #vector = np.broadcast_to(np.array(a_orig[p]), attested.shape)            
+            #vector = np.broadcast_to(np.array(a_orig[p].reshape(-1,1)), attested.shape)            
             #probs[p] = cosine_similarity(vector, attested).max()
 
     print('')
@@ -182,11 +194,24 @@ def process_nps(nps, max_vec_len, max_vec_num):
     a_orig = csr_matrix(binarize(a_orig.T)).tocsr()
 
     print('normalizing probabilities ...')
-    probs = np.array(probs)
-    probs = probs/np.sum(probs)
-    # probs = softmax(probs)
-
+    probs = normalize(np.array(probs))
+    
     return nouns, adjectives, probs, a_orig
+
+def normalize(v):
+    if NORMALIZATION == 'softmax':
+        v = softmax(v)
+    elif NORMALIZATION == 'minmax':
+        v = (v - np.min(v)) / (np.max(v) - np.min(v))
+    elif NORMALIZATION == 'sum':
+        v = v/np.sum(v)
+    elif NORMALIZATION == 'max':
+        v = v/np.max(v)
+    elif NORMALIZATION == 'zscore':
+        v = softmax(zscore(v))
+
+    return v
+    
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='partition adjective space')
@@ -216,7 +241,7 @@ if __name__ == '__main__':
     
 
     print("loading " + args.nps[0] + " ...")
-    nps = load_nps(args.nps[0], clusters, cl)        
+    nps = load_nps(args.nps[0], clusters, cl, CLUST_ADJ)        
 
     nouns, adjs, probs, a_orig = process_nps(nps, MAX_VEC_LEN, MAX_VEC_NUM)
 
