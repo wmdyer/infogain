@@ -183,7 +183,8 @@ def process_nps(nps, max_vec_len, max_vec_num):
 
             # use euclidean distance
             vec = np.array(a_orig[p])
-            probs[p] = (norm(attested-vec[:,None], axis=0, ord=2).max()/attested.shape[0])**2
+            probs[p] = 1/(exp((norm(attested-vec[:,None], axis=0, ord=2).max()/attested.shape[0])**2))
+            #probs[p] = (norm(attested-vec[:,None], axis=0, ord=2).min()/attested.shape[0])**2
 
             # use cosine similarity
             #vector = np.broadcast_to(np.array(a_orig[p].reshape(-1,1)), attested.shape)            
