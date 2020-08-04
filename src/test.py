@@ -14,6 +14,10 @@ VERBOSE = False
 NORMALIZATION = 'sum'
 CLUST_ADJ = False
 
+CRED = '\033[91m'
+CEND = '\033[0m'
+
+
 def print_progress(i, n):
     j = (i+1) / n
     sys.stdout.write('\r')
@@ -112,7 +116,7 @@ def partition(wordlist, a, probs, w, pos):
     if np.sum(qk) > 0:
         qk_num = len(np.where(qk != 0)[0])
         if VERBOSE:
-            print('qk', qk_num, '\n', a.A, '\n', qk)    
+            print(CRED + 'qk ' + str(qk_num) + CEND, '\n', a.A, '\n', qk)    
         
         qk = normalize(qk)
         for d in ['yes', 'no']:
@@ -124,7 +128,7 @@ def partition(wordlist, a, probs, w, pos):
                 ig += (pk_num/qk_num) * entropy(pk=pk[d], qk=qk, base=2)
     
                 if VERBOSE:
-                    print(d, pk_num, '\n', ap[d].A, '\n', pk[d])
+                    print(CRED + 'pk[' + d + '] ' + str(pk_num) + CEND, '\n', ap[d].A, '\n', pk[d])
 
     if VERBOSE:
         print(ig)
@@ -173,6 +177,8 @@ def score(nouns, adjs, a_orig, probs, seqs, cl, outfile):
                 igs = []
                 a = a_orig
                 template = ""
+                if VERBOSE:
+                    print("\n\n*** " + str(perm) + " ***")
                 for w in perm:
                     wf = w.split('/')[0]
                     try:
