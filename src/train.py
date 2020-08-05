@@ -5,7 +5,7 @@ from textdistance import levenshtein
 from itertools import repeat
 from scipy.stats import entropy, zscore
 from scipy.special import softmax
-from scipy.sparse import csr_matrix, diags
+from scipy.sparse import csr_matrix, diags, hstack
 from math import log2, exp
 from itertools import permutations, chain, combinations
 from sklearn.metrics.pairwise import cosine_similarity
@@ -32,6 +32,9 @@ NORMALIZATION = 'sum'
 
 # cluster adjectives
 CLUST_ADJ = False
+
+# smoothing factor (higher value means more drop-off from attested to unattested meaning vectors)
+SMOOTHING = 2
 
 def print_progress(i, n):
     j = (i+1) / n
@@ -101,11 +104,13 @@ def get_powerset(iterable, max_vec_len):
 
 # process NPs into probabilities and expanded adjacency matrix
 def process_nps(nps, max_vec_len, max_vec_num):
-    print("processing attested meanings ...")    
+    print("processing meanings ...")    
     probs = []
     pairs = []
     adjectives = []
     nouns = []
+
+    a_chunks = []
 
     # build up adjacency as regular python list, not numpy, for better performance
     a = []
@@ -134,6 +139,7 @@ def process_nps(nps, max_vec_len, max_vec_num):
                         noun_adjs.append(w)
 
         if len(noun_adjs) > 0:
+            attested = []
             for j,row in df.iterrows():
                 vector = [0] * len(adjectives)
                 for adj in row['adjs'].split(','):
@@ -142,60 +148,81 @@ def process_nps(nps, max_vec_len, max_vec_num):
                     probs.append(row['count'])
                 else:
                     probs.append(1)
-                a.append(vector)
+                attested.append(vector)
                 nouns.append(noun)
                 if max_vec_num > -1 and j > max_vec_num:
-                    break                
-                
+                    break
+            attested = np.array(attested)
+            unattested = []            
             if max_vec_num != 0:
                 pset = get_powerset(noun_adjs, max_vec_len)
                 j = 0
-            
+
                 for s in pset:
                     sl = ','.join(list(s))
                     if not (df['adjs']==sl).any():
-                        probs.append(0)
+
                         vector = [0] * len(adjectives)
                         for adj in list(s):
                             vector[adjectives.index(adj)] = 1
-                
-                        a.append(vector)
+                        unattested.append(vector)
                         nouns.append(noun)
+                        probs.append(1/(SMOOTHING * exp((norm(attested.T-np.array(vector)[:,None], axis=0, ord=2).max()/attested.shape[0])**2)))
                         j += 1
                         if max_vec_num > -1 and j > max_vec_num:
                             break
+            if len(unattested) > 0:
+                a = np.append(attested, np.array(unattested), axis=0)
+            else:
+                a = attested
+            a_chunks.append(csr_matrix(binarize(a.T)).tocsr())            
 
     print('')
-    print('converting adjacencies to numpy ...')
-    a_orig = np.array(a)
+    print('sparsifying adjacencies ...')
+    a_orig = hstack(a_chunks).tocsr()
 
-    print('calculating unattested probabilities ...')
-    np_probs = np.array(probs)
-    np_nouns = np.array(nouns)
-    total = len(np.where(np_probs == 0)[0])
 
-    for i,p in enumerate(np.where(np_probs == 0)[0]):
-        if not VERBOSE:
-            print_progress(i+1, total)
-        noun = nouns[p]
-        attested = a_orig[list(np.where((np_nouns == noun) & (np_probs == 1))[0]),:].T
-        if attested.shape[1] > 0:
+    #print('')
+    #print(a_orig.A)
+    #print(probs)
+    #exit()
+
+    #print(a_orig.A)
+    #exit()
+
+    #print('')
+    #print('converting adjacencies to numpy ...')
+    #a_orig = np.array(a)
+
+    #print('calculating unattested probabilities ...')
+    #np_probs = np.array(probs)
+    #np_nouns = np.array(nouns)
+    #total = len(np.where(np_probs == 0)[0])
+
+    #for i,p in enumerate(np.where(np_probs == 0)[0]):
+    #    if not VERBOSE:
+    #        print_progress(i+1, total)
+    #    noun = nouns[p]
+    #    attested = a_orig.A[list(np.where((np_nouns == noun) & (np_probs == 1))[0]),:].T
+    #    if attested.shape[1] > 0:
 
             # use euclidean distance
-            vec = np.array(a_orig[p])
-            probs[p] = 1/(exp((norm(attested-vec[:,None], axis=0, ord=2).max()/attested.shape[0])**2))
+    #        vec = np.array(a_orig[p])
+    #        probs[p] = 1/(SMOOTHING * exp((norm(attested-vec[:,None], axis=0, ord=2).max()/attested.shape[0])**2))
             #probs[p] = (norm(attested-vec[:,None], axis=0, ord=2).min()/attested.shape[0])**2
 
             # use cosine similarity
             #vector = np.broadcast_to(np.array(a_orig[p].reshape(-1,1)), attested.shape)            
             #probs[p] = cosine_similarity(vector, attested).max()
 
-    print('')
-    print('sparsifying adjacencies ...')
-    a_orig = csr_matrix(binarize(a_orig.T)).tocsr()
+    #print('')
+    #print('sparsifying adjacencies ...')
+    #a_orig = csr_matrix(binarize(a_orig.T)).tocsr()
 
     print('normalizing probabilities ...')
     probs = normalize(np.array(probs))
+
+    print('total feature vectors:', len(probs))
     
     return nouns, adjectives, probs, a_orig
 
@@ -254,6 +281,7 @@ if __name__ == '__main__':
     pickle.dump(a_orig, f)
     pickle.dump(probs, f)    
     pickle.dump(cl, f)
+    pickle.dump(CLUST_ADJ, f)
 
     print('done')
 
