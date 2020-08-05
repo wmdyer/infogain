@@ -12,7 +12,6 @@ from sklearn.preprocessing import binarize
 
 VERBOSE = False
 NORMALIZATION = 'sum'
-CLUST_ADJ = False
 
 CRED = '\033[91m'
 CEND = '\033[0m'
@@ -137,7 +136,7 @@ def partition(wordlist, a, probs, w, pos):
 
 def score(nouns, adjs, a_orig, probs, seqs, cl, outfile):
     outfile = open(outfile, 'w')
-    outstr = "key\tsurface\ttemplate\tattest\tig_sum\tig_ent\tigs\n"
+    outstr = "key\tsurface\ttemplate\tattest\tig_sum\tig_ent\tig_var\tigs\n"
     outfile.write(outstr)
     n = len(seqs.key.unique())
     
@@ -198,7 +197,7 @@ def score(nouns, adjs, a_orig, probs, seqs, cl, outfile):
                         igs.append(ign)
                         template += "N"
 
-                # if each word has an IG score, calculate entropy of IG scores and append to out string
+                # if each word has an IG score, calculate entropy and variance of IG scores and append to out string
                 if len(igs) == len(words):
                     surface = ','.join(perm)                
                     try:
@@ -213,8 +212,10 @@ def score(nouns, adjs, a_orig, probs, seqs, cl, outfile):
                         ent = entropy(igs, base=2)
                     else:
                         ent = 0
+
+                    var = np.var(igs)
                     
-                    out.append('\t'.join([key, ','.join(perm), template, str(attest), str(np.sum(igs)), str(ent), ','.join(map(str,igs))]) + "\n")
+                    out.append('\t'.join([key, ','.join(perm), template, str(attest), str(np.sum(igs)), str(ent), str(var), ','.join(map(str,igs))]) + "\n")
 
                 # only write to outfile if all permutations have scores
                 if len(out) == len(list(permutations(words))):
@@ -236,10 +237,11 @@ if __name__ == '__main__':
     adjs = pickle.load(f)
     a_orig = pickle.load(f)
     probs = pickle.load(f)
-    cl = pickle.load(f)        
+    cl = pickle.load(f)
+    clust_adj = pickle.load(f)
 
     print("loading " + args.seqs[0] + " ...")
-    seqs = load_seqs(args.seqs[0], cl, CLUST_ADJ)
+    seqs = load_seqs(args.seqs[0], cl, clust_adj)
 
     score(nouns, adjs, a_orig, probs, seqs, cl, "scores.tsv")
     print('')
