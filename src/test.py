@@ -12,6 +12,7 @@ from sklearn.preprocessing import binarize
 
 VERBOSE = False
 NORMALIZATION = 'sum'
+PARTITION_NOUN = False
 
 CRED = '\033[91m'
 CEND = '\033[0m'
@@ -87,18 +88,21 @@ def partition(wordlist, a, probs, w, pos):
         x = wordlist.index(w)
         ap['yes'] = a.multiply(binarize(a[x])).tocsr()
             
-    elif pos == 'noun2':
-        # multiply a by noun col and re-sparsify
-        vec = np.zeros(a.shape[1])        
-        y = [i for i, x in enumerate(wordlist) if x == w]
-        np.put(vec, y, 1)
-        ap['yes'] = a * diags(vec)
-        #a_yes = a.multiply(binarize(a[:,y]).reshape(-1,1)).tocsr()
-
     elif pos == 'noun':
-        # multiply a by noun col and re-sparsify
-        y = [a[:,i] for i, x in enumerate(wordlist) if x == w]
-        ap['yes'] = a.multiply(binarize(np.sum(hstack(y), axis=1)))
+
+        if PARTITION_NOUN:
+            # multiply a by noun col and re-sparsify
+            vec = np.zeros(a.shape[1])        
+            y = [i for i, x in enumerate(wordlist) if x == w]
+            np.put(vec, y, 1)
+            ap['yes'] = a * diags(vec)
+
+        else:
+            # get all adjs associated to noun
+            y = [a[:,i] for i, x in enumerate(wordlist) if x == w]
+
+            # multiply a by all noun adjs
+            ap['yes'] = a.multiply(binarize(np.sum(hstack(y), axis=1)))
 
 
     # a_no is whatever's left of 'a' after removing a_yes
