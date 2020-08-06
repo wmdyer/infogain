@@ -1,9 +1,9 @@
 import sys, argparse, pickle
 import pandas as pd
 import numpy as np
-from scipy.stats import entropy, zscore
+from scipy.stats import entropy, zscore, skew
 from scipy.special import softmax
-from scipy.sparse import csr_matrix, diags
+from scipy.sparse import csr_matrix, diags, hstack
 from math import log2, exp
 from itertools import permutations, chain, combinations
 #from sklearn.metrics.pairwise import cosine_similarity
@@ -87,13 +87,19 @@ def partition(wordlist, a, probs, w, pos):
         x = wordlist.index(w)
         ap['yes'] = a.multiply(binarize(a[x])).tocsr()
             
-    elif pos == 'noun':
+    elif pos == 'noun2':
         # multiply a by noun col and re-sparsify
         vec = np.zeros(a.shape[1])        
         y = [i for i, x in enumerate(wordlist) if x == w]
         np.put(vec, y, 1)
         ap['yes'] = a * diags(vec)
         #a_yes = a.multiply(binarize(a[:,y]).reshape(-1,1)).tocsr()
+
+    elif pos == 'noun':
+        # multiply a by noun col and re-sparsify
+        y = [a[:,i] for i, x in enumerate(wordlist) if x == w]
+        ap['yes'] = a.multiply(binarize(np.sum(hstack(y), axis=1)))
+
 
     # a_no is whatever's left of 'a' after removing a_yes
     ap['no'] = a - ap['yes']
@@ -136,7 +142,7 @@ def partition(wordlist, a, probs, w, pos):
 
 def score(nouns, adjs, a_orig, probs, seqs, cl, outfile):
     outfile = open(outfile, 'w')
-    outstr = "key\tsurface\ttemplate\tattest\tig_sum\tig_ent\tig_var\tigs\n"
+    outstr = "key\tsurface\ttemplate\tattest\tig_sum\tig_ent\tig_var\tig_skew\tigs\n"
     outfile.write(outstr)
     n = len(seqs.key.unique())
     
@@ -214,8 +220,9 @@ def score(nouns, adjs, a_orig, probs, seqs, cl, outfile):
                         ent = 0
 
                     var = np.var(igs)
+                    sk = skew(igs)
                     
-                    out.append('\t'.join([key, ','.join(perm), template, str(attest), str(np.sum(igs)), str(ent), str(var), ','.join(map(str,igs))]) + "\n")
+                    out.append('\t'.join([key, ','.join(perm), template, str(attest), str(np.sum(igs)), str(ent), str(var), str(sk), ','.join(map(str,igs))]) + "\n")
 
                 # only write to outfile if all permutations have scores
                 if len(out) == len(list(permutations(words))):
