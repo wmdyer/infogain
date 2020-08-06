@@ -16,7 +16,7 @@ from sklearn.preprocessing import binarize
 VERBOSE = False
 
 # use weighted probabilities
-WEIGHTED_PROBS = False
+WEIGHTED_PROBS = True
 
 # maximum number of feature vectors (can also be set with -fn argument)
 MAX_VEC_NUM = 20
@@ -31,10 +31,10 @@ POWERSET = False
 NORMALIZATION = 'sum'
 
 # cluster adjectives
-CLUST_ADJ = False
+CLUST_ADJ = True
 
 # smoothing factor (higher value means more drop-off from attested to unattested meaning vectors)
-SMOOTHING = 2
+SMOOTHING = 1.5
 
 def print_progress(i, n):
     j = (i+1) / n
@@ -150,7 +150,7 @@ def process_nps(nps, max_vec_len, max_vec_num):
                     probs.append(1)
                 attested.append(vector)
                 nouns.append(noun)
-                if max_vec_num > -1 and j > max_vec_num:
+                if max_vec_num > 0 and j > max_vec_num:
                     break
             attested = np.array(attested)
             unattested = []            
@@ -178,46 +178,8 @@ def process_nps(nps, max_vec_len, max_vec_num):
             a_chunks.append(csr_matrix(binarize(a.T)).tocsr())            
 
     print('')
-    print('sparsifying adjacencies ...')
+    print('assembling adjacencies ...')
     a_orig = hstack(a_chunks).tocsr()
-
-
-    #print('')
-    #print(a_orig.A)
-    #print(probs)
-    #exit()
-
-    #print(a_orig.A)
-    #exit()
-
-    #print('')
-    #print('converting adjacencies to numpy ...')
-    #a_orig = np.array(a)
-
-    #print('calculating unattested probabilities ...')
-    #np_probs = np.array(probs)
-    #np_nouns = np.array(nouns)
-    #total = len(np.where(np_probs == 0)[0])
-
-    #for i,p in enumerate(np.where(np_probs == 0)[0]):
-    #    if not VERBOSE:
-    #        print_progress(i+1, total)
-    #    noun = nouns[p]
-    #    attested = a_orig.A[list(np.where((np_nouns == noun) & (np_probs == 1))[0]),:].T
-    #    if attested.shape[1] > 0:
-
-            # use euclidean distance
-    #        vec = np.array(a_orig[p])
-    #        probs[p] = 1/(SMOOTHING * exp((norm(attested-vec[:,None], axis=0, ord=2).max()/attested.shape[0])**2))
-            #probs[p] = (norm(attested-vec[:,None], axis=0, ord=2).min()/attested.shape[0])**2
-
-            # use cosine similarity
-            #vector = np.broadcast_to(np.array(a_orig[p].reshape(-1,1)), attested.shape)            
-            #probs[p] = cosine_similarity(vector, attested).max()
-
-    #print('')
-    #print('sparsifying adjacencies ...')
-    #a_orig = csr_matrix(binarize(a_orig.T)).tocsr()
 
     print('normalizing probabilities ...')
     probs = normalize(np.array(probs))
