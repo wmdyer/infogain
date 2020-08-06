@@ -50,18 +50,17 @@ done
 # verify each row has >1 cols and normalize
 cat nps | gawk 'BEGIN{FS=","}{if(NF>1) print $0}' | tr -d '" ' | sed -e 's/,/\t/' | grep "/NOUN.*/ADJ" | gawk 'BEGIN{FS="\t"}{if(NF==2) print $0}' > nps.tsv
 
-
-# remove hapaxes
-#join -t$'\t' <(cat nps.tsv | cut -f1 | sort | uniq -c | sed -e 's/^[ ]*//' | grep -vw "1" | cut -d" " -f2 | sort -k1,1) <(cat nps.tsv | sort -k1,1) > nps_no_hapax.tsv
-
 # strip '/POS'
 cat nps.tsv | sed -e 's|/[A-Z]*||g' | grep -v '/' > temp; mv temp nps.tsv
 
 # inserts counts
 cat nps.tsv | sort | uniq -c | sed -e 's/^[ ]*//' | tr ' ' '\t' > temp; mv temp nps.tsv
 
+# remove hapaxes
+cat nps.tsv | gawk 'BEGIN{FS="\t"}{if($1!="1") print $0}' > nps.nh
+
 # output counts of nps by type
-cat nps.tsv | cut -f3 | gawk 'BEGIN{FS=","}{print NF}' | sort | uniq -c | sort -rn | gawk 'BEGIN{FS=" "}{print $0 FS "ADJ"}'
+cat nps.nh | cut -f3 | gawk 'BEGIN{FS=","}{print NF}' | sort | uniq -c | sort -rn | gawk 'BEGIN{FS=" "}{print $0 FS "ADJ"}'
 
 # clean up
 rm sents
