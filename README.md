@@ -67,6 +67,6 @@ python ./src/test.py -s <file>.csv
 python src/regress.py -tr <scores>.tsv -m <ig_sum|ig_ent|ig_var|ig_skew> [--plot --all]
 ```
 >-tr: training file for regression  
->-m: metric (ig_sum = sum of IGs; ig_ent = entropy of IGs; ig_var = variance of IGs; ig_skew = skewness of IGs)
+>-m: metric (ig_sum = sum of IGs; ig_ent = entropy of IGs; ig_var = variance of IGs; ig_skew = skewness of IGs)  
 >--plot: generate plots  
->--all: compare across templates (uses TensorFlow SMOTE)
+>--all: compare across templates (uses TensorFlow SMOTE)  
