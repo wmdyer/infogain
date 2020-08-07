@@ -107,10 +107,11 @@ if __name__ == '__main__':
 
     try:
         test, test_templates = load_scores(args.test[0])
-        x_test, y_test, xt_test, yt_test = preprocess(test, test_templates)
+        x_test, y_test, xt_test, yt_test = preprocess(test, test_templates, args.run_all, metric)
         run_test = True
     except:
         run_test = False
+
 
     for t,template in enumerate(templates):
         if len(x[template]) > 7:
