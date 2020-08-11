@@ -52,8 +52,9 @@ def preprocess(scores, templates, run_all, metric):
                 for j,row2 in df.iterrows():
                     if i!=j:
                         for k in range(np.sum(df['attest'])):
-                            xt.append([row[metric] - row2[metric]])
-                            yt.append(np.clip(row['attest'], 0, 1))
+                            if row[metric] != row2[metric]:
+                                xt.append([row[metric] - row2[metric]])
+                                yt.append(np.clip(row['attest'], 0, 1))
         
         for t,template in enumerate(templates):
             dist = df.loc[df['template'] == template]
