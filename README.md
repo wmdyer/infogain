@@ -5,7 +5,7 @@ using information gain to describe adj order
 ```{bash}
 cd data/fr
 python ../../src/test.py -s triples.csv
-python ../../src/regress.py -tr scores.tsv -m ig_ent
+python ../../src/regress.py -tr scores.tsv -m ig_sum
 ```
 
 ## source data
