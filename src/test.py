@@ -12,7 +12,7 @@ from sklearn.preprocessing import binarize
 
 VERBOSE = False
 NORMALIZATION = 'sum'
-PARTITION_NOUN = False
+PARTITION_NOUN = True
 
 CRED = '\033[91m'
 CEND = '\033[0m'
