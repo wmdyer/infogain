@@ -26,7 +26,7 @@ do
 
     # extract all lemmas and key them to sentence:index
     printf " words"
-    cat sents | grep -v '%' | gawk 'BEGIN{FS="\t"}{if($3!="_") print $1":"$2 FS $4"/"$5}' > words
+    cat sents | grep -v '%' | gawk 'BEGIN{FS="\t"}{if($4!="_") print $1":"$2 FS $4"/"$5; else print $1":"$2 FS $3"/"$5}' > words
 
     # extract all children
     printf " children"
