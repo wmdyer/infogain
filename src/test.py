@@ -182,7 +182,8 @@ def score(nouns, adjs, a_orig, probs, seqs, cl, outfile):
 
         if analyze:
             out = []
-            for perm in list(permutations(words)):
+            perms = list(permutations(words))
+            for perm in perms:
                 igs = []
                 a = a_orig
                 template = ""
@@ -229,7 +230,7 @@ def score(nouns, adjs, a_orig, probs, seqs, cl, outfile):
                     out.append('\t'.join([key, ','.join(perm), template, str(attest), str(np.sum(igs)), str(ent), str(var), str(sk), ','.join(map(str,igs))]) + "\n")
 
                 # only write to outfile if all permutations have scores
-                if len(out) == len(list(permutations(words))):
+                if len(out) == len(perms):
                     for line in out:
                         outfile.write(line)
                     an += 1

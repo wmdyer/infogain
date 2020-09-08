@@ -19,7 +19,7 @@ VERBOSE = False
 WEIGHTED_PROBS = True
 
 # maximum number of feature vectors (can also be set with -fn argument)
-MAX_VEC_NUM = 20
+MAX_VEC_NUM = 1000
 
 # maximum non-zero length of feature vectors (can also be set with -fl argument)
 MAX_VEC_LEN = 2
@@ -34,7 +34,7 @@ NORMALIZATION = 'sum'
 CLUST_ADJ = True
 
 # smoothing factor (higher value means more drop-off from attested to unattested meaning vectors)
-SMOOTHING = 1.5
+SMOOTHING = 2
 
 def print_progress(i, n):
     j = (i+1) / n
@@ -56,9 +56,9 @@ def load_nps(filename, clusters, cl, clust_adj):
     # change nouns to their clusters
     if len(clusters) > 0:
         print('converting nouns to clusters ...')
-        nps = pd.merge(nps, clusters, how='inner', left_on=['noun'], right_on=['wf'])
+        nps = pd.merge(nps, clusters, how='inner', left_on=['noun'], right_on=['lemma'])
         del nps['noun']
-        del nps['wf']        
+        del nps['lemma']        
         nps = nps.rename(columns={"cl": "noun"})
         nps = nps.astype({'noun': 'str'})
 
@@ -206,8 +206,8 @@ def normalize(v):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='partition adjective space')
     parser.add_argument('-n', '--nps', nargs=1, dest='nps', required=True, help='tab-delimited file of [noun<TAB>adj,adj,...] (no header)')    
-    parser.add_argument('-c', '--clusters', nargs=1, dest='clusters', required=False, help='comma-delimited file of wordform, cluster IDs [wf,cl]')
-    parser.add_argument('-fn', '--num_features', nargs=1, dest='fn', required=False, help='max number of meaning vectors per noun; -1 means unlimited; default is 20')
+    parser.add_argument('-c', '--clusters', nargs=1, dest='clusters', required=False, help='comma-delimited file of lemma, cluster IDs [lemma,cl]')
+    parser.add_argument('-fn', '--num_features', nargs=1, dest='fn', required=False, help='max number of meaning vectors per noun; -1 means unlimited; default is 1000')
     parser.add_argument('-fl', '--len_features', nargs=1, dest='fl', required=False, help='max non-zero length of feature vectors; -1 means unlimited; default is 2')    
     args = parser.parse_args()
 
