@@ -28,14 +28,9 @@ python ../../src/regress.py -tr scores.tsv -m ig_sum
 
 *2. cluster (optional)*
 ```{bash}
-cat nps.tsv | cut -f2,3 | tr '\t,' '\n' | sort -u > words
-join <(cat words | sort -k1,1) <(cat <vectors> | sort -k1,1) > vecs
-python ./src/cluster.py -v vecs -w words [-k <num_clusters>] [-c <pct_pca>]
+./tools/cluster.sh <conllu_file> <vector_file> <num_clusters> <pct_pca>
 ```
->-v: file containing word vectors  
->-w: file containing words of interest  
->-k: number of clusters  
->-c: percentage of PCA to perform (1.0 = none)
+>e.g.: ./tools/cluster.sh ar-wikipedia-000.conllu cc.ar.300.vec 2000 0.2
 
 *3. train*
 ```{bash}
