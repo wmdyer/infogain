@@ -102,7 +102,7 @@ if __name__ == '__main__':
 
     print('')
     
-    print("clustering (k=" + str(k) + ") ...")
+    print("clustering (n=" + str(len(words)) + ",k=" + str(k) + ") ...")
     cls = get_clusters(words, vectors, k)
     words['cl'] = words['lemma'].map(cls).astype('str')
     words = words.loc[words['cl'] != 'nan']
