@@ -1,3 +1,5 @@
+fn="100"
+fl="2"
 
 lang="`ls | grep wikipedia | cut -d"-" -f1 | head -1`"
 
@@ -36,7 +38,7 @@ fi
 if [ "`ls | grep ig.pkl`" == "" ]
 then
     echo -e "\nTRAIN (wiki)"
-    python3 ../../src/train.py -n nps.tsv -c clusters.csv
+    python3 ../../src/train.py -n nps.tsv -c clusters.csv -fn $fn -fl $fl
 fi
 
 if [ "`ls | grep ^pairs.wiki`" == "" ]
@@ -84,7 +86,7 @@ then
 fi
 
 echo -e "\nREGRESS PAIRS"
-python3 ../../src/regress.py -tr scores.pairs.wiki -te scores.pairs.cc -m ig_sum --all --plot
+python3 ../../src/regress.py -tr scores.pairs.wiki -te scores.pairs.cc -m ig_sum --plot
 
 if [ "`ls | grep ^triples.wiki`" == "" ]
 then
