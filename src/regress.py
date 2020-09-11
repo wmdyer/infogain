@@ -50,11 +50,10 @@ def preprocess(scores, templates, run_all, metric):
         if run_all:
             for i,row in df.iterrows():
                 for j,row2 in df.iterrows():
-                    if i!=j:
+                    if i!=j and row[metric] != row2[metric]:                        
                         for k in range(np.sum(df['attest'])):
-                            if row[metric] != row2[metric]:
-                                xt.append([row[metric] - row2[metric]])
-                                yt.append(np.clip(row['attest'], 0, 1))
+                            xt.append([row[metric] - row2[metric]])
+                            yt.append(np.clip(row['attest'], 0, 1))
         
         for t,template in enumerate(templates):
             dist = df.loc[df['template'] == template]
@@ -83,14 +82,24 @@ if __name__ == '__main__':
     metric = args.metric[0]
     
     train, templates = load_scores(args.train[0])
+    seq_length = str(len(train['key'].values[0].split(','))).replace('2', 'pairs').replace('3', 'triples')
     x, y, xt, yt = preprocess(train, templates, args.run_all, metric)
-
-    print('')    
+    print('')
+    
+    try:
+        test, test_templates = load_scores(args.test[0])
+        x_test, y_test, xt_test, yt_test = preprocess(test, test_templates, args.run_all, metric)
+        print('')            
+        run_test = True
+    except:
+        run_test = False  
 
     if args.run_all:
-        from imblearn.over_sampling import SMOTE
-        smote = SMOTE('minority')
-        x_sm, y_sm = smote.fit_sample(xt, yt)
+        #from imblearn.over_sampling import SMOTE
+        #smote = SMOTE('minority')
+        #x_sm, y_sm = smote.fit_sample(xt, yt)
+        x_sm = xt
+        y_sm = yt
 
         x_train, x_dev, y_train, y_dev = train_test_split(np.array(x_sm), np.array(y_sm), random_state=1)
         x_ = sm.add_constant(x_train)
@@ -98,6 +107,8 @@ if __name__ == '__main__':
         result = logit.fit()
         x_ = sm.add_constant(x_dev)            
         y_pred = result.predict(x_)
+
+        print('ALL ' + seq_length.upper())
         print(result.summary())
         x_ = sm.add_constant(x_dev)                
         y_pred = result.predict(x_)
@@ -106,13 +117,41 @@ if __name__ == '__main__':
         print("\nVALIDATING ...")
         print(classification_report(y_dev, np.digitize(y_pred, bins=[0.5])))
 
-    try:
-        test, test_templates = load_scores(args.test[0])
-        x_test, y_test, xt_test, yt_test = preprocess(test, test_templates, args.run_all, metric)
-        run_test = True
-    except:
-        run_test = False
+        if args.plot:
+            print("\nPLOTTING REGRESSION...")
+            plt.figure(figsize=(9,6))
+            if len(x_train) > 100000:
+                idx = np.random.choice(np.arange(len(x_train)), 100000, replace=False)
+            else:
+                idx = range(0, len(x_train))
+            sns.regplot(x_train[idx], y_train[idx], logistic=logistic, scatter=False, truncate=True, marker='|')
+            plt.xlabel('delta IG')
+            plt.ylabel('alphabetical')
+            plt.title('ALL')
+            plt.savefig('ALL_' + seq_length + '_regression.png')
+            plt.clf()        
 
+        if run_test:
+            print("\nTESTING ...")
+            x_ = sm.add_constant(xt_test)
+            y_pred = np.digitize(result.predict(x_), bins=[0.5])
+            y_true = yt_test
+            print(classification_report(y_true, y_pred))
+
+            data = {'y_Actual':    y_true,
+                    'y_Predicted': y_pred
+            }
+
+            df = pd.DataFrame(data, columns=['y_Actual','y_Predicted'])
+
+            confusion_matrix = pd.crosstab(df['y_Actual'], df['y_Predicted'], rownames=['Actual'], colnames=['Predicted'])
+            print (confusion_matrix)
+                
+            if args.plot:
+                print("\nPLOTTING CONFUSION ...")
+                sns.heatmap(confusion_matrix, annot=True, cmap=plt.cm.Blues, fmt=".0f")
+                plt.savefig("ALL_" + seq_length + "_confusion.png")
+                plt.clf()        
 
     for t,template in enumerate(templates):
         if len(x[template]) > 7:
@@ -148,7 +187,7 @@ if __name__ == '__main__':
             if args.plot:
                 print("\nPLOTTING REGRESSION...")
                 plt.figure(figsize=(9,6))
-                sns.regplot(x_train, y_train, logistic=logistic, scatter=True, truncate=True, marker='|')
+                sns.regplot(x_train, y_train, logistic=logistic, scatter=False, truncate=True, marker='|')
                 plt.xlabel('delta IG')
                 plt.ylabel('alphabetical')
                 plt.title(template)
