@@ -16,7 +16,7 @@ using information gain to describe adj order
  
 ## run full pipeline
 *1. mkdir \<lang\>*  
-*2. download source data for \<lang\>*  
+*2. download and uncompress source data for \<lang\>*  
 *3. run `../tools/run_all.sh`*  
 
 
