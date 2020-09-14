@@ -1,3 +1,15 @@
+if [ "`ls | grep wikipedia | grep conllu`" == "" ]
+then
+    echo "ERROR: Can't find wikipedia conllu files"
+    exit
+fi
+
+if [ "`ls | grep common_crawl | grep conllu`" == "" ]
+then
+    echo "ERROR: Can't find common_crawl conllu files"
+    exit
+fi
+
 fn="1000"
 fl="2"
 test="true"
