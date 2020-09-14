@@ -1,12 +1,6 @@
 # infogain
 using information gain to describe adj order
 
-## using pre-trained model
-```{bash}
-cd data/fr
-python ../../src/test.py -s triples.csv
-python ../../src/regress.py -tr scores.tsv -m ig_sum
-```
 
 ## source data
 
@@ -18,6 +12,12 @@ python ../../src/regress.py -tr scores.tsv -m ig_sum
 *Word embeddings*
 
  >[fastText](https://fasttext.cc/docs/en/crawl-vectors.html)
+ 
+ 
+## run full pipeline
+*1. mkdir \<lang\>*  
+*2. download and uncompress source data for \<lang\>*  
+*3. run `../tools/run_all.sh`*  
 
 
 ## training
