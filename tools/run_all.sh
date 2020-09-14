@@ -10,6 +10,12 @@ then
     exit
 fi
 
+if [ "`ls | grep cc.*.300.vec`" == "" ]
+then
+    echo "ERROR: Can't find fastText embeddings"
+    exit
+fi
+
 fn="1000"
 fl="2"
 test="true"
