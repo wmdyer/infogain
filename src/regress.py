@@ -49,11 +49,15 @@ def preprocess(scores, templates, run_all, metric):
 
         if run_all:
             for i,row in df.iterrows():
-                for j,row2 in df.iterrows():
-                    if i!=j and row[metric] != row2[metric]:                        
-                        for k in range(np.sum(df['attest'])):
-                            xt.append([row[metric] - row2[metric]])
-                            yt.append(np.clip(row['attest'], 0, 1))
+                if row['attest'] > 0:
+                    for j,row2 in df.iterrows():
+                        if i!=j and row[metric] != row2[metric]:
+                            for k in range(row['attest']):
+                                xt.append([row[metric] - row2[metric]])
+                                yt.append(1)
+
+                                xt.append([row2[metric] - row[metric]])
+                                yt.append(0)
         
         for t,template in enumerate(templates):
             dist = df.loc[df['template'] == template]
@@ -119,16 +123,18 @@ if __name__ == '__main__':
 
         if args.plot:
             print("\nPLOTTING REGRESSION...")
-            plt.figure(figsize=(9,6))
+            plt.figure(figsize=(2,1))
             if len(x_train) > 100000:
                 idx = np.random.choice(np.arange(len(x_train)), 100000, replace=False)
             else:
                 idx = range(0, len(x_train))
             sns.regplot(x_train[idx], y_train[idx], logistic=logistic, scatter=False, truncate=True, marker='|')
-            plt.xlabel('delta IG')
-            plt.ylabel('alphabetical')
-            plt.title('ALL')
-            plt.savefig('ALL_' + seq_length + '_regression.png')
+            #plt.xlabel('delta IG')
+            #plt.ylabel('alphabetical')
+            #plt.title('ALL')
+            plt.axis('off')
+            plt.tick_params(axis='both', left='off', top='off', right='off', bottom='off', labelleft='off', labeltop='off', labelright='off', labelbottom='off')
+            plt.savefig('ALL_' + seq_length + '_regression.png', bbox_inches='tight', pad_inches=0.0)
             plt.clf()        
 
         if run_test:
@@ -147,11 +153,11 @@ if __name__ == '__main__':
             confusion_matrix = pd.crosstab(df['y_Actual'], df['y_Predicted'], rownames=['Actual'], colnames=['Predicted'])
             print (confusion_matrix)
                 
-            if args.plot:
-                print("\nPLOTTING CONFUSION ...")
-                sns.heatmap(confusion_matrix, annot=True, cmap=plt.cm.Blues, fmt=".0f")
-                plt.savefig("ALL_" + seq_length + "_confusion.png")
-                plt.clf()        
+            #if args.plot:
+            #    print("\nPLOTTING CONFUSION ...")
+            #    sns.heatmap(confusion_matrix, annot=True, cmap=plt.cm.Blues, fmt=".0f")
+            #    plt.savefig("ALL_" + seq_length + "_confusion.png")
+            #    plt.clf()        
 
     for t,template in enumerate(templates):
         if len(x[template]) > 7:
@@ -186,12 +192,14 @@ if __name__ == '__main__':
 
             if args.plot:
                 print("\nPLOTTING REGRESSION...")
-                plt.figure(figsize=(9,6))
+                plt.figure(figsize=(2,1))
                 sns.regplot(x_train, y_train, logistic=logistic, scatter=False, truncate=True, marker='|')
-                plt.xlabel('delta IG')
-                plt.ylabel('alphabetical')
-                plt.title(template)
-                plt.savefig(template + '_regression.png')
+                #plt.xlabel('delta IG')
+                #plt.ylabel('alphabetical')
+                #plt.title(template)
+                plt.axis('off')
+                plt.tick_params(axis='both', left='off', top='off', right='off', bottom='off', labelleft='off', labeltop='off', labelright='off', labelbottom='off')
+                plt.savefig(template + '_regression.png', bbox_inches='tight', pad_inches=0.0)
                 plt.clf()
 
             if run_test and template in x_test:
@@ -210,8 +218,8 @@ if __name__ == '__main__':
                 confusion_matrix = pd.crosstab(df['y_Actual'], df['y_Predicted'], rownames=['Actual'], colnames=['Predicted'])
                 print (confusion_matrix)
                 
-                if args.plot:
-                    print("\nPLOTTING CONFUSION ...")
-                    sns.heatmap(confusion_matrix, annot=True, cmap=plt.cm.Blues, fmt=".0f")
-                    plt.savefig(template + "_confusion.png")
-                    plt.clf()
+                #if args.plot:
+                #    print("\nPLOTTING CONFUSION ...")
+                #    sns.heatmap(confusion_matrix, annot=True, cmap=plt.cm.Blues, fmt=".0f")
+                #    plt.savefig(template + "_confusion.png")
+                #    plt.clf()
