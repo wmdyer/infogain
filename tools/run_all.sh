@@ -1,5 +1,8 @@
-fn="100"
+fn="1000"
 fl="2"
+test="true"
+threshold="10000"
+do_pairs="false"
 
 lang="`ls | grep wikipedia | cut -d"-" -f1 | head -1`"
 
@@ -38,82 +41,90 @@ fi
 if [ "`ls | grep ig.pkl`" == "" ]
 then
     echo -e "\nTRAIN (wiki)"
-    python3 ../../src/train.py -n nps.tsv -c clusters.csv -fn $fn -fl $fl
+    python3 ../../src/train.py -n nps.nh -c clusters.csv -fn $fn -fl $fl
 fi
 
-if [ "`ls | grep ^pairs.wiki`" == "" ]
+if [ "$do_pairs" == "true" ]
 then
-    echo -e "\nGET PAIRS (wiki)"
-    printf "" > pairs
-    i="0"
-    while [ "`cat pairs | wc -l`" -lt "20000" -a "`ls | grep -w "$lang-wikipedia-00$i.conllu"`" != "" ]
-    do
-	../../tools/extract_conllu_pairs.sh $lang-wikipedia-00$i.conllu
-	i="`expr $i + 1`"
-	cat pairs.csv >> pairs
-    done
-    mv pairs pairs.wiki
+    if [ "`ls | grep ^pairs.wiki`" == "" ]
+    then
+	echo -e "\nGET PAIRS (wiki)"
+	printf "" > pairs
+	i="0"
+	while [ "`cat pairs | wc -l`" -lt "$threshold" -a "`ls | grep -w "$lang-wikipedia-00$i.conllu"`" != "" ]
+	do
+	    ../../tools/extract_conllu_pairs.sh $lang-wikipedia-00$i.conllu
+	    i="`expr $i + 1`"
+	    cat pairs.csv >> pairs
+	done
+	cat pairs | shuf -n $threshold > pairs.wiki
+    fi
+    
+    if [ "`ls | grep ^pairs.cc`" == "" -a "$test" == "true" ]
+    then
+	echo -e "\nGET PAIRS (cc)"
+	printf "" > pairs
+	i="0"
+	while [ "`cat pairs | wc -l`" -lt "$threshold" -a "`ls | grep -w "$lang-common_crawl-00$i.conllu"`" != "" ]
+	do
+	    ../../tools/extract_conllu_pairs.sh $lang-common_crawl-00$i.conllu
+	    i="`expr $i + 1`"
+	    cat pairs.csv >> pairs
+	done
+	cat pairs | shuf -n $threshold > pairs.cc
+    fi
+    
+    if [ "`ls | grep scores.pairs.wiki`" == "" ]
+    then
+	echo -e "\nTEST PAIRS (wiki)"
+	python3 ../../src/test.py -s pairs.wiki
+	mv scores.tsv scores.pairs.wiki
+	../../tools/analyze.sh pairs wiki    
+    fi
+    
+    if [ "`ls | grep scores.pairs.cc`" == "" -a "$test" == "true" ]
+    then
+	echo -e "\nTEST PAIRS (cc)"
+	python3 ../../src/test.py -s pairs.cc
+	mv scores.tsv scores.pairs.cc
+	../../tools/analyze.sh pairs cc    
+    fi
+    
+    echo -e "\nREGRESS PAIRS"
+    if [ "$test" == "true" ]
+    then
+	python3 ../../src/regress.py -tr scores.pairs.wiki -te scores.pairs.cc -m ig_sum --all
+    else
+	python3 ../../src/regress.py -tr scores.pairs.wiki -m ig_sum --all
+    fi
 fi
-
-if [ "`ls | grep ^pairs.cc`" == "" ]
-then
-    echo -e "\nGET PAIRS (cc)"
-    printf "" > pairs
-    i="0"
-    while [ "`cat pairs | wc -l`" -lt "20000" -a "`ls | grep -w "$lang-common_crawl-00$i.conllu"`" != "" ]
-    do
-	../../tools/extract_conllu_pairs.sh $lang-common_crawl-00$i.conllu
-	i="`expr $i + 1`"
-	cat pairs.csv >> pairs
-    done
-    mv pairs pairs.cc
-fi
-
-if [ "`ls | grep scores.pairs.wiki`" == "" ]
-then
-    echo -e "\nTEST PAIRS (wiki)"
-    python3 ../../src/test.py -s pairs.wiki
-    mv scores.tsv scores.pairs.wiki
-    ../../tools/analyze.sh pairs wiki    
-fi
-
-if [ "`ls | grep scores.pairs.cc`" == "" ]
-then
-    echo -e "\nTEST PAIRS (cc)"
-    python3 ../../src/test.py -s pairs.cc
-    mv scores.tsv scores.pairs.cc
-    ../../tools/analyze.sh pairs cc    
-fi
-
-echo -e "\nREGRESS PAIRS"
-python3 ../../src/regress.py -tr scores.pairs.wiki -te scores.pairs.cc -m ig_sum --plot
 
 if [ "`ls | grep ^triples.wiki`" == "" ]
 then
     echo -e "\nGET TRIPLES (wiki)"
     printf "" > triples
     i="0"
-    while [ "`cat triples | wc -l`" -lt "20000" -a "`ls | grep -w "$lang-wikipedia-00$i.conllu"`" != "" ]
+    while [ "`cat triples | wc -l`" -lt "$threshold" -a "`ls | grep -w "$lang-wikipedia-00$i.conllu"`" != "" ]
     do
 	../../tools/extract_conllu_triples.sh $lang-wikipedia-00$i.conllu
 	i="`expr $i + 1`"
 	cat triples.csv >> triples
     done
-    mv triples triples.wiki
+    cat triples | shuf -n $threshold triples > triples.wiki
 fi
 
-if [ "`ls | grep ^triples.cc`" == "" ]
+if [ "`ls | grep ^triples.cc`" == "" -a "$test" == "true" ]
 then
     echo -e "\nGET TRIPLES (cc)"
     printf "" > triples
     i="0"
-    while [ "`cat triples | wc -l`" -lt "20000" -a "`ls | grep -w "$lang-common_crawl-00$i.conllu"`" != "" ]
+    while [ "`cat triples | wc -l`" -lt "$threshold" -a "`ls | grep -w "$lang-common_crawl-00$i.conllu"`" != "" ]
     do
 	../../tools/extract_conllu_triples.sh $lang-common_crawl-00$i.conllu
 	i="`expr $i + 1`"
 	cat triples.csv >> triples
     done
-    mv triples triples.cc
+    cat triples | shuf -n $threshold > triples.cc
 fi
 
 if [ "`ls | grep scores.triples.wiki`" == "" ]
@@ -124,7 +135,7 @@ then
     ../../tools/analyze.sh triples wiki
 fi
 
-if [ "`ls | grep scores.triples.cc`" == "" ]
+if [ "`ls | grep scores.triples.cc`" == "" -a "$test" == "true" ]
 then
     echo -e "\nTEST TRIPLES (cc)"
     python3 ../../src/test.py -s triples.cc
@@ -133,6 +144,11 @@ then
 fi
 
 echo -e "\nREGRESS TRIPLES"
-python3 ../../src/regress.py -tr scores.triples.wiki -te scores.triples.cc -m ig_sum --all --plot
+if [ "$test" == "true" ]
+then
+    python3 ../../src/regress.py -tr scores.triples.wiki -te scores.triples.cc -m ig_sum --all
+else
+    python3 ../../src/regress.py -tr scores.triples.wiki -m ig_sum --all
+fi
 
 
