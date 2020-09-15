@@ -19,7 +19,7 @@ fi
 fn="1000"
 fl="2"
 test="true"
-threshold="10000"
+threshold="20000"
 do_pairs="false"
 
 lang="`ls | grep wikipedia | cut -d"-" -f1 | head -1`"
