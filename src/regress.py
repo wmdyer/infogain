@@ -63,14 +63,20 @@ def preprocess(scores, templates, run_all, metric):
             dist = df.loc[df['template'] == template]
             igs_t = dist[metric].values
             attests = dist.attest.values
-            n = sum(attests)
-            for i in range(n):
-                try:
-                    if igs_t[0] != igs_t[1]:
-                        x[template].append([igs_t[0] - igs_t[1]])
-                        y[template].append(np.clip(attests[0], 0, 1))
-                except:
-                    pass
+            if igs_t[0] != igs_t[1]:
+                for i in range(attests[0]):
+                    x[template].append([igs_t[0] - igs_t[1]])
+                    y[template].append(1)
+
+                    x[template].append([igs_t[1] - igs_t[0]])
+                    y[template].append(0)
+
+                for i in range(attests[1]):
+                    x[template].append([igs_t[1] - igs_t[0]])
+                    y[template].append(1)
+
+                    x[template].append([igs_t[0] - igs_t[1]])
+                    y[template].append(0)                                        
 
     return x, y, np.array(xt), np.array(yt)
 
