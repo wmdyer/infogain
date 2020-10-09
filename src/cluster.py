@@ -50,8 +50,10 @@ def get_clusters(words, vectors, k):
         
 def combine_vectors(forms, vectors):
 
-    single_forms = forms[forms['wfs'].str.contains(',') == False].drop_duplicates()
-    multi_forms = forms[forms['wfs'].str.contains(',', na=False)].drop_duplicates()
+    single_forms = forms[forms['wfs'].str.contains(',') == False]
+    single_forms = single_forms.drop_duplicates()
+    multi_forms = forms[forms['wfs'].str.contains(',', na=False)]
+    multi_forms = multi_forms.drop_duplicates()
 
     print('extracting lemma vectors ...')
     wv = pd.merge(single_forms, vectors, left_on=['lemma'], right_index=True)
@@ -59,7 +61,7 @@ def combine_vectors(forms, vectors):
     c_vectors = np.array(wv[wv.columns[2:]].values).astype(float).tolist()
 
     print('combining wordform vectors ...')
-    total = len(multi_forms.lemma.unique())
+    total = len(multi_forms)
     j=1
     for i,row in multi_forms.iterrows():
         j = print_progress(j, total)
@@ -105,7 +107,7 @@ if __name__ == '__main__':
     print("clustering (n=" + str(len(words)) + ",k=" + str(k) + ") ...")
     cls = get_clusters(words, vectors, k)
     words['cl'] = words['lemma'].map(cls).astype('str')
-    words = words.loc[words['cl'] != 'nan']
+    words = words.loc[words['cl'] != 'nan'].drop_duplicates()
 
     print("printing output to clusters.csv ...")
     outfile = open("clusters.csv", 'w')
