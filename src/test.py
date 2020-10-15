@@ -252,6 +252,8 @@ if __name__ == '__main__':
     cl = pickle.load(f)
     clust_adj = pickle.load(f)
 
+    cl = {str(k).lower(): v for k, v in cl.items()}
+
     print("loading " + args.seqs[0] + " ...")
     seqs = load_seqs(args.seqs[0], cl, clust_adj)
 
