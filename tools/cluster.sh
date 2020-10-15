@@ -10,7 +10,7 @@ then
 fi
 
 echo "extracting ADJs and NOUNs ..."
-cat $conllu_file | grep "^[0-9]" | gawk 'BEGIN{FS="\t"}{if($4=="ADJ" || $4=="NOUN") print $3 FS $2}' | grep -vE '(\$)|(\%)|(")' | grep -v "'" | sort | uniq -c | sort -rn | head -100000 | sed -e 's/^[ ]*[0-9]*[ ]*//' > words
+cat $conllu_file | grep "^[0-9]" | gawk 'BEGIN{FS="\t"}{if($4=="ADJ" || $4=="NOUN") print $3 FS $2}' | grep -vE '(\$)|(\%)|(")' | grep -v "'" | sort | uniq -c | sort -rn | head -100000 | sed -e 's/^[ ]*[0-9]*[ ]*//' | gawk 'BEGIN{FS="\t"}{if($1=="_") print $2 FS $2; else print $0}' | sort -u > words
 
 echo "extracting vectors ..."
 join <(cat words | tr '\t' '\n' | sort -u) <(cat $vec_file | sort -k1,1) | gawk 'BEGIN{FS=" "}{if(NF==301) print $0}' > vecs
