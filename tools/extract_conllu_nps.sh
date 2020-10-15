@@ -22,7 +22,7 @@ do
 
     # add sentence IDs
     printf " sents"
-    cat $file | grep "^[0-9][0-9]*"$'\t' | gawk 'BEGIN{FS="\t";S=0}{if($1=="1") S++; print S FS $0}' > sents
+    cat $file | grep "^[0-9][0-9]*"$'\t' | gawk 'BEGIN{FS="\t";S=0}{if($1=="1") S++; if($4=="ADJ" || $4=="NOUN") print S FS $0}' > sents
 
     # extract all lemmas and key them to sentence:index
     printf " words"
@@ -48,7 +48,7 @@ do
 done
 
 # verify each row has >1 cols and normalize
-cat nps | gawk 'BEGIN{FS=","}{if(NF>1) print $0}' | tr -d '" ' | sed -e 's/,/\t/' | grep "/NOUN.*/ADJ" | gawk 'BEGIN{FS="\t"}{if(NF==2) print $0}' > nps.tsv
+cat nps | gawk 'BEGIN{FS=","}{if(NF>1) print $0}' | tr -d '" ' | sed -e 's/,/\t/' | grep "/NOUN.*/ADJ" | gawk 'BEGIN{FS="\t"}{if(NF==2 && $1!="" && $2!="") print $0}' > nps.tsv
 
 # strip '/POS'
 cat nps.tsv | sed -e 's|/[A-Z]*||g' | grep -v '/' > temp; mv temp nps.tsv
