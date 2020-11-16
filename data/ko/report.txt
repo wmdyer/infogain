@@ -1,0 +1,36 @@
+ig_1st_a all n 7.0
+ig_1st_a all n_train 7
+ig_1st_a all n_test 0.0
+ig_1st_a ANA n_train 0 0.0
+ig_1st_a AAN n_train 7 1.0
+ig_1st_a NAA n_train 0 0.0
+ig_sum all n 7.0
+ig_sum all n_train 7
+ig_sum all n_test 0.0
+ig_sum ANA n_train 0 0.0
+ig_sum AAN n_train 7 1.0
+ig_sum NAA n_train 0 0.0
+ig_uc_pos all n 7.0
+ig_uc_pos all n_train 7
+ig_uc_pos all n_test 0.0
+ig_uc_pos ANA n_train 0 0.0
+ig_uc_pos AAN n_train 7 1.0
+ig_uc_pos NAA n_train 0 0.0
+ig_c_pos all n 7.0
+ig_c_pos all n_train 7
+ig_c_pos all n_test 0.0
+ig_c_pos ANA n_train 0 0.0
+ig_c_pos AAN n_train 7 1.0
+ig_c_pos NAA n_train 0 0.0
+ig_uc_neg all n 7.0
+ig_uc_neg all n_train 7
+ig_uc_neg all n_test 0.0
+ig_uc_neg ANA n_train 0 0.0
+ig_uc_neg AAN n_train 7 1.0
+ig_uc_neg NAA n_train 0 0.0
+ig_c_neg all n 7.0
+ig_c_neg all n_train 7
+ig_c_neg all n_test 0.0
+ig_c_neg ANA n_train 0 0.0
+ig_c_neg AAN n_train 7 1.0
+ig_c_neg NAA n_train 0 0.0

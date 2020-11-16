@@ -1,0 +1,66 @@
+ig_1st_a AAN beta_0 -0.08018653382045755
+ig_1st_a AAN beta_1 12.78342769867028
+ig_1st_a AAN p-value 1.4005274596110327e-149
+ig_1st_a AAN accuracy 0.580574391703231
+ig_1st_a all n 11536
+ig_1st_a all n_train 6522
+ig_1st_a all n_test 5014
+ig_1st_a ANA n_train 0 0.0
+ig_1st_a AAN n_train 6522 1.0
+ig_1st_a NAA n_train 0 0.0
+ig_1st_a AAN n_test 5014 1.0
+ig_sum AAN beta_0 -0.02697771687061242
+ig_sum AAN beta_1 -0.1102690779128242
+ig_sum AAN p-value 0.6573844631892224
+ig_sum AAN accuracy 0.5181491822895892
+ig_sum all n 11536
+ig_sum all n_train 6522
+ig_sum all n_test 5014
+ig_sum ANA n_train 0 0.0
+ig_sum AAN n_train 6522 1.0
+ig_sum NAA n_train 0 0.0
+ig_sum AAN n_test 5014 1.0
+ig_uc_pos AAN beta_0 -0.0557306893665434
+ig_uc_pos AAN beta_1 -0.2750931902335254
+ig_uc_pos AAN p-value 5.607110214784221e-119
+ig_uc_pos AAN accuracy 0.5843637814120463
+ig_uc_pos all n 11537
+ig_uc_pos all n_train 6523
+ig_uc_pos all n_test 5014
+ig_uc_pos ANA n_train 0 0.0
+ig_uc_pos AAN n_train 6523 1.0
+ig_uc_pos NAA n_train 0 0.0
+ig_uc_pos AAN n_test 5014 1.0
+ig_c_pos AAN beta_0 -0.07879606438173659
+ig_c_pos AAN beta_1 16.055735037190395
+ig_c_pos AAN p-value 5.496576358199233e-150
+ig_c_pos AAN accuracy 0.581970482648584
+ig_c_pos all n 11536
+ig_c_pos all n_train 6522
+ig_c_pos all n_test 5014
+ig_c_pos ANA n_train 0 0.0
+ig_c_pos AAN n_train 6522 1.0
+ig_c_pos NAA n_train 0 0.0
+ig_c_pos AAN n_test 5014 1.0
+ig_uc_neg AAN beta_0 -0.08527154677878876
+ig_uc_neg AAN beta_1 61.025215869452936
+ig_uc_neg AAN p-value 1.5275297573171213e-146
+ig_uc_neg AAN accuracy 0.5768693918245265
+ig_uc_neg all n 11538
+ig_uc_neg all n_train 6523
+ig_uc_neg all n_test 5015
+ig_uc_neg ANA n_train 0 0.0
+ig_uc_neg AAN n_train 6523 1.0
+ig_uc_neg NAA n_train 0 0.0
+ig_uc_neg AAN n_test 5015 1.0
+ig_c_neg AAN beta_0 -0.08480261103639873
+ig_c_neg AAN beta_1 62.27180627910414
+ig_c_neg AAN p-value 6.456194907954546e-147
+ig_c_neg AAN accuracy 0.5780658025922233
+ig_c_neg all n 11538
+ig_c_neg all n_train 6523
+ig_c_neg all n_test 5015
+ig_c_neg ANA n_train 0 0.0
+ig_c_neg AAN n_train 6523 1.0
+ig_c_neg NAA n_train 0 0.0
+ig_c_neg AAN n_test 5015 1.0

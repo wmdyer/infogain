@@ -1,0 +1,10 @@
+이런/ADJ,여러/ADJ,개혁/NOUN
+새/ADJ,새/ADJ,경상북도/NOUN
+다른/ADJ,여러/ADJ,공연/NOUN
+다른/ADJ,별/ADJ,글리제/NOUN
+여러/ADJ,다른/ADJ,대사/NOUN
+다른/ADJ,여러/ADJ,무슬림/NOUN
+그런/ADJ,여러/ADJ,사회주의/NOUN
+다른/ADJ,여러/ADJ,수도원/NOUN
+다른/ADJ,새/ADJ,연료/NOUN
+오랜/ADJ,오랜/ADJ,옛날/NOUN
