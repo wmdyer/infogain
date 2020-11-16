@@ -16,7 +16,7 @@ from sklearn.preprocessing import binarize
 VERBOSE = False
 
 # use weighted probabilities
-WEIGHTED_PROBS = True
+WEIGHTED_PROBS = False
 
 # maximum number of feature vectors (can also be set with -fn argument)
 MAX_VEC_NUM = 1000
@@ -34,7 +34,7 @@ NORMALIZATION = 'sum'
 CLUST_ADJ = True
 
 # smoothing factor (higher value means more drop-off from attested to unattested meaning vectors)
-SMOOTHING = 2
+SMOOTHING = 1
 
 def print_progress(i, n):
     j = (i+1) / n
@@ -50,8 +50,9 @@ def load_clusters(filename):
 def load_nps(filename, clusters, cl, clust_adj):
     nps = pd.read_csv(filename, sep="\t", error_bad_lines=False, engine='python', header=None)
     nps.columns = ['count', 'noun', 'adjs']
-    nps['noun'] = nps['noun'].str.lower()
-    nps['adjs'] = nps['adjs'].str.lower()
+    nps['noun'] = nps['noun'].str.lower() + "/NOUN"
+    nps['adjs'] = nps['adjs'].str.lower() + "/ADJ"
+    nps.replace(',', '/ADJ,', inplace=True, regex=True)
 
     # change nouns to their clusters
     if len(clusters) > 0:
@@ -78,6 +79,7 @@ def load_nps(filename, clusters, cl, clust_adj):
                             astring += str(acl)
                         except:
                             pass
+                        
                 except:
                     pass
 
