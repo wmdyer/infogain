@@ -1,53 +1,15 @@
-if [ "`ls | grep wikipedia | grep conllu`" == "" ]
-then
-    echo "ERROR: Can't find wikipedia conllu files"
-    exit
-fi
+ak="50000"
+nk="50000"
 
-if [ "`ls | grep common_crawl | grep conllu`" == "" ]
-then
-    echo "ERROR: Can't find common_crawl conllu files"
-    exit
-fi
-
-if [ "`ls | grep cc.*.300.vec`" == "" ]
-then
-    echo "ERROR: Can't find fastText embeddings"
-    exit
-fi
-
-fn="1000"
-fl="2"
+fn="0"
+fl="0"
 test="true"
 threshold="20000"
-do_pairs="false"
-
-lang="`ls | grep wikipedia | cut -d"-" -f1 | head -1`"
-
-if [ "`ls | grep conllu.wiki`" == "" ]
-then
-    echo -e "\nGENERATE conllu.wiki"
-    cat $lang-wikipedia-000.conllu > conllu.wiki
-    cat $lang-wikipedia-001.conllu >> conllu.wiki
-    #cat $lang-wikipedia-002.conllu | grep -E "(ADJ)|(NOUN)" >> conllu.wiki
-    #cat $lang-wikipedia-003.conllu | grep -E "(ADJ)|(NOUN)" >> conllu.wiki
-    #cat $lang-wikipedia-004.conllu | grep -E "(ADJ)|(NOUN)" >> conllu.wiki
-fi
-
-if [ "`ls | grep conllu.cc`" == "" ]
-then
-    echo -e "\nGENERATE conllu.cc"
-    cat $lang-common_crawl-000.conllu > conllu.cc
-    cat $lang-common_crawl-001.conllu >> conllu.cc
-    #cat $lang-common_crawl-002.conllu | grep -E "(ADJ)|(NOUN)" >> conllu.cc
-    #cat $lang-common_crawl-003.conllu | grep -E "(ADJ)|(NOUN)" >> conllu.cc
-    #cat $lang-common_crawl-004.conllu | grep -E "(ADJ)|(NOUN)" >> conllu.cc
-fi
 
 if [ "`ls | grep clusters.csv`" == "" ]
 then
     echo -e "\nCLUSTER (wiki)"
-    ../../tools/cluster.sh conllu.wiki cc.$lang.300.vec 5000 0.1
+    ../../tools/cluster.sh conllu.wiki cc.$lang.300.vec $ak $nk 0.1
 fi
 
 if [ "`ls | grep nps.tsv`" == "" ]
@@ -59,72 +21,17 @@ fi
 if [ "`ls | grep ig.pkl`" == "" ]
 then
     echo -e "\nTRAIN (wiki)"
-    python3 ../../src/train.py -n nps.nh -c clusters.csv -fn $fn -fl $fl
-fi
-
-if [ "$do_pairs" == "true" ]
-then
-    if [ "`ls | grep ^pairs.wiki`" == "" ]
-    then
-	echo -e "\nGET PAIRS (wiki)"
-	printf "" > pairs
-	i="0"
-	while [ "`cat pairs | wc -l`" -lt "$threshold" -a "`ls | grep -w "$lang-wikipedia-00$i.conllu"`" != "" ]
-	do
-	    ../../tools/extract_conllu_pairs.sh $lang-wikipedia-00$i.conllu
-	    i="`expr $i + 1`"
-	    cat pairs.csv >> pairs
-	done
-	cat pairs | shuf -n $threshold > pairs.wiki
-    fi
-    
-    if [ "`ls | grep ^pairs.cc`" == "" -a "$test" == "true" ]
-    then
-	echo -e "\nGET PAIRS (cc)"
-	printf "" > pairs
-	i="0"
-	while [ "`cat pairs | wc -l`" -lt "$threshold" -a "`ls | grep -w "$lang-common_crawl-00$i.conllu"`" != "" ]
-	do
-	    ../../tools/extract_conllu_pairs.sh $lang-common_crawl-00$i.conllu
-	    i="`expr $i + 1`"
-	    cat pairs.csv >> pairs
-	done
-	cat pairs | shuf -n $threshold > pairs.cc
-    fi
-    
-    if [ "`ls | grep scores.pairs.wiki`" == "" ]
-    then
-	echo -e "\nTEST PAIRS (wiki)"
-	python3 ../../src/test.py -s pairs.wiki
-	mv scores.tsv scores.pairs.wiki
-	../../tools/analyze.sh pairs wiki    
-    fi
-    
-    if [ "`ls | grep scores.pairs.cc`" == "" -a "$test" == "true" ]
-    then
-	echo -e "\nTEST PAIRS (cc)"
-	python3 ../../src/test.py -s pairs.cc
-	mv scores.tsv scores.pairs.cc
-	../../tools/analyze.sh pairs cc    
-    fi
-    
-    echo -e "\nREGRESS PAIRS"
-    if [ "$test" == "true" ]
-    then
-	python3 ../../src/regress.py -tr scores.pairs.wiki -te scores.pairs.cc -m ig_sum --all
-    else
-	python3 ../../src/regress.py -tr scores.pairs.wiki -m ig_sum --all
-    fi
+    python3 ../../src/train.py -n <(cat nps.tsv | sort -rnk1,1 | head -100000) -c clusters.csv -fn $fn -fl $fl
 fi
 
 if [ "`ls | grep ^triples.wiki`" == "" ]
 then
     echo -e "\nGET TRIPLES (wiki)"
     printf "" > triples
-    i="0"
-    while [ "`cat triples | wc -l`" -lt "$threshold" -a "`ls | grep -w "$lang-wikipedia-00$i.conllu"`" != "" ]
+    i="10"
+    while [ "`cat triples | wc -l`" -lt "$threshold" -a "`ls | grep -w "$lang-wikipedia-0$i.conllu"`" != "" ]
     do
-	../../tools/extract_conllu_triples.sh $lang-wikipedia-00$i.conllu
+	../../tools/extract_conllu_triples.sh $lang-wikipedia-0$i.conllu
 	i="`expr $i + 1`"
 	cat triples.csv >> triples
     done
@@ -145,28 +52,37 @@ then
     cat triples | shuf -n $threshold > triples.cc
 fi
 
-if [ "`ls | grep scores.triples.wiki`" == "" ]
-then
-    echo -e "\nTEST TRIPLES (wiki)"
-    python3 ../../src/test.py -s triples.wiki
-    mv scores.tsv scores.triples.wiki
-    ../../tools/analyze.sh triples wiki
-fi
+#for t in `echo wiki cc`
+#do
+#    if [ "`ls | grep -w "triples.$t.norm"`" == "" ]
+#    then
+#	echo -e "\nNORMALIZE TRIPLES ($t)"
+#	../../tools/normalize.sh triples.$t
+#    fi
+#done
 
-if [ "`ls | grep scores.triples.cc`" == "" -a "$test" == "true" ]
-then
-    echo -e "\nTEST TRIPLES (cc)"
-    python3 ../../src/test.py -s triples.cc
-    mv scores.tsv scores.triples.cc
-    ../../tools/analyze.sh triples cc
-fi
+for t in `echo wiki cc`
+do
+    if [ "`ls | grep scores.$t`" == "" ]
+    then
+	echo -e "\nTEST TRIPLES ($t)"
+	python3 ../../src/ablate.py -s triples.$t
+	mv scores.tsv scores.$t
+    fi
+done
 
-echo -e "\nREGRESS TRIPLES"
-if [ "$test" == "true" ]
+if [ "$1" == "" ]
 then
-    python3 ../../src/regress.py -tr scores.triples.wiki -te scores.triples.cc -m ig_sum --all
+    m="1st_a sum uc_pos c_pos uc_neg c_neg"
 else
-    python3 ../../src/regress.py -tr scores.triples.wiki -m ig_sum --all
+    m="$1"
 fi
 
+printf "" > report.txt
+
+for t in `echo $m`
+do
+    echo -e "\nREGRESS TRIPLES ($t)"
+    python3 ../../src/regress.py -tr scores.wiki -te scores.cc -m ig_$t | tee -a report.txt
+done
 
