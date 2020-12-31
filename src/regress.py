@@ -18,7 +18,7 @@ def load_scores(filename, verbose):
     if verbose:
         print('loading and processing ' + filename + ' ...')
     scores = pd.read_csv(filename, sep="\t", error_bad_lines=False, engine='python').replace([np.inf, -np.inf], np.nan).dropna()
-    scores['clusters'] = scores['clusters'].str.lower()
+    #scores['clusters'] = scores['clusters'].str.lower()
     scores['attest'] = np.clip(scores['attest'], 0, 100)
     templates = scores.template.unique()
     return scores, templates
@@ -26,19 +26,22 @@ def load_scores(filename, verbose):
 def preprocess(scores, templates, metric, verbose):
 
     total = len(scores['key'].unique())
-    cols = ['clusters', 'template', 'attest', metric]
+    cols = ['wordforms', 'template', 'attest', metric]
 
     x = {}
     y = {}
 
+    analyzed = {}
+
     for template in templates:
         x[template] = []
         y[template] = []
+        analyzed[template] = []
 
     for i,key in enumerate(scores['key'].unique()):
         if verbose:
             print_progress(i+1, total)
-        df = scores.loc[scores['key'] == key][cols].sort_values(by='clusters')
+        df = scores.loc[scores['key'] == key][cols].sort_values(by='wordforms')
         igs = df[metric].values
         
         for t,template in enumerate(templates):
@@ -49,24 +52,34 @@ def preprocess(scores, templates, metric, verbose):
                 if igs_t[0] != igs_t[1]:
                     for i in range(attests[0]):
                         x[template].append([igs_t[0] - igs_t[1]])
-                        y[template].append(1)                        
+                        y[template].append(1)
+                        analyzed[template].append([dist['wordforms'].values[1], dist['wordforms'].values[0]])
                     for i in range(attests[1]):
                         x[template].append([igs_t[0] - igs_t[1]])
                         y[template].append(0)
+                        analyzed[template].append([dist['wordforms'].values[1], dist['wordforms'].values[0]])
             except:
                 pass
+                    
+    return x, y, analyzed
 
-    return x, y
-
+def generate(analyzed, template, trues, preds, outfile, verbose):
+    for p,pair in enumerate(analyzed[template]):
+        outfile.write('\t'.join([template, pair[trues[p]], pair[preds[p]]]) + "\n")                     
+    
+                        
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='evaluate scores')
     parser.add_argument('-tr', '--train', nargs=1, dest='train', required=True, help='tab-delimited scores file for training')
-    parser.add_argument('-m', '--metric', nargs=1, dest='metric', required=True, help='metric [ig_sum or ig_ent]')    
+    parser.add_argument('-m', '--metric', nargs=1, dest='metric', required=False, help='metric [ig_1st_a, ig_sum, ig_ent]')    
     parser.add_argument('-te', '--test', nargs=1, dest='test', required=False, help='tab-delimited scores file for hold-out testing')
     parser.add_argument('--verbose', dest='verbose', default=False, action='store_true', required=False, help='verbose')            
     args = parser.parse_args()
 
-    metric = args.metric[0]
+    try:
+        metric = args.metric[0]
+    except:
+        metric = "ig_1st_a"
 
     verbose = args.verbose
         
@@ -77,7 +90,7 @@ if __name__ == '__main__':
         print(train['key'])
         exit()
         
-    x, y = preprocess(train, templates, metric, verbose)
+    x, y, a_train = preprocess(train, templates, metric, verbose)
     if verbose:
         print('')
         
@@ -87,10 +100,14 @@ if __name__ == '__main__':
             test_templates = templates
             x_test = x
             y_test = y
+            a_test = a_train
         else:
             test, test_templates = load_scores(args.test[0], verbose)
-            x_test, y_test = preprocess(test, test_templates, metric, verbose)
+            x_test, y_test, a_test = preprocess(test, test_templates, metric, verbose)
         run_test = True
+        outfile = open('test.gen.tsv', 'w')
+        outfile.write("template\tactual\tgenerated\n")
+        
     except Exception as e:
         run_test = False
     
@@ -103,7 +120,7 @@ if __name__ == '__main__':
     
     for t,template in enumerate(templates):
         n_train[template] = len(x[template])        
-        if n_train[template] > 7:
+        if n_train[template] > 100:
             if verbose:
                 print('\n' + template)
                 print('TRAINING ...')
@@ -129,15 +146,17 @@ if __name__ == '__main__':
                     x_ = sm.add_constant(x_dev)
                     y_pred = result.predict(x_)
                     print("\nVALIDATING ...")
-                    print(classification_report(y_dev, np.digitize(y_pred, bins=[0.5])))                    
+                    print(classification_report(y_dev, np.digitize(y_pred, bins=[0.5])))
+
             except:
                 print('not enough data')
 
             if run_test and template in x_test:
-                if verbose:
-                    print("\nTESTING ...")
                 n_test[template] = len(x_test[template])
-                try:
+                if n_test[template] > 100:
+                    if verbose:
+                        print("\nTESTING ...")
+
                     x_ = sm.add_constant(x_test[template])
                     y_pred = np.digitize(result.predict(x_), bins=[0.5])
                     y_true = y_test[template]
@@ -145,8 +164,11 @@ if __name__ == '__main__':
                         print(classification_report(y_true, np.digitize(y_pred, bins=[0.5])))
                     else:
                         print(metric, template, "accuracy", accuracy_score(y_true, np.digitize(y_pred, bins=[0.5])))
-                except:
-                    pass
+
+                    generate(a_test, template, np.array(y_true), y_pred, outfile, verbose)
+
+    if run_test:
+        outfile.close()
 
 n_all = np.sum(list(n_train.values())) + np.sum(list(n_test.values()))
 print(metric, 'all', 'n', n_all)
