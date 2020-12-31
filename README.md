@@ -5,9 +5,8 @@ This is the code and data repository for our application of information gain to 
 ## source data
 
 *CoNLLU files*
-
- >[CoNLL 2017 Shared Task - Automatically Annotated Raw Texts and Word Embeddings](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1989)  
- >[Universal Dependencies](https://github.com/UniversalDependencies)
+- [CoNLL 2017 Shared Task - Automatically Annotated Raw Texts and Word Embeddings](https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1989)  
+- [Universal Dependencies](https://github.com/UniversalDependencies)
  
  ## workflow
  
