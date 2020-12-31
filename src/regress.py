@@ -105,7 +105,7 @@ if __name__ == '__main__':
             test, test_templates = load_scores(args.test[0], verbose)
             x_test, y_test, a_test = preprocess(test, test_templates, metric, verbose)
         run_test = True
-        outfile = open('test.gen.tsv', 'w')
+        outfile = open('triples.gen', 'w')
         outfile.write("template\tactual\tgenerated\n")
         
     except Exception as e:
