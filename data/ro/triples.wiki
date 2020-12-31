@@ -1,5 +1,6 @@
 abilitate/NOUN,profesional/ADJ,necesar/ADJ
 abilitate/NOUN,tehnic/ADJ,necesar/ADJ
+abilitate/NOUN,conformațional/ADJ,neobișnuit/ADJ
 academie/NOUN,militar/ADJ,general/ADJ
 academie/NOUN,diplomatic/ADJ,internațional/ADJ
 academie/NOUN,tehnic/ADJ,militar/ADJ
@@ -15,6 +16,7 @@ academie/NOUN,militar/ADJ,superior/ADJ
 achiziție/NOUN,public/ADJ,european/ADJ
 acid/NOUN,acetilsalicilic/ADJ,nou/ADJ
 acoperire/NOUN,aerian/ADJ,eficient/ADJ
+acoperire/NOUN,geografic/ADJ,extensiv/ADJ
 acord/NOUN,internațional/ADJ,major/ADJ
 act/NOUN,normativ/ADJ,comunitar/ADJ
 act/NOUN,unic/ADJ,european/ADJ
@@ -25,6 +27,7 @@ act/NOUN,unic/ADJ,european/ADJ
 act/NOUN,unic/ADJ,european/ADJ
 act/NOUN,unic/ADJ,european/ADJ
 act/NOUN,legislativ/ADJ,important/ADJ
+act/NOUN,cognitiv/ADJ,propriu-zis/ADJ
 act/NOUN,normativ/ADJ,specific/ADJ
 act/NOUN,propriu/ADJ,zis/ADJ
 activare/NOUN,emoțional/ADJ,nespecific/ADJ
@@ -68,6 +71,7 @@ activitate/NOUN,cultural/ADJ,public/ADJ
 activitate/NOUN,literar/ADJ,publicistic/ADJ
 activitate/NOUN,publicistic/ADJ,remarcabil/ADJ
 activitate/NOUN,publicistic/ADJ,remarcabil/ADJ
+activitate/NOUN,reflex/ADJ,simplu/ADJ
 activitate/NOUN,nervos/ADJ,superior/ADJ
 activitate/NOUN,nervos/ADJ,superior/ADJ
 activitate/NOUN,nervos/ADJ,superior/ADJ
@@ -86,6 +90,7 @@ acțiune/NOUN,caritabil/ADJ,comun/ADJ
 acțiune/NOUN,uman/ADJ,eroic/ADJ
 acțiune/NOUN,violent/ADJ,imediat/ADJ
 acțiune/NOUN,polițienesc/ADJ,nazist/ADJ
+acțiune/NOUN,corectiv/ADJ,necesar/ADJ
 acțiune/NOUN,poluant/ADJ,puternic/ADJ
 acțiune/NOUN,arab/ADJ,socialist/ADJ
 adevăr/NOUN,istoric/ADJ,dezvăluit/ADJ
@@ -146,6 +151,7 @@ agent/NOUN,termic/ADJ,gazos/ADJ
 agent/NOUN,patogen/ADJ,identificat/ADJ
 agent/NOUN,economic/ADJ,mare/ADJ
 agent/NOUN,economic/ADJ,privat/ADJ
+agent/NOUN,stresor/ADJ,psihic/ADJ
 agent/NOUN,consular/ADJ,rus/ADJ
 agenție/NOUN,spațial/ADJ,american/ADJ
 agenție/NOUN,spațial/ADJ,brazilian/ADJ
@@ -169,8 +175,10 @@ agenție/NOUN,spațial/ADJ,român/ADJ
 agenție/NOUN,telegrafic/ADJ,român/ADJ
 agenție/NOUN,economic/ADJ,românesc/ADJ
 agenție/NOUN,european/ADJ,spațial/ADJ
+agonist/NOUN,muscarinic/ADJ,negativ/ADJ
 agricultură/NOUN,contemporan/ADJ,românesc/ADJ
 agronomie/NOUN,modern/ADJ,românesc/ADJ
+ajutor/NOUN,militar/ADJ,cerut/ADJ
 ajutor/NOUN,militar/ADJ,destinat/ADJ
 ajutor/NOUN,militar/ADJ,egiptean/ADJ
 ajutor/NOUN,militar/ADJ,francez/ADJ
@@ -194,6 +202,8 @@ alegere/NOUN,electoral/ADJ,local/ADJ
 alegere/NOUN,local/ADJ,nou/ADJ
 alegere/NOUN,legislativ/ADJ,palestinian/ADJ
 alegere/NOUN,preliminar/ADJ,prezidențial/ADJ
+algebră/NOUN,liniar/ADJ,modern/ADJ
+algebră/NOUN,liniar/ADJ,modern/ADJ
 alianță/NOUN,politic/ADJ,actual/ADJ
 alianță/NOUN,național/ADJ,democratic/ADJ
 alianță/NOUN,liber/ADJ,european/ADJ
@@ -288,8 +298,10 @@ analiză/NOUN,fundamental/ADJ,comparativ/ADJ
 analiză/NOUN,funcțional/ADJ,contemporan/ADJ
 analiză/NOUN,complex/ADJ,modern/ADJ
 anchetă/NOUN,epidemiologic/ADJ,punctual/ADJ
+anestezic/NOUN,general/ADJ,inhalator/ADJ
 anestezic/NOUN,general/ADJ,intravenos/ADJ
 angajament/NOUN,financiar/ADJ,scadent/ADJ
+animal/NOUN,endemic/ADJ,australian/ADJ
 animal/NOUN,sălbatic/ADJ,frecvent/ADJ
 animal/NOUN,sălbatic/ADJ,mare/ADJ
 anomalie/NOUN,genetic/ADJ,ereditar/ADJ
@@ -298,6 +310,9 @@ ansamblu/NOUN,arhitectural/ADJ,existent/ADJ
 ansamblu/NOUN,cultural/ADJ,german/ADJ
 ansamblu/NOUN,mănăstiresc/ADJ,vechi/ADJ
 antigen/NOUN,proteic/ADJ,comun/ADJ
+antisemitism/NOUN,românesc/ADJ,interbelic/ADJ
+antisemitism/NOUN,activ/ADJ,român/ADJ
+antisemitism/NOUN,rusesc/ADJ,tradițional/ADJ
 antologie/NOUN,ilustrat/ADJ,alcătuit/ADJ
 aparat/NOUN,genital/ADJ,feminin/ADJ
 aparat/NOUN,nazist/ADJ,german/ADJ
@@ -306,11 +321,13 @@ aparat/NOUN,vizual/ADJ,uman/ADJ
 apariție/NOUN,public/ADJ,constant/ADJ
 apartenență/NOUN,local/ADJ,moldovenesc/ADJ
 apetit/NOUN,sexual/ADJ,exagerat/ADJ
+aport/NOUN,caloric/ADJ,cotidian/ADJ
 apă/NOUN,natural/ADJ,belgian/ADJ
 apă/NOUN,industrial/ADJ,cald/ADJ
 apă/NOUN,mare/ADJ,extraordinar/ADJ
 apă/NOUN,teritorial/ADJ,iranian/ADJ
 apă/NOUN,teritorial/ADJ,iranian/ADJ
+apă/NOUN,sărat/ADJ,marin/ADJ
 apă/NOUN,uzat/ADJ,menajer/ADJ
 apă/NOUN,uzat/ADJ,menajer/ADJ
 apă/NOUN,uzat/ADJ,menajer/ADJ
@@ -341,6 +358,7 @@ arhivă/NOUN,cultural/ADJ,român/ADJ
 arhivă/NOUN,militar/ADJ,român/ADJ
 arhivă/NOUN,militar/ADJ,român/ADJ
 arie/NOUN,arheologic/ADJ,actual/ADJ
+arie/NOUN,hipotalamic/ADJ,anterior/ADJ
 arie/NOUN,urban/ADJ,principal/ADJ
 arie/NOUN,natural/ADJ,protejat/ADJ
 arie/NOUN,natural/ADJ,protejat/ADJ
@@ -415,6 +433,7 @@ armată/NOUN,național/ADJ,ucrainean/ADJ
 armată/NOUN,roșu/ADJ,ungar/ADJ
 armată/NOUN,național/ADJ,unic/ADJ
 armată/NOUN,german/ADJ,învins/ADJ
+armonie/NOUN,pre-/ADJ,tonal/ADJ
 armă/NOUN,nuclear/ADJ,convențional/ADJ
 armă/NOUN,nuclear/ADJ,strategic/ADJ
 armă/NOUN,automat/ADJ,ușor/ADJ
@@ -561,6 +580,7 @@ autoritate/NOUN,public/ADJ,local/ADJ
 autoritate/NOUN,public/ADJ,local/ADJ
 autoritate/NOUN,public/ADJ,local/ADJ
 autoritate/NOUN,comunist/ADJ,maghiar/ADJ
+autoritate/NOUN,fascist/ADJ,maghiar/ADJ
 autoritate/NOUN,local/ADJ,maghiar/ADJ
 autoritate/NOUN,militar/ADJ,otoman/ADJ
 autoritate/NOUN,național/ADJ,palestinian/ADJ
@@ -588,6 +608,7 @@ autoritate/NOUN,legislativ/ADJ,suprem/ADJ
 autoritate/NOUN,polițienesc/ADJ,suprem/ADJ
 autoritate/NOUN,religios/ADJ,suprem/ADJ
 autoritate/NOUN,local/ADJ,ucrainean/ADJ
+autoritate/NOUN,fascist/ADJ,ungar/ADJ
 avangardă/NOUN,sovietic/ADJ,mecanizat/ADJ
 avangardă/NOUN,artistic/ADJ,rus/ADJ
 avangardă/NOUN,artistic/ADJ,rus/ADJ
@@ -650,6 +671,7 @@ barieră/NOUN,comercial/ADJ,european/ADJ
 barieră/NOUN,social/ADJ,tradițional/ADJ
 barieră/NOUN,social/ADJ,vechi/ADJ
 bază/NOUN,naval/ADJ,aliat/ADJ
+bază/NOUN,aerian/ADJ,dispersat/ADJ
 bază/NOUN,sportiv/ADJ,nou/ADJ
 bază/NOUN,militar/ADJ,rus/ADJ
 beneficiu/NOUN,terapeutic/ADJ,trecător/ADJ
@@ -1106,6 +1128,9 @@ cadru/NOUN,istoric/ADJ,general/ADJ
 cadru/NOUN,juridic/ADJ,general/ADJ
 cadru/NOUN,epic/ADJ,inițial/ADJ
 cadru/NOUN,epic/ADJ,inițial/ADJ
+cadru/NOUN,financiar/ADJ,multianual/ADJ
+cadru/NOUN,financiar/ADJ,multianual/ADJ
+cadru/NOUN,financiar/ADJ,multianual/ADJ
 cadru/NOUN,financiar/ADJ,precedent/ADJ
 cadru/NOUN,militar/ADJ,superior/ADJ
 cadru/NOUN,didactic/ADJ,universitar/ADJ
@@ -1113,6 +1138,7 @@ cadră/NOUN,didactic/ADJ,corespunzător/ADJ
 cadră/NOUN,didactic/ADJ,tânăr/ADJ
 cadră/NOUN,didactic/ADJ,universitar/ADJ
 calcul/NOUN,numeric/ADJ,intensiv/ADJ
+cale/NOUN,simplu/ADJ,bidirecțional/ADJ
 cale/NOUN,ferată/ADJ,chinezesc/ADJ
 cale/NOUN,ferată/ADJ,elvețian/ADJ
 cale/NOUN,ferată/ADJ,federal/ADJ
@@ -1159,6 +1185,7 @@ calendar/NOUN,rusesc/ADJ,iulian/ADJ
 calendar/NOUN,roman/ADJ,republican/ADJ
 calendar/NOUN,iulian/ADJ,timpuriu/ADJ
 calendar/NOUN,roman/ADJ,universal/ADJ
+calitate/NOUN,curativ/ADJ,deosebit/ADJ
 calitate/NOUN,muzical/ADJ,neobișnuit/ADJ
 calitate/NOUN,intelectual/ADJ,remarcabil/ADJ
 campanie/NOUN,electoral/ADJ,american/ADJ
@@ -1171,10 +1198,12 @@ canon/NOUN,estetic/ADJ,occidental/ADJ
 canon/NOUN,estetic/ADJ,occidental/ADJ
 cantitate/NOUN,mediu/ADJ,anual/ADJ
 capacitate/NOUN,industrial/ADJ,britanic/ADJ
+capacitate/NOUN,cranian/ADJ,complet/ADJ
 capacitate/NOUN,intelectual/ADJ,similar/ADJ
 capacitate/NOUN,colectiv/ADJ,teritorial/ADJ
 capacitate/NOUN,colectiv/ADJ,uman/ADJ
 capacitate/NOUN,termic/ADJ,volumic/ADJ
+capacitate/NOUN,cognitiv/ADJ,înalt/ADJ
 capital/NOUN,social/ADJ,inițial/ADJ
 capital/NOUN,privat/ADJ,românesc/ADJ
 capitală/NOUN,cultural/ADJ,european/ADJ
@@ -1192,6 +1221,7 @@ caracter/NOUN,uman/ADJ,credibil/ADJ
 caracter/NOUN,chimic/ADJ,diferit/ADJ
 caracter/NOUN,exclusiv/ADJ,german/ADJ
 caracter/NOUN,chinezesc/ADJ,respectiv/ADJ
+caracter/NOUN,chinez/ADJ,simplificat/ADJ
 caracter/NOUN,etnic/ADJ,specific/ADJ
 caracteristică/NOUN,esențial/ADJ,comun/ADJ
 caracteristică/NOUN,lingvistic/ADJ,comun/ADJ
@@ -1207,6 +1237,8 @@ carieră/NOUN,public/ADJ,timpuriu/ADJ
 carieră/NOUN,artistic/ADJ,ulterior/ADJ
 carieră/NOUN,didactic/ADJ,universitar/ADJ
 carieră/NOUN,didactic/ADJ,universitar/ADJ
+cariotip/NOUN,uman/ADJ,normal/ADJ
+cariotip/NOUN,uman/ADJ,normal/ADJ
 carte/NOUN,medical/ADJ,indian/ADJ
 carte/NOUN,original/ADJ,publicat/ADJ
 carte/NOUN,românesc/ADJ,vechi/ADJ
@@ -1244,9 +1276,16 @@ cavalerie/NOUN,ușor/ADJ,lituanian/ADJ
 cavalerie/NOUN,ușor/ADJ,muntean/ADJ
 caz/NOUN,social/ADJ,arădean/ADJ
 ceai/NOUN,negru/ADJ,chinezesc/ADJ
+celulă/NOUN,solar/ADJ,amorf/ADJ
 celulă/NOUN,tipic/ADJ,animal/ADJ
+celulă/NOUN,epitelial/ADJ,gastric/ADJ
 celulă/NOUN,solar/ADJ,rigid/ADJ
+celulă/NOUN,nervos/ADJ,senzitiv/ADJ
+celulă/NOUN,epitelial/ADJ,tiroidian/ADJ
+celulă/NOUN,somatic/ADJ,uman/ADJ
+celulă/NOUN,somatic/ADJ,uman/ADJ
 celulă/NOUN,solar/ADJ,utilizat/ADJ
+celulă/NOUN,tipic/ADJ,vegetal/ADJ
 cenaclu/NOUN,literar/ADJ,german/ADJ
 cenaclu/NOUN,timișorean/ADJ,german/ADJ
 centru/NOUN,cultural/ADJ,britanic/ADJ
@@ -1373,12 +1412,17 @@ climat/NOUN,temperat/ADJ,continental/ADJ
 climat/NOUN,temperat/ADJ,oceanic/ADJ
 climă/NOUN,temperat/ADJ,continental/ADJ
 climă/NOUN,blând/ADJ,oceanic/ADJ
+climă/NOUN,tropical/ADJ,umed/ADJ
+clor/NOUN,rezidual/ADJ,liber/ADJ
 club/NOUN,regal/ADJ,român/ADJ
 club/NOUN,cultural/ADJ,sportiv/ADJ
 club/NOUN,sportiv/ADJ,școlar/ADJ
 club/NOUN,sportiv/ADJ,școlar/ADJ
 clădire/NOUN,istoric/ADJ,pierdut/ADJ
+coaliție/NOUN,majoritar/ADJ,menționat/ADJ
+coaliție/NOUN,majoritar/ADJ,menționat/ADJ
 coastă/NOUN,capital/ADJ,existent/ADJ
+coastă/NOUN,nord-vestic/ADJ,tropical/ADJ
 cod/NOUN,fiscal/ADJ,american/ADJ
 cod/NOUN,genetic/ADJ,celular/ADJ
 cod/NOUN,civil/ADJ,german/ADJ
@@ -1568,6 +1612,7 @@ comunitate/NOUN,științific/ADJ,modern/ADJ
 comunitate/NOUN,democratic/ADJ,mondial/ADJ
 comunitate/NOUN,românesc/ADJ,ortodox/ADJ
 comunitate/NOUN,săsesc/ADJ,respectiv/ADJ
+comunitate/NOUN,agricol/ADJ,sedentar/ADJ
 comunitate/NOUN,ortodox/ADJ,sârb/ADJ
 concentrație/NOUN,maxim/ADJ,admis/ADJ
 concentrație/NOUN,alcoolic/ADJ,minim/ADJ
@@ -1583,6 +1628,7 @@ concluzie/NOUN,juridic/ADJ,oficial/ADJ
 concurs/NOUN,sportiv/ADJ,montan/ADJ
 condiție/NOUN,material/ADJ,avantajos/ADJ
 condiție/NOUN,cuantic/ADJ,clasic/ADJ
+condiție/NOUN,meteorologic/ADJ,defavorabil/ADJ
 condiție/NOUN,biologic/ADJ,degradat/ADJ
 condiție/NOUN,meteorologic/ADJ,dificil/ADJ
 condiție/NOUN,meteorologic/ADJ,exterior/ADJ
@@ -1598,6 +1644,7 @@ conducere/NOUN,arab/ADJ,local/ADJ
 conducere/NOUN,militar/ADJ,sovietic/ADJ
 conducere/NOUN,militar/ADJ,sovietic/ADJ
 conducere/NOUN,maghiar/ADJ,stalinist/ADJ
+conduct/NOUN,auditiv/ADJ,osos/ADJ
 conducător/NOUN,politic/ADJ,local/ADJ
 conducător/NOUN,comunist/ADJ,polonez/ADJ
 conducător/NOUN,militar/ADJ,slav/ADJ
@@ -1652,6 +1699,13 @@ construcție/NOUN,special/ADJ,industrial/ADJ
 construcție/NOUN,monumental/ADJ,nou/ADJ
 construcție/NOUN,lingvistic/ADJ,uman/ADJ
 consul/NOUN,general/ADJ,rus/ADJ
+contact/NOUN,sexual/ADJ,anal/ADJ
+contact/NOUN,sexual/ADJ,anal/ADJ
+contact/NOUN,sexual/ADJ,anal/ADJ
+contact/NOUN,sexual/ADJ,anal/ADJ
+contact/NOUN,sexual/ADJ,anal/ADJ
+contact/NOUN,sexual/ADJ,heterosexual/ADJ
+contact/NOUN,sexual/ADJ,heterosexual/ADJ
 contact/NOUN,comercial/ADJ,intens/ADJ
 contact/NOUN,sexual/ADJ,oral/ADJ
 contact/NOUN,direct/ADJ,realizat/ADJ
@@ -1726,6 +1780,8 @@ corp/NOUN,diplomatic/ADJ,românesc/ADJ
 corp/NOUN,spiritual/ADJ,universal/ADJ
 corp/NOUN,omenesc/ADJ,întreg/ADJ
 cortizol/NOUN,plasmatic/ADJ,urinar/ADJ
+cost/NOUN,marginal/ADJ,crescător/ADJ
+cost/NOUN,marginal/ADJ,descrescător/ADJ
 cost/NOUN,uniform/ADJ,standard/ADJ
 cost/NOUN,adițional/ADJ,uriaș/ADJ
 costum/NOUN,popular/ADJ,asemănător/ADJ
@@ -1770,8 +1826,10 @@ critică/NOUN,literar/ADJ,românesc/ADJ
 critică/NOUN,literar/ADJ,românesc/ADJ
 critică/NOUN,literar/ADJ,românesc/ADJ
 critică/NOUN,literar/ADJ,românesc/ADJ
+critică/NOUN,literar/ADJ,suedez/ADJ
 criză/NOUN,spiritual/ADJ,actual/ADJ
 criză/NOUN,economic/ADJ,acut/ADJ
+criză/NOUN,logistic/ADJ,aliat/ADJ
 criză/NOUN,financiar/ADJ,asiatic/ADJ
 criză/NOUN,financiar/ADJ,asiatic/ADJ
 criză/NOUN,economic/ADJ,global/ADJ
@@ -1821,11 +1879,13 @@ cultură/NOUN,scris/ADJ,românesc/ADJ
 cultură/NOUN,scris/ADJ,românesc/ADJ
 cultură/NOUN,spiritual/ADJ,românesc/ADJ
 cultură/NOUN,național/ADJ,scris/ADJ
+cultură/NOUN,agricol/ADJ,suedez/ADJ
 cultură/NOUN,european/ADJ,superior/ADJ
 cultură/NOUN,european/ADJ,timpuriu/ADJ
 cultură/NOUN,agricol/ADJ,tipic/ADJ
 cultură/NOUN,popular/ADJ,tradițional/ADJ
 cultură/NOUN,dacic/ADJ,târziu/ADJ
+cultură/NOUN,celular/ADJ,vegetal/ADJ
 cultură/NOUN,român/ADJ,viu/ADJ
 cunoștință/NOUN,uman/ADJ,existent/ADJ
 cunoștință/NOUN,geografic/ADJ,modern/ADJ
@@ -1840,6 +1900,7 @@ curent/NOUN,politic/ADJ,decis/ADJ
 curent/NOUN,muzical/ADJ,denumit/ADJ
 curent/NOUN,literar/ADJ,divers/ADJ
 curent/NOUN,electric/ADJ,generat/ADJ
+curent/NOUN,electric/ADJ,indus/ADJ
 curent/NOUN,electric/ADJ,instantaneu/ADJ
 curent/NOUN,mozaic/ADJ,ortodox/ADJ
 curent/NOUN,electric/ADJ,produs/ADJ
@@ -1875,6 +1936,7 @@ cuvânt/NOUN,echivalent/ADJ,românesc/ADJ
 câine/NOUN,ciobănesc/ADJ,german/ADJ
 câmp/NOUN,magnetic/ADJ,alternativ/ADJ
 câmp/NOUN,magnetic/ADJ,aplicat/ADJ
+câmp/NOUN,morfogenetic/ADJ,biofizic/ADJ
 câmp/NOUN,magnetic/ADJ,exterior/ADJ
 câmp/NOUN,electric/ADJ,extern/ADJ
 câmp/NOUN,electric/ADJ,extern/ADJ
@@ -1882,6 +1944,7 @@ câmp/NOUN,electric/ADJ,extern/ADJ
 câmp/NOUN,electric/ADJ,intern/ADJ
 câmp/NOUN,magnetic/ADJ,orizontal/ADJ
 câmp/NOUN,electromagnetic/ADJ,prezent/ADJ
+câmp/NOUN,magnetic/ADJ,pulsatoriu/ADJ
 câmp/NOUN,magnetic/ADJ,puternic/ADJ
 câmp/NOUN,intelectual/ADJ,românesc/ADJ
 câmp/NOUN,magnetic/ADJ,terestru/ADJ
@@ -1898,6 +1961,9 @@ cântec/NOUN,popular/ADJ,românesc/ADJ
 cântec/NOUN,popular/ADJ,românesc/ADJ
 cântec/NOUN,patriotic/ADJ,rusesc/ADJ
 cântec/NOUN,popular/ADJ,tradițional/ADJ
+cîmp/NOUN,magnetic/ADJ,coercitiv/ADJ
+cîmp/NOUN,magnetic/ADJ,exterior/ADJ
+cîmp/NOUN,semantic/ADJ,referitor/ADJ
 călăreț/NOUN,voluntar/ADJ,selectat/ADJ
 dans/NOUN,popular/ADJ,caracteristic/ADJ
 dans/NOUN,popular/ADJ,românesc/ADJ
@@ -1910,6 +1976,8 @@ dată/NOUN,geografic/ADJ,liber/ADJ
 dată/NOUN,biografic/ADJ,selectiv/ADJ
 dată/NOUN,hidrologic/ADJ,suficient/ADJ
 debit/NOUN,mediu/ADJ,anual/ADJ
+debit/NOUN,mediu/ADJ,multianual/ADJ
+debit/NOUN,mediu/ADJ,multianual/ADJ
 debit/NOUN,maxim/ADJ,înregistrat/ADJ
 debut/NOUN,radiofonic/ADJ,real/ADJ
 debut/NOUN,editorial/ADJ,timpuriu/ADJ
@@ -1932,6 +2000,7 @@ departament/NOUN,constituțional/ADJ,legislativ/ADJ
 depozit/NOUN,geologic/ADJ,respectiv/ADJ
 deschidere/NOUN,numeric/ADJ,mic/ADJ
 descoperire/NOUN,nou/ADJ,arheologic/ADJ
+descriere/NOUN,arhitectonic/ADJ,amănunțit/ADJ
 desen/NOUN,papilar/ADJ,digital/ADJ
 desert/NOUN,similar/ADJ,rece/ADJ
 design/NOUN,grafic/ADJ,japonez/ADJ
@@ -1957,6 +2026,7 @@ dialect/NOUN,vorbit/ADJ,actual/ADJ
 dialect/NOUN,grecesc/ADJ,diferit/ADJ
 dialect/NOUN,regional/ADJ,francez/ADJ
 dialect/NOUN,slav/ADJ,occidental/ADJ
+dictator/NOUN,fascist/ADJ,german/ADJ
 dicționar/NOUN,sexual/ADJ,japonez/ADJ
 diferențiere/NOUN,etnic/ADJ,analog/ADJ
 diferență/NOUN,structural/ADJ,clar/ADJ
@@ -1971,12 +2041,15 @@ dinar/NOUN,maghiar/ADJ,contemporan/ADJ
 diplomație/NOUN,românesc/ADJ,modern/ADJ
 director/NOUN,general/ADJ,tehnic/ADJ
 direcție/NOUN,național/ADJ,maghiar/ADJ
+direcție/NOUN,topografic/ADJ,militar/ADJ
 direcție/NOUN,general/ADJ,politic/ADJ
 disc/NOUN,dur/ADJ,fizic/ADJ
 disc/NOUN,circular/ADJ,respectiv/ADJ
 disc/NOUN,dur/ADJ,virtual/ADJ
 disc/NOUN,lunar/ADJ,întunecat/ADJ
 discurs/NOUN,politic/ADJ,pompos/ADJ
+disgenezie/NOUN,gonadic/ADJ,pur/ADJ
+disgenezie/NOUN,gonadic/ADJ,pur/ADJ
 distanță/NOUN,focal/ADJ,infinit/ADJ
 distincție/NOUN,fundamental/ADJ,hegelian/ADJ
 distincție/NOUN,militar/ADJ,onorific/ADJ
@@ -2026,6 +2099,7 @@ distrugere/NOUN,economic/ADJ,mare/ADJ
 divizare/NOUN,administrativ/ADJ,actual/ADJ
 divizie/NOUN,mecanizat/ADJ,capabil/ADJ
 divizie/NOUN,militar/ADJ,teritorial/ADJ
+diviziune/NOUN,instrumental/ADJ,extins/ADJ
 diviziune/NOUN,celular/ADJ,indirect/ADJ
 diviziune/NOUN,teritorial/ADJ,tradițional/ADJ
 dobândă/NOUN,minim/ADJ,acceptat/ADJ
@@ -2067,6 +2141,7 @@ dramaturgie/NOUN,clasic/ADJ,românesc/ADJ
 dramaturgie/NOUN,național/ADJ,rus/ADJ
 dramă/NOUN,rural/ADJ,poetic/ADJ
 dreaptă/NOUN,liberal/ADJ,republican/ADJ
+drenaj/NOUN,superficial/ADJ,coroborat/ADJ
 drept/NOUN,cultural/ADJ,deplin/ADJ
 drept/NOUN,uman/ADJ,elementar/ADJ
 drept/NOUN,feudal/ADJ,francez/ADJ
@@ -2118,18 +2193,22 @@ economie/NOUN,planificat/ADJ,sovietic/ADJ
 economie/NOUN,planificat/ADJ,sovietic/ADJ
 economie/NOUN,rural/ADJ,tradițional/ADJ
 ecuație/NOUN,polar/ADJ,elementar/ADJ
+ecuație/NOUN,liniar/ADJ,omogen/ADJ
 ecuație/NOUN,diferențial/ADJ,ordinar/ADJ
 ecuație/NOUN,diferențial/ADJ,ordinar/ADJ
 ecuație/NOUN,diferențial/ADJ,ordinar/ADJ
 ecuație/NOUN,diferențial/ADJ,ordinar/ADJ
 ecuație/NOUN,derivat/ADJ,parțial/ADJ
+eczemă/NOUN,umed/ADJ,alimentar/ADJ
 edem/NOUN,cerebral/ADJ,mixt/ADJ
 ediție/NOUN,național/ADJ,specific/ADJ
 educație/NOUN,superior/ADJ,brazilian/ADJ
 educație/NOUN,național/ADJ,francez/ADJ
 educație/NOUN,religios/ADJ,obligatoriu/ADJ
 educație/NOUN,religios/ADJ,ortodox/ADJ
+efect/NOUN,fiziologic/ADJ,colateral/ADJ
 efect/NOUN,negativ/ADJ,cunoscut/ADJ
+efect/NOUN,distructiv/ADJ,excesiv/ADJ
 efect/NOUN,fotoelectric/ADJ,extern/ADJ
 efect/NOUN,fotoelectric/ADJ,extern/ADJ
 efect/NOUN,fotoelectric/ADJ,extern/ADJ
@@ -2146,6 +2225,7 @@ efect/NOUN,spațial/ADJ,optic/ADJ
 efect/NOUN,secundar/ADJ,posibil/ADJ
 efect/NOUN,advers/ADJ,sever/ADJ
 efect/NOUN,farmacologic/ADJ,urmărit/ADJ
+efect/NOUN,fenotipic/ADJ,vizibil/ADJ
 efectiv/NOUN,armat/ADJ,european/ADJ
 efort/NOUN,militar/ADJ,enorm/ADJ
 efort/NOUN,fizic/ADJ,extraordinar/ADJ
@@ -2200,6 +2280,10 @@ emisiune/NOUN,american/ADJ,importat/ADJ
 enclavă/NOUN,etnic/ADJ,tradițional/ADJ
 energie/NOUN,solar/ADJ,german/ADJ
 energie/NOUN,electric/ADJ,necesar/ADJ
+energie/NOUN,potențial/ADJ,osmotic/ADJ
+energie/NOUN,potențial/ADJ,osmotic/ADJ
+energie/NOUN,potențial/ADJ,osmotic/ADJ
+energie/NOUN,primordial/ADJ,prezent/ADJ
 energie/NOUN,electric/ADJ,produs/ADJ
 energie/NOUN,nuclear/ADJ,produs/ADJ
 energie/NOUN,suplimentar/ADJ,produs/ADJ
@@ -2224,9 +2308,11 @@ epocă/NOUN,întunecat/ADJ,grecesc/ADJ
 eroare/NOUN,istoric/ADJ,existent/ADJ
 eroare/NOUN,circular/ADJ,probabil/ADJ
 erou/NOUN,istoric/ADJ,cunoscut/ADJ
+erupție/NOUN,rubeolic/ADJ,clasic/ADJ
 eseu/NOUN,publicat/ADJ,postum/ADJ
 eseu/NOUN,critic/ADJ,selectiv/ADJ
 etaj/NOUN,geologic/ADJ,respectiv/ADJ
+etnie/NOUN,majoritar/ADJ,român/ADJ
 eu/NOUN,liric/ADJ,feminin/ADJ
 ev/NOUN,mediu/ADJ,bizantin/ADJ
 ev/NOUN,mediu/ADJ,creștin/ADJ
@@ -2310,6 +2396,7 @@ expansiune/NOUN,colonial/ADJ,francez/ADJ
 expansiune/NOUN,teritorial/ADJ,maxim/ADJ
 experiență/NOUN,sexual/ADJ,anterior/ADJ
 experiență/NOUN,psihologic/ADJ,direct/ADJ
+experiență/NOUN,cognitiv/ADJ,dobândit/ADJ
 experiență/NOUN,artistic/ADJ,unic/ADJ
 experiment/NOUN,cantitativ/ADJ,inițial/ADJ
 expert/NOUN,tehnic/ADJ,judiciar/ADJ
@@ -2317,6 +2404,7 @@ explicație/NOUN,științific/ADJ,naturalist/ADJ
 exploatare/NOUN,agricol/ADJ,mecanizat/ADJ
 expresie/NOUN,literar/ADJ,adevărat/ADJ
 expresie/NOUN,drept/ADJ,comercial/ADJ
+expresie/NOUN,trigonometric/ADJ,hiperbolic/ADJ
 expresie/NOUN,emoțional/ADJ,penetrant/ADJ
 expresie/NOUN,dublu/ADJ,standard/ADJ
 expresie/NOUN,lingvistic/ADJ,tradițional/ADJ
@@ -2364,9 +2452,11 @@ farsă/NOUN,mecanic/ADJ,complicat/ADJ
 fată/NOUN,tânăr/ADJ,necăsătorit/ADJ
 faună/NOUN,sălbatic/ADJ,mic/ADJ
 fază/NOUN,apos/ADJ,continuu/ADJ
+fațetă/NOUN,articular/ADJ,mijlociu/ADJ
 federație/NOUN,ecvestru/ADJ,internațional/ADJ
 federație/NOUN,sportiv/ADJ,român/ADJ
 federație/NOUN,sportiv/ADJ,român/ADJ
+femeie/NOUN,rămâne/ADJ,singur/ADJ
 fenomen/NOUN,major/ADJ,adiacent/ADJ
 fenomen/NOUN,artistic/ADJ,barbian/ADJ
 fenomen/NOUN,fizic/ADJ,cunoscut/ADJ
@@ -2386,6 +2476,7 @@ fermă/NOUN,țărănesc/ADJ,individual/ADJ
 fetiță/NOUN,nou/ADJ,născut/ADJ
 fibră/NOUN,optic/ADJ,anterior/ADJ
 fibră/NOUN,muscular/ADJ,neted/ADJ
+fibră/NOUN,nervos/ADJ,somatic/ADJ
 fier/NOUN,metalic/ADJ,brut/ADJ
 ființă/NOUN,uman/ADJ,arhaic/ADJ
 ființă/NOUN,uman/ADJ,individual/ADJ
@@ -2419,6 +2510,7 @@ flotă/NOUN,combinat/ADJ,japonez/ADJ
 flotă/NOUN,comercial/ADJ,japonez/ADJ
 flotă/NOUN,militar/ADJ,rea/ADJ
 flotă/NOUN,comercial/ADJ,român/ADJ
+fluture/NOUN,mare/ADJ,tropical/ADJ
 flux/NOUN,sanguin/ADJ,cerebral/ADJ
 flux/NOUN,aerian/ADJ,constant/ADJ
 flux/NOUN,turistic/ADJ,important/ADJ
@@ -2451,6 +2543,8 @@ fond/NOUN,financiar/ADJ,necesar/ADJ
 fond/NOUN,financiar/ADJ,public/ADJ
 fond/NOUN,național/ADJ,român/ADJ
 for/NOUN,olimpic/ADJ,român/ADJ
+formație/NOUN,vegetal/ADJ,caracteristic/ADJ
+formație/NOUN,vegetal/ADJ,caracteristic/ADJ
 formație/NOUN,geologic/ADJ,deosebit/ADJ
 formațiune/NOUN,politic/ADJ,românesc/ADJ
 formațiune/NOUN,politic/ADJ,românesc/ADJ
@@ -2680,6 +2774,7 @@ forță/NOUN,politic/ADJ,sârb/ADJ
 forță/NOUN,social/ADJ,tradițional/ADJ
 forță/NOUN,armat/ADJ,unit/ADJ
 forță/NOUN,sovietic/ADJ,vulnerabil/ADJ
+fosfatază/NOUN,alcalin/ADJ,crescut/ADJ
 fotbal/NOUN,feroviar/ADJ,clujean/ADJ
 fotbal/NOUN,românesc/ADJ,interbelic/ADJ
 franc/NOUN,african/ADJ,legat/ADJ
@@ -2713,6 +2808,7 @@ frunză/NOUN,tânăr/ADJ,recoltat/ADJ
 functie/NOUN,endotelial/ADJ,normal/ADJ
 funcție/NOUN,sintactic/ADJ,diferit/ADJ
 funcție/NOUN,uman/ADJ,distinct/ADJ
+funcție/NOUN,trigonometric/ADJ,hiperbolic/ADJ
 funcție/NOUN,militar/ADJ,important/ADJ
 funcție/NOUN,artistic/ADJ,internațional/ADJ
 funcție/NOUN,administrativ/ADJ,local/ADJ
@@ -2855,6 +2951,11 @@ fundație/NOUN,cultural/ADJ,român/ADJ
 fundație/NOUN,cultural/ADJ,român/ADJ
 fundație/NOUN,cultural/ADJ,român/ADJ
 furnizor/NOUN,industrial/ADJ,principal/ADJ
+fus/NOUN,noradrenergic/ADJ,dorsal/ADJ
+fus/NOUN,orar/ADJ,real/ADJ
+fuziune/NOUN,nuclear/ADJ,controlat/ADJ
+ganglion/NOUN,limfatic/ADJ,regional/ADJ
+ganglion/NOUN,limfatic/ADJ,subepicardic/ADJ
 garanție/NOUN,real/ADJ,mobiliar/ADJ
 gardă/NOUN,național/ADJ,aerian/ADJ
 gardă/NOUN,național/ADJ,aerian/ADJ
@@ -2864,6 +2965,8 @@ gardă/NOUN,imperial/ADJ,rus/ADJ
 gaură/NOUN,negru/ADJ,imens/ADJ
 gaz/NOUN,perfect/ADJ,cuantic/ADJ
 geană/NOUN,protector/ADJ,lung/ADJ
+gen/NOUN,muzical/ADJ,abordat/ADJ
+gen/NOUN,muzical/ADJ,abordat/ADJ
 gen/NOUN,muzical/ADJ,adoptat/ADJ
 gen/NOUN,muzical/ADJ,adoptat/ADJ
 gen/NOUN,cinematografic/ADJ,distinct/ADJ
@@ -2873,11 +2976,13 @@ gen/NOUN,liric/ADJ,românesc/ADJ
 generație/NOUN,nou/ADJ,românesc/ADJ
 generație/NOUN,nou/ADJ,românesc/ADJ
 geografie/NOUN,spiritual/ADJ,român/ADJ
+geometrie/NOUN,hiperbolic/ADJ,neeuclidian/ADJ
 geometrie/NOUN,analitic/ADJ,plan/ADJ
 germană/NOUN,standard/ADJ,elvețian/ADJ
 gh./NOUN,botanic/ADJ,sistematic/ADJ
 gimnastică/NOUN,artistic/ADJ,feminin/ADJ
 gimnastică/NOUN,feminin/ADJ,românesc/ADJ
+glandă/NOUN,salivar/ADJ,dublu/ADJ
 glandă/NOUN,endocrin/ADJ,principal/ADJ
 glucoză/NOUN,administrat/ADJ,oral/ADJ
 gol/NOUN,rezultat/ADJ,final/ADJ
@@ -2926,6 +3031,7 @@ grup/NOUN,etnic/ADJ,german/ADJ
 grup/NOUN,evreiesc/ADJ,independent/ADJ
 grup/NOUN,independent/ADJ,internațional/ADJ
 grup/NOUN,etnic/ADJ,major/ADJ
+grup/NOUN,etnic/ADJ,majoritar/ADJ
 grup/NOUN,bulgar/ADJ,oriental/ADJ
 grup/NOUN,etnic/ADJ,principal/ADJ
 grup/NOUN,religios/ADJ,romano-catolic/ADJ
@@ -3005,6 +3111,12 @@ haină/NOUN,specific/ADJ,nobil/ADJ
 haină/NOUN,indian/ADJ,tradițional/ADJ
 han/NOUN,românesc/ADJ,vechi/ADJ
 hartă/NOUN,fizic/ADJ,general/ADJ
+hartă/NOUN,topografic/ADJ,sovietic/ADJ
+hartă/NOUN,topografic/ADJ,sovietic/ADJ
+hartă/NOUN,topografic/ADJ,sovietic/ADJ
+hartă/NOUN,topografic/ADJ,sovietic/ADJ
+hartă/NOUN,topografic/ADJ,sovietic/ADJ
+hartă/NOUN,topografic/ADJ,sovietic/ADJ
 hemoragie/NOUN,cerebral/ADJ,fatal/ADJ
 hepatită/NOUN,cronic/ADJ,viral/ADJ
 hepatită/NOUN,cronic/ADJ,viral/ADJ
@@ -3059,6 +3171,7 @@ imperiu/NOUN,colonial/ADJ,francez/ADJ
 imperiu/NOUN,colonial/ADJ,francez/ADJ
 imperiu/NOUN,colonial/ADJ,francez/ADJ
 imperiu/NOUN,colonial/ADJ,francez/ADJ
+imperiu/NOUN,fascist/ADJ,italian/ADJ
 imperiu/NOUN,colonial/ADJ,olandez/ADJ
 imperiu/NOUN,colonial/ADJ,olandez/ADJ
 imperiu/NOUN,maritim/ADJ,portughez/ADJ
@@ -3106,6 +3219,7 @@ influență/NOUN,cert/ADJ,german/ADJ
 influență/NOUN,nociv/ADJ,occidental/ADJ
 influență/NOUN,cultural/ADJ,străin/ADJ
 influență/NOUN,muzical/ADJ,vestic/ADJ
+influență/NOUN,climatic/ADJ,întâlnit/ADJ
 informație/NOUN,nutrițional/ADJ,afișat/ADJ
 informație/NOUN,biografic/ADJ,general/ADJ
 informație/NOUN,genetic/ADJ,necesar/ADJ
@@ -3116,6 +3230,7 @@ infrastructură/NOUN,feroviar/ADJ,public/ADJ
 infrastructură/NOUN,feroviar/ADJ,public/ADJ
 inginer/NOUN,militar/ADJ,britanic/ADJ
 inginer/NOUN,regal/ADJ,britanic/ADJ
+inginerie/NOUN,economic/ADJ,industrial/ADJ
 ingredient/NOUN,biologic/ADJ,activ/ADJ
 inhibiție/NOUN,activ/ADJ,intern/ADJ
 inspector/NOUN,general/ADJ,financiar/ADJ
@@ -3129,6 +3244,7 @@ instalație/NOUN,tehnic/ADJ,popular/ADJ
 instanță/NOUN,judecătoresc/ADJ,obișnuit/ADJ
 instanță/NOUN,judecătoresc/ADJ,suprem/ADJ
 instinct/NOUN,criminal/ADJ,înnăscut/ADJ
+institut/NOUN,suedez/ADJ,american/ADJ
 institut/NOUN,militar/ADJ,austro-ungar/ADJ
 institut/NOUN,meteorologic/ADJ,central/ADJ
 institut/NOUN,meteorologic/ADJ,central/ADJ
@@ -3201,6 +3317,7 @@ instrument/NOUN,egiptean/ADJ,tradițional/ADJ
 insuficiență/NOUN,renal/ADJ,acut/ADJ
 insuficiență/NOUN,venos/ADJ,cronic/ADJ
 insuficiență/NOUN,funcțional/ADJ,multiplu/ADJ
+insuficiență/NOUN,gonadic/ADJ,secundar/ADJ
 insulă/NOUN,principal/ADJ,grecesc/ADJ
 integrare/NOUN,monetar/ADJ,european/ADJ
 intelectualitate/NOUN,liberal/ADJ,maghiar/ADJ
@@ -3242,6 +3359,7 @@ istoriografie/NOUN,romantic/ADJ,german/ADJ
 istoriografie/NOUN,rus/ADJ,modern/ADJ
 istoriografie/NOUN,militar/ADJ,sovietic/ADJ
 izolație/NOUN,termic/ADJ,rupt/ADJ
+izotop/NOUN,radioactiv/ADJ,artificial/ADJ
 izotop/NOUN,relativ/ADJ,inofensiv/ADJ
 izvoară/NOUN,natural/ADJ,existent/ADJ
 izvor/NOUN,bibliografic/ADJ,privitor/ADJ
@@ -3264,6 +3382,8 @@ justiție/NOUN,contemporan/ADJ,român/ADJ
 justiție/NOUN,contemporan/ADJ,român/ADJ
 justiție/NOUN,contemporan/ADJ,român/ADJ
 lanț/NOUN,carpatic/ADJ,românesc/ADJ
+lanț/NOUN,nervos/ADJ,ventral/ADJ
+lanț/NOUN,nervos/ADJ,ventral/ADJ
 lanț/NOUN,montan/ADJ,înalt/ADJ
 lapte/NOUN,matern/ADJ,uman/ADJ
 latură/NOUN,corespunzător/ADJ,proporțional/ADJ
@@ -3296,6 +3416,8 @@ legătură/NOUN,chimic/ADJ,nou/ADJ
 legătură/NOUN,sentimental/ADJ,semnificativ/ADJ
 legătură/NOUN,extern/ADJ,vechi/ADJ
 legătură/NOUN,direct/ADJ,zilnic/ADJ
+leucemie/NOUN,acut/ADJ,limfatic/ADJ
+leucemie/NOUN,cronic/ADJ,limfatic/ADJ
 leucemie/NOUN,acut/ADJ,mieloblastic/ADJ
 leucemie/NOUN,cronic/ADJ,mieloblastic/ADJ
 lexic/NOUN,arab/ADJ,clasic/ADJ
@@ -3503,6 +3625,7 @@ limbă/NOUN,romanic/ADJ,vestic/ADJ
 limbă/NOUN,romanic/ADJ,vestic/ADJ
 limbă/NOUN,romanic/ADJ,înrudit/ADJ
 limbă/NOUN,nou/ADJ,învățat/ADJ
+limfocită/NOUN,matur/ADJ,naiv/ADJ
 limită/NOUN,maxim/ADJ,admis/ADJ
 limită/NOUN,maxim/ADJ,admis/ADJ
 limită/NOUN,maxim/ADJ,admis/ADJ
@@ -3576,6 +3699,7 @@ literatură/NOUN,modern/ADJ,român/ADJ
 literatură/NOUN,modern/ADJ,român/ADJ
 literatură/NOUN,didactic/ADJ,românesc/ADJ
 literatură/NOUN,contemporan/ADJ,rus/ADJ
+literatură/NOUN,portughez/ADJ,scrie/ADJ
 literatură/NOUN,latin/ADJ,timpuriu/ADJ
 literatură/NOUN,modern/ADJ,timpuriu/ADJ
 literatură/NOUN,lituanian/ADJ,vechi/ADJ
@@ -3603,12 +3727,14 @@ liturghie/NOUN,tradițional/ADJ,roman/ADJ
 loc/NOUN,turistic/ADJ,important/ADJ
 loc/NOUN,rămas/ADJ,liber/ADJ
 loc/NOUN,rămas/ADJ,vacant/ADJ
+loc/NOUN,rămâne/ADJ,vacant/ADJ
 localitate/NOUN,component/ADJ,administrativ/ADJ
 localitate/NOUN,component/ADJ,administrativ/ADJ
 localitate/NOUN,important/ADJ,belgian/ADJ
 localitate/NOUN,turistic/ADJ,internațional/ADJ
 localitate/NOUN,istoric/ADJ,transilvănean/ADJ
 localitate/NOUN,propriu/ADJ,zis/ADJ
+locuitor/NOUN,originar/ADJ,amerindian/ADJ
 locuitor/NOUN,autohton/ADJ,român/ADJ
 logică/NOUN,grec/ADJ,antic/ADJ
 lovitură/NOUN,principal/ADJ,sovietic/ADJ
@@ -3650,13 +3776,17 @@ lungime/NOUN,maxim/ADJ,admis/ADJ
 luptă/NOUN,aerian/ADJ,clasic/ADJ
 luptă/NOUN,legal/ADJ,interminabil/ADJ
 luptă/NOUN,politic/ADJ,intern/ADJ
+lupus/NOUN,eritematos/ADJ,sistemic/ADJ
+lupus/NOUN,eritematos/ADJ,sistemic/ADJ
 lăcaș/NOUN,cult/ADJ,unit/ADJ
 magazin/NOUN,universal/ADJ,actual/ADJ
 maimuță/NOUN,actual/ADJ,mare/ADJ
 maimuță/NOUN,actual/ADJ,mare/ADJ
 majoritate/NOUN,ortodox/ADJ,evreiesc/ADJ
+majoritate/NOUN,parlamentar/ADJ,nou-format/ADJ
 majoritate/NOUN,armean/ADJ,relativ/ADJ
 majoritate/NOUN,relativ/ADJ,săsesc/ADJ
+malformație/NOUN,congenital/ADJ,cardiovascular/ADJ
 manifestare/NOUN,cultural/ADJ,amplu/ADJ
 manifestare/NOUN,cultural/ADJ,important/ADJ
 manifestare/NOUN,tradițional/ADJ,local/ADJ
@@ -3674,6 +3804,7 @@ manifestare/NOUN,tradițional/ADJ,local/ADJ
 manifestare/NOUN,tradițional/ADJ,local/ADJ
 manifestare/NOUN,tradițional/ADJ,local/ADJ
 manifestare/NOUN,tradițional/ADJ,local/ADJ
+manifestare/NOUN,mintal/ADJ,morbid/ADJ
 manifestare/NOUN,clinic/ADJ,predominant/ADJ
 manifestare/NOUN,antisemit/ADJ,recent/ADJ
 manifestare/NOUN,cultural/ADJ,românesc/ADJ
@@ -3790,6 +3921,7 @@ material/NOUN,folcloric/ADJ,local/ADJ
 material/NOUN,prim/ADJ,local/ADJ
 material/NOUN,numit/ADJ,mas/ADJ
 material/NOUN,sintetic/ADJ,modern/ADJ
+material/NOUN,vegetal/ADJ,mort/ADJ
 material/NOUN,textil/ADJ,oriental/ADJ
 material/NOUN,genetic/ADJ,suplimentar/ADJ
 material/NOUN,genetic/ADJ,uman/ADJ
@@ -3809,6 +3941,7 @@ mecanică/NOUN,statistic/ADJ,clasic/ADJ
 mecanism/NOUN,democratic/ADJ,existent/ADJ
 mecanism/NOUN,economic/ADJ,roman/ADJ
 mecanism/NOUN,politic/ADJ,unic/ADJ
+mecanism/NOUN,neuro-endocrin/ADJ,vegetativ/ADJ
 mediator/NOUN,chimic/ADJ,specific/ADJ
 medic/NOUN,european/ADJ,medieval/ADJ
 medicament/NOUN,antipsihotic/ADJ,nou/ADJ
@@ -3823,6 +3956,7 @@ medie/NOUN,intelectual/ADJ,bucureștean/ADJ
 medie/NOUN,zilnic/ADJ,efectiv/ADJ
 medie/NOUN,lunar/ADJ,maxim/ADJ
 medie/NOUN,optic/ADJ,modern/ADJ
+medie/NOUN,lunar/ADJ,multianual/ADJ
 medie/NOUN,lunar/ADJ,pozitiv/ADJ
 medie/NOUN,maxim/ADJ,zilnic/ADJ
 mediu/NOUN,urban/ADJ,actual/ADJ
@@ -3831,6 +3965,7 @@ mediu/NOUN,artistic/ADJ,local/ADJ
 mediu/NOUN,zilnic/ADJ,maxim/ADJ
 mediu/NOUN,literar/ADJ,parizian/ADJ
 mediu/NOUN,interstelar/ADJ,înconjurător/ADJ
+mediu/NOUN,ostil/ADJ,întâlnit/ADJ
 membrană/NOUN,celular/ADJ,bacterian/ADJ
 membru/NOUN,viitor/ADJ,potențial/ADJ
 membru/NOUN,viitor/ADJ,potențial/ADJ
@@ -3850,6 +3985,7 @@ metodă/NOUN,științific/ADJ,modern/ADJ
 metodă/NOUN,științific/ADJ,modern/ADJ
 metodă/NOUN,științific/ADJ,riguros/ADJ
 mic/NOUN,producător/ADJ,agricol/ADJ
+mic/NOUN,motor/ADJ,experimental/ADJ
 mic/NOUN,nobil/ADJ,sărac/ADJ
 migrație/NOUN,forțat/ADJ,internațional/ADJ
 mijloc/NOUN,auto/ADJ,local/ADJ
@@ -3885,6 +4021,7 @@ mitropolie/NOUN,ortodox/ADJ,român/ADJ
 mitropolie/NOUN,ortodox/ADJ,român/ADJ
 miză/NOUN,maxim/ADJ,admis/ADJ
 mișcare/NOUN,clasic/ADJ,actual/ADJ
+mișcare/NOUN,diurn/ADJ,aparent/ADJ
 mișcare/NOUN,propriu/ADJ,aparent/ADJ
 mișcare/NOUN,muncitoresc/ADJ,arădean/ADJ
 mișcare/NOUN,separatist/ADJ,basc/ADJ
@@ -3894,6 +4031,7 @@ mișcare/NOUN,comunist/ADJ,internațional/ADJ
 mișcare/NOUN,suprarealist/ADJ,internațional/ADJ
 mișcare/NOUN,suprarealist/ADJ,internațional/ADJ
 mișcare/NOUN,suprarealist/ADJ,internațional/ADJ
+mișcare/NOUN,fascist/ADJ,italian/ADJ
 mișcare/NOUN,național/ADJ,moldovenesc/ADJ
 mișcare/NOUN,național/ADJ,moldovenesc/ADJ
 mișcare/NOUN,comunist/ADJ,mondial/ADJ
@@ -3910,6 +4048,9 @@ mișcare/NOUN,legionar/ADJ,trecut/ADJ
 mișcare/NOUN,artistic/ADJ,ulterior/ADJ
 mișcare/NOUN,național/ADJ,unit/ADJ
 mișcare/NOUN,național/ADJ,unit/ADJ
+mobilitate/NOUN,articular/ADJ,subtalar/ADJ
+mobilitate/NOUN,excesiv/ADJ,subtalar/ADJ
+mobilizare/NOUN,economic/ADJ,total/ADJ
 mod/NOUN,viu/ADJ,colorat/ADJ
 mod/NOUN,remarcabil/ADJ,produs/ADJ
 model/NOUN,artistic/ADJ,asemănător/ADJ
@@ -3925,6 +4066,7 @@ modificare/NOUN,vizual/ADJ,important/ADJ
 modificare/NOUN,organic/ADJ,major/ADJ
 modificare/NOUN,politic/ADJ,major/ADJ
 modificare/NOUN,electrolitic/ADJ,menționat/ADJ
+modul/NOUN,logistic/ADJ,multifuncțional/ADJ
 moment/NOUN,istoric/ADJ,actual/ADJ
 monarhie/NOUN,habsburgic/ADJ,austriac/ADJ
 monarhie/NOUN,ereditar/ADJ,constituțional/ADJ
@@ -3998,6 +4140,7 @@ muzică/NOUN,arab/ADJ,clasic/ADJ
 muzică/NOUN,contemporan/ADJ,clujean/ADJ
 muzică/NOUN,viguros/ADJ,codificat/ADJ
 muzică/NOUN,clasic/ADJ,georgian/ADJ
+muzică/NOUN,popular/ADJ,instrumental/ADJ
 muzică/NOUN,tradițional/ADJ,islandez/ADJ
 muzică/NOUN,disponibil/ADJ,legal/ADJ
 muzică/NOUN,popular/ADJ,lituanian/ADJ
@@ -4024,6 +4167,7 @@ muzică/NOUN,ușor/ADJ,românesc/ADJ
 muzică/NOUN,ușor/ADJ,românesc/ADJ
 muzică/NOUN,electronic/ADJ,sincopat/ADJ
 muzică/NOUN,japonez/ADJ,tradițional/ADJ
+mușchi/NOUN,scheletic/ADJ,principal/ADJ
 mărime/NOUN,fizic/ADJ,caracteristic/ADJ
 mărime/NOUN,fizic/ADJ,derivat/ADJ
 mărime/NOUN,fizic/ADJ,fundamental/ADJ
@@ -4047,15 +4191,20 @@ navă/NOUN,modern/ADJ,mare/ADJ
 navă/NOUN,comercial/ADJ,modern/ADJ
 navă/NOUN,cosmic/ADJ,real/ADJ
 naștere/NOUN,nou/ADJ,comun/ADJ
+naționalism/NOUN,european/ADJ,promovat/ADJ
 naționalist/NOUN,conservator/ADJ,catalan/ADJ
+naționalitate/NOUN,majoritar/ADJ,reprezentativ/ADJ
 națiune/NOUN,român/ADJ,liber/ADJ
 națiune/NOUN,român/ADJ,liber/ADJ
 națiune/NOUN,modern/ADJ,lituanian/ADJ
 națiune/NOUN,modern/ADJ,rus/ADJ
 necesitate/NOUN,vital/ADJ,cotidian/ADJ
 necesitate/NOUN,obiectiv/ADJ,uman/ADJ
+nefropatie/NOUN,amiloid/ADJ,ereditar/ADJ
 negociere/NOUN,politic/ADJ,oficial/ADJ
 negustor/NOUN,german/ADJ,larg/ADJ
+nerv/NOUN,facial/ADJ,corespunzător/ADJ
+neuron/NOUN,motor/ADJ,periferic/ADJ
 nevoie/NOUN,uman/ADJ,fundamental/ADJ
 nevoie/NOUN,uman/ADJ,fundamental/ADJ
 nevoie/NOUN,specific/ADJ,uman/ADJ
@@ -4076,6 +4225,7 @@ notă/NOUN,legal/ADJ,corespunzător/ADJ
 notă/NOUN,telefonic/ADJ,menționat/ADJ
 notă/NOUN,explicativ/ADJ,necesar/ADJ
 nucleu/NOUN,narativ/ADJ,distinct/ADJ
+nucleu/NOUN,posterior/ADJ,hipotalamic/ADJ
 nucleu/NOUN,atomic/ADJ,nou/ADJ
 nucleu/NOUN,inactiv/ADJ,rămas/ADJ
 nucleu/NOUN,atomic/ADJ,întreg/ADJ
@@ -4091,16 +4241,19 @@ nume/NOUN,antic/ADJ,rămas/ADJ
 nume/NOUN,propriu/ADJ,străin/ADJ
 nume/NOUN,străin/ADJ,împrumutat/ADJ
 numire/NOUN,militar/ADJ,onorific/ADJ
+numit/NOUN,reflex/ADJ,condiționat/ADJ
 număr/NOUN,complex/ADJ,asociat/ADJ
 număr/NOUN,întreg/ADJ,pozitiv/ADJ
 număr/NOUN,cuantic/ADJ,principal/ADJ
 număr/NOUN,cuantic/ADJ,principal/ADJ
 număr/NOUN,rațional/ADJ,respectiv/ADJ
 nuvelă/NOUN,german/ADJ,modern/ADJ
+obiect/NOUN,încărcat/ADJ,electric/ADJ
 obiect/NOUN,geometric/ADJ,elementar/ADJ
 obiect/NOUN,natural/ADJ,finit/ADJ
 obiect/NOUN,sportiv/ADJ,imens/ADJ
 obiect/NOUN,metalic/ADJ,impresionant/ADJ
+obiect/NOUN,astronomic/ADJ,ipotetic/ADJ
 obiect/NOUN,bibliografic/ADJ,propriu/ADJ
 obiect/NOUN,cuantic/ADJ,respectiv/ADJ
 obiect/NOUN,arheologic/ADJ,specific/ADJ
@@ -4200,6 +4353,9 @@ opinie/NOUN,public/ADJ,internațional/ADJ
 opinie/NOUN,public/ADJ,internațional/ADJ
 opinie/NOUN,public/ADJ,israelian/ADJ
 opinie/NOUN,public/ADJ,maghiar/ADJ
+opinie/NOUN,critic/ADJ,majoritar/ADJ
+opinie/NOUN,critic/ADJ,majoritar/ADJ
+opinie/NOUN,critic/ADJ,majoritar/ADJ
 opinie/NOUN,public/ADJ,mondial/ADJ
 opinie/NOUN,public/ADJ,mondial/ADJ
 opinie/NOUN,public/ADJ,mondial/ADJ
@@ -4212,6 +4368,7 @@ opoziție/NOUN,democratic/ADJ,interbelic/ADJ
 opoziție/NOUN,comunist/ADJ,internațional/ADJ
 opoziție/NOUN,politic/ADJ,local/ADJ
 opțiune/NOUN,terapeutic/ADJ,alternativ/ADJ
+opțiune/NOUN,vegetarian/ADJ,comun/ADJ
 oraș/NOUN,vechi/ADJ,fortificat/ADJ
 oraș/NOUN,liber/ADJ,imperial/ADJ
 oraș/NOUN,comercial/ADJ,liber/ADJ
@@ -4220,10 +4377,12 @@ oraș/NOUN,regal/ADJ,liber/ADJ
 oraș/NOUN,regal/ADJ,liber/ADJ
 oraș/NOUN,italian/ADJ,numit/ADJ
 oraș/NOUN,modern/ADJ,respectiv/ADJ
+ordine/NOUN,călugăresc/ADJ,catolic/ADJ
 ordine/NOUN,juridic/ADJ,comunitar/ADJ
 ordine/NOUN,internațional/ADJ,postbelic/ADJ
 ordine/NOUN,juridic/ADJ,tradițional/ADJ
 organ/NOUN,genital/ADJ,extern/ADJ
+organ/NOUN,reproductiv/ADJ,extern/ADJ
 organ/NOUN,suprem/ADJ,judiciar/ADJ
 organ/NOUN,administrativ/ADJ,local/ADJ
 organ/NOUN,instituțional/ADJ,propriu/ADJ
@@ -4265,6 +4424,7 @@ orientare/NOUN,magnetic/ADJ,terestru/ADJ
 origine/NOUN,primar/ADJ,comun/ADJ
 origine/NOUN,social/ADJ,modest/ADJ
 orizont/NOUN,științific/ADJ,românesc/ADJ
+os/NOUN,tibial/ADJ,mare/ADJ
 oscilație/NOUN,mecanic/ADJ,puternic/ADJ
 pagină/NOUN,oficial/ADJ,central/ADJ
 pagubă/NOUN,economic/ADJ,imens/ADJ
@@ -4289,12 +4449,15 @@ parohie/NOUN,ortodox/ADJ,român/ADJ
 parohie/NOUN,ortodox/ADJ,român/ADJ
 parohie/NOUN,român/ADJ,unit/ADJ
 parte/NOUN,panonic/ADJ,estic/ADJ
+parte/NOUN,vegetal/ADJ,prezent/ADJ
+parte/NOUN,superficial/ADJ,terestru/ADJ
 participare/NOUN,militar/ADJ,românesc/ADJ
 particularitate/NOUN,istoric/ADJ,regional/ADJ
 particulă/NOUN,elementar/ADJ,afectat/ADJ
 particulă/NOUN,mic/ADJ,intern/ADJ
 particulă/NOUN,invizibil/ADJ,necunoscut/ADJ
 particulă/NOUN,elementar/ADJ,prezent/ADJ
+particulă/NOUN,elementar/ADJ,încărcat/ADJ
 partid/NOUN,popular/ADJ,austriac/ADJ
 partid/NOUN,istoric/ADJ,belgian/ADJ
 partid/NOUN,comunist/ADJ,britanic/ADJ
@@ -4985,6 +5148,7 @@ partid/NOUN,național/ADJ,liberal/ADJ
 partid/NOUN,comunist/ADJ,local/ADJ
 partid/NOUN,comunist/ADJ,local/ADJ
 partid/NOUN,comunist/ADJ,maghiar/ADJ
+partid/NOUN,politic/ADJ,majoritar/ADJ
 partid/NOUN,politic/ADJ,mare/ADJ
 partid/NOUN,național/ADJ,moldovenesc/ADJ
 partid/NOUN,național/ADJ,moldovenesc/ADJ
@@ -5059,6 +5223,7 @@ partid/NOUN,social/ADJ,românesc/ADJ
 partid/NOUN,social/ADJ,românesc/ADJ
 partid/NOUN,comunist/ADJ,sovietic/ADJ
 partid/NOUN,comunist/ADJ,sovietic/ADJ
+partid/NOUN,social-democrat/ADJ,suedez/ADJ
 partid/NOUN,comunist/ADJ,sârb/ADJ
 partid/NOUN,comunist/ADJ,ucrainean/ADJ
 partid/NOUN,comunist/ADJ,ucrainean/ADJ
@@ -5130,6 +5295,7 @@ patrimoniu/NOUN,cultural/ADJ,național/ADJ
 patrimoniu/NOUN,cultural/ADJ,național/ADJ
 patrimoniu/NOUN,cultural/ADJ,național/ADJ
 patrimoniu/NOUN,cultural/ADJ,românesc/ADJ
+patron/NOUN,simetric/ADJ,similar/ADJ
 patrulă/NOUN,aerian/ADJ,japonez/ADJ
 pată/NOUN,alb/ADJ,strălucitor/ADJ
 pavilion/NOUN,naval/ADJ,italian/ADJ
@@ -5142,6 +5308,7 @@ pensie/NOUN,privat/ADJ,obligatoriu/ADJ
 perete/NOUN,celular/ADJ,bacterian/ADJ
 perete/NOUN,celular/ADJ,bacterian/ADJ
 perete/NOUN,exterior/ADJ,sudic/ADJ
+perete/NOUN,celular/ADJ,vegetal/ADJ
 perioadă/NOUN,pre-/ADJ,creștin/ADJ
 perioadă/NOUN,arab/ADJ,timpuriu/ADJ
 perioadă/NOUN,feudal/ADJ,timpuriu/ADJ
@@ -5161,6 +5328,7 @@ persoană/NOUN,social/ADJ,vulnerabil/ADJ
 personaj/NOUN,literar/ADJ,feminin/ADJ
 personaj/NOUN,literar/ADJ,masculin/ADJ
 personaj/NOUN,feminin/ADJ,tânăr/ADJ
+personaj/NOUN,uman/ADJ,întâlnit/ADJ
 personal/NOUN,militar/ADJ,capturat/ADJ
 personal/NOUN,sanitar/ADJ,mediu/ADJ
 personal/NOUN,diplomatic/ADJ,românesc/ADJ
@@ -5183,11 +5351,15 @@ piață/NOUN,mondial/ADJ,total/ADJ
 pictor/NOUN,autohton/ADJ,danez/ADJ
 pictură/NOUN,islandez/ADJ,contemporan/ADJ
 pictură/NOUN,românesc/ADJ,interbelic/ADJ
+pictură/NOUN,mural/ADJ,interior/ADJ
 pictură/NOUN,parietal/ADJ,interior/ADJ
 pictură/NOUN,monumental/ADJ,intitulat/ADJ
 pictură/NOUN,român/ADJ,modern/ADJ
+pictură/NOUN,mural/ADJ,monumental/ADJ
+pictură/NOUN,mural/ADJ,originar/ADJ
 pictură/NOUN,modern/ADJ,român/ADJ
 pictură/NOUN,istoric/ADJ,românesc/ADJ
+pictură/NOUN,mural/ADJ,unic/ADJ
 pierdere/NOUN,omenesc/ADJ,uriaș/ADJ
 pierdere/NOUN,economic/ADJ,însemnat/ADJ
 piesă/NOUN,acustic/ADJ,remarcabil/ADJ
@@ -5195,7 +5367,9 @@ piesă/NOUN,muzical/ADJ,reprezentativ/ADJ
 pilot/NOUN,aliat/ADJ,doborât/ADJ
 pilot/NOUN,aliat/ADJ,doborât/ADJ
 piramidă/NOUN,social/ADJ,parizian/ADJ
+piuliță/NOUN,cilindric/ADJ,striat/ADJ
 placă/NOUN,fotografic/ADJ,astronomic/ADJ
+placă/NOUN,aglomerat/ADJ,poros/ADJ
 plan/NOUN,stâng/ADJ,apropiat/ADJ
 plan/NOUN,experimental/ADJ,defectuos/ADJ
 plan/NOUN,inițial/ADJ,german/ADJ
@@ -5293,6 +5467,7 @@ politică/NOUN,extern/ADJ,maghiar/ADJ
 politică/NOUN,extern/ADJ,maghiar/ADJ
 politică/NOUN,internațional/ADJ,multilateral/ADJ
 politică/NOUN,antisemit/ADJ,nazist/ADJ
+politică/NOUN,rasist/ADJ,nazist/ADJ
 politică/NOUN,oficial/ADJ,religios/ADJ
 politică/NOUN,oficial/ADJ,sovietic/ADJ
 politică/NOUN,economic/ADJ,stalinist/ADJ
@@ -5323,6 +5498,10 @@ populație/NOUN,activ/ADJ,economic/ADJ
 populație/NOUN,actual/ADJ,exact/ADJ
 populație/NOUN,autohton/ADJ,francez/ADJ
 populație/NOUN,catolic/ADJ,german/ADJ
+populație/NOUN,majoritar/ADJ,maghiar/ADJ
+populație/NOUN,german/ADJ,majoritar/ADJ
+populație/NOUN,local/ADJ,majoritar/ADJ
+populație/NOUN,românesc/ADJ,majoritar/ADJ
 populație/NOUN,băștinaș/ADJ,moldovean/ADJ
 populație/NOUN,local/ADJ,musulman/ADJ
 populație/NOUN,nativ/ADJ,ocupat/ADJ
@@ -5334,6 +5513,7 @@ populație/NOUN,local/ADJ,sârb/ADJ
 populație/NOUN,urban/ADJ,tânăr/ADJ
 populație/NOUN,slav/ADJ,vechi/ADJ
 populație/NOUN,alternativ/ADJ,viabil/ADJ
+populație/NOUN,inactiv/ADJ,îmbătrânit/ADJ
 port/NOUN,popular/ADJ,femeiesc/ADJ
 port/NOUN,local/ADJ,feminin/ADJ
 port/NOUN,popular/ADJ,moldovean/ADJ
@@ -5343,6 +5523,7 @@ port/NOUN,popular/ADJ,românesc/ADJ
 port/NOUN,popular/ADJ,românesc/ADJ
 port/NOUN,popular/ADJ,săsesc/ADJ
 porumb/NOUN,modificat/ADJ,genetic/ADJ
+porumb/NOUN,dulce/ADJ,prăjit/ADJ
 posibilitate/NOUN,limitat/ADJ,agricol/ADJ
 posibilitate/NOUN,material/ADJ,mare/ADJ
 posibilitate/NOUN,material/ADJ,modest/ADJ
@@ -5370,6 +5551,7 @@ poziție/NOUN,maxim/ADJ,ocupat/ADJ
 poziție/NOUN,extern/ADJ,potrivnic/ADJ
 poziție/NOUN,oficial/ADJ,rus/ADJ
 poziție/NOUN,avansat/ADJ,sovietic/ADJ
+poziție/NOUN,neutru/ADJ,subtalar/ADJ
 poziție/NOUN,ierarhic/ADJ,superior/ADJ
 poziție/NOUN,judiciar/ADJ,înalt/ADJ
 practică/NOUN,politic/ADJ,global/ADJ
@@ -5402,6 +5584,7 @@ presiune/NOUN,mediu/ADJ,anual/ADJ
 presiune/NOUN,atmosferic/ADJ,mediu/ADJ
 presiune/NOUN,atmosferic/ADJ,mic/ADJ
 presiune/NOUN,politic/ADJ,otoman/ADJ
+presiune/NOUN,extravascular/ADJ,ridicat/ADJ
 presiune/NOUN,diplomatic/ADJ,rusesc/ADJ
 presiune/NOUN,atmosferic/ADJ,scăzut/ADJ
 presă/NOUN,literar/ADJ,arădean/ADJ
@@ -5428,6 +5611,7 @@ princip/NOUN,estetic/ADJ,similar/ADJ
 principat/NOUN,medieval/ADJ,român/ADJ
 principat/NOUN,unit/ADJ,român/ADJ
 principat/NOUN,unit/ADJ,român/ADJ
+principat/NOUN,creștin/ADJ,tributar/ADJ
 prioritate/NOUN,cronologic/ADJ,românesc/ADJ
 prizonier/NOUN,politic/ADJ,francez/ADJ
 prizonier/NOUN,român/ADJ,mort/ADJ
@@ -5449,7 +5633,9 @@ procedură/NOUN,electoral/ADJ,francez/ADJ
 procedură/NOUN,competițional/ADJ,internațional/ADJ
 procedură/NOUN,legislativ/ADJ,special/ADJ
 proces/NOUN,degenerativ/ADJ,cardiovascular/ADJ
+proces/NOUN,cognitiv/ADJ,complex/ADJ
 proces/NOUN,literar/ADJ,contemporan/ADJ
+proces/NOUN,verbal/ADJ,corectat/ADJ
 proces/NOUN,educațional/ADJ,dezvoltat/ADJ
 proces/NOUN,nervos/ADJ,fundamental/ADJ
 proces/NOUN,decizional/ADJ,guvernamental/ADJ
@@ -5469,6 +5655,7 @@ proces/NOUN,psihic/ADJ,specific/ADJ
 proces/NOUN,psihologic/ADJ,superior/ADJ
 proces/NOUN,propriu/ADJ,zice/ADJ
 proces/NOUN,propriu/ADJ,zis/ADJ
+productivitate/NOUN,marginal/ADJ,descrescător/ADJ
 producție/NOUN,agricol/ADJ,anual/ADJ
 producție/NOUN,muzical/ADJ,autohton/ADJ
 producție/NOUN,industrial/ADJ,civil/ADJ
@@ -5497,12 +5684,16 @@ produs/NOUN,intern/ADJ,brut/ADJ
 produs/NOUN,intern/ADJ,brut/ADJ
 produs/NOUN,intern/ADJ,brut/ADJ
 produs/NOUN,intern/ADJ,brut/ADJ
+produs/NOUN,vegetal/ADJ,cultivat/ADJ
+produs/NOUN,vegetal/ADJ,depozitat/ADJ
 produs/NOUN,certificat/ADJ,ecologic/ADJ
 produs/NOUN,electronic/ADJ,mic/ADJ
+produs/NOUN,vegetal/ADJ,necesar/ADJ
 produs/NOUN,intern/ADJ,net/ADJ
 produs/NOUN,agricol/ADJ,principal/ADJ
 produs/NOUN,agricol/ADJ,românesc/ADJ
 produs/NOUN,tradițional/ADJ,românesc/ADJ
+produs/NOUN,marginal/ADJ,total/ADJ
 profesor/NOUN,social/ADJ,democrat/ADJ
 profil/NOUN,editorial/ADJ,inițial/ADJ
 program/NOUN,spațial/ADJ,american/ADJ
@@ -5558,6 +5749,7 @@ protecție/NOUN,legal/ADJ,federal/ADJ
 proteină/NOUN,membranar/ADJ,integral/ADJ
 provincie/NOUN,unit/ADJ,habsburgic/ADJ
 provincie/NOUN,istoric/ADJ,românesc/ADJ
+provincie/NOUN,suedez/ADJ,tradițional/ADJ
 prozator/NOUN,român/ADJ,interbelic/ADJ
 proză/NOUN,rus/ADJ,clasic/ADJ
 proză/NOUN,sârb/ADJ,contemporan/ADJ
@@ -5600,7 +5792,9 @@ putere/NOUN,spiritual/ADJ,superior/ADJ
 putere/NOUN,executiv/ADJ,suprem/ADJ
 putere/NOUN,legislativ/ADJ,suprem/ADJ
 putere/NOUN,militar/ADJ,suprem/ADJ
+pârâu/NOUN,mic/ADJ,sărat/ADJ
 pădure/NOUN,numeros/ADJ,existent/ADJ
+pădure/NOUN,tropical/ADJ,propriu-zis/ADJ
 păr/NOUN,violet/ADJ,tuns/ADJ
 pătrat/NOUN,mare/ADJ,inferior/ADJ
 păun/NOUN,asiatic/ADJ,albastru/ADJ
@@ -5640,6 +5834,7 @@ rază/NOUN,atomic/ADJ,mediu/ADJ
 rază/NOUN,atomic/ADJ,mediu/ADJ
 rază/NOUN,atomic/ADJ,mediu/ADJ
 rază/NOUN,atomic/ADJ,mic/ADJ
+rață/NOUN,trofic/ADJ,complex/ADJ
 rață/NOUN,subteran/ADJ,considerabil/ADJ
 rață/NOUN,comercial/ADJ,important/ADJ
 rață/NOUN,comercial/ADJ,israelian/ADJ
@@ -5649,6 +5844,7 @@ reacție/NOUN,advers/ADJ,pronunțat/ADJ
 reacție/NOUN,alergic/ADJ,sever/ADJ
 reacție/NOUN,alergic/ADJ,sever/ADJ
 realism/NOUN,socialist/ADJ,oficial/ADJ
+realism/NOUN,magic/ADJ,sud-american/ADJ
 realitate/NOUN,contemporan/ADJ,nou/ADJ
 realizare/NOUN,tehnic/ADJ,deosebit/ADJ
 realizare/NOUN,științific/ADJ,deosebit/ADJ
@@ -5683,6 +5879,8 @@ regim/NOUN,comunist/ADJ,european/ADJ
 regim/NOUN,republican/ADJ,francez/ADJ
 regim/NOUN,climatic/ADJ,general/ADJ
 regim/NOUN,nazist/ADJ,german/ADJ
+regim/NOUN,fascist/ADJ,italian/ADJ
+regim/NOUN,fascist/ADJ,italian/ADJ
 regim/NOUN,comunist/ADJ,iugoslav/ADJ
 regim/NOUN,dictatorial/ADJ,militar/ADJ
 regim/NOUN,totalitar/ADJ,nazist/ADJ
@@ -5690,6 +5888,7 @@ regim/NOUN,totalitar/ADJ,nazist/ADJ
 regim/NOUN,termic/ADJ,optim/ADJ
 regim/NOUN,puritan/ADJ,precedent/ADJ
 regim/NOUN,comunist/ADJ,român/ADJ
+regim/NOUN,fascist/ADJ,românesc/ADJ
 regim/NOUN,social-politic/ADJ,românesc/ADJ
 regim/NOUN,nutrițional/ADJ,specific/ADJ
 regim/NOUN,democratic/ADJ,stabil/ADJ
@@ -5699,6 +5898,8 @@ regim/NOUN,sovietic/ADJ,totalitar/ADJ
 regim/NOUN,stalinist/ADJ,totalitar/ADJ
 regim/NOUN,comunist/ADJ,ungar/ADJ
 regină/NOUN,italian/ADJ,rău/ADJ
+regiune/NOUN,cervical/ADJ,anterior/ADJ
+regiune/NOUN,cortical/ADJ,anterior/ADJ
 regiune/NOUN,nou/ADJ,cucerit/ADJ
 regiune/NOUN,basc/ADJ,francez/ADJ
 regiune/NOUN,autonom/ADJ,maghiar/ADJ
@@ -5735,6 +5936,7 @@ regiune/NOUN,istoric/ADJ,tradițional/ADJ
 reglementare/NOUN,intern/ADJ,parțial/ADJ
 reglementare/NOUN,corporativ/ADJ,urban/ADJ
 regulament/NOUN,universitar/ADJ,austriac/ADJ
+regulă/NOUN,constrictiv/ADJ,anterior/ADJ
 regulă/NOUN,disciplinar/ADJ,aspru/ADJ
 relație/NOUN,sexual/ADJ,activ/ADJ
 relație/NOUN,apropiat/ADJ,adițional/ADJ
@@ -5762,6 +5964,7 @@ relație/NOUN,militar/ADJ,internațional/ADJ
 relație/NOUN,comercial/ADJ,normal/ADJ
 relație/NOUN,diplomatic/ADJ,oficial/ADJ
 relație/NOUN,social/ADJ,tensionat/ADJ
+relief/NOUN,glaciar/ADJ,cuaternar/ADJ
 relief/NOUN,glaciar/ADJ,montan/ADJ
 religie/NOUN,creștin/ADJ,acceptabil/ADJ
 religie/NOUN,roman/ADJ,arhaic/ADJ
@@ -6152,6 +6355,7 @@ republică/NOUN,sovietic/ADJ,ungar/ADJ
 republică/NOUN,sovietic/ADJ,ungar/ADJ
 republică/NOUN,arab/ADJ,unit/ADJ
 republică/NOUN,arab/ADJ,unit/ADJ
+responsabil/NOUN,politic/ADJ,român/ADJ
 responsabilitate/NOUN,social/ADJ,corporativ/ADJ
 restricție/NOUN,impus/ADJ,prezent/ADJ
 resursă/NOUN,local/ADJ,agricol/ADJ
@@ -6185,6 +6389,7 @@ revoluție/NOUN,industrial/ADJ,occidental/ADJ
 revoluție/NOUN,comunist/ADJ,rea/ADJ
 rezecție/NOUN,hepatic/ADJ,major/ADJ
 rezervație/NOUN,natural/ADJ,botanic/ADJ
+rezervă/NOUN,glicogenic/ADJ,hepatic/ADJ
 rezervă/NOUN,financiar/ADJ,minim/ADJ
 rezervă/NOUN,minim/ADJ,obligatoriu/ADJ
 rezervă/NOUN,minim/ADJ,obligatoriu/ADJ
@@ -6193,6 +6398,7 @@ rezervă/NOUN,minim/ADJ,obligatoriu/ADJ
 rezervă/NOUN,minim/ADJ,obligatoriu/ADJ
 rezervă/NOUN,militar/ADJ,proaspăt/ADJ
 rezervă/NOUN,financiar/ADJ,total/ADJ
+reziduu/NOUN,radioactiv/ADJ,rămâne/ADJ
 reziduu/NOUN,menajer/ADJ,urban/ADJ
 rezistență/NOUN,intern/ADJ,ceh/ADJ
 rezistență/NOUN,comunist/ADJ,francez/ADJ
@@ -6305,6 +6511,8 @@ s/NOUN,critic/ADJ,literar/ADJ
 s/NOUN,mediu/ADJ,local/ADJ
 s/NOUN,performant/ADJ,sportiv/ADJ
 s/NOUN,roșu/ADJ,violet/ADJ
+sac/NOUN,limfatic/ADJ,posterior/ADJ
+sac/NOUN,limfatic/ADJ,posterior/ADJ
 salariu/NOUN,anual/ADJ,anterior/ADJ
 salariu/NOUN,mediu/ADJ,brut/ADJ
 salariu/NOUN,minim/ADJ,brut/ADJ
@@ -6321,6 +6529,7 @@ sarcină/NOUN,elementar/ADJ,pozitiv/ADJ
 sarcină/NOUN,electric/ADJ,staționar/ADJ
 sat/NOUN,nou/ADJ,creat/ADJ
 sat/NOUN,românesc/ADJ,medieval/ADJ
+sat/NOUN,global/ADJ,primordial/ADJ
 sat/NOUN,autohton/ADJ,românesc/ADJ
 sat/NOUN,fost/ADJ,românesc/ADJ
 sat/NOUN,rural/ADJ,românesc/ADJ
@@ -6337,6 +6546,7 @@ scenă/NOUN,politic/ADJ,european/ADJ
 scenă/NOUN,artistic/ADJ,islandez/ADJ
 scenă/NOUN,literar/ADJ,român/ADJ
 scenă/NOUN,liric/ADJ,românesc/ADJ
+schemă/NOUN,echivalent/ADJ,simplificat/ADJ
 schimbare/NOUN,abrupt/ADJ,dramatic/ADJ
 schimbare/NOUN,climatic/ADJ,global/ADJ
 schimbare/NOUN,climatic/ADJ,global/ADJ
@@ -6364,6 +6574,7 @@ scriitor/NOUN,liber/ADJ,profesionist/ADJ
 scriitor/NOUN,român/ADJ,uitat/ADJ
 scris/NOUN,inițial/ADJ,egiptean/ADJ
 scurgere/NOUN,mediu/ADJ,anual/ADJ
+scut/NOUN,termic/ADJ,dorsal/ADJ
 scut/NOUN,termic/ADJ,frontal/ADJ
 sector/NOUN,bancar/ADJ,francez/ADJ
 sector/NOUN,industrial/ADJ,intern/ADJ
@@ -6374,6 +6585,8 @@ sector/NOUN,economic/ADJ,secundar/ADJ
 sector/NOUN,energetic/ADJ,ucrainean/ADJ
 secvență/NOUN,literar/ADJ,german/ADJ
 secvență/NOUN,literar/ADJ,german/ADJ
+secțiune/NOUN,instrumental/ADJ,lung/ADJ
+sediment/NOUN,recent/ADJ,orizontal/ADJ
 sediu/NOUN,profesional/ADJ,principal/ADJ
 sediu/NOUN,profesional/ADJ,principal/ADJ
 seminar/NOUN,teologic/ADJ,ortodox/ADJ
@@ -6381,6 +6594,7 @@ seminar/NOUN,pedagogic/ADJ,universitar/ADJ
 seminar/NOUN,pedagogic/ADJ,universitar/ADJ
 seminar/NOUN,pedagogic/ADJ,universitar/ADJ
 semn/NOUN,vizual/ADJ,arbitrar/ADJ
+semn/NOUN,distinctiv/ADJ,austriac/ADJ
 semnal/NOUN,digital/ADJ,terestru/ADJ
 semnificație/NOUN,inițial/ADJ,generalizat/ADJ
 semnificație/NOUN,fizic/ADJ,important/ADJ
@@ -6497,6 +6711,7 @@ sistem/NOUN,solar/ADJ,exterior/ADJ
 sistem/NOUN,solar/ADJ,exterior/ADJ
 sistem/NOUN,sanitar/ADJ,francez/ADJ
 sistem/NOUN,informațional/ADJ,geografic/ADJ
+sistem/NOUN,inteligent/ADJ,hibrid/ADJ
 sistem/NOUN,cuantic/ADJ,individual/ADJ
 sistem/NOUN,cav/ADJ,inferior/ADJ
 sistem/NOUN,parlamentar/ADJ,instituit/ADJ
@@ -6507,6 +6722,10 @@ sistem/NOUN,sanitar/ADJ,irlandez/ADJ
 sistem/NOUN,judiciar/ADJ,italian/ADJ
 sistem/NOUN,juridic/ADJ,italian/ADJ
 sistem/NOUN,sanitar/ADJ,italian/ADJ
+sistem/NOUN,electoral/ADJ,majoritar/ADJ
+sistem/NOUN,electoral/ADJ,majoritar/ADJ
+sistem/NOUN,electoral/ADJ,majoritar/ADJ
+sistem/NOUN,electoral/ADJ,majoritar/ADJ
 sistem/NOUN,informatic/ADJ,mare/ADJ
 sistem/NOUN,economic/ADJ,modern/ADJ
 sistem/NOUN,legislativ/ADJ,moldovenesc/ADJ
@@ -6522,6 +6741,12 @@ sistem/NOUN,politic/ADJ,național/ADJ
 sistem/NOUN,static/ADJ,nedeterminat/ADJ
 sistem/NOUN,ascendent/ADJ,noradrenergic/ADJ
 sistem/NOUN,constructiv/ADJ,nou/ADJ
+sistem/NOUN,nervos/ADJ,parasimpatic/ADJ
+sistem/NOUN,nervos/ADJ,parasimpatic/ADJ
+sistem/NOUN,nervos/ADJ,parasimpatic/ADJ
+sistem/NOUN,nervos/ADJ,parasimpatic/ADJ
+sistem/NOUN,nervos/ADJ,parasimpatic/ADJ
+sistem/NOUN,nervos/ADJ,parasimpatic/ADJ
 sistem/NOUN,nervos/ADJ,periferic/ADJ
 sistem/NOUN,nervos/ADJ,periferic/ADJ
 sistem/NOUN,nervos/ADJ,periferic/ADJ
@@ -6551,6 +6776,11 @@ sistem/NOUN,nervos/ADJ,simpatic/ADJ
 sistem/NOUN,nervos/ADJ,simpatic/ADJ
 sistem/NOUN,nervos/ADJ,simpatic/ADJ
 sistem/NOUN,nervos/ADJ,simpatic/ADJ
+sistem/NOUN,nervos/ADJ,somatic/ADJ
+sistem/NOUN,nervos/ADJ,somatic/ADJ
+sistem/NOUN,nervos/ADJ,somatic/ADJ
+sistem/NOUN,nervos/ADJ,somatic/ADJ
+sistem/NOUN,nervos/ADJ,somatic/ADJ
 sistem/NOUN,economic/ADJ,sovietic/ADJ
 sistem/NOUN,digital/ADJ,străvechi/ADJ
 sistem/NOUN,respirator/ADJ,superior/ADJ
@@ -6559,6 +6789,7 @@ sistem/NOUN,constructiv/ADJ,tehnic/ADJ
 sistem/NOUN,solar/ADJ,timpuriu/ADJ
 sistem/NOUN,guvernamental/ADJ,turc/ADJ
 sistem/NOUN,autoimun/ADJ,uman/ADJ
+sistem/NOUN,cognitiv/ADJ,uman/ADJ
 sistem/NOUN,vizual/ADJ,uman/ADJ
 sistem/NOUN,feudal/ADJ,ungar/ADJ
 sistem/NOUN,nervos/ADJ,vegetativ/ADJ
@@ -6572,10 +6803,12 @@ sistem/NOUN,nervos/ADJ,vegetativ/ADJ
 sistem/NOUN,nervos/ADJ,vegetativ/ADJ
 sistem/NOUN,nervos/ADJ,vegetativ/ADJ
 sistem/NOUN,imunitar/ADJ,înnăscut/ADJ
+sit/NOUN,arheologic/ADJ,important/ADJ
 situare/NOUN,proaspăt/ADJ,creat/ADJ
 situație/NOUN,economic/ADJ,actual/ADJ
 situație/NOUN,politic/ADJ,actual/ADJ
 situație/NOUN,material/ADJ,bun/ADJ
+situație/NOUN,economic/ADJ,catastrofal/ADJ
 situație/NOUN,economic/ADJ,curent/ADJ
 situație/NOUN,economic/ADJ,european/ADJ
 situație/NOUN,militar/ADJ,existent/ADJ
@@ -6626,6 +6859,7 @@ societate/NOUN,feudal/ADJ,timpuriu/ADJ
 societate/NOUN,african/ADJ,tradițional/ADJ
 sociologie/NOUN,literar/ADJ,empiric/ADJ
 soi/NOUN,vechi/ADJ,românesc/ADJ
+sol/NOUN,montan/ADJ,acid/ADJ
 soldat/NOUN,german/ADJ,amestecat/ADJ
 soldat/NOUN,aliat/ADJ,mort/ADJ
 soldat/NOUN,român/ADJ,mort/ADJ
@@ -6637,6 +6871,7 @@ soluție/NOUN,tehnic/ADJ,diferit/ADJ
 soluție/NOUN,real/ADJ,multiplu/ADJ
 sondaj/NOUN,efectuat/ADJ,telefonic/ADJ
 spațiu/NOUN,românesc/ADJ,actual/ADJ
+spațiu/NOUN,interior/ADJ,ambiental/ADJ
 spațiu/NOUN,cultural/ADJ,bizantin/ADJ
 spațiu/NOUN,aerian/ADJ,britanic/ADJ
 spațiu/NOUN,metric/ADJ,complet/ADJ
@@ -6647,6 +6882,11 @@ spațiu/NOUN,academic/ADJ,francez/ADJ
 spațiu/NOUN,vectorial/ADJ,general/ADJ
 spațiu/NOUN,cultural/ADJ,indo-european/ADJ
 spațiu/NOUN,aerian/ADJ,irlandez/ADJ
+spațiu/NOUN,liniar/ADJ,normat/ADJ
+spațiu/NOUN,liniar/ADJ,normat/ADJ
+spațiu/NOUN,liniar/ADJ,normat/ADJ
+spațiu/NOUN,liniar/ADJ,normat/ADJ
+spațiu/NOUN,liniar/ADJ,ordonat/ADJ
 spațiu/NOUN,larg/ADJ,public/ADJ
 spațiu/NOUN,verde/ADJ,public/ADJ
 spațiu/NOUN,geografic/ADJ,respectiv/ADJ
@@ -6701,6 +6941,7 @@ stare/NOUN,conflictual/ADJ,existent/ADJ
 stare/NOUN,energetic/ADJ,fundamental/ADJ
 stare/NOUN,existențial/ADJ,fundamental/ADJ
 stare/NOUN,psihic/ADJ,prezent/ADJ
+stare/NOUN,cuantic/ADJ,simetric/ADJ
 stare/NOUN,civil/ADJ,ungar/ADJ
 stat/NOUN,major/ADJ,aliat/ADJ
 stat/NOUN,major/ADJ,american/ADJ
@@ -6712,6 +6953,7 @@ stat/NOUN,federal/ADJ,contemporan/ADJ
 stat/NOUN,unit/ADJ,continental/ADJ
 stat/NOUN,unit/ADJ,continental/ADJ
 stat/NOUN,unit/ADJ,continental/ADJ
+stat/NOUN,sedentar/ADJ,creștinesc/ADJ
 stat/NOUN,modern/ADJ,democratic/ADJ
 stat/NOUN,major/ADJ,economic/ADJ
 stat/NOUN,european/ADJ,emitent/ADJ
@@ -6879,6 +7121,9 @@ stație/NOUN,spațial/ADJ,internațional/ADJ
 stațiune/NOUN,experimental/ADJ,agricol/ADJ
 steag/NOUN,istoric/ADJ,italian/ADJ
 sticlă/NOUN,roman/ADJ,scump/ADJ
+stil/NOUN,muzical/ADJ,abordat/ADJ
+stil/NOUN,muzical/ADJ,abordat/ADJ
+stil/NOUN,muzical/ADJ,abordat/ADJ
 stil/NOUN,narativ/ADJ,adoptat/ADJ
 stil/NOUN,neapărat/ADJ,bizantin/ADJ
 stil/NOUN,intern/ADJ,chinezesc/ADJ
@@ -6889,15 +7134,18 @@ stil/NOUN,arhitectonic/ADJ,local/ADJ
 stil/NOUN,radical/ADJ,modern/ADJ
 stil/NOUN,arhitectural/ADJ,obișnuit/ADJ
 stil/NOUN,tradițional/ADJ,oriental/ADJ
+stil/NOUN,liniar/ADJ,polifonic/ADJ
 stil/NOUN,imperial/ADJ,roman/ADJ
 stil/NOUN,original/ADJ,romanic/ADJ
 stil/NOUN,romanic/ADJ,timpuriu/ADJ
+stomac/NOUN,glandular/ADJ,propriu/ADJ
 strat/NOUN,solar/ADJ,exterior/ADJ
 strat/NOUN,superior/ADJ,stabil/ADJ
 strategie/NOUN,militar/ADJ,elvețian/ADJ
 strategie/NOUN,politic/ADJ,național/ADJ
 structură/NOUN,politic/ADJ,actual/ADJ
 structură/NOUN,verbal/ADJ,arab/ADJ
+structură/NOUN,cefalic/ADJ,cranian/ADJ
 structură/NOUN,fundamental/ADJ,cunoscut/ADJ
 structură/NOUN,formal/ADJ,dinamic/ADJ
 structură/NOUN,social/ADJ,feudal/ADJ
@@ -6910,8 +7158,11 @@ structură/NOUN,informativ/ADJ,polonez/ADJ
 structură/NOUN,neregulat/ADJ,remarcabil/ADJ
 structură/NOUN,politic/ADJ,republican/ADJ
 structură/NOUN,social/ADJ,rural/ADJ
+structură/NOUN,amorf/ADJ,sticlos/ADJ
+structură/NOUN,osos/ADJ,trabecular/ADJ
 structură/NOUN,social/ADJ,urban/ADJ
 studiu/NOUN,critic/ADJ,amintit/ADJ
+studiu/NOUN,lingvistic/ADJ,amănunțit/ADJ
 studiu/NOUN,teatral/ADJ,aplicat/ADJ
 studiu/NOUN,academic/ADJ,efectuat/ADJ
 studiu/NOUN,universitar/ADJ,filologic/ADJ
@@ -7000,6 +7251,8 @@ supliment/NOUN,medical/ADJ,tipic/ADJ
 suport/NOUN,militar/ADJ,american/ADJ
 suport/NOUN,funcțional/ADJ,complet/ADJ
 suport/NOUN,tehnic/ADJ,extins/ADJ
+suport/NOUN,transparent/ADJ,flexibil/ADJ
+suport/NOUN,evanghelic/ADJ,invocat/ADJ
 suprafață/NOUN,administrativ/ADJ,total/ADJ
 sursă/NOUN,geografic/ADJ,antic/ADJ
 sursă/NOUN,documentar/ADJ,disponibil/ADJ
@@ -7185,6 +7438,24 @@ temperatură/NOUN,mediu/ADJ,lunar/ADJ
 temperatură/NOUN,mediu/ADJ,maxim/ADJ
 temperatură/NOUN,anual/ADJ,mediu/ADJ
 temperatură/NOUN,anual/ADJ,mediu/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
+temperatură/NOUN,mediu/ADJ,multianual/ADJ
 temperatură/NOUN,mediu/ADJ,zilnic/ADJ
 temperatură/NOUN,mediu/ADJ,zilnic/ADJ
 temperatură/NOUN,mediu/ADJ,zilnic/ADJ
@@ -7278,6 +7549,7 @@ tineret/NOUN,comunist/ADJ,polonez/ADJ
 tinerime/NOUN,român/ADJ,unit/ADJ
 tip/NOUN,standard/ADJ,complex/ADJ
 tipografie/NOUN,domnesc/ADJ,ortodox/ADJ
+tiroidectomie/NOUN,subtotal/ADJ,larg/ADJ
 titlu/NOUN,imperial/ADJ,bizantin/ADJ
 titlu/NOUN,mondial/ADJ,consecutiv/ADJ
 titlu/NOUN,imperial/ADJ,roman/ADJ
@@ -7370,6 +7642,7 @@ trupă/NOUN,revoluționar/ADJ,francez/ADJ
 trupă/NOUN,revoluționar/ADJ,francez/ADJ
 trupă/NOUN,revoluționar/ADJ,francez/ADJ
 trupă/NOUN,nazist/ADJ,german/ADJ
+trupă/NOUN,fascist/ADJ,italian/ADJ
 trupă/NOUN,regal/ADJ,italian/ADJ
 trupă/NOUN,revoluționar/ADJ,maghiar/ADJ
 trupă/NOUN,neregulat/ADJ,otoman/ADJ
@@ -7390,6 +7663,7 @@ trăsătură/NOUN,specific/ADJ,egiptean/ADJ
 trăsătură/NOUN,psihologic/ADJ,feminin/ADJ
 trăsătură/NOUN,uman/ADJ,negativ/ADJ
 tub/NOUN,digestiv/ADJ,abdominal/ADJ
+tub/NOUN,contort/ADJ,distal/ADJ
 tulburare/NOUN,psihic/ADJ,grav/ADJ
 tulburare/NOUN,nervos/ADJ,periodic/ADJ
 tulburare/NOUN,zis/ADJ,psihic/ADJ
@@ -7397,6 +7671,7 @@ turbă/NOUN,roșu/ADJ,simplu/ADJ
 tutelă/NOUN,brutal/ADJ,stalinist/ADJ
 tânăr/NOUN,maghiar/ADJ,dornic/ADJ
 tânăr/NOUN,savant/ADJ,francez/ADJ
+tânăr/NOUN,cercetător/ADJ,orientat/ADJ
 umanism/NOUN,clasic/ADJ,grecesc/ADJ
 umiditate/NOUN,relativ/ADJ,mediu/ADJ
 umiditate/NOUN,atmosferic/ADJ,ridicat/ADJ
@@ -7486,6 +7761,7 @@ vale/NOUN,lung/ADJ,mare/ADJ
 vale/NOUN,lung/ADJ,mic/ADJ
 vale/NOUN,lung/ADJ,român/ADJ
 vale/NOUN,lung/ADJ,român/ADJ
+valență/NOUN,artistic/ADJ,incontestabil/ADJ
 valență/NOUN,estetic/ADJ,natural/ADJ
 valoare/NOUN,maxim/ADJ,admis/ADJ
 valoare/NOUN,maxim/ADJ,admis/ADJ
@@ -7517,6 +7793,7 @@ variație/NOUN,mare/ADJ,regional/ADJ
 vas/NOUN,marin/ADJ,american/ADJ
 vas/NOUN,comercial/ADJ,britanic/ADJ
 vas/NOUN,britanic/ADJ,civil/ADJ
+vas/NOUN,limfatic/ADJ,eferent/ADJ
 vas/NOUN,militar/ADJ,grecesc/ADJ
 vas/NOUN,militar/ADJ,italian/ADJ
 vas/NOUN,militar/ADJ,polonez/ADJ
@@ -7544,6 +7821,7 @@ vestigiu/NOUN,arheologic/ADJ,asemănător/ADJ
 viață/NOUN,german/ADJ,activ/ADJ
 viață/NOUN,sexual/ADJ,activ/ADJ
 viață/NOUN,uman/ADJ,civilizat/ADJ
+viață/NOUN,spiritual/ADJ,călugăresc/ADJ
 viață/NOUN,politic/ADJ,francez/ADJ
 viață/NOUN,politic/ADJ,grecesc/ADJ
 viață/NOUN,economic/ADJ,intens/ADJ
@@ -7587,6 +7865,7 @@ vită/NOUN,cornut/ADJ,mare/ADJ
 viziune/NOUN,economic/ADJ,național-țărănist/ADJ
 viziune/NOUN,poetic/ADJ,occidental/ADJ
 vocație/NOUN,narativ/ADJ,caracteristic/ADJ
+voce/NOUN,electronic/ADJ,sintetizat/ADJ
 volum/NOUN,sanguin/ADJ,circulant/ADJ
 volum/NOUN,economic/ADJ,global/ADJ
 volum/NOUN,publicat/ADJ,postum/ADJ
@@ -7656,8 +7935,10 @@ zonă/NOUN,rural/ADJ,înconjurător/ADJ
 împrejurare/NOUN,politic/ADJ,internațional/ADJ
 împrumut/NOUN,latin/ADJ,comun/ADJ
 împrăștiere/NOUN,statistic/ADJ,respectiv/ADJ
+împuternicire/NOUN,special/ADJ,limitat/ADJ
 împărțire/NOUN,administrativ/ADJ,actual/ADJ
 înaintare/NOUN,inițial/ADJ,german/ADJ
+încadrare/NOUN,administrativ/ADJ,teritorial/ADJ
 încoronare/NOUN,religios/ADJ,menit/ADJ
 încălzire/NOUN,global/ADJ,antropic/ADJ
 înfrângere/NOUN,inițial/ADJ,sovietic/ADJ
@@ -7761,6 +8042,9 @@ zonă/NOUN,rural/ADJ,înconjurător/ADJ
 țesut/NOUN,miocardic/ADJ,adult/ADJ
 țesut/NOUN,cartilaginos/ADJ,elastic/ADJ
 țesut/NOUN,cartilaginos/ADJ,fibros/ADJ
+țesut/NOUN,cartilaginos/ADJ,hialin/ADJ
+țesut/NOUN,conjunctiv/ADJ,moale/ADJ
+țesut/NOUN,conjunctiv/ADJ,moale/ADJ
 țesut/NOUN,vaginal/ADJ,normal/ADJ
 țesut/NOUN,celular/ADJ,subcutanat/ADJ
 nou/ADJ,colegiu/NOUN,academic/ADJ
@@ -7783,6 +8067,7 @@ următor/ADJ,identitate/NOUN,adițional/ADJ
 diferit/ADJ,funcție/NOUN,administrativ/ADJ
 diferit/ADJ,poziție/NOUN,administrativ/ADJ
 diferit/ADJ,reformă/NOUN,administrativ/ADJ
+diferit/ADJ,subdiviziune/NOUN,administrativ/ADJ
 divers/ADJ,funcție/NOUN,administrativ/ADJ
 divers/ADJ,serviciu/NOUN,administrativ/ADJ
 nou/ADJ,entitate/NOUN,administrativ/ADJ
@@ -7846,6 +8131,8 @@ urban/ADJ,contemporan/NOUN,american/ADJ
 vechi/ADJ,aristocrație/NOUN,american/ADJ
 viitor/ADJ,spion/NOUN,american/ADJ
 viitor/ADJ,stat/NOUN,american/ADJ
+numeros/ADJ,trib/NOUN,amerindian/ADJ
+numeros/ADJ,trib/NOUN,amerindian/ADJ
 diferit/ADJ,element/NOUN,anatomic/ADJ
 mare/ADJ,regat/NOUN,anglo-saxon/ADJ
 întreg/ADJ,tablou/NOUN,anterior/ADJ
@@ -7868,6 +8155,7 @@ divers/ADJ,mărturie/NOUN,arheologic/ADJ
 important/ADJ,descoperire/NOUN,arheologic/ADJ
 numeros/ADJ,descoperire/NOUN,arheologic/ADJ
 numeros/ADJ,probă/NOUN,arheologic/ADJ
+numeros/ADJ,sit/NOUN,arheologic/ADJ
 principal/ADJ,vestigiu/NOUN,arheologic/ADJ
 respectiv/ADJ,lucrare/NOUN,arheologic/ADJ
 semnificativ/ADJ,vestigiu/NOUN,arheologic/ADJ
@@ -7908,6 +8196,7 @@ singur/ADJ,cunoaștere/NOUN,autentic/ADJ
 propriu/ADJ,atelier/NOUN,auto/ADJ
 ortodox/ADJ,polonez/NOUN,autocefal/ADJ
 ortodox/ADJ,sârb/NOUN,autocefal/ADJ
+permanent/ADJ,neutralitate/NOUN,autodeclarat/ADJ
 divers/ADJ,instituție/NOUN,autonom/ADJ
 multiplu/ADJ,procesor/NOUN,autonom/ADJ
 nou/ADJ,republică/NOUN,autonom/ADJ
@@ -8017,6 +8306,7 @@ principal/ADJ,insulă/NOUN,component/ADJ
 principal/ADJ,substanță/NOUN,component/ADJ
 următor/ADJ,element/NOUN,component/ADJ
 următor/ADJ,parte/NOUN,component/ADJ
+veche/ADJ,partid/NOUN,compromis/ADJ
 numeros/ADJ,element/NOUN,comun/ADJ
 propriu/ADJ,piață/NOUN,comun/ADJ
 următor/ADJ,caracteristică/NOUN,comun/ADJ
@@ -8098,6 +8388,7 @@ următor/ADJ,cuvânt/NOUN,danez/ADJ
 propriu/ADJ,societate/NOUN,decadent/ADJ
 asemenea/ADJ,acțiune/NOUN,decisiv/ADJ
 următor/ADJ,pas/NOUN,decisiv/ADJ
+diferit/ADJ,proiect/NOUN,dedicat/ADJ
 nou/ADJ,partid/NOUN,democrat/ADJ
 important/ADJ,reformă/NOUN,democratic/ADJ
 principal/ADJ,partid/NOUN,democratic/ADJ
@@ -8121,6 +8412,7 @@ numeros/ADJ,substanță/NOUN,diferit/ADJ
 numeros/ADJ,enzimă/NOUN,digestiv/ADJ
 nou/ADJ,economie/NOUN,digital/ADJ
 nou/ADJ,tehnologie/NOUN,digital/ADJ
+acid/ADJ,mineral/NOUN,diluat/ADJ
 asemenea/ADJ,asigurare/NOUN,diplomatic/ADJ
 cunoscut/ADJ,efort/NOUN,diplomatic/ADJ
 mare/ADJ,misiune/NOUN,diplomatic/ADJ
@@ -8235,6 +8527,7 @@ numit/ADJ,temperatură/NOUN,empiric/ADJ
 întreg/ADJ,sistem/NOUN,energetic/ADJ
 mare/ADJ,dramaturg/NOUN,englez/ADJ
 vechi/ADJ,cântec/NOUN,epic/ADJ
+denumit/ADJ,glomerulopatie/NOUN,ereditar/ADJ
 fost/ADJ,bloc/NOUN,estic/ADJ
 întreg/ADJ,bloc/NOUN,estic/ADJ
 diferit/ADJ,grup/NOUN,etnic/ADJ
@@ -8254,6 +8547,7 @@ următor/ADJ,grup/NOUN,etnic/ADJ
 următor/ADJ,grup/NOUN,etnic/ADJ
 următor/ADJ,structură/NOUN,etnic/ADJ
 următor/ADJ,structură/NOUN,etnic/ADJ
+scurt/ADJ,derivație/NOUN,euristic/ADJ
 întreg/ADJ,zonă/NOUN,euro-atlantic/ADJ
 adevărat/ADJ,oraș/NOUN,european/ADJ
 diferit/ADJ,putere/NOUN,european/ADJ
@@ -8321,6 +8615,8 @@ principal/ADJ,amenințare/NOUN,extern/ADJ
 propriu/ADJ,politică/NOUN,extern/ADJ
 singur/ADJ,raport/NOUN,extern/ADJ
 diferit/ADJ,întrunire/NOUN,familial/ADJ
+nou/ADJ,stat/NOUN,fascist/ADJ
+propriu/ADJ,regim/NOUN,fascist/ADJ
 asemenea/ADJ,efect/NOUN,favorabil/ADJ
 nou/ADJ,cabinet/NOUN,federal/ADJ
 suplimentar/ADJ,fond/NOUN,federal/ADJ
@@ -8359,6 +8655,7 @@ numeros/ADJ,insulă/NOUN,fluvial/ADJ
 divers/ADJ,instrument/NOUN,folosit/ADJ
 principal/ADJ,schimbare/NOUN,fonetic/ADJ
 vechi/ADJ,biserică/NOUN,fortificat/ADJ
+eterogen/ADJ,stat/NOUN,franc/ADJ
 celebru/ADJ,actor/NOUN,francez/ADJ
 englez/ADJ,jumătate/NOUN,francez/ADJ
 fost/ADJ,colonie/NOUN,francez/ADJ
@@ -8503,6 +8800,7 @@ principal/ADJ,zonă/NOUN,industrial/ADJ
 vechi/ADJ,capacitate/NOUN,industrial/ADJ
 asemenea/ADJ,zgomot/NOUN,inițial/ADJ
 numit/ADJ,diabet/NOUN,insipid/ADJ
+nou/ADJ,combinație/NOUN,instrumental/ADJ
 întreg/ADJ,țară/NOUN,insular/ADJ
 următor/ADJ,text/NOUN,integral/ADJ
 mare/ADJ,scriitor/NOUN,interbelic/ADJ
@@ -8555,10 +8853,12 @@ principal/ADJ,oraș/NOUN,italian/ADJ
 fost/ADJ,republică/NOUN,iugoslav/ADJ
 fost/ADJ,stat/NOUN,iugoslav/ADJ
 nou/ADJ,guvern/NOUN,iugoslav/ADJ
+mic/ADJ,subunitate/NOUN,japonez/ADJ
 mult/ADJ,dialect/NOUN,japonez/ADJ
 principal/ADJ,forță/NOUN,japonez/ADJ
 actual/ADJ,drum/NOUN,județean/ADJ
 nou/ADJ,sistem/NOUN,judiciar/ADJ
+ineficient/ADJ,sistem/NOUN,juridic/ADJ
 mic/ADJ,rânduială/NOUN,juridic/ADJ
 respectiv/ADJ,persoană/NOUN,juridic/ADJ
 temeinic/ADJ,studiu/NOUN,juridic/ADJ
@@ -8617,6 +8917,9 @@ propriu/ADJ,miliție/NOUN,local/ADJ
 respectiv/ADJ,minim/NOUN,local/ADJ
 vechi/ADJ,edificiu/NOUN,local/ADJ
 următor/ADJ,întrebare/NOUN,logic/ADJ
+mare/ADJ,problemă/NOUN,logistic/ADJ
+nou/ADJ,centru/NOUN,logistic/ADJ
+uriaș/ADJ,problemă/NOUN,logistic/ADJ
 celebru/ADJ,rege/NOUN,macedonean/ADJ
 mediu/ADJ,sat/NOUN,maghiar/ADJ
 nou/ADJ,administrație/NOUN,maghiar/ADJ
@@ -8667,6 +8970,8 @@ mare/ADJ,stat/NOUN,major/ADJ
 singur/ADJ,succes/NOUN,major/ADJ
 următor/ADJ,pas/NOUN,major/ADJ
 actual/ADJ,echipă/NOUN,managerial/ADJ
+amorf/ADJ,randament/NOUN,mare/ADJ
+articular/ADJ,mijlocie/NOUN,mare/ADJ
 fost/ADJ,sală/NOUN,mare/ADJ
 sfânt/ADJ,mărie/NOUN,mare/ADJ
 mare/ADJ,port/NOUN,maritim/ADJ
@@ -8692,12 +8997,14 @@ mare/ADJ,unitate/NOUN,mecanizat/ADJ
 mare/ADJ,universitate/NOUN,medical/ADJ
 principal/ADJ,doctrină/NOUN,medical/ADJ
 următor/ADJ,proprietate/NOUN,medicinal/ADJ
+următor/ADJ,consemnare/NOUN,medieval/ADJ
 vechi/ADJ,instituție/NOUN,medieval/ADJ
 vechi/ADJ,zid/NOUN,medieval/ADJ
 întreg/ADJ,gândire/NOUN,medieval/ADJ
 întreg/ADJ,ev/NOUN,mediu/ADJ
 următor/ADJ,frază/NOUN,memorabil/ADJ
 mare/ADJ,perspectivă/NOUN,metafizic/ADJ
+puternic/ADJ,preconcepție/NOUN,metafizic/ADJ
 actual/ADJ,structură/NOUN,metalic/ADJ
 numeros/ADJ,pod/NOUN,metalic/ADJ
 asemenea/ADJ,atenuare/NOUN,mic/ADJ
@@ -8766,12 +9073,15 @@ singur/ADJ,titlu/NOUN,mondial/ADJ
 nou/ADJ,sistem/NOUN,monetar/ADJ
 numeros/ADJ,tezaur/NOUN,monetar/ADJ
 mic/ADJ,schiță/NOUN,moral/ADJ
+puternic/ADJ,motivație/NOUN,moral/ADJ
 întreg/ADJ,lege/NOUN,moral/ADJ
 întreg/ADJ,responsabilitate/NOUN,moral/ADJ
 mare/ADJ,regiune/NOUN,morfologic/ADJ
 întreg/ADJ,personal/NOUN,muncitor/ADJ
 vechi/ADJ,corporație/NOUN,municipal/ADJ
+întreg/ADJ,pictură/NOUN,mural/ADJ
 mic/ADJ,fibră/NOUN,muscular/ADJ
+neagră/ADJ,bătut/NOUN,mustos/ADJ
 numeros/ADJ,organizație/NOUN,musulman/ADJ
 diferit/ADJ,film/NOUN,mut/ADJ
 diferit/ADJ,eveniment/NOUN,muzical/ADJ
@@ -8798,6 +9108,7 @@ singur/ADJ,aliat/NOUN,natural/ADJ
 singur/ADJ,izvor/NOUN,natural/ADJ
 următor/ADJ,rezervație/NOUN,natural/ADJ
 întreg/ADJ,cadru/NOUN,natural/ADJ
+propriu/ADJ,mucus/NOUN,nazal/ADJ
 mare/ADJ,unitate/NOUN,nazist/ADJ
 adevărat/ADJ,culoare/NOUN,național/ADJ
 dublu/ADJ,campion/NOUN,național/ADJ
@@ -8919,6 +9230,7 @@ fertil/ADJ,pământ/NOUN,negru/ADJ
 următor/ADJ,organizație/NOUN,neguvernamental/ADJ
 asemenea/ADJ,număr/NOUN,nesfârșit/ADJ
 feminin/ADJ,masculin/NOUN,neutru/ADJ
+eventual/ADJ,formațiune/NOUN,nodular/ADJ
 următor/ADJ,valoare/NOUN,nominal/ADJ
 întreg/ADJ,regiune/NOUN,nordic/ADJ
 principal/ADJ,ziar/NOUN,norvegian/ADJ
@@ -8957,6 +9269,7 @@ suprem/ADJ,fericire/NOUN,omenesc/ADJ
 întreg/ADJ,neam/NOUN,omenesc/ADJ
 vechi/ADJ,comitat/NOUN,omonim/ADJ
 propriu/ADJ,experiență/NOUN,operațional/ADJ
+divers/ADJ,fus/NOUN,orar/ADJ
 nou/ADJ,teritoriu/NOUN,organizat/ADJ
 ideologic/ADJ,element/NOUN,oriental/ADJ
 lingvistic/ADJ,roman/NOUN,oriental/ADJ
@@ -9092,6 +9405,7 @@ nou/ADJ,ordine/NOUN,postbelic/ADJ
 numeros/ADJ,analiză/NOUN,postbelic/ADJ
 numeros/ADJ,curs/NOUN,postuniversitar/ADJ
 unic/ADJ,soluție/NOUN,potrivit/ADJ
+neschimbat/ADJ,număr/NOUN,pozitiv/ADJ
 propriu/ADJ,marcă/NOUN,poștal/ADJ
 diferit/ADJ,problemă/NOUN,practic/ADJ
 fost/ADJ,comună/NOUN,prahovean/ADJ
@@ -9178,6 +9492,7 @@ post/ADJ,război/NOUN,rece/ADJ
 emițător/ADJ,canal/NOUN,receptor/ADJ
 singur/ADJ,autoritate/NOUN,recunoscut/ADJ
 liber/ADJ,calibru/NOUN,redus/ADJ
+următor/ADJ,undă/NOUN,reflectat/ADJ
 diferit/ADJ,castel/NOUN,regal/ADJ
 fost/ADJ,guvern/NOUN,regal/ADJ
 important/ADJ,document/NOUN,regal/ADJ
@@ -9286,6 +9601,7 @@ fost/ADJ,imperiu/NOUN,rus/ADJ
 mare/ADJ,compozitor/NOUN,rus/ADJ
 nou/ADJ,democrație/NOUN,rus/ADJ
 nou/ADJ,guvern/NOUN,rus/ADJ
+tânar/ADJ,democrație/NOUN,rus/ADJ
 întreg/ADJ,intelectualitate/NOUN,rus/ADJ
 întreg/ADJ,societate/NOUN,rus/ADJ
 cumplit/ADJ,iarnă/NOUN,rusesc/ADJ
@@ -9305,6 +9621,7 @@ numeros/ADJ,pungă/NOUN,secretor/ADJ
 senin/ADJ,simfonie/NOUN,secund/ADJ
 bogat/ADJ,literatură/NOUN,secundar/ADJ
 didactic/ADJ,învățământ/NOUN,secundar/ADJ
+numeros/ADJ,populație/NOUN,sedentar/ADJ
 olandez/ADJ,profit/NOUN,semnificativ/ADJ
 singur/ADJ,minoritate/NOUN,semnificativ/ADJ
 următor/ADJ,pasaj/NOUN,semnificativ/ADJ
@@ -9319,12 +9636,14 @@ singur/ADJ,punct/NOUN,slab/ADJ
 următor/ADJ,punct/NOUN,slab/ADJ
 numeros/ADJ,savant/NOUN,slav/ADJ
 adevărat/ADJ,dimensiune/NOUN,social/ADJ
+adevărat/ADJ,inginerie/NOUN,social/ADJ
 adevărat/ADJ,seism/NOUN,social/ADJ
 adevărat/ADJ,transformare/NOUN,social/ADJ
 divers/ADJ,pătură/NOUN,social/ADJ
 eventual/ADJ,conflict/NOUN,social/ADJ
 grav/ADJ,problemă/NOUN,social/ADJ
 mare/ADJ,audiență/NOUN,social/ADJ
+mare/ADJ,convulsie/NOUN,social/ADJ
 mare/ADJ,explozie/NOUN,social/ADJ
 mare/ADJ,problemă/NOUN,social/ADJ
 mare/ADJ,tensiune/NOUN,social/ADJ
@@ -9341,6 +9660,7 @@ nou/ADJ,stat/NOUN,socialist/ADJ
 propriu/ADJ,cale/NOUN,socialist/ADJ
 propriu/ADJ,reformă/NOUN,socialist/ADJ
 întreg/ADJ,mișcare/NOUN,socialist/ADJ
+întreg/ADJ,sistem/NOUN,socio-familial/ADJ
 destul/ADJ,energie/NOUN,solar/ADJ
 nou/ADJ,calendar/NOUN,solar/ADJ
 întreg/ADJ,sistem/NOUN,solar/ADJ
@@ -9410,8 +9730,11 @@ principal/ADJ,campus/NOUN,studențesc/ADJ
 puternic/ADJ,element/NOUN,subiectiv/ADJ
 nou/ADJ,centru/NOUN,subteran/ADJ
 numeros/ADJ,apă/NOUN,subteran/ADJ
+numeros/ADJ,scriitor/NOUN,suedez/ADJ
+întreg/ADJ,stat/NOUN,suedez/ADJ
 puternic/ADJ,stare/NOUN,sufletesc/ADJ
 înalt/ADJ,însușire/NOUN,sufletesc/ADJ
+nou/ADJ,nume/NOUN,sugerat/ADJ
 diferit/ADJ,eșalon/NOUN,superior/ADJ
 nou/ADJ,școală/NOUN,superior/ADJ
 divers/ADJ,comision/NOUN,suplimentar/ADJ
@@ -9422,6 +9745,8 @@ mare/ADJ,migrație/NOUN,sârb/ADJ
 responsabil/ADJ,guvern/NOUN,sârb/ADJ
 puternic/ADJ,influență/NOUN,sârbesc/ADJ
 vechi/ADJ,biserică/NOUN,sârbesc/ADJ
+mare/ADJ,lac/NOUN,sărat/ADJ
+mare/ADJ,lac/NOUN,sărat/ADJ
 mediu/ADJ,sat/NOUN,săsesc/ADJ
 următor/ADJ,așezare/NOUN,sătesc/ADJ
 următor/ADJ,așezare/NOUN,sătesc/ADJ
@@ -9453,6 +9778,9 @@ diferit/ADJ,substanță/NOUN,toxic/ADJ
 diferit/ADJ,joc/NOUN,tradițional/ADJ
 principal/ADJ,activitate/NOUN,tradițional/ADJ
 nou/ADJ,așezare/NOUN,transilvănean/ADJ
+dens/ADJ,pădure/NOUN,tropical/ADJ
+estic/ADJ,pădure/NOUN,tropical/ADJ
+frecvent/ADJ,ploaie/NOUN,tropical/ADJ
 mare/ADJ,vizir/NOUN,turc/ADJ
 nou/ADJ,republică/NOUN,turc/ADJ
 nou/ADJ,element/NOUN,turcesc/ADJ
@@ -9499,6 +9827,7 @@ următor/ADJ,echipaj/NOUN,uman/ADJ
 întreg/ADJ,rasă/NOUN,uman/ADJ
 divers/ADJ,proiect/NOUN,umanitar/ADJ
 mic/ADJ,câmpie/NOUN,ungar/ADJ
+mare/ADJ,proprietar/NOUN,ungur/ADJ
 nou/ADJ,partid/NOUN,unit/ADJ
 actual/ADJ,biserică/NOUN,unitarian/ADJ
 mare/ADJ,răzmeriță/NOUN,unitarian/ADJ
@@ -9531,10 +9860,14 @@ următor/ADJ,carte/NOUN,vechi/ADJ
 întreg/ADJ,imperiu/NOUN,vechi/ADJ
 mare/ADJ,putere/NOUN,vecin/ADJ
 mic/ADJ,stat/NOUN,vecin/ADJ
+numeros/ADJ,aliment/NOUN,vegetal/ADJ
+întreg/ADJ,lume/NOUN,vegetal/ADJ
 singur/ADJ,predicat/NOUN,verbal/ADJ
 nenumărat/ADJ,spațiu/NOUN,verde/ADJ
 principal/ADJ,spațiu/NOUN,verde/ADJ
 singur/ADJ,soluție/NOUN,viabil/ADJ
+numeros/ADJ,model/NOUN,vibratoriu/ADJ
+ilustru/ADJ,psihiatru/NOUN,vienez/ADJ
 diferit/ADJ,fenomen/NOUN,viitor/ADJ
 important/ADJ,relație/NOUN,vital/ADJ
 numit/ADJ,umoare/NOUN,vitros/ADJ

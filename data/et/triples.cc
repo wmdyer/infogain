@@ -7,6 +7,7 @@ loogiline/ADJ,operatsioon/NOUN,edukas/ADJ
 parim/ADJ,asi/NOUN,elus/ADJ
 parim/ADJ,asi/NOUN,elus/ADJ
 viimane/ADJ,aeg/NOUN,harvem/ADJ
+demokraatlik/ADJ,poliitik/NOUN,hea/ADJ
 esimene/ADJ,juht/NOUN,hea/ADJ
 suur/ADJ,enamus/NOUN,hea/ADJ
 hea/ADJ,alus/NOUN,hilisem/ADJ
@@ -15,6 +16,7 @@ staatiline/ADJ,pilt/NOUN,järjestikune/ADJ
 eelmine/ADJ,aasta/NOUN,pikk/ADJ
 klassikaline/ADJ,aeroobika/NOUN,rahulik/ADJ
 klassikaline/ADJ,aeroobika/NOUN,rahulik/ADJ
+erinev/ADJ,liiga/NOUN,seni/ADJ
 teismeline/ADJ,tüdruk/NOUN,surnud/ADJ
 suur/ADJ,mõte/NOUN,suureline/ADJ
 kohalik/ADJ,valimine/NOUN,teine/ADJ
@@ -81,6 +83,7 @@ lineaarne/ADJ,dünaamiline/ADJ,ala/NOUN
 vaheline/ADJ,neutraalne/ADJ,ala/NOUN
 selline/ADJ,suur/ADJ,ala/NOUN
 erinev/ADJ,tehniline/ADJ,ala/NOUN
+tänav/ADJ,vaheline/ADJ,ala/NOUN
 spetsiaalne/ADJ,matemaatiline/ADJ,algoritm/NOUN
 anonüümne/ADJ,diplomaatiline/ADJ,allikas/NOUN
 parim/ADJ,roheline/ADJ,alternatiiv/NOUN
@@ -375,6 +378,7 @@ suure_pärane/ADJ,optiline/ADJ,jõudlus/NOUN
 kiireim/ADJ,võimalik/ADJ,jõudlus/NOUN
 selline/ADJ,seksuaalne/ADJ,jõulisus/NOUN
 sama/ADJ,suur/ADJ,k/NOUN
+sirge/ADJ,tõus/ADJ,k/NOUN
 traditsiooniline/ADJ,staatiline/ADJ,kaar/NOUN
 teine/ADJ,uhke/ADJ,kaar/NOUN
 elus/ADJ,hea/ADJ,kaaslane/NOUN
@@ -410,6 +414,7 @@ keskmine/ADJ,aastane/ADJ,kasv/NOUN
 uus/ADJ,kehaline/ADJ,kasvatus/NOUN
 järgmine/ADJ,grammatiline/ADJ,kategooria/NOUN
 piirav/ADJ,sooline/ADJ,kategooria/NOUN
+seni/ADJ,viimane/ADJ,katsetus/NOUN
 vaheline/ADJ,seaduslik/ADJ,kaubandus/NOUN
 esmane/ADJ,ametlik/ADJ,keel/NOUN
 erinev/ADJ,eesti/ADJ,keel/NOUN
@@ -461,7 +466,6 @@ uus/ADJ,suvine/ADJ,kleidi=ke/NOUN
 pikk/ADJ,must/ADJ,kleit/NOUN
 väike/ADJ,must/ADJ,kleit/NOUN
 rõhutav/ADJ,valge/ADJ,kleit/NOUN
-lugema/ADJ,endine/ADJ,klient/NOUN
 niiske/ADJ,kontinentaalne/ADJ,kliima/NOUN
 troopiline/ADJ,mandriline/ADJ,kliima/NOUN
 niiske/ADJ,mereline/ADJ,kliima/NOUN
@@ -517,6 +521,7 @@ oluline/ADJ,poliitiline/ADJ,kontakt/NOUN
 laiem/ADJ,poliitiline/ADJ,kontekst/NOUN
 suur/ADJ,bioloogiline/ADJ,kontrast/NOUN
 regulaarne/ADJ,arstlik/ADJ,kontroll/NOUN
+suure=m/ADJ,demokraatlik/ADJ,kontroll/NOUN
 vajalik/ADJ,meditsiiniline/ADJ,kontroll/NOUN
 põhine=v/ADJ,sotsiaalne/ADJ,kontroll/NOUN
 uus/ADJ,strateegiline/ADJ,kontseptsioon/NOUN
@@ -620,6 +625,7 @@ kole/ADJ,pealmine/ADJ,leht/NOUN
 välimine/ADJ,suur/ADJ,leht/NOUN
 kole/ADJ,välimine/ADJ,leht/NOUN
 parim/ADJ,noor/ADJ,leiutaja/NOUN
+kindel/ADJ,kohustuslik/ADJ,lektüür/NOUN
 lähim/ADJ,rahvus_vahe=line/ADJ,lennu_jaam/NOUN
 vastav/ADJ,uus/ADJ,leping/NOUN
 punane/ADJ,lõhnav/ADJ,lett/NOUN
@@ -712,7 +718,9 @@ tüüpiline/ADJ,eesti/ADJ,mees/NOUN
 üritav/ADJ,eesti/ADJ,mees/NOUN
 tuttav/ADJ,hall/ADJ,mees/NOUN
 sportlik/ADJ,sale/ADJ,mees/NOUN
+seni/ADJ,suurim/ADJ,mees/NOUN
 korras/ADJ,tap=nud/ADJ,mees/NOUN
+seni/ADJ,tundmatu/ADJ,mees/NOUN
 selline/ADJ,vaene/ADJ,mees/NOUN
 surnud/ADJ,vana/ADJ,mees/NOUN
 tark/ADJ,vana/ADJ,mees/NOUN
@@ -1006,6 +1014,7 @@ pakkuv/ADJ,moodne/ADJ,restoran/NOUN
 esimene/ADJ,oranž/ADJ,revolutsioon/NOUN
 pikk/ADJ,range/ADJ,reziim/NOUN
 kitsas/ADJ,kollane/ADJ,riba/NOUN
+teine/ADJ,samas/ADJ,riigi_kogu/NOUN
 ükski/ADJ,kolmas/ADJ,riik/NOUN
 selline/ADJ,kommunistlik/ADJ,riik/NOUN
 ühine/ADJ,sooviv/ADJ,riik/NOUN
@@ -1163,6 +1172,7 @@ parim/ADJ,noor/ADJ,tantsija/NOUN
 tugevaim/ADJ,kohalik/ADJ,tasand/NOUN
 sama/ADJ,domineeriv/ADJ,tase/NOUN
 kõrge/ADJ,kunstiline/ADJ,tase/NOUN
+seni/ADJ,madalaim/ADJ,tase/NOUN
 mullune/ADJ,sama/ADJ,tase/NOUN
 selline/ADJ,selline/ADJ,tase/NOUN
 jääv/ADJ,teine/ADJ,tase/NOUN
@@ -1336,7 +1346,6 @@ hea/ADJ,öine/ADJ,uni/NOUN
 täiuslik/ADJ,keskne/ADJ,universum/NOUN
 oletatav/ADJ,nähtav/ADJ,universum/NOUN
 hea/ADJ,esimene/ADJ,usa/NOUN
-lugema/ADJ,viimane/ADJ,uudis/NOUN
 esimene/ADJ,värske/ADJ,uudis/NOUN
 saadav/ADJ,selline/ADJ,uuendus/NOUN
 sõltumatu/ADJ,rahvus_vahe=line/ADJ,uurimine/NOUN
@@ -1355,6 +1364,7 @@ vajalik/ADJ,rahaline/ADJ,vahend/NOUN
 erinev/ADJ,õiguslik/ADJ,vaidlus/NOUN
 suur/ADJ,graafiline/ADJ,vajadus/NOUN
 naine/ADJ,normaalne/ADJ,vajadus/NOUN
+olev/ADJ,võimalik/ADJ,vaktsiin/NOUN
 uus/ADJ,kohustuslik/ADJ,valdkond/NOUN
 teine/ADJ,oluline/ADJ,valdkond/NOUN
 roosakas/ADJ,lai/ADJ,valge/NOUN
@@ -1402,6 +1412,7 @@ ilus/ADJ,värvi~line/ADJ,välk/NOUN
 ilus/ADJ,must/ADJ,värv/NOUN
 naturaalne/ADJ,roheline/ADJ,värv/NOUN
 sügav/ADJ,must/ADJ,värvus/NOUN
+mitmene/ADJ,erinev/ADJ,vääratus/NOUN
 tunnusta=tud/ADJ,eetiline/ADJ,väärtus/NOUN
 märkimis_väärne/ADJ,kirjanduslik/ADJ,väärtus/NOUN
 oluline/ADJ,konservatiivne/ADJ,väärtus/NOUN
@@ -1450,10 +1461,12 @@ universaalne/ADJ,kristlik/ADJ,ühendus/NOUN
 rahvuslik/ADJ,poliitiline/ADJ,ühendus/NOUN
 uus/ADJ,poliitiline/ADJ,ühendus/NOUN
 selline/ADJ,seksuaalne/ADJ,ühinemine/NOUN
+normaalne/ADJ,demokraatlik/ADJ,ühiskond/NOUN
 praegune/ADJ,kapitalistlik/ADJ,ühiskond/NOUN
 õiglane/ADJ,sotsialistlik/ADJ,ühiskond/NOUN
 uus/ADJ,diagnostiline/ADJ,üksus/NOUN
 suurem/ADJ,poliitiline/ADJ,üksus/NOUN
+rahvus_vahe=line/ADJ,demokraatlik/ADJ,üldsus/NOUN
 järgmine/ADJ,halb/ADJ,üllatus/NOUN
 eriline/ADJ,kulinaarne/ADJ,üllatus/NOUN
 õige/ADJ,magus/ADJ,üllatus/NOUN

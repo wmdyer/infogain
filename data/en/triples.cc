@@ -7963,7 +7963,6 @@ other/ADJ,key/ADJ,piece/NOUN
 periodic/ADJ,long/ADJ,piece/NOUN
 several/ADJ,more/ADJ,piece/NOUN
 other/ADJ,new/ADJ,piece/NOUN
-major/ADJ,publish/ADJ,piece/NOUN
 organic/ADJ,strawberry/ADJ,piece/NOUN
 good/ADJ,young/ADJ,piece/NOUN
 conventional/ADJ,religious/ADJ,piety/NOUN
@@ -8758,6 +8757,7 @@ unified/ADJ,standard/ADJ,railway/NOUN
 heavy/ADJ,recent/ADJ,rain/NOUN
 blue/ADJ,yellow/ADJ,rainbow/NOUN
 average/ADJ,annual/ADJ,rainfall/NOUN
+enough/ADJ,physical/ADJ,ram/NOUN
 long/ADJ,last/ADJ,ramification/NOUN
 adverse/ADJ,legal/ADJ,ramification/NOUN
 better/ADJ,dynamic/ADJ,range/NOUN
@@ -8798,7 +8798,6 @@ oldest/ADJ,first/ADJ,rating/NOUN
 oldest/ADJ,first/ADJ,rating/NOUN
 average/ADJ,overall/ADJ,rating/NOUN
 many/ADJ,previous/ADJ,rating/NOUN
-lower/ADJ,weighted/ADJ,rating/NOUN
 anal/ADJ,high/ADJ,reach/NOUN
 severe/ADJ,allergic/ADJ,reaction/NOUN
 severe/ADJ,allergic/ADJ,reaction/NOUN

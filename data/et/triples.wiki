@@ -73,6 +73,7 @@ keemiline/ADJ,reaktsioon/NOUN,aktiivne/ADJ
 graafiline/ADJ,romaan/NOUN,alane/ADJ
 suur/ADJ,mõtleja/NOUN,filosoofiline/ADJ
 viimane/ADJ,aeg/NOUN,harvem/ADJ
+demokraatlik/ADJ,poliitik/NOUN,hea/ADJ
 esimene/ADJ,juht/NOUN,hea/ADJ
 hea/ADJ,to/NOUN,hea/ADJ
 vene/ADJ,tank/NOUN,hea/ADJ
@@ -95,6 +96,7 @@ must/ADJ,jõud/NOUN,vastane/ADJ
 must/ADJ,jõud/NOUN,vastane/ADJ
 endine/ADJ,kuninglik/ADJ,aadelkond/NOUN
 järgmine/ADJ,vii/ADJ,aas/NOUN
+uus/ADJ,astroloogiline/ADJ,aasta/NOUN
 keskmine/ADJ,troopiline/ADJ,aasta/NOUN
 hea/ADJ,uus/ADJ,aasta/NOUN
 suurim/ADJ,viimane/ADJ,aasta/NOUN
@@ -173,6 +175,8 @@ endine/ADJ,keiserlik/ADJ,armee/NOUN
 inglise/ADJ,pragmaatiline/ADJ,armee/NOUN
 sama/ADJ,suur/ADJ,armee/NOUN
 selline/ADJ,suur/ADJ,arst/NOUN
+parim/ADJ,pop/ADJ,artist/NOUN
+parim/ADJ,pop/ADJ,artist/NOUN
 parim/ADJ,rahvus_vahe=line/ADJ,artist/NOUN
 parim/ADJ,rahvus_vahe=line/ADJ,artist/NOUN
 parim/ADJ,rahvus_vahe=line/ADJ,artist/NOUN
@@ -210,6 +214,7 @@ suure=m/ADJ,geneetiline/ADJ,defekt/NOUN
 järgmine/ADJ,formaalne/ADJ,definitsioon/NOUN
 selge/ADJ,teaduslik/ADJ,definitsioon/NOUN
 ametlik/ADJ,universaalne/ADJ,definitsioon/NOUN
+mõõdukas/ADJ,parlamentaarne/ADJ,demokraatia/NOUN
 esimene/ADJ,suur/ADJ,demonstratsioon/NOUN
 esimene/ADJ,taoline/ADJ,demonstratsioon/NOUN
 hea/ADJ,3./ADJ,detsember/NOUN
@@ -261,6 +266,7 @@ vajalik/ADJ,täiendav/ADJ,energia/NOUN
 ainuke/ADJ,täielik/ADJ,ennetus/NOUN
 sama/ADJ,empiiriline/ADJ,ennustus/NOUN
 selline/ADJ,piirav/ADJ,ensüüm/NOUN
+seni/ADJ,viimane/ADJ,era/NOUN
 koondu=nud/ADJ,uus/ADJ,erakond/NOUN
 ainuke/ADJ,ökoloogiline/ADJ,erakond/NOUN
 oluline/ADJ,funktsionaalne/ADJ,erinevus/NOUN
@@ -323,6 +329,7 @@ rakenduslik/ADJ,pedagoogiline/ADJ,haridus/NOUN
 kõrge/ADJ,vaimulik/ADJ,haridus/NOUN
 parim/ADJ,võimalik/ADJ,haridus/NOUN
 selline/ADJ,kasulik/ADJ,harjumus/NOUN
+uus/ADJ,tänav/ADJ,hark/NOUN
 vana/ADJ,majanduslik/ADJ,hegemoonia/NOUN
 suure=m/ADJ,absoluutne/ADJ,heledus/NOUN
 esimene/ADJ,elektrooniline/ADJ,heli/NOUN
@@ -333,6 +340,7 @@ ainus/ADJ,esteetiline/ADJ,hinnang/NOUN
 esimene/ADJ,parem/ADJ,hinnang/NOUN
 haige/ADJ,subjektiivne/ADJ,hinnang/NOUN
 madalam/ADJ,keskmine/ADJ,hinne/NOUN
+vastanduv/ADJ,demokraatlik/ADJ,hoiak/NOUN
 vastav/ADJ,esteetiline/ADJ,hoiak/NOUN
 ühine/ADJ,ametlik/ADJ,hoiatus/NOUN
 esinduslik/ADJ,kivine/ADJ,hoone/NOUN
@@ -591,6 +599,7 @@ selline/ADJ,keela=tud/ADJ,koht/NOUN
 parim/ADJ,kolmas/ADJ,koht/NOUN
 parim/ADJ,kolmas/ADJ,koht/NOUN
 esimene/ADJ,kümme/ADJ,koht/NOUN
+eelmine/ADJ,samas/ADJ,koht/NOUN
 individuaalne/ADJ,teine/ADJ,koht/NOUN
 parim/ADJ,teine/ADJ,koht/NOUN
 parim/ADJ,teine/ADJ,koht/NOUN
@@ -667,6 +676,7 @@ võimalik/ADJ,esimene/ADJ,kord/NOUN
 esimene/ADJ,eesti/ADJ,korporatsioon/NOUN
 esimene/ADJ,eesti/ADJ,korporatsioon/NOUN
 esimene/ADJ,eesti/ADJ,korporatsioon/NOUN
+uus/ADJ,demokraatlik/ADJ,korraldus/NOUN
 keeruline/ADJ,sotsiaalne/ADJ,korraldus/NOUN
 selline/ADJ,poliitiline/ADJ,korrektsus/NOUN
 terve/ADJ,viies/ADJ,korrus/NOUN
@@ -749,6 +759,7 @@ noor/ADJ,andekas/ADJ,lauljanna/NOUN
 tuline/ADJ,vale/ADJ,leek/NOUN
 üle_jäänud/ADJ,viimane/ADJ,leht/NOUN
 suurim/ADJ,avasta=tud/ADJ,leiu_koht/NOUN
+kindel/ADJ,kohustuslik/ADJ,lektüür/NOUN
 lähim/ADJ,kohalik/ADJ,lennu_jaam/NOUN
 lähim/ADJ,rahvus_vahe=line/ADJ,lennu_jaam/NOUN
 lähim/ADJ,rahvus_vahe=line/ADJ,lennu_jaam/NOUN
@@ -774,6 +785,7 @@ vaheline/ADJ,suhteline/ADJ,liikumine/NOUN
 kitsas/ADJ,elitaarne/ADJ,liikumis/NOUN
 eesti/ADJ,kommunistlik/ADJ,liikumis/NOUN
 illegaalne/ADJ,kommunistlik/ADJ,liikumis/NOUN
+rahvuslik/ADJ,demokraatlik/ADJ,liit/NOUN
 täielik/ADJ,majanduslik/ADJ,liit/NOUN
 uus/ADJ,rahvus_vahe=line/ADJ,liit/NOUN
 kristlik/ADJ,sõjaline/ADJ,liit/NOUN
@@ -924,9 +936,34 @@ alaline/ADJ,akadeemiline/ADJ,nimetus/NOUN
 norra/ADJ,keelne/ADJ,nimetus/NOUN
 endine/ADJ,ametlik/ADJ,nimi/NOUN
 varasem/ADJ,ametlik/ADJ,nimi/NOUN
+tänav/ADJ,endine/ADJ,nimi/NOUN
+tänav/ADJ,endine/ADJ,nimi/NOUN
+tänav/ADJ,endine/ADJ,nimi/NOUN
+tänav/ADJ,endine/ADJ,nimi/NOUN
+tänav/ADJ,endine/ADJ,nimi/NOUN
+tänav/ADJ,endine/ADJ,nimi/NOUN
+tänav/ADJ,endine/ADJ,nimi/NOUN
+tänav/ADJ,endine/ADJ,nimi/NOUN
 selline/ADJ,halvustav/ADJ,nimi/NOUN
 inglise/ADJ,keelne/ADJ,nimi/NOUN
 selline/ADJ,korralik/ADJ,nimi/NOUN
+tänav/ADJ,kunagine/ADJ,nimi/NOUN
+tänav/ADJ,vanim/ADJ,nimi/NOUN
+tänav/ADJ,varasem/ADJ,nimi/NOUN
+tänav/ADJ,varasem/ADJ,nimi/NOUN
+tänav/ADJ,varasem/ADJ,nimi/NOUN
+tänav/ADJ,varasem/ADJ,nimi/NOUN
+tänav/ADJ,varasem/ADJ,nimi/NOUN
+tänav/ADJ,varasem/ADJ,nimi/NOUN
+tänav/ADJ,varasem/ADJ,nimi/NOUN
+tänav/ADJ,varasem/ADJ,nimi/NOUN
+tänav/ADJ,varasem/ADJ,nimi/NOUN
+tänav/ADJ,varasem/ADJ,nimi/NOUN
+tänav/ADJ,varasem/ADJ,nimi/NOUN
+tänav/ADJ,varasem/ADJ,nimi/NOUN
+tänav/ADJ,varasem/ADJ,nimi/NOUN
+tänav/ADJ,varasem/ADJ,nimi/NOUN
+tänav/ADJ,varasem/ADJ,nimi/NOUN
 identne/ADJ,ökoloogiline/ADJ,nišš/NOUN
 sama/ADJ,ökoloogiline/ADJ,nišš/NOUN
 selline/ADJ,ökoloogiline/ADJ,nišš/NOUN
@@ -1078,6 +1115,10 @@ asu=v/ADJ,avalik/ADJ,park/NOUN
 suur/ADJ,inglise/ADJ,park/NOUN
 suurim/ADJ,inglise/ADJ,park/NOUN
 suure=m/ADJ,poliitiline/ADJ,part/NOUN
+endine/ADJ,demokraatlik/ADJ,partei/NOUN
+opositsiooniline/ADJ,demokraatlik/ADJ,partei/NOUN
+uus/ADJ,demokraatlik/ADJ,partei/NOUN
+uus/ADJ,demokraatlik/ADJ,partei/NOUN
 albaania/ADJ,kommunistlik/ADJ,partei/NOUN
 norra/ADJ,kommunistlik/ADJ,partei/NOUN
 uus/ADJ,kommunistlik/ADJ,partei/NOUN
@@ -1086,6 +1127,7 @@ rahvuslik/ADJ,konservatiivne/ADJ,partei/NOUN
 ainus/ADJ,legaalne/ADJ,partei/NOUN
 rahvuslik/ADJ,liberaalne/ADJ,partei/NOUN
 uus/ADJ,poliitiline/ADJ,partei/NOUN
+demokraatlik/ADJ,progressiivne/ADJ,partei/NOUN
 esimene/ADJ,suure=m/ADJ,partii/NOUN
 suur/ADJ,kommunistlik/ADJ,partisan/NOUN
 sama/ADJ,graafiline/ADJ,partituur/NOUN
@@ -1130,6 +1172,7 @@ eesti/ADJ,poliitiline/ADJ,politsei/NOUN
 tartu/ADJ,poliitiline/ADJ,politsei/NOUN
 suur/ADJ,hiline/ADJ,pommitamine/NOUN
 tohutu/ADJ,suur/ADJ,populaarsus/NOUN
+suur/ADJ,heterogeenne/ADJ,populatsioon/NOUN
 teine/ADJ,ründav/ADJ,positsioon/NOUN
 kõrge/ADJ,sotsiaalne/ADJ,positsioon/NOUN
 uus/ADJ,efektiivne/ADJ,potentsiaal/NOUN
@@ -1239,6 +1282,7 @@ selline/ADJ,digitaalne/ADJ,režiim/NOUN
 talvine/ADJ,jahedam/ADJ,režiim/NOUN
 teine/ADJ,vana/ADJ,režiim/NOUN
 kitsas/ADJ,kollane/ADJ,riba/NOUN
+esimene/ADJ,demokraatlik/ADJ,riik/NOUN
 traditsiooniline/ADJ,iga-aastane/ADJ,riik/NOUN
 ükski/ADJ,kolmas/ADJ,riik/NOUN
 selline/ADJ,kommunistlik/ADJ,riik/NOUN
@@ -1253,6 +1297,7 @@ suure=m/ADJ,individuaalne/ADJ,risk/NOUN
 madal/ADJ,suhteline/ADJ,risk/NOUN
 elus/ADJ,suur/ADJ,risk/NOUN
 suur/ADJ,äriline/ADJ,risk/NOUN
+elektrooniline/ADJ,pop/ADJ,rock/NOUN
 oluline/ADJ,füsioloogiline/ADJ,roll/NOUN
 esimene/ADJ,oluline/ADJ,roll/NOUN
 sarnane/ADJ,poliitiline/ADJ,roll/NOUN
@@ -1279,6 +1324,7 @@ hea/ADJ,lahkuv/ADJ,rühm/NOUN
 järgmine/ADJ,suur/ADJ,rühm/NOUN
 teine/ADJ,suure=m/ADJ,rühm/NOUN
 suurim/ADJ,opositsiooniline/ADJ,rühmitus/NOUN
+seni/ADJ,tundmatu/ADJ,rühmitus/NOUN
 esimene/ADJ,suure=m/ADJ,rünnak/NOUN
 viimane/ADJ,suure=m/ADJ,rünnak/NOUN
 aeglane/ADJ,harmooniline/ADJ,rütm/NOUN
@@ -1297,6 +1343,7 @@ suhteline/ADJ,usuline/ADJ,sallivus/NOUN
 esimene/ADJ,oluline/ADJ,samm/NOUN
 esimene/ADJ,suur/ADJ,samm/NOUN
 järgmine/ADJ,suure=m/ADJ,samm/NOUN
+seni/ADJ,suurim/ADJ,samm/NOUN
 vertikaalne/ADJ,valge/ADJ,sammas/NOUN
 hea/ADJ,täiendav/ADJ,sanktsioon/NOUN
 olene=mata/ADJ,selline/ADJ,seadistus/NOUN
@@ -1508,6 +1555,7 @@ teine/ADJ,noor/ADJ,tudeng/NOUN
 teine/ADJ,noor/ADJ,tudeng/NOUN
 summaarne/ADJ,optiline/ADJ,tugevus/NOUN
 senine/ADJ,parim/ADJ,tulem/NOUN
+seni/ADJ,parim/ADJ,tulemus/NOUN
 senine/ADJ,parim/ADJ,tulemus/NOUN
 parim/ADJ,rahvus_vahe=line/ADJ,tulemus/NOUN
 suurim/ADJ,võimalik/ADJ,tulemus/NOUN
@@ -1630,6 +1678,7 @@ hele/ADJ,valge/ADJ,valgus/NOUN
 elus/ADJ,oluline/ADJ,valik/NOUN
 oluline/ADJ,suguline/ADJ,valik/NOUN
 viimane/ADJ,selline/ADJ,valimine/NOUN
+seni/ADJ,viimane/ADJ,valimine/NOUN
 kõrgeim/ADJ,kohalik/ADJ,valitseja/NOUN
 abistav/ADJ,kristlik/ADJ,valitseja/NOUN
 viimane/ADJ,paganlik/ADJ,valitseja/NOUN
@@ -1641,6 +1690,7 @@ senine/ADJ,ajutine/ADJ,valitsus/NOUN
 uus/ADJ,ajutine/ADJ,valitsus/NOUN
 uus/ADJ,ajutine/ADJ,valitsus/NOUN
 uus/ADJ,ajutine/ADJ,valitsus/NOUN
+esimene/ADJ,demokraatlik/ADJ,valitsus/NOUN
 senine/ADJ,rahvuslik/ADJ,valu/NOUN
 spetsiaalne/ADJ,poliitiline/ADJ,vang/NOUN
 adaptiivne/ADJ,geneetiline/ADJ,variatsioon/NOUN
@@ -1678,6 +1728,7 @@ alumine/ADJ,must/ADJ,värv/NOUN
 eriline/ADJ,must/ADJ,värv/NOUN
 ilus/ADJ,must/ADJ,värv/NOUN
 selge/ADJ,opositsiooniline/ADJ,värving/NOUN
+mitmene/ADJ,erinev/ADJ,vääratus/NOUN
 tunnusta=tud/ADJ,eetiline/ADJ,väärtus/NOUN
 ühine/ADJ,eetiline/ADJ,väärtus/NOUN
 kõrge/ADJ,energeetiline/ADJ,väärtus/NOUN

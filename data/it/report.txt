@@ -1,126 +1,63 @@
-ig_1st_a ANA beta_0 -0.09931648499847291
-ig_1st_a ANA beta_1 34.71335687663267
-ig_1st_a ANA p-value 2.30298987347031e-208
-ig_1st_a ANA accuracy 0.6895248380129589
-ig_1st_a AAN beta_0 0.15065162558038933
-ig_1st_a AAN beta_1 -0.1794424262802265
-ig_1st_a AAN p-value 0.9289885360850526
-ig_1st_a AAN accuracy 0.5374331550802139
-ig_1st_a NAA beta_0 -0.0636437233054361
-ig_1st_a NAA beta_1 5.994114176980842
-ig_1st_a NAA p-value 2.5613179157603008e-108
-ig_1st_a NAA accuracy 0.7442105263157894
-ig_1st_a all n 12323
-ig_1st_a all n_train 7295
-ig_1st_a all n_test 5028
-ig_1st_a ANA n_train 4553 0.6241261137765592
-ig_1st_a AAN n_train 205 0.02810143934201508
-ig_1st_a NAA n_train 2537 0.3477724468814256
-ig_1st_a ANA n_test 3704 0.7366746221161495
-ig_1st_a AAN n_test 374 0.07438345266507558
-ig_1st_a NAA n_test 950 0.18894192521877487
-ig_sum ANA beta_0 0.2214540297057631
-ig_sum ANA beta_1 -0.7432552886165059
-ig_sum ANA p-value 2.437706218473892e-10
-ig_sum ANA accuracy 0.5573859033216311
-ig_sum AAN beta_0 0.15102101864604453
-ig_sum AAN beta_1 0.5963607961532645
-ig_sum AAN p-value 0.7757076804376333
-ig_sum AAN accuracy 0.5347593582887701
-ig_sum NAA beta_0 0.02065325552255378
-ig_sum NAA beta_1 2.141889206435129
-ig_sum NAA p-value 6.072511764146107e-58
-ig_sum NAA accuracy 0.6930379746835443
-ig_sum all n 12323
-ig_sum all n_train 7298
-ig_sum all n_test 5025
-ig_sum ANA n_train 4554 0.6240065771444231
-ig_sum AAN n_train 205 0.028089887640449437
-ig_sum NAA n_train 2539 0.34790353521512746
-ig_sum ANA n_test 3703 0.7369154228855721
-ig_sum AAN n_test 374 0.07442786069651741
-ig_sum NAA n_test 948 0.18865671641791046
-ig_uc_pos ANA beta_0 0.17089066419813878
-ig_uc_pos ANA beta_1 0.0018026343502428642
-ig_uc_pos ANA p-value 0.8176061803112358
-ig_uc_pos ANA accuracy 0.5309941520467836
-ig_uc_pos AAN beta_0 0.1883927485277576
-ig_uc_pos AAN beta_1 0.08311878419031327
-ig_uc_pos AAN p-value 0.07328730383923522
-ig_uc_pos AAN accuracy 0.5588235294117647
-ig_uc_pos NAA beta_0 0.04108488664537533
-ig_uc_pos NAA beta_1 0.07094280882930323
-ig_uc_pos NAA p-value 1.5976228351441393e-10
-ig_uc_pos NAA accuracy 0.6051779935275081
-ig_uc_pos all n 11539
-ig_uc_pos all n_train 6818
-ig_uc_pos all n_test 4721
-ig_uc_pos ANA n_train 4117 0.6038427691405104
-ig_uc_pos AAN n_train 205 0.030067468465825756
-ig_uc_pos NAA n_train 2496 0.3660897623936638
-ig_uc_pos ANA n_test 3420 0.7244227917814022
-ig_uc_pos AAN n_test 374 0.07922050413048083
-ig_uc_pos NAA n_test 927 0.19635670408811692
-ig_c_pos ANA beta_0 0.25898117401400556
-ig_c_pos ANA beta_1 -3.0383281362827455
-ig_c_pos ANA p-value 1.338037950766689e-32
-ig_c_pos ANA accuracy 0.5452335943829327
-ig_c_pos AAN beta_0 0.15399500710532757
-ig_c_pos AAN beta_1 -0.4185929928545706
-ig_c_pos AAN p-value 0.869084765947761
-ig_c_pos AAN accuracy 0.5374331550802139
-ig_c_pos NAA beta_0 -0.043530253120777844
-ig_c_pos NAA beta_1 8.579429678127715
-ig_c_pos NAA p-value 1.376712723789079e-112
-ig_c_pos NAA accuracy 0.7518878101402373
-ig_c_pos all n 12257
-ig_c_pos all n_train 7253
-ig_c_pos all n_test 5004
-ig_c_pos ANA n_train 4554 0.6278781193988694
-ig_c_pos AAN n_train 205 0.02826416655177168
-ig_c_pos NAA n_train 2494 0.3438577140493589
-ig_c_pos ANA n_test 3703 0.7400079936051159
-ig_c_pos AAN n_test 374 0.07474020783373302
-ig_c_pos NAA n_test 927 0.18525179856115107
-ig_uc_neg ANA beta_0 0.2815190605989569
-ig_uc_neg ANA beta_1 -2.4842315241927233
-ig_uc_neg ANA p-value 4.521652621047411e-27
-ig_uc_neg ANA accuracy 0.5576248313090418
-ig_uc_neg AAN beta_0 0.1362347682045679
-ig_uc_neg AAN beta_1 2.0665020063019965
-ig_uc_neg AAN p-value 0.8277795173297257
-ig_uc_neg AAN accuracy 0.5374331550802139
-ig_uc_neg NAA beta_0 -0.0672705987018149
-ig_uc_neg NAA beta_1 15.401079684944214
-ig_uc_neg NAA p-value 2.841261690888279e-79
-ig_uc_neg NAA accuracy 0.744258872651357
-ig_uc_neg all n 12359
-ig_uc_neg all n_train 7322
-ig_uc_neg all n_test 5037
-ig_uc_neg ANA n_train 4554 0.6219612127833926
-ig_uc_neg AAN n_train 205 0.02799781480469817
-ig_uc_neg NAA n_train 2563 0.3500409724119093
-ig_uc_neg ANA n_test 3705 0.7355568790946992
-ig_uc_neg AAN n_test 374 0.07425054595989676
-ig_uc_neg NAA n_test 958 0.190192574945404
-ig_c_neg ANA beta_0 0.2967577029334713
-ig_c_neg ANA beta_1 -7.082044562618583
-ig_c_neg ANA p-value 6.342632527889288e-47
-ig_c_neg ANA accuracy 0.5796436285097192
-ig_c_neg AAN beta_0 0.13707787355266018
-ig_c_neg AAN beta_1 1.9431537643444974
-ig_c_neg AAN p-value 0.8412086069825611
-ig_c_neg AAN accuracy 0.5374331550802139
-ig_c_neg NAA beta_0 -0.07279442249354583
-ig_c_neg NAA beta_1 18.774190179744124
-ig_c_neg NAA p-value 1.3151928784273463e-89
-ig_c_neg NAA accuracy 0.741901776384535
-ig_c_neg all n 12369
-ig_c_neg all n_train 7334
-ig_c_neg all n_test 5035
-ig_c_neg ANA n_train 4554 0.6209435505863103
-ig_c_neg AAN n_train 205 0.027952004363239705
-ig_c_neg NAA n_train 2575 0.35110444505044996
-ig_c_neg ANA n_test 3704 0.7356504468718967
-ig_c_neg AAN n_test 374 0.07428003972194637
-ig_c_neg NAA n_test 957 0.1900695134061569
+ig_1st_a AAN beta_0 -0.13382522178750486
+ig_1st_a AAN beta_1 -0.42053877901079023
+ig_1st_a AAN p-value 0.8320809364045415
+ig_1st_a AAN accuracy 0.4613333333333333
+ig_1st_a ANA beta_0 0.011903332027011606
+ig_1st_a ANA beta_1 36.65840257804155
+ig_1st_a ANA p-value 1.2373338011958448e-246
+ig_1st_a ANA accuracy 0.68065557486963
+ig_1st_a NAA beta_0 -0.052053807890145735
+ig_1st_a NAA beta_1 4.0569155833330095
+ig_1st_a NAA p-value 4.476909119346258e-109
+ig_1st_a NAA accuracy 0.7132867132867133
+ig_1st_a all n 14591
+ig_1st_a all n_train 9045
+ig_1st_a all n_test 5546
+ig_1st_a AAN n_train 237 0.026202321724709786
+ig_1st_a ANA n_train 5416 0.598783858485351
+ig_1st_a NAA n_train 3392 0.3750138197899392
+ig_1st_a AAN n_test 375 0.06761630003606203
+ig_1st_a ANA n_test 4027 0.7261089073205914
+ig_1st_a NAA n_test 1144 0.20627479264334656
+ig_uc_pos AAN beta_0 -0.19508419822779158
+ig_uc_pos AAN beta_1 0.08196409273486863
+ig_uc_pos AAN p-value 0.05876984227973639
+ig_uc_pos AAN accuracy 0.5225988700564972
+ig_uc_pos ANA beta_0 0.26644558407430446
+ig_uc_pos ANA beta_1 -0.03475584588651492
+ig_uc_pos ANA p-value 7.988431991563303e-06
+ig_uc_pos ANA accuracy 0.5417406749555951
+ig_uc_pos NAA beta_0 0.00893195799826444
+ig_uc_pos NAA beta_1 0.09185680240726295
+ig_uc_pos NAA p-value 1.4111237656611935e-15
+ig_uc_pos NAA accuracy 0.5982986767485823
+ig_uc_pos all n 12273
+ig_uc_pos all n_train 6920
+ig_uc_pos all n_test 5353
+ig_uc_pos AAN n_train 215 0.03106936416184971
+ig_uc_pos ANA n_train 4499 0.6501445086705202
+ig_uc_pos NAA n_train 2206 0.31878612716763005
+ig_uc_pos AAN n_test 354 0.0661311414160284
+ig_uc_pos ANA n_test 3941 0.7362226788716607
+ig_uc_pos NAA n_test 1058 0.19764617971231085
+ig_uc_neg AAN beta_0 0.13672834236872144
+ig_uc_neg AAN beta_1 25.494281817418088
+ig_uc_neg AAN p-value 2.851597549905601e-09
+ig_uc_neg AAN accuracy 0.512
+ig_uc_neg ANA beta_0 0.2542536661576912
+ig_uc_neg ANA beta_1 -0.8102106489601303
+ig_uc_neg ANA p-value 1.6312607484784424e-35
+ig_uc_neg ANA accuracy 0.5455674199155699
+ig_uc_neg NAA beta_0 0.04933483609874507
+ig_uc_neg NAA beta_1 -0.10281865880588346
+ig_uc_neg NAA p-value 0.02813123599895878
+ig_uc_neg NAA accuracy 0.46026200873362444
+ig_uc_neg all n 14596
+ig_uc_neg all n_train 9049
+ig_uc_neg all n_test 5547
+ig_uc_neg AAN n_train 237 0.026190739308210854
+ig_uc_neg ANA n_train 5416 0.5985191733893248
+ig_uc_neg NAA n_train 3396 0.3752900873024644
+ig_uc_neg AAN n_test 375 0.06760411032990805
+ig_uc_neg ANA n_test 4027 0.7259780061294393
+ig_uc_neg NAA n_test 1145 0.2064178835406526

@@ -54,6 +54,7 @@ administração/NOUN,local/ADJ,próprio/ADJ
 admiração/NOUN,crítico/ADJ,duradouro/ADJ
 afirmação/NOUN,genérico/ADJ,favorável/ADJ
 afirmação/NOUN,universal/ADJ,verdadeiro/ADJ
+afloramento/NOUN,granítico/ADJ,belíssimo/ADJ
 agente/NOUN,público/ADJ,federal/ADJ
 agente/NOUN,econômico/ADJ,principal/ADJ
 agente/NOUN,tóxico/ADJ,similar/ADJ
@@ -138,6 +139,8 @@ ano/NOUN,científico/ADJ,internacional/ADJ
 ano/NOUN,novo/ADJ,internacional/ADJ
 ano/NOUN,novo/ADJ,islâmico/ADJ
 antecedente/NOUN,português/ADJ,claro/ADJ
+antigo/NOUN,eslavo/ADJ,eclesiástico/ADJ
+antigo/NOUN,eslavo/ADJ,eclesiástico/ADJ
 antropologia/NOUN,físico/ADJ,forense/ADJ
 análise/NOUN,filogenético/ADJ,posterior/ADJ
 análise/NOUN,jurídico/ADJ,posterior/ADJ
@@ -234,6 +237,7 @@ ascendência/NOUN,irlandês/ADJ,católico/ADJ
 ascendência/NOUN,familiar/ADJ,comum/ADJ
 aspecto/NOUN,técnico/ADJ,analógico/ADJ
 aspecto/NOUN,sensual/ADJ,exótico/ADJ
+aspecto/NOUN,hormonal/ADJ,feminino/ADJ
 aspecto/NOUN,físico/ADJ,geral/ADJ
 aspecto/NOUN,físico/ADJ,geral/ADJ
 assembleia/NOUN,legislativo/ADJ,provincial/ADJ
@@ -294,6 +298,7 @@ ato/NOUN,homossexual/ADJ,masculino/ADJ
 ato/NOUN,contratual/ADJ,mágico/ADJ
 ato/NOUN,jurídico/ADJ,perfeito/ADJ
 ato/NOUN,terrorista/ADJ,suicida/ADJ
+atraso/NOUN,médio/ADJ,gerenciável/ADJ
 atrativo/NOUN,turístico/ADJ,incomparável/ADJ
 atração/NOUN,turístico/ADJ,amplo/ADJ
 atração/NOUN,nacional/ADJ,famoso/ADJ
@@ -603,6 +608,7 @@ cenário/NOUN,musical/ADJ,britânico/ADJ
 cenário/NOUN,econômico/ADJ,recente/ADJ
 chave/NOUN,inicial/ADJ,conhecido/ADJ
 chefe/NOUN,tribal/ADJ,hostil/ADJ
+chefe/NOUN,tribal/ADJ,mongol/ADJ
 chefe/NOUN,árabe/ADJ,sunita/ADJ
 cheia/NOUN,local/ADJ,posterior/ADJ
 cheiro/NOUN,agradável/ADJ,distintivo/ADJ
@@ -680,6 +686,7 @@ clima/NOUN,tropical/ADJ,ameno/ADJ
 clima/NOUN,tropical/ADJ,atlântico/ADJ
 clima/NOUN,tropical/ADJ,chuvoso/ADJ
 clima/NOUN,subtropical/ADJ,húmido/ADJ
+clima/NOUN,subtropical/ADJ,mediterrânico/ADJ
 clima/NOUN,agradável/ADJ,propício/ADJ
 clima/NOUN,desértico/ADJ,quente/ADJ
 clima/NOUN,tropical/ADJ,quente/ADJ
@@ -770,6 +777,7 @@ conceito/NOUN,técnico/ADJ,fundamental/ADJ
 concepção/NOUN,urbanístico/ADJ,tradicional/ADJ
 concurso/NOUN,nacional/ADJ,exclusivo/ADJ
 condecoração/NOUN,militar/ADJ,português/ADJ
+condição/NOUN,astronômico/ADJ,conhecido/ADJ
 condição/NOUN,inicial/ADJ,conhecido/ADJ
 condição/NOUN,inicial/ADJ,diferente/ADJ
 condição/NOUN,meteorológico/ADJ,excepcional/ADJ
@@ -844,6 +852,7 @@ conteúdo/NOUN,sexual/ADJ,visual/ADJ
 contingente/NOUN,populacional/ADJ,expressivo/ADJ
 conto/NOUN,fantástico/ADJ,brasileiro/ADJ
 contorno/NOUN,sindicalista/ADJ,revolucionário/ADJ
+contraceptivo/NOUN,masculino/ADJ,experimental/ADJ
 contrato/NOUN,petrolífero/ADJ,iraquiano/ADJ
 contração/NOUN,muscular/ADJ,brusco/ADJ
 contração/NOUN,muscular/ADJ,involuntário/ADJ
@@ -1122,6 +1131,8 @@ discurso/NOUN,indireto/ADJ,livre/ADJ
 discurso/NOUN,indireto/ADJ,livre/ADJ
 discurso/NOUN,indireto/ADJ,livre/ADJ
 discussão/NOUN,político/ADJ,radical/ADJ
+display/NOUN,eletrônico/ADJ,analógico/ADJ
+display/NOUN,eletrônico/ADJ,digital/ADJ
 disposição/NOUN,legal/ADJ,específico/ADJ
 distribuição/NOUN,geográfico/ADJ,distinto/ADJ
 distribuição/NOUN,geográfico/ADJ,restrito/ADJ
@@ -1155,6 +1166,8 @@ doença/NOUN,crônico/ADJ,degenerativo/ADJ
 doença/NOUN,genético/ADJ,específico/ADJ
 doença/NOUN,cerebral/ADJ,grave/ADJ
 doença/NOUN,renal/ADJ,grave/ADJ
+doença/NOUN,autossômico/ADJ,recessivo/ADJ
+doença/NOUN,autossômico/ADJ,recessivo/ADJ
 doença/NOUN,genético/ADJ,transmissível/ADJ
 doença/NOUN,humano/ADJ,viral/ADJ
 domicílio/NOUN,particular/ADJ,permanente/ADJ
@@ -1273,6 +1286,7 @@ eleição/NOUN,legislativo/ADJ,regional/ADJ
 elemento/NOUN,cultural/ADJ,adicional/ADJ
 elemento/NOUN,gráfico/ADJ,atômico/ADJ
 elemento/NOUN,estrutural/ADJ,básico/ADJ
+elemento/NOUN,estilístico/ADJ,clássico/ADJ
 elemento/NOUN,metafísico/ADJ,egípcio/ADJ
 elemento/NOUN,construtivo/ADJ,horizontal/ADJ
 elemento/NOUN,cultural/ADJ,importante/ADJ
@@ -1386,6 +1400,7 @@ escala/NOUN,pequeno/ADJ,melódico/ADJ
 escala/NOUN,pequeno/ADJ,natural/ADJ
 escavação/NOUN,arqueológico/ADJ,recente/ADJ
 esclerose/NOUN,lateral/ADJ,primária/ADJ
+escoamento/NOUN,superficial/ADJ,nulo/ADJ
 escola/NOUN,técnico/ADJ,federal/ADJ
 escola/NOUN,técnico/ADJ,federal/ADJ
 escola/NOUN,técnico/ADJ,federal/ADJ
@@ -1720,6 +1735,7 @@ forma/NOUN,físico/ADJ,real/ADJ
 forma/NOUN,musical/ADJ,semelhante/ADJ
 forma/NOUN,passivo/ADJ,sintético/ADJ
 forma/NOUN,tempo/ADJ,verbal/ADJ
+forma/NOUN,líquido/ADJ,viscoso/ADJ
 formalismo/NOUN,matemático/ADJ,inerente/ADJ
 formação/NOUN,profissional/ADJ,adequado/ADJ
 formação/NOUN,acadêmico/ADJ,complementar/ADJ
@@ -2007,6 +2023,7 @@ instituto/NOUN,jurídico/ADJ,semelhante/ADJ
 instrumento/NOUN,processual/ADJ,eficiente/ADJ
 instrumento/NOUN,musical/ADJ,eléctrico/ADJ
 instrumento/NOUN,musical/ADJ,físico/ADJ
+instrumento/NOUN,astronômico/ADJ,grego/ADJ
 instrumento/NOUN,eletrônico/ADJ,nacional/ADJ
 instrumento/NOUN,musical/ADJ,novo/ADJ
 instrumento/NOUN,musical/ADJ,real/ADJ
@@ -2146,12 +2163,14 @@ lista/NOUN,telefônico/ADJ,brasileiro/ADJ
 lista/NOUN,telefônico/ADJ,eletrônico/ADJ
 lista/NOUN,telefônico/ADJ,eletrônico/ADJ
 lista/NOUN,partidário/ADJ,nacional/ADJ
+literatura/NOUN,islandês/ADJ,antigo/ADJ
 literatura/NOUN,latino/ADJ,antigo/ADJ
 literatura/NOUN,português/ADJ,medieval/ADJ
 literatura/NOUN,português/ADJ,medieval/ADJ
 literatura/NOUN,português/ADJ,medieval/ADJ
 literatura/NOUN,português/ADJ,medieval/ADJ
 literatura/NOUN,português/ADJ,medieval/ADJ
+literatura/NOUN,islandês/ADJ,moderno/ADJ
 literatura/NOUN,nacional/ADJ,popular/ADJ
 literatura/NOUN,medieval/ADJ,posterior/ADJ
 litoral/NOUN,norte/ADJ,peruano/ADJ
@@ -2331,6 +2350,8 @@ momento/NOUN,magnético/ADJ,grande/ADJ
 momento/NOUN,pontual/ADJ,independente/ADJ
 momento/NOUN,magnético/ADJ,intrínseco/ADJ
 momento/NOUN,magnético/ADJ,nuclear/ADJ
+momento/NOUN,angular/ADJ,orbital/ADJ
+momento/NOUN,angular/ADJ,orbital/ADJ
 momento/NOUN,magnético/ADJ,orbital/ADJ
 monarquia/NOUN,parlamentar/ADJ,constitucional/ADJ
 montagem/NOUN,brasileiro/ADJ,recente/ADJ
@@ -2472,6 +2493,9 @@ nome/NOUN,comum/ADJ,distinto/ADJ
 nome/NOUN,genérico/ADJ,impróprio/ADJ
 nome/NOUN,carinhoso/ADJ,masculino/ADJ
 nome/NOUN,comum/ADJ,sinónimo/ADJ
+nomeação/NOUN,militar/ADJ,honorário/ADJ
+nomeação/NOUN,militar/ADJ,honorário/ADJ
+nomeação/NOUN,típico/ADJ,islandês/ADJ
 norma/NOUN,geral/ADJ,tendente/ADJ
 nota/NOUN,fiscal/ADJ,eletrônico/ADJ
 nota/NOUN,fiscal/ADJ,eletrônico/ADJ
@@ -2483,9 +2507,11 @@ notação/NOUN,científico/ADJ,binário/ADJ
 notação/NOUN,curto/ADJ,comum/ADJ
 notação/NOUN,polonês/ADJ,inverso/ADJ
 notícia/NOUN,estatístico/ADJ,descritivo/ADJ
+náusea/NOUN,mortal/ADJ,intolerável/ADJ
 nível/NOUN,financeiro/ADJ,grande/ADJ
 nível/NOUN,grande/ADJ,operacional/ADJ
 nível/NOUN,técnico/ADJ,suficiente/ADJ
+nômade/NOUN,mongol/ADJ,conhecido/ADJ
 núcleo/NOUN,integral/ADJ,contínuo/ADJ
 núcleo/NOUN,cerebral/ADJ,profundo/ADJ
 núcleo/NOUN,populacional/ADJ,próximo/ADJ
@@ -2603,6 +2629,7 @@ painel/NOUN,decorativo/ADJ,grande/ADJ
 paisagem/NOUN,musical/ADJ,famoso/ADJ
 paisagem/NOUN,natural/ADJ,famoso/ADJ
 palato/NOUN,secundário/ADJ,ósseo/ADJ
+palmeira/NOUN,real/ADJ,australiano/ADJ
 panorama/NOUN,editorial/ADJ,atual/ADJ
 papel/NOUN,higiênico/ADJ,branco/ADJ
 papel/NOUN,político/ADJ,contemporâneo/ADJ
@@ -2811,6 +2838,7 @@ peso/NOUN,médio/ADJ,masculino/ADJ
 peso/NOUN,médio/ADJ,masculino/ADJ
 peso/NOUN,corporal/ADJ,normal/ADJ
 pesquisa/NOUN,sistemático/ADJ,adicional/ADJ
+pesquisa/NOUN,astronômico/ADJ,ativo/ADJ
 pesquisa/NOUN,físico/ADJ,atual/ADJ
 pesquisa/NOUN,religioso/ADJ,geral/ADJ
 pesquisa/NOUN,arqueológico/ADJ,recente/ADJ
@@ -2853,6 +2881,7 @@ planeta/NOUN,gasoso/ADJ,gigante/ADJ
 planeta/NOUN,gasoso/ADJ,gigante/ADJ
 plano/NOUN,duro/ADJ,pediátrico/ADJ
 plano/NOUN,político/ADJ,secreto/ADJ
+planta/NOUN,irregular/ADJ,disperso/ADJ
 planta/NOUN,irregular/ADJ,orgânico/ADJ
 planta/NOUN,irregular/ADJ,orgânico/ADJ
 pneu/NOUN,simples/ADJ,gigante/ADJ
@@ -2914,6 +2943,7 @@ ponto/NOUN,fixo/ADJ,atrativo/ADJ
 ponto/NOUN,interno/ADJ,comum/ADJ
 ponto/NOUN,turístico/ADJ,conhecido/ADJ
 ponto/NOUN,positivo/ADJ,considerável/ADJ
+ponto/NOUN,alto/ADJ,disperso/ADJ
 ponto/NOUN,estratégico/ADJ,favorável/ADJ
 ponto/NOUN,preto/ADJ,flutuante/ADJ
 ponto/NOUN,turístico/ADJ,nacional/ADJ
@@ -3515,7 +3545,13 @@ retenção/NOUN,urinário/ADJ,crônico/ADJ
 risca/NOUN,branco/ADJ,vertical/ADJ
 risco/NOUN,colectivo/ADJ,inerente/ADJ
 risco/NOUN,arquitetônico/ADJ,notável/ADJ
+ritmo/NOUN,superficial/ADJ,diferente/ADJ
 ritmo/NOUN,musical/ADJ,memorável/ADJ
+rito/NOUN,litúrgico/ADJ,latino/ADJ
+rito/NOUN,litúrgico/ADJ,latino/ADJ
+rito/NOUN,litúrgico/ADJ,latino/ADJ
+rito/NOUN,litúrgico/ADJ,oriental/ADJ
+rito/NOUN,romano/ADJ,tradicional/ADJ
 robô/NOUN,gigante/ADJ,conhecido/ADJ
 robô/NOUN,industrial/ADJ,similar/ADJ
 rock/NOUN,alternativo/ADJ,australiano/ADJ
@@ -3715,6 +3751,7 @@ software/NOUN,educacional/ADJ,livre/ADJ
 soldado/NOUN,suficiente/ADJ,disponível/ADJ
 soldado/NOUN,espanhol/ADJ,morto/ADJ
 soldado/NOUN,alemão/ADJ,presente/ADJ
+soldado/NOUN,inimigo/ADJ,próximo/ADJ
 solo/NOUN,vermelho/ADJ,fértil/ADJ
 solução/NOUN,técnico/ADJ,compatível/ADJ
 solução/NOUN,estrutural/ADJ,moderno/ADJ
@@ -3743,6 +3780,7 @@ suporte/NOUN,energético/ADJ,contínuo/ADJ
 suspensão/NOUN,traseiro/ADJ,activo/ADJ
 sânscrito/NOUN,híbrido/ADJ,budista/ADJ
 sépala/NOUN,dorsal/ADJ,elíptico/ADJ
+sílaba/NOUN,final/ADJ,forte/ADJ
 símbolo/NOUN,esotérico/ADJ,comum/ADJ
 símbolo/NOUN,sexual/ADJ,internacional/ADJ
 símbolo/NOUN,heráldico/ADJ,próprio/ADJ
@@ -3765,6 +3803,11 @@ sítio/NOUN,arqueológico/ADJ,mau/ADJ
 sítio/NOUN,arqueológico/ADJ,mau/ADJ
 sítio/NOUN,arqueológico/ADJ,mau/ADJ
 sítio/NOUN,arqueológico/ADJ,mau/ADJ
+sítio/NOUN,arqueológico/ADJ,micênico/ADJ
+sítio/NOUN,arqueológico/ADJ,micênico/ADJ
+sítio/NOUN,arqueológico/ADJ,micênico/ADJ
+sítio/NOUN,arqueológico/ADJ,micênico/ADJ
+sítio/NOUN,arqueológico/ADJ,micênico/ADJ
 sítio/NOUN,eletrônico/ADJ,oficial/ADJ
 sítio/NOUN,arqueológico/ADJ,paleolítico/ADJ
 sítio/NOUN,urbano/ADJ,secundário/ADJ
@@ -3816,6 +3859,7 @@ temperatura/NOUN,médio/ADJ,inferior/ADJ
 temperatura/NOUN,pequeno/ADJ,inferior/ADJ
 temperatura/NOUN,médio/ADJ,mensal/ADJ
 temperatura/NOUN,pequeno/ADJ,negativo/ADJ
+temperatura/NOUN,superficial/ADJ,similar/ADJ
 tempestade/NOUN,tropical/ADJ,intenso/ADJ
 tempestade/NOUN,tropical/ADJ,intenso/ADJ
 tempo/NOUN,solar/ADJ,aparente/ADJ
@@ -3824,6 +3868,7 @@ tendência/NOUN,psiquiátrico/ADJ,grave/ADJ
 tendência/NOUN,estético/ADJ,múltiplo/ADJ
 tendência/NOUN,homossexual/ADJ,profundo/ADJ
 tenor/NOUN,lírico/ADJ,dramático/ADJ
+tensão/NOUN,angular/ADJ,apreciável/ADJ
 tensão/NOUN,elétrico/ADJ,dependente/ADJ
 tensão/NOUN,elétrico/ADJ,dependente/ADJ
 tensão/NOUN,estrutural/ADJ,impossível/ADJ
@@ -3848,6 +3893,7 @@ terra/NOUN,baixa/ADJ,oriental/ADJ
 território/NOUN,colonial/ADJ,britânico/ADJ
 território/NOUN,reprodutivo/ADJ,fixo/ADJ
 tesouraria/NOUN,líquido/ADJ,positivo/ADJ
+tesouro/NOUN,numismático/ADJ,romano/ADJ
 teste/NOUN,nuclear/ADJ,atmosférico/ADJ
 teste/NOUN,nuclear/ADJ,atmosférico/ADJ
 texto/NOUN,original/ADJ,disponível/ADJ
@@ -3933,6 +3979,7 @@ tratamento/NOUN,diário/ADJ,contínuo/ADJ
 tratamento/NOUN,médico/ADJ,decente/ADJ
 tratamento/NOUN,estético/ADJ,especial/ADJ
 tratamento/NOUN,térmico/ADJ,especial/ADJ
+tratamento/NOUN,superficial/ADJ,específico/ADJ
 tratamento/NOUN,aquoso/ADJ,final/ADJ
 tratamento/NOUN,médico/ADJ,gratuito/ADJ
 tratamento/NOUN,odontológico/ADJ,gratuito/ADJ
@@ -3943,6 +3990,7 @@ trato/NOUN,respiratório/ADJ,alto/ADJ
 trato/NOUN,respiratório/ADJ,alto/ADJ
 trato/NOUN,respiratório/ADJ,inferior/ADJ
 trator/NOUN,americano/ADJ,moderno/ADJ
+traço/NOUN,autossômico/ADJ,dominante/ADJ
 traço/NOUN,negro/ADJ,evidente/ADJ
 traço/NOUN,arquitetônico/ADJ,marcante/ADJ
 traço/NOUN,arquitetônico/ADJ,original/ADJ
@@ -4124,6 +4172,7 @@ variação/NOUN,diferente/ADJ,disponível/ADJ
 vaso/NOUN,sanguíneo/ADJ,proeminente/ADJ
 vazio/NOUN,urbano/ADJ,demográfico/ADJ
 velocidade/NOUN,médio/ADJ,alto/ADJ
+velocidade/NOUN,angular/ADJ,completo/ADJ
 velocidade/NOUN,linear/ADJ,constante/ADJ
 velocidade/NOUN,individual/ADJ,feminino/ADJ
 velocidade/NOUN,individual/ADJ,feminino/ADJ
@@ -4132,7 +4181,9 @@ velocidade/NOUN,individual/ADJ,feminino/ADJ
 velocidade/NOUN,individual/ADJ,feminino/ADJ
 velocidade/NOUN,individual/ADJ,feminino/ADJ
 velocidade/NOUN,pequeno/ADJ,geral/ADJ
+velocidade/NOUN,angular/ADJ,grande/ADJ
 velocidade/NOUN,médio/ADJ,grande/ADJ
+velocidade/NOUN,angular/ADJ,igual/ADJ
 velocidade/NOUN,individual/ADJ,masculino/ADJ
 velocidade/NOUN,individual/ADJ,masculino/ADJ
 velocidade/NOUN,individual/ADJ,masculino/ADJ
@@ -4529,6 +4580,7 @@ bom/ADJ,conselho/NOUN,amoroso/ADJ
 novo/ADJ,relacionamento/NOUN,amoroso/ADJ
 particular/ADJ,palavra/NOUN,amoroso/ADJ
 contínuo/ADJ,sinal/NOUN,analógico/ADJ
+cilíndrico/ADJ,aceleração/NOUN,angular/ADJ
 incontável/ADJ,espécie/NOUN,animal/ADJ
 bom/ADJ,resultado/NOUN,anterior/ADJ
 bom/ADJ,resultado/NOUN,anterior/ADJ
@@ -4561,6 +4613,7 @@ estranho/ADJ,ligação/NOUN,anônimo/ADJ
 local/ADJ,amador/NOUN,anônimo/ADJ
 numeroso/ADJ,aluno/NOUN,anônimo/ADJ
 novo/ADJ,elemento/NOUN,apaixonante/ADJ
+angular/ADJ,médio/NOUN,aparente/ADJ
 baixo/ADJ,densidade/NOUN,aparente/ADJ
 alto/ADJ,investimento/NOUN,aplicável/ADJ
 alto/ADJ,poder/NOUN,aquisitivo/ADJ
@@ -4650,6 +4703,10 @@ vitorioso/ADJ,carreira/NOUN,artístico/ADJ
 grande/ADJ,influência/NOUN,asiático/ADJ
 novo/ADJ,tigre/NOUN,asiático/ADJ
 grande/ADJ,custo/NOUN,associado/ADJ
+difícil/ADJ,cálculo/NOUN,astronômico/ADJ
+gigante/ADJ,calendário/NOUN,astronômico/ADJ
+importante/ADJ,descoberta/NOUN,astronômico/ADJ
+significativo/ADJ,alinhamento/NOUN,astronômico/ADJ
 grande/ADJ,participação/NOUN,ativo/ADJ
 novo/ADJ,princípio/NOUN,ativo/ADJ
 incrível/ADJ,habilidade/NOUN,atlético/ADJ
@@ -4706,6 +4763,7 @@ relevante/ADJ,papel/NOUN,biológico/ADJ
 xx/ADJ,arma/NOUN,biológico/ADJ
 inúmero/ADJ,aplicação/NOUN,biotecnológico/ADJ
 antigo/ADJ,igreja/NOUN,bizantino/ADJ
+atômico/ADJ,planetário/NOUN,bonito/ADJ
 numeroso/ADJ,jardim/NOUN,botânico/ADJ
 grande/ADJ,rebanho/NOUN,bovino/ADJ
 grande/ADJ,rebanho/NOUN,bovino/ADJ
@@ -4807,6 +4865,7 @@ forte/ADJ,tradição/NOUN,católico/ADJ
 grande/ADJ,aceitação/NOUN,católico/ADJ
 grande/ADJ,igreja/NOUN,católico/ADJ
 grande/ADJ,influência/NOUN,católico/ADJ
+indígena/ADJ,rito/NOUN,católico/ADJ
 principal/ADJ,festa/NOUN,católico/ADJ
 severo/ADJ,educação/NOUN,católico/ADJ
 pequeno/ADJ,passo/NOUN,cauteloso/ADJ
@@ -5441,6 +5500,7 @@ grande/ADJ,reforma/NOUN,democrático/ADJ
 importante/ADJ,valor/NOUN,democrático/ADJ
 novo/ADJ,constituição/NOUN,democrático/ADJ
 novo/ADJ,constituição/NOUN,democrático/ADJ
+verdadeiro/ADJ,retrocesso/NOUN,democrático/ADJ
 alto/ADJ,audiência/NOUN,demográfica/ADJ
 baixo/ADJ,densidade/NOUN,demográfica/ADJ
 baixo/ADJ,densidade/NOUN,demográfica/ADJ
@@ -5462,6 +5522,7 @@ novo/ADJ,cálculo/NOUN,desnecessário/ADJ
 bom/ADJ,resultado/NOUN,desportivo/ADJ
 grande/ADJ,investimento/NOUN,desportivo/ADJ
 inúmero/ADJ,evento/NOUN,desportivo/ADJ
+fraco/ADJ,sinal/NOUN,detectável/ADJ
 pequeno/ADJ,variação/NOUN,devido/ADJ
 verdadeiro/ADJ,variante/NOUN,dialetal/ADJ
 intenso/ADJ,atividade/NOUN,didático/ADJ
@@ -5506,6 +5567,7 @@ grande/ADJ,poder/NOUN,discricionário/ADJ
 grande/ADJ,diário/NOUN,disponível/ADJ
 meio/ADJ,técnico/NOUN,disponível/ADJ
 antigo/ADJ,aluno/NOUN,distinto/ADJ
+novo/ADJ,luz/NOUN,diurno/ADJ
 novo/ADJ,revelação/NOUN,divino/ADJ
 intenso/ADJ,bombardeio/NOUN,diário/ADJ
 ligeiro/ADJ,flutuação/NOUN,diário/ADJ
@@ -6097,6 +6159,7 @@ novo/ADJ,unidade/NOUN,fabril/ADJ
 terrível/ADJ,ferimento/NOUN,facial/ADJ
 inúmero/ADJ,ato/NOUN,falho/ADJ
 abundante/ADJ,dado/NOUN,falso/ADJ
+alegre/ADJ,piquenique/NOUN,familiar/ADJ
 autêntico/ADJ,ritual/NOUN,familiar/ADJ
 crescente/ADJ,intimidade/NOUN,familiar/ADJ
 forte/ADJ,herança/NOUN,familiar/ADJ
@@ -6431,6 +6494,8 @@ novo/ADJ,reforma/NOUN,geral/ADJ
 primeiro/ADJ,superior/NOUN,geral/ADJ
 segundo/ADJ,lugar/NOUN,geral/ADJ
 sétimo/ADJ,lugar/NOUN,geral/ADJ
+antigo/ADJ,população/NOUN,germânico/ADJ
+passado/ADJ,original/NOUN,germânico/ADJ
 grande/ADJ,pássaro/NOUN,gigante/ADJ
 novo/ADJ,concerto/NOUN,gigantesco/ADJ
 completo/ADJ,programa/NOUN,global/ADJ
@@ -6572,7 +6637,10 @@ claro/ADJ,tendência/NOUN,homossexual/ADJ
 claro/ADJ,tendência/NOUN,homossexual/ADJ
 conhecido/ADJ,romance/NOUN,homossexual/ADJ
 forte/ADJ,implicação/NOUN,homossexual/ADJ
+numeroso/ADJ,título/NOUN,honorário/ADJ
 largo/ADJ,listra/NOUN,horizontal/ADJ
+grande/ADJ,variação/NOUN,hormonal/ADJ
+grave/ADJ,problema/NOUN,hormonal/ADJ
 enorme/ADJ,crise/NOUN,humanitário/ADJ
 consequente/ADJ,desenvolvimento/NOUN,humano/ADJ
 diminuto/ADJ,figura/NOUN,humano/ADJ
@@ -6683,6 +6751,7 @@ importante/ADJ,exposição/NOUN,individual/ADJ
 inúmero/ADJ,exposição/NOUN,individual/ADJ
 inúmero/ADJ,exposição/NOUN,individual/ADJ
 inúmero/ADJ,exposição/NOUN,individual/ADJ
+minúsculo/ADJ,cela/NOUN,individual/ADJ
 numeroso/ADJ,exposição/NOUN,individual/ADJ
 principal/ADJ,exposição/NOUN,individual/ADJ
 principal/ADJ,exposição/NOUN,individual/ADJ
@@ -6777,6 +6846,7 @@ fiel/ADJ,princípio/NOUN,inicial/ADJ
 grande/ADJ,desenvolvimento/NOUN,inicial/ADJ
 grande/ADJ,importância/NOUN,inicial/ADJ
 grande/ADJ,investimento/NOUN,inicial/ADJ
+único/ADJ,comandante/NOUN,inimigo/ADJ
 grande/ADJ,medida/NOUN,inovador/ADJ
 inúmero/ADJ,técnica/NOUN,inovador/ADJ
 seguro/ADJ,v/NOUN,inseguro/ADJ
@@ -7129,6 +7199,7 @@ ocasional/ADJ,decoração/NOUN,linear/ADJ
 ocasional/ADJ,decoração/NOUN,linear/ADJ
 eletrônico/ADJ,sistema/NOUN,linfático/ADJ
 grande/ADJ,diferença/NOUN,linguístico/ADJ
+grande/ADJ,similaridade/NOUN,linguístico/ADJ
 grande/ADJ,talento/NOUN,linguístico/ADJ
 pequeno/ADJ,diferença/NOUN,linguístico/ADJ
 pertencente/ADJ,grupo/NOUN,linguístico/ADJ
@@ -7646,6 +7717,7 @@ grande/ADJ,visibilidade/NOUN,nacional/ADJ
 imediato/ADJ,reconhecimento/NOUN,nacional/ADJ
 importante/ADJ,artista/NOUN,nacional/ADJ
 importante/ADJ,autor/NOUN,nacional/ADJ
+importante/ADJ,colecionador/NOUN,nacional/ADJ
 importante/ADJ,título/NOUN,nacional/ADJ
 inúmero/ADJ,prémio/NOUN,nacional/ADJ
 largo/ADJ,distribuição/NOUN,nacional/ADJ
@@ -7802,6 +7874,7 @@ percentual/ADJ,mínimo/NOUN,obrigatório/ADJ
 mero/ADJ,ligação/NOUN,ocasional/ADJ
 forte/ADJ,corrente/NOUN,oceânico/ADJ
 forte/ADJ,corrente/NOUN,oceânico/ADJ
+novo/ADJ,crosta/NOUN,oceânico/ADJ
 primeiro/ADJ,patrulha/NOUN,oceânico/ADJ
 alto/ADJ,europeu/NOUN,ocidental/ADJ
 forte/ADJ,influência/NOUN,ocidental/ADJ
@@ -7875,6 +7948,7 @@ possível/ADJ,restrição/NOUN,operacional/ADJ
 antigo/ADJ,tradição/NOUN,oral/ADJ
 antigo/ADJ,tradição/NOUN,oral/ADJ
 único/ADJ,fator/NOUN,ordeiro/ADJ
+bom/ADJ,resultado/NOUN,organizacional/ADJ
 novo/ADJ,estrutura/NOUN,organizativo/ADJ
 natural/ADJ,substância/NOUN,orgânico/ADJ
 novo/ADJ,matéria/NOUN,orgânico/ADJ
@@ -8505,6 +8579,7 @@ novo/ADJ,curso/NOUN,profissionalizante/ADJ
 ii/ADJ,grau/NOUN,profundo/ADJ
 principal/ADJ,veia/NOUN,profundo/ADJ
 servil/ADJ,y/NOUN,profundo/ADJ
+superficial/ADJ,v/NOUN,profundo/ADJ
 temporal/ADJ,médio/NOUN,profundo/ADJ
 enorme/ADJ,surto/NOUN,progressista/ADJ
 novo/ADJ,impulso/NOUN,progressista/ADJ
@@ -8553,6 +8628,8 @@ inúmero/ADJ,campanha/NOUN,publicitário/ADJ
 inúmero/ADJ,trabalho/NOUN,publicitário/ADJ
 autêntico/ADJ,expedição/NOUN,punitivo/ADJ
 freqüente/ADJ,expedição/NOUN,punitivo/ADJ
+primeiro/ADJ,lugar/NOUN,póstumo/ADJ
+suposto/ADJ,poema/NOUN,póstumo/ADJ
 administrativo/ADJ,agente/NOUN,público/ADJ
 alto/ADJ,função/NOUN,público/ADJ
 brilhante/ADJ,carreira/NOUN,público/ADJ
@@ -8897,6 +8974,7 @@ novo/ADJ,descoberta/NOUN,similar/ADJ
 variável/ADJ,fisiologia/NOUN,similar/ADJ
 enorme/ADJ,incursão/NOUN,simultâneo/ADJ
 novo/ADJ,liderança/NOUN,sindical/ADJ
+suave/ADJ,visão/NOUN,sinistro/ADJ
 novo/ADJ,constituição/NOUN,sinodal/ADJ
 novo/ADJ,constituição/NOUN,sinodal/ADJ
 grande/ADJ,poder/NOUN,soberano/ADJ
@@ -9043,6 +9121,9 @@ carioca/ADJ,bicampeão/NOUN,sul-americano/ADJ
 novo/ADJ,recorde/NOUN,sul-americano/ADJ
 sexto/ADJ,título/NOUN,sul-americano/ADJ
 tradicional/ADJ,ritmo/NOUN,sul-americano/ADJ
+alto/ADJ,atividade/NOUN,superficial/ADJ
+grande/ADJ,drenagem/NOUN,superficial/ADJ
+ii/ADJ,grau/NOUN,superficial/ADJ
 meio/ADJ,plano/NOUN,superior/ADJ
 violento/ADJ,mão/NOUN,supremo/ADJ
 novo/ADJ,adulto/NOUN,surdo/ADJ
@@ -9057,6 +9138,7 @@ grave/ADJ,risco/NOUN,sísmico/ADJ
 intenso/ADJ,atividade/NOUN,sísmico/ADJ
 possível/ADJ,movimento/NOUN,sísmico/ADJ
 geral/ADJ,prestação/NOUN,sólido/ADJ
+inúmero/ADJ,lutador/NOUN,tailandês/ADJ
 pequeno/ADJ,cantor/NOUN,talentoso/ADJ
 clássico/ADJ,maia/NOUN,tardio/ADJ
 antigo/ADJ,crítico/NOUN,teatral/ADJ
@@ -9090,6 +9172,8 @@ novo/ADJ,meio/NOUN,tecnológico/ADJ
 novo/ADJ,recurso/NOUN,tecnológico/ADJ
 novo/ADJ,área/NOUN,tecnológico/ADJ
 significativo/ADJ,inovação/NOUN,tecnológico/ADJ
+grande/ADJ,instabilidade/NOUN,tectônico/ADJ
+novo/ADJ,atividade/NOUN,tectônico/ADJ
 novo/ADJ,centro/NOUN,telefônico/ADJ
 grande/ADJ,audiência/NOUN,televisivo/ADJ
 grande/ADJ,audiência/NOUN,televisivo/ADJ
@@ -9409,6 +9493,8 @@ verdadeiro/ADJ,ilha/NOUN,verde/ADJ
 grande/ADJ,círculo/NOUN,vermelho/ADJ
 grande/ADJ,olho/NOUN,vermelho/ADJ
 longo/ADJ,asa/NOUN,vermelho/ADJ
+novo/ADJ,glóbulo/NOUN,vermelho/ADJ
+novo/ADJ,glóbulo/NOUN,vermelho/ADJ
 novo/ADJ,triângulo/NOUN,vermelho/ADJ
 verde/ADJ,faixa/NOUN,vermelho/ADJ
 alto/ADJ,parede/NOUN,vertical/ADJ
@@ -9422,6 +9508,7 @@ idêntico/ADJ,assalto/NOUN,violento/ADJ
 novo/ADJ,protesto/NOUN,violento/ADJ
 grande/ADJ,endereço/NOUN,virtual/ADJ
 utilizável/ADJ,endereço/NOUN,virtual/ADJ
+notável/ADJ,verso/NOUN,visionário/ADJ
 bom/ADJ,acuidade/NOUN,visual/ADJ
 bom/ADJ,adaptação/NOUN,visual/ADJ
 bom/ADJ,apresentação/NOUN,visual/ADJ

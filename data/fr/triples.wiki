@@ -202,7 +202,6 @@ altitude/NOUN,moyen/ADJ,élevé/ADJ
 ambassadeur/NOUN,culturel/ADJ,européen/ADJ
 amour/NOUN,filial/ADJ,véritable/ADJ
 amplitude/NOUN,thermique/ADJ,annuel/ADJ
-an/NOUN,american/ADJ,original/ADJ
 analyse/NOUN,textuel/ADJ,critique/ADJ
 analyse/NOUN,mécanique/ADJ,dynamique/ADJ
 analyse/NOUN,chimique/ADJ,environnemental/ADJ
@@ -212,7 +211,6 @@ analyse/NOUN,diophantien/ADJ,rationnel/ADJ
 analyse/NOUN,cartographique/ADJ,statique/ADJ
 analyse/NOUN,financier/ADJ,trompeur/ADJ
 angle/NOUN,supérieur/ADJ,gauche/ADJ
-animateur/NOUN,radio/ADJ,québécois/ADJ
 annale/NOUN,royal/ADJ,assyrien/ADJ
 année/NOUN,polaire/ADJ,international/ADJ
 année/NOUN,civil/ADJ,précédent/ADJ
@@ -938,7 +936,6 @@ commandant/NOUN,russe/ADJ,majeur/ADJ
 commanditaire/NOUN,terroriste/ADJ,occulte/ADJ
 commentateur/NOUN,politique/ADJ,américain/ADJ
 commentateur/NOUN,politique/ADJ,américain/ADJ
-commentateur/NOUN,sportif/ADJ,radio/ADJ
 commerçant/NOUN,partenaire/ADJ,reconnaissable/ADJ
 commissaire/NOUN,royal/ADJ,provisoire/ADJ
 commission/NOUN,électoral/ADJ,central/ADJ
@@ -4362,7 +4359,6 @@ opinion/NOUN,public/ADJ,piémontais/ADJ
 opinion/NOUN,public/ADJ,québécois/ADJ
 opinion/NOUN,public/ADJ,suisse/ADJ
 opinion/NOUN,public/ADJ,unanime/ADJ
-opérateur/NOUN,radio/ADJ,anglais/ADJ
 opérateur/NOUN,téléphonique/ADJ,suisse/ADJ
 opération/NOUN,psychologique/ADJ,britannique/ADJ
 opération/NOUN,militaire/ADJ,croate/ADJ
@@ -9362,7 +9358,6 @@ haut/ADJ,fonctionnaire/NOUN,français/ADJ
 haut/ADJ,fonctionnaire/NOUN,français/ADJ
 haut/ADJ,fonctionnaire/NOUN,français/ADJ
 haut/ADJ,fonctionnaire/NOUN,français/ADJ
-heavy/ADJ,metal/NOUN,français/ADJ
 immense/ADJ,succès/NOUN,français/ADJ
 international/ADJ,espoir/NOUN,français/ADJ
 international/ADJ,espoir/NOUN,français/ADJ
@@ -11856,5 +11851,4 @@ autre/ADJ,grand/ADJ,unité/NOUN
 lien/ADJ,externe/ADJ,vidéo/NOUN
 autre/ADJ,grand/ADJ,ville/NOUN
 premier/ADJ,gros/ADJ,volume/NOUN
-first/ADJ,american/ADJ,édition/NOUN
 nombreux/ADJ,petit/ADJ,île/NOUN

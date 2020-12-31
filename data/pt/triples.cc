@@ -48,6 +48,8 @@ anúncio/NOUN,repelente/ADJ,natural/ADJ
 aparelho/NOUN,teórico/ADJ,conceitual/ADJ
 aplicativo/NOUN,virtual/ADJ,gratuito/ADJ
 aplicação/NOUN,comercial/ADJ,imediato/ADJ
+apoio/NOUN,aéreo/ADJ,inimigo/ADJ
+apoio/NOUN,aéreo/ADJ,inimigo/ADJ
 apoio/NOUN,parlamentar/ADJ,suficiente/ADJ
 apreciação/NOUN,qualitativo/ADJ,parecido/ADJ
 aproximação/NOUN,estatístico/ADJ,disponível/ADJ
@@ -297,6 +299,7 @@ carro/NOUN,atual/ADJ,ruim/ADJ
 cartão/NOUN,telefônico/ADJ,diverso/ADJ
 cartão/NOUN,virtual/ADJ,grátis/ADJ
 carvalho/NOUN,francês/ADJ,novo/ADJ
+caráter/NOUN,autossômico/ADJ,recessivo/ADJ
 casa/NOUN,residencial/ADJ,independente/ADJ
 casa/NOUN,noturno/ADJ,paulista/ADJ
 casa/NOUN,novo/ADJ,pronto/ADJ
@@ -658,6 +661,7 @@ efeito/NOUN,colateral/ADJ,grave/ADJ
 efeito/NOUN,colateral/ADJ,grave/ADJ
 efeito/NOUN,nocivo/ADJ,grave/ADJ
 efeito/NOUN,secundário/ADJ,grave/ADJ
+efeito/NOUN,colateral/ADJ,hormonal/ADJ
 efeito/NOUN,colateral/ADJ,horrível/ADJ
 efeito/NOUN,jurídico/ADJ,imediato/ADJ
 efeito/NOUN,suspensivo/ADJ,imediato/ADJ
@@ -1008,6 +1012,7 @@ genoma/NOUN,humano/ADJ,sintético/ADJ
 gente/NOUN,fino/ADJ,velho/ADJ
 gerenciamento/NOUN,ambiental/ADJ,alto/ADJ
 gestão/NOUN,democrático/ADJ,melhor/ADJ
+glóbulo/NOUN,branco/ADJ,especial/ADJ
 gordura/NOUN,abdominal/ADJ,rápido/ADJ
 grupo/NOUN,religioso/ADJ,britânico/ADJ
 grupo/NOUN,social/ADJ,diferente/ADJ
@@ -1023,6 +1028,8 @@ habilidade/NOUN,sensorial/ADJ,incrível/ADJ
 habilidade/NOUN,prático/ADJ,útil/ADJ
 habilitação/NOUN,brasileiro/ADJ,válido/ADJ
 hemorragia/NOUN,pulmonar/ADJ,ameaçador/ADJ
+herança/NOUN,autossômico/ADJ,dominante/ADJ
+herança/NOUN,autossômico/ADJ,recessivo/ADJ
 hidrocarboneto/NOUN,geológico/ADJ,gasoso/ADJ
 higiene/NOUN,pessoal/ADJ,adequado/ADJ
 hino/NOUN,nacional/ADJ,brasileiro/ADJ
@@ -1186,6 +1193,7 @@ luz/NOUN,solar/ADJ,pleno/ADJ
 luz/NOUN,branco/ADJ,quente/ADJ
 luz/NOUN,branco/ADJ,quente/ADJ
 lábio/NOUN,alto/ADJ,fino/ADJ
+líquido/NOUN,meio/ADJ,viscoso/ADJ
 lúpus/NOUN,eritematoso/ADJ,sistêmico/ADJ
 madeira/NOUN,antigo/ADJ,autêntico/ADJ
 madeira/NOUN,novo/ADJ,disponível/ADJ
@@ -1291,6 +1299,7 @@ negócio/NOUN,jurídico/ADJ,complexo/ADJ
 noite/NOUN,caro/ADJ,anônimo/ADJ
 nome/NOUN,comercial/ADJ,diferente/ADJ
 nome/NOUN,paternal/ADJ,francês/ADJ
+nomeação/NOUN,típico/ADJ,islandês/ADJ
 norma/NOUN,penal/ADJ,completo/ADJ
 norma/NOUN,técnico/ADJ,ministerial/ADJ
 norma/NOUN,social/ADJ,simples/ADJ
@@ -1368,6 +1377,7 @@ padrão/NOUN,tribal/ADJ,abstrato/ADJ
 padrão/NOUN,tribal/ADJ,abstrato/ADJ
 padrão/NOUN,social/ADJ,amplo/ADJ
 padrão/NOUN,sazonal/ADJ,atmosférico/ADJ
+padrão/NOUN,autossômico/ADJ,dominante/ADJ
 padrão/NOUN,urbanístico/ADJ,tradicional/ADJ
 pagamento/NOUN,móvel/ADJ,universal/ADJ
 painel/NOUN,solar/ADJ,flexível/ADJ
@@ -2309,6 +2319,7 @@ branco/ADJ,trabalho/NOUN,azul/ADJ
 estranho/ADJ,árvore/NOUN,azul/ADJ
 europeu/ADJ,partido/NOUN,azul/ADJ
 grande/ADJ,garrafa/NOUN,azul/ADJ
+minúsculo/ADJ,saúde/NOUN,azul/ADJ
 novo/ADJ,cão/NOUN,azul/ADJ
 novo/ADJ,mulher/NOUN,azul/ADJ
 pequeno/ADJ,criatura/NOUN,azul/ADJ
@@ -2374,6 +2385,7 @@ bizarro/ADJ,estupro/NOUN,brasileiro/ADJ
 bom/ADJ,música/NOUN,brasileiro/ADJ
 bom/ADJ,vinho/NOUN,brasileiro/ADJ
 brasileiro/ADJ,modelo/NOUN,brasileiro/ADJ
+famoso/ADJ,playboy/NOUN,brasileiro/ADJ
 forte/ADJ,característica/NOUN,brasileiro/ADJ
 gostoso/ADJ,amador/NOUN,brasileiro/ADJ
 grande/ADJ,artista/NOUN,brasileiro/ADJ
@@ -2715,6 +2727,7 @@ forte/ADJ,traço/NOUN,distintivo/ADJ
 inúmero/ADJ,prova/NOUN,distinto/ADJ
 inúmero/ADJ,deputado/NOUN,distrital/ADJ
 penitenciário/ADJ,deputado/NOUN,distrital/ADJ
+noturno/ADJ,atividade/NOUN,diurno/ADJ
 mesmo/ADJ,pensamento/NOUN,divergente/ADJ
 invisível/ADJ,par/NOUN,diverso/ADJ
 pessoal/ADJ,compreensão/NOUN,diverso/ADJ
@@ -2913,6 +2926,8 @@ servidor/ADJ,público/NOUN,estadual/ADJ
 enorme/ADJ,investimento/NOUN,estatal/ADJ
 maciço/ADJ,intervenção/NOUN,estatal/ADJ
 novo/ADJ,necessidade/NOUN,estatístico/ADJ
+bom/ADJ,qualidade/NOUN,estilístico/ADJ
+novo/ADJ,mudança/NOUN,estilístico/ADJ
 inúmero/ADJ,pesquisa/NOUN,estrangeiro/ADJ
 eventual/ADJ,corpo/NOUN,estranho/ADJ
 largo/ADJ,gravidade/NOUN,estratégico/ADJ
@@ -2960,6 +2975,7 @@ novo/ADJ,condição/NOUN,externo/ADJ
 novo/ADJ,parceria/NOUN,externo/ADJ
 novo/ADJ,parceria/NOUN,externo/ADJ
 pequeno/ADJ,serviço/NOUN,externo/ADJ
+péssimo/ADJ,repercussão/NOUN,externo/ADJ
 substancial/ADJ,financiamento/NOUN,externo/ADJ
 incrível/ADJ,animal/NOUN,extinto/ADJ
 novo/ADJ,pessoa/NOUN,extraordinário/ADJ
@@ -3013,6 +3029,7 @@ presente/ADJ,janeiro/NOUN,feliz/ADJ
 super/ADJ,mega/NOUN,feliz/ADJ
 grande/ADJ,característica/NOUN,feminino/ADJ
 lindo/ADJ,calçado/NOUN,feminino/ADJ
+novo/ADJ,fragrância/NOUN,feminino/ADJ
 novo/ADJ,programa/NOUN,feminino/ADJ
 novo/ADJ,truque/NOUN,feminino/ADJ
 pendente/ADJ,moto/NOUN,feminino/ADJ
@@ -3091,6 +3108,7 @@ verdadeiro/ADJ,bomba/NOUN,flutuante/ADJ
 efetivo/ADJ,treinamento/NOUN,fonológico/ADJ
 grande/ADJ,aplicação/NOUN,forense/ADJ
 mero/ADJ,irregularidade/NOUN,formal/ADJ
+necessário/ADJ,rito/NOUN,formal/ADJ
 bonito/ADJ,mulher/NOUN,forte/ADJ
 duplo/ADJ,penetração/NOUN,forte/ADJ
 firme/ADJ,&/NOUN,forte/ADJ
@@ -3218,6 +3236,7 @@ urgente/ADJ,ajudante/NOUN,geral/ADJ
 completo/ADJ,processo/NOUN,gerencial/ADJ
 novo/ADJ,recurso/NOUN,gerencial/ADJ
 precioso/ADJ,energia/NOUN,gerencial/ADJ
+antigo/ADJ,população/NOUN,germânico/ADJ
 antigo/ADJ,macho/NOUN,gigante/ADJ
 curioso/ADJ,célula/NOUN,gigante/ADJ
 grande/ADJ,ameaça/NOUN,global/ADJ
@@ -3410,6 +3429,7 @@ frio/ADJ,criança/NOUN,inocente/ADJ
 novo/ADJ,oportunidade/NOUN,inovador/ADJ
 eventual/ADJ,condição/NOUN,inseguro/ADJ
 instantâneo/ADJ,mensagem/NOUN,instantâneo/ADJ
+negativo/ADJ,retro/NOUN,instantâneo/ADJ
 bom/ADJ,álbum/NOUN,instrumental/ADJ
 fresco/ADJ,pão/NOUN,integral/ADJ
 duro/ADJ,conto/NOUN,inteiro/ADJ
@@ -3666,6 +3686,7 @@ principal/ADJ,artista/NOUN,modernista/ADJ
 externo/ADJ,cor/NOUN,moderno/ADJ
 masculino/ADJ,estilo/NOUN,moderno/ADJ
 novo/ADJ,estilo/NOUN,moderno/ADJ
+simples/ADJ,retro/NOUN,moderno/ADJ
 simétrico/ADJ,escritório/NOUN,moderno/ADJ
 urbano/ADJ,interseção/NOUN,moderno/ADJ
 alto/ADJ,peso/NOUN,molecular/ADJ
@@ -3916,6 +3937,8 @@ bom/ADJ,absorção/NOUN,oral/ADJ
 gostoso/ADJ,sexo/NOUN,oral/ADJ
 mau/ADJ,hábito/NOUN,oral/ADJ
 pequeno/ADJ,apresentação/NOUN,oral/ADJ
+grande/ADJ,efetividade/NOUN,organizacional/ADJ
+grande/ADJ,flexibilidade/NOUN,organizacional/ADJ
 notável/ADJ,dificuldade/NOUN,organizativo/ADJ
 alta/ADJ,carga/NOUN,orgânico/ADJ
 bom/ADJ,produto/NOUN,orgânico/ADJ
@@ -3927,6 +3950,7 @@ grande/ADJ,valor/NOUN,ornamental/ADJ
 sério/ADJ,problema/NOUN,ortopédico/ADJ
 duro/ADJ,corte/NOUN,orçamentário/ADJ
 novo/ADJ,corte/NOUN,orçamentário/ADJ
+antigo/ADJ,motivo/NOUN,otomano/ADJ
 belo/ADJ,efeito/NOUN,paisagístico/ADJ
 último/ADJ,derrota/NOUN,palmeirense/ADJ
 último/ADJ,derrota/NOUN,palmeirense/ADJ
@@ -4116,6 +4140,8 @@ alemão/ADJ,capa/NOUN,preto/ADJ
 bacana/ADJ,cabelo/NOUN,preto/ADJ
 bonito/ADJ,ilustração/NOUN,preto/ADJ
 eletrônico/ADJ,cor/NOUN,preto/ADJ
+escravagista/ADJ,contra/NOUN,preto/ADJ
+escravagista/ADJ,contra/NOUN,preto/ADJ
 eterno/ADJ,rival/NOUN,preto/ADJ
 fundo/ADJ,capacidade/NOUN,preto/ADJ
 longo/ADJ,fio/NOUN,preto/ADJ
@@ -4279,6 +4305,7 @@ forte/ADJ,hemorragia/NOUN,pulmonar/ADJ
 grande/ADJ,esforço/NOUN,pulmonar/ADJ
 amarelo/ADJ,limão/NOUN,pálido/ADJ
 eminente/ADJ,jornalista/NOUN,pátrio/ADJ
+grande/ADJ,homenagem/NOUN,póstumo/ADJ
 bom/ADJ,política/NOUN,público/ADJ
 excepcional/ADJ,interesse/NOUN,público/ADJ
 forte/ADJ,repercussão/NOUN,público/ADJ
@@ -4446,6 +4473,7 @@ novo/ADJ,processo/NOUN,seletivo/ADJ
 novo/ADJ,processo/NOUN,seletivo/ADJ
 novo/ADJ,processo/NOUN,seletivo/ADJ
 longo/ADJ,planta/NOUN,selvagem/ADJ
+sul/ADJ,besta/NOUN,selvagem/ADJ
 grande/ADJ,alta/NOUN,semanal/ADJ
 inúmero/ADJ,quadro/NOUN,semelhante/ADJ
 novo/ADJ,ação/NOUN,semelhante/ADJ
@@ -4576,6 +4604,8 @@ comercial/ADJ,zona/NOUN,sul/ADJ
 geral/ADJ,rio/NOUN,sul/ADJ
 paulista/ADJ,zona/NOUN,sul/ADJ
 quarto/ADJ,zona/NOUN,sul/ADJ
+forte/ADJ,tensão/NOUN,superficial/ADJ
+pequeno/ADJ,diferença/NOUN,superficial/ADJ
 surpreendente/ADJ,ideia/NOUN,sustentável/ADJ
 inúmero/ADJ,benefício/NOUN,sutil/ADJ
 inúmero/ADJ,estudo/NOUN,sério/ADJ
@@ -4720,6 +4750,7 @@ fresco/ADJ,mulher/NOUN,vermelho/ADJ
 frio/ADJ,verão/NOUN,vermelho/ADJ
 macho/ADJ,medicina/NOUN,vermelho/ADJ
 marrom/ADJ,preto/NOUN,vermelho/ADJ
+novo/ADJ,glóbulo/NOUN,vermelho/ADJ
 pequeno/ADJ,mancha/NOUN,vermelho/ADJ
 pequeno/ADJ,ponto/NOUN,vermelho/ADJ
 verde/ADJ,menino/NOUN,vermelho/ADJ

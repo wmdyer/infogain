@@ -35,6 +35,18 @@ air/NOUN,bersih/ADJ,dingin/ADJ
 air/NOUN,putih/ADJ,dingin/ADJ
 air/NOUN,putih/ADJ,dingin/ADJ
 air/NOUN,panas/ADJ,gratis/ADJ
+air/NOUN,putih/ADJ,hangat/ADJ
+air/NOUN,putih/ADJ,hangat/ADJ
+air/NOUN,putih/ADJ,hangat/ADJ
+air/NOUN,putih/ADJ,hangat/ADJ
+air/NOUN,putih/ADJ,hangat/ADJ
+air/NOUN,putih/ADJ,hangat/ADJ
+air/NOUN,putih/ADJ,hangat/ADJ
+air/NOUN,putih/ADJ,hangat/ADJ
+air/NOUN,putih/ADJ,hangat/ADJ
+air/NOUN,putih/ADJ,hangat/ADJ
+air/NOUN,putih/ADJ,hangat/ADJ
+air/NOUN,putih/ADJ,hangat/ADJ
 air/NOUN,besar/ADJ,hitam/ADJ
 air/NOUN,besar/ADJ,hitam/ADJ
 air/NOUN,panas/ADJ,keluar/ADJ
@@ -96,6 +108,7 @@ akibat/NOUN,hamil/ADJ,dini/ADJ
 akibat/NOUN,berat/ADJ,sendiri/ADJ
 akibat/NOUN,berat/ADJ,sendiri/ADJ
 aksi/NOUN,kolektif/ADJ,sama/ADJ
+aktivitas/NOUN,kreatif/ADJ,inovatif/ADJ
 aktivitas/NOUN,biologis/ADJ,internal/ADJ
 aktivitas/NOUN,operasional/ADJ,lainnya/ADJ
 aktivitas/NOUN,ringan/ADJ,lainnya/ADJ
@@ -107,6 +120,7 @@ akuntan/NOUN,internasional/ADJ,terbesar/ADJ
 akuntan/NOUN,internasional/ADJ,terbesar/ADJ
 alam/NOUN,gaib/ADJ,halus/ADJ
 alam/NOUN,gaib/ADJ,halus/ADJ
+alarm/NOUN,tunggal/ADJ,baru/ADJ
 alat/NOUN,sederhana/ADJ,lainnya/ADJ
 alat/NOUN,cetak/ADJ,serupa/ADJ
 album/NOUN,laris/ADJ,selanjutnya/ADJ
@@ -115,6 +129,7 @@ alias/NOUN,biru/ADJ,muda/ADJ
 aliran/NOUN,putih/ADJ,lainnya/ADJ
 aliran/NOUN,putih/ADJ,lainnya/ADJ
 alkitab/NOUN,sungguh/ADJ,berbeda/ADJ
+aman/NOUN,alami/ADJ,efektif/ADJ
 anak/NOUN,baik/ADJ,asli/ADJ
 anak/NOUN,khusus/ADJ,baru/ADJ
 anak/NOUN,pasar/ADJ,baru/ADJ
@@ -267,6 +282,7 @@ bahan/NOUN,organik/ADJ,sendiri/ADJ
 bahan/NOUN,organik/ADJ,tinggi/ADJ
 bahan/NOUN,organik/ADJ,tinggi/ADJ
 bahan/NOUN,biru/ADJ,tua/ADJ
+bahas/NOUN,panjang/ADJ,lebar/ADJ
 bahasa/NOUN,asing/ADJ,lain/ADJ
 bahasa/NOUN,asing/ADJ,lainnya/ADJ
 bahasa/NOUN,populer/ADJ,lainnya/ADJ
@@ -276,8 +292,10 @@ bahasa/NOUN,lisan/ADJ,sederhana/ADJ
 bahasa/NOUN,lisan/ADJ,sederhana/ADJ
 bahasa/NOUN,asing/ADJ,sendiri/ADJ
 bahasa/NOUN,resmi/ADJ,sesuai/ADJ
+bahasa/NOUN,non/ADJ,verbal/ADJ
 baja/NOUN,standar/ADJ,internasional/ADJ
 baju/NOUN,pasar/ADJ,baru/ADJ
+baju/NOUN,merah/ADJ,cerah/ADJ
 baju/NOUN,hitam/ADJ,hitam/ADJ
 baju/NOUN,murah/ADJ,langsung/ADJ
 baju/NOUN,murah/ADJ,malang/ADJ
@@ -325,6 +343,7 @@ bank/NOUN,umum/ADJ,lainnya/ADJ
 bank/NOUN,asing/ADJ,nasional/ADJ
 bank/NOUN,swasta/ADJ,nasional/ADJ
 bank/NOUN,mandiri/ADJ,setempat/ADJ
+bank/NOUN,umum/ADJ,syariah/ADJ
 bank/NOUN,terbesar/ADJ,ternama/ADJ
 bantuan/NOUN,hidup/ADJ,dasar/ADJ
 bantuan/NOUN,hidup/ADJ,dasar/ADJ
@@ -383,6 +402,7 @@ bayi/NOUN,cepat/ADJ,keluar/ADJ
 beban/NOUN,sama/ADJ,kuat/ADJ
 beban/NOUN,berat/ADJ,sendiri/ADJ
 beban/NOUN,hidup/ADJ,sendiri/ADJ
+beda/NOUN,jauh/ADJ,sama/ADJ
 bekas/NOUN,murah/ADJ,baru/ADJ
 belakang/NOUN,hitam/ADJ,polos/ADJ
 belanja/NOUN,online/ADJ,murah/ADJ
@@ -473,6 +493,7 @@ binatang/NOUN,utuh/ADJ,terpisah/ADJ
 binatang/NOUN,utuh/ADJ,terpisah/ADJ
 biner/NOUN,lainnya/ADJ,baik/ADJ
 biner/NOUN,lainnya/ADJ,baik/ADJ
+bingung/NOUN,sendiri/ADJ,baru/ADJ
 bintang/NOUN,besar/ADJ,merah/ADJ
 bintang/NOUN,merah/ADJ,raksasa/ADJ
 biologi/NOUN,penting/ADJ,lainnya/ADJ
@@ -515,6 +536,8 @@ buah/NOUN,merah/ADJ,asli/ADJ
 buah/NOUN,lokal/ADJ,baru/ADJ
 buah/NOUN,sehat/ADJ,kaya/ADJ
 buas/NOUN,hidup/ADJ,bebas/ADJ
+buat/NOUN,coklat/ADJ,online/ADJ
+buat/NOUN,bersama/ADJ,sama/ADJ
 buaya/NOUN,putih/ADJ,raksasa/ADJ
 budaya/NOUN,hidup/ADJ,bersih/ADJ
 budaya/NOUN,hidup/ADJ,bersih/ADJ
@@ -536,6 +559,7 @@ budaya/NOUN,hidup/ADJ,sehat/ADJ
 budaya/NOUN,dasar/ADJ,sendiri/ADJ
 budaya/NOUN,dasar/ADJ,sendiri/ADJ
 budaya/NOUN,lokal/ADJ,setempat/ADJ
+budaya/NOUN,dasar/ADJ,wajib/ADJ
 budi/NOUN,rata/ADJ,rata/ADJ
 bujur/NOUN,standar/ADJ,lokal/ADJ
 buku/NOUN,besar/ADJ,baik/ADJ
@@ -573,6 +597,7 @@ bulan/NOUN,sabit/ADJ,merah/ADJ
 bulan/NOUN,baru/ADJ,pertama/ADJ
 bulat/NOUN,dasar/ADJ,rata/ADJ
 bulat/NOUN,dasar/ADJ,rata/ADJ
+bulu/NOUN,hitam/ADJ,keriting/ADJ
 bulu/NOUN,putih/ADJ,mulus/ADJ
 bulu/NOUN,putih/ADJ,mulus/ADJ
 bumbu/NOUN,dasar/ADJ,putih/ADJ
@@ -589,6 +614,7 @@ bus/NOUN,khusus/ADJ,perempuan/ADJ
 busana/NOUN,modern/ADJ,lainnya/ADJ
 butik/NOUN,cantik/ADJ,murah/ADJ
 cahaya/NOUN,putih/ADJ,cepat/ADJ
+cahaya/NOUN,putih/ADJ,cerah/ADJ
 cairan/NOUN,kental/ADJ,hitam/ADJ
 cairan/NOUN,kental/ADJ,hitam/ADJ
 cairan/NOUN,kental/ADJ,hitam/ADJ
@@ -632,6 +658,7 @@ celana/NOUN,pendek/ADJ,ketat/ADJ
 celana/NOUN,pendek/ADJ,sebelumnya/ADJ
 celana/NOUN,hamil/ADJ,sendiri/ADJ
 celana/NOUN,pendek/ADJ,tipis/ADJ
+cepat/NOUN,buka/ADJ,tutup/ADJ
 cerita/NOUN,bebas/ADJ,baik/ADJ
 cerita/NOUN,panas/ADJ,dewasa/ADJ
 cerita/NOUN,kecil/ADJ,lainnya/ADJ
@@ -655,6 +682,7 @@ cerita/NOUN,pendek/ADJ,sendiri/ADJ
 cerita/NOUN,pendek/ADJ,sendiri/ADJ
 cerita/NOUN,pendek/ADJ,terbaik/ADJ
 cerita/NOUN,panas/ADJ,terbaru/ADJ
+cetak/NOUN,tinggi/ADJ,sendiri/ADJ
 cincin/NOUN,bagus/ADJ,murah/ADJ
 cinta/NOUN,romantis/ADJ,lucu/ADJ
 cinta/NOUN,sama/ADJ,perempuan/ADJ
@@ -700,6 +728,8 @@ ciri/NOUN,khas/ADJ,tersendiri/ADJ
 ciri/NOUN,khas/ADJ,tersendiri/ADJ
 ciri/NOUN,khas/ADJ,tersendiri/ADJ
 citra/NOUN,hitam/ADJ,putih/ADJ
+coba/NOUN,langsung/ADJ,sukses/ADJ
+coba/NOUN,resmi/ADJ,terakhir/ADJ
 contoh/NOUN,basa/ADJ,kuat/ADJ
 contoh/NOUN,historis/ADJ,lainnya/ADJ
 contoh/NOUN,historis/ADJ,lainnya/ADJ
@@ -716,6 +746,7 @@ daerah/NOUN,administratif/ADJ,setempat/ADJ
 daerah/NOUN,setempat/ADJ,setempat/ADJ
 daerah/NOUN,bakal/ADJ,signifikan/ADJ
 daging/NOUN,kecil/ADJ,kecil/ADJ
+daging/NOUN,murah/ADJ,meriah/ADJ
 dakwah/NOUN,global/ADJ,online/ADJ
 dampak/NOUN,negatif/ADJ,baik/ADJ
 dampak/NOUN,negatif/ADJ,baik/ADJ
@@ -730,6 +761,12 @@ dampak/NOUN,negatif/ADJ,lainnya/ADJ
 dampak/NOUN,positif/ADJ,lainnya/ADJ
 dana/NOUN,gaib/ADJ,langsung/ADJ
 dana/NOUN,modal/ADJ,nasional/ADJ
+dana/NOUN,mantap/ADJ,plus/ADJ
+dana/NOUN,mantap/ADJ,plus/ADJ
+dana/NOUN,mantap/ADJ,plus/ADJ
+dana/NOUN,mantap/ADJ,plus/ADJ
+dana/NOUN,mantap/ADJ,plus/ADJ
+dana/NOUN,mantap/ADJ,plus/ADJ
 darah/NOUN,mikro/ADJ,baru/ADJ
 darah/NOUN,mikro/ADJ,baru/ADJ
 darah/NOUN,merah/ADJ,basah/ADJ
@@ -769,6 +806,7 @@ debitur/NOUN,kecil/ADJ,lainnya/ADJ
 definisi/NOUN,dasar/ADJ,minimal/ADJ
 deklarasi/NOUN,terbaik/ADJ,lainnya/ADJ
 deklarasi/NOUN,terbaik/ADJ,lainnya/ADJ
+demografi/NOUN,penting/ADJ,lainnya/ADJ
 demonstrasi/NOUN,besar/ADJ,lainnya/ADJ
 desa/NOUN,setengah/ADJ,telanjang/ADJ
 desain/NOUN,internasional/ADJ,baru/ADJ
@@ -817,6 +855,7 @@ dosen/NOUN,luar/ADJ,biasa/ADJ
 dosis/NOUN,tinggi/ADJ,bersamaan/ADJ
 drama/NOUN,singkat/ADJ,lucu/ADJ
 dukungan/NOUN,militer/ADJ,kuat/ADJ
+dunia/NOUN,matematis/ADJ,ekonomis/ADJ
 dunia/NOUN,medis/ADJ,modern/ADJ
 dunia/NOUN,global/ADJ,umumnya/ADJ
 duri/NOUN,lunak/ADJ,biasa/ADJ
@@ -827,6 +866,7 @@ efek/NOUN,jahat/ADJ,lainnya/ADJ
 efek/NOUN,negatif/ADJ,lainnya/ADJ
 efek/NOUN,cetak/ADJ,miring/ADJ
 efek/NOUN,cetak/ADJ,tebal/ADJ
+efisiensi/NOUN,modal/ADJ,sendiri/ADJ
 ejaan/NOUN,baru/ADJ,bersama/ADJ
 ejakulasi/NOUN,dini/ADJ,alami/ADJ
 ejakulasi/NOUN,dini/ADJ,alami/ADJ
@@ -1014,6 +1054,8 @@ garis/NOUN,hitam/ADJ,putih/ADJ
 garis/NOUN,besar/ADJ,singkat/ADJ
 garis/NOUN,hitam/ADJ,tebal/ADJ
 garis/NOUN,hitam/ADJ,tipis/ADJ
+gaun/NOUN,putih/ADJ,panjang/ADJ
+gaun/NOUN,hitam/ADJ,tipis/ADJ
 gaya/NOUN,hidup/ADJ,alternatif/ADJ
 gaya/NOUN,hidup/ADJ,baru/ADJ
 gaya/NOUN,berat/ADJ,khas/ADJ
@@ -1070,6 +1112,7 @@ gizi/NOUN,buruk/ADJ,tertinggi/ADJ
 go/NOUN,hidup/ADJ,sehat/ADJ
 gol/NOUN,terbaik/ADJ,lainnya/ADJ
 gol/NOUN,terbaik/ADJ,lainnya/ADJ
+grosir/NOUN,murah/ADJ,malang/ADJ
 gua/NOUN,laris/ADJ,manis/ADJ
 gubernur/NOUN,termuda/ADJ,sebelumnya/ADJ
 gula/NOUN,merah/ADJ,cair/ADJ
@@ -1146,6 +1189,11 @@ harga/NOUN,dasar/ADJ,jual/ADJ
 harga/NOUN,murah/ADJ,jual/ADJ
 harga/NOUN,terbaru/ADJ,khusus/ADJ
 harga/NOUN,jelas/ADJ,mahal/ADJ
+harga/NOUN,murah/ADJ,meriah/ADJ
+harga/NOUN,murah/ADJ,meriah/ADJ
+harga/NOUN,murah/ADJ,meriah/ADJ
+harga/NOUN,murah/ADJ,meriah/ADJ
+harga/NOUN,murah/ADJ,meriah/ADJ
 harga/NOUN,murah/ADJ,murah/ADJ
 harga/NOUN,murah/ADJ,pasti/ADJ
 harga/NOUN,emas/ADJ,putih/ADJ
@@ -1183,6 +1231,7 @@ hari/NOUN,besar/ADJ,nasional/ADJ
 hari/NOUN,besar/ADJ,nasional/ADJ
 hari/NOUN,besar/ADJ,nasional/ADJ
 hari/NOUN,besar/ADJ,sendiri/ADJ
+hari/NOUN,penuh/ADJ,sesak/ADJ
 hari/NOUN,subur/ADJ,terakhir/ADJ
 hasil/NOUN,statistik/ADJ,agregat/ADJ
 hasil/NOUN,maksimal/ADJ,baru/ADJ
@@ -1264,6 +1313,7 @@ ibu/NOUN,hamil/ADJ,sulit/ADJ
 ibu/NOUN,hamil/ADJ,susah/ADJ
 ibu/NOUN,hamil/ADJ,tua/ADJ
 ide/NOUN,bagus/ADJ,lainnya/ADJ
+ide/NOUN,murah/ADJ,meriah/ADJ
 ide/NOUN,baru/ADJ,positif/ADJ
 ide/NOUN,dasar/ADJ,tambahan/ADJ
 identitas/NOUN,pribadi/ADJ,lainnya/ADJ
@@ -1276,6 +1326,7 @@ ikan/NOUN,nila/ADJ,biasa/ADJ
 ikan/NOUN,putih/ADJ,hidup/ADJ
 ikan/NOUN,nila/ADJ,hitam/ADJ
 ikan/NOUN,nila/ADJ,hitam/ADJ
+ikan/NOUN,asing/ADJ,ilegal/ADJ
 ikan/NOUN,nila/ADJ,intensif/ADJ
 ikan/NOUN,nila/ADJ,keluar/ADJ
 ikan/NOUN,hias/ADJ,lainnya/ADJ
@@ -1312,6 +1363,7 @@ iklim/NOUN,basah/ADJ,tropis/ADJ
 iklim/NOUN,sub/ADJ,tropis/ADJ
 ikon/NOUN,khas/ADJ,setempat/ADJ
 ilmiah/NOUN,baik/ADJ,cetak/ADJ
+indikator/NOUN,merah/ADJ,hijau/ADJ
 individu/NOUN,muda/ADJ,betina/ADJ
 indo/NOUN,jelas/ADJ,beda/ADJ
 induk/NOUN,betina/ADJ,baru/ADJ
@@ -1382,9 +1434,11 @@ jabatan/NOUN,eksekutif/ADJ,senior/ADJ
 jabatan/NOUN,militer/ADJ,tertinggi/ADJ
 jabatan/NOUN,fungsional/ADJ,umum/ADJ
 jabatan/NOUN,fungsional/ADJ,umum/ADJ
+jadi/NOUN,kaya/ADJ,mendadak/ADJ
 jagung/NOUN,nasional/ADJ,baru/ADJ
 jagung/NOUN,manis/ADJ,segar/ADJ
 jagung/NOUN,manis/ADJ,segar/ADJ
+jaksa/NOUN,agung/ADJ,baru/ADJ
 jalan/NOUN,sendiri/ADJ,bebas/ADJ
 jalan/NOUN,harian/ADJ,beda/ADJ
 jalan/NOUN,besar/ADJ,cocok/ADJ
@@ -1419,6 +1473,7 @@ jalur/NOUN,kabel/ADJ,sendiri/ADJ
 jalur/NOUN,tempuh/ADJ,sulit/ADJ
 jam/NOUN,langsung/ADJ,full/ADJ
 jamaah/NOUN,tinggi/ADJ,baik/ADJ
+jamu/NOUN,tradisional/ADJ,khas/ADJ
 jangka/NOUN,panjang/ADJ,baru/ADJ
 jangka/NOUN,panjang/ADJ,baru/ADJ
 jangka/NOUN,pendek/ADJ,berikutnya/ADJ
@@ -1449,6 +1504,7 @@ jari/NOUN,tegak/ADJ,lurus/ADJ
 jari/NOUN,tegak/ADJ,lurus/ADJ
 jaringan/NOUN,sebelumnya/ADJ,baik/ADJ
 jaringan/NOUN,lunak/ADJ,disekitarnya/ADJ
+jaringan/NOUN,lunak/ADJ,ekstensif/ADJ
 jaringan/NOUN,biologis/ADJ,lainnya/ADJ
 jaringan/NOUN,biologis/ADJ,lainnya/ADJ
 jaringan/NOUN,biologis/ADJ,lainnya/ADJ
@@ -1467,6 +1523,11 @@ jenis/NOUN,terbanyak/ADJ,berikutnya/ADJ
 jenis/NOUN,lainnya/ADJ,hidup/ADJ
 jenis/NOUN,tegak/ADJ,lurus/ADJ
 jenis/NOUN,standar/ADJ,nasional/ADJ
+jilbab/NOUN,cantik/ADJ,modern/ADJ
+jilbab/NOUN,langsung/ADJ,murah/ADJ
+jilbab/NOUN,besar/ADJ,panjang/ADJ
+jilbab/NOUN,sama/ADJ,panjang/ADJ
+jilbab/NOUN,modern/ADJ,terbaru/ADJ
 jiwa/NOUN,nasional/ADJ,terkemuka/ADJ
 jubah/NOUN,putih/ADJ,panjang/ADJ
 jubah/NOUN,putih/ADJ,panjang/ADJ
@@ -1577,6 +1638,7 @@ kawasan/NOUN,regional/ADJ,lainnya/ADJ
 kawasan/NOUN,strategis/ADJ,nasional/ADJ
 kawasan/NOUN,strategis/ADJ,nasional/ADJ
 kawasan/NOUN,strategis/ADJ,nasional/ADJ
+kaya/NOUN,terbuka/ADJ,lebar/ADJ
 kayu/NOUN,komersial/ADJ,lainnya/ADJ
 kayu/NOUN,mudah/ADJ,lapuk/ADJ
 kayu/NOUN,keras/ADJ,lokal/ADJ
@@ -1637,6 +1699,7 @@ kecepatan/NOUN,tinggi/ADJ,primer/ADJ
 kecepatan/NOUN,rendah/ADJ,sekunder/ADJ
 kecerdasan/NOUN,matematis/ADJ,logis/ADJ
 kecerdasan/NOUN,akademis/ADJ,tinggi/ADJ
+kedelai/NOUN,mudah/ADJ,lepas/ADJ
 kegiatan/NOUN,lain/ADJ,disekitarnya/ADJ
 kegiatan/NOUN,baru/ADJ,kreatif/ADJ
 kegiatan/NOUN,negatif/ADJ,lainnya/ADJ
@@ -1718,6 +1781,8 @@ kemampuan/NOUN,andal/ADJ,lainnya/ADJ
 kemampuan/NOUN,awal/ADJ,matematis/ADJ
 kemampuan/NOUN,awal/ADJ,matematis/ADJ
 kemampuan/NOUN,awal/ADJ,matematis/ADJ
+kemampuan/NOUN,verbal/ADJ,rendah/ADJ
+kemampuan/NOUN,verbal/ADJ,rendah/ADJ
 kemampuan/NOUN,awal/ADJ,sama/ADJ
 kemampuan/NOUN,sains/ADJ,sederhana/ADJ
 kemampuan/NOUN,sains/ADJ,sederhana/ADJ
@@ -1745,6 +1810,7 @@ kemungkinan/NOUN,besar/ADJ,hamil/ADJ
 kemungkinan/NOUN,besar/ADJ,lain/ADJ
 kemungkinan/NOUN,besar/ADJ,tipis/ADJ
 kemungkinan/NOUN,lain/ADJ,utama/ADJ
+kena/NOUN,panas/ADJ,langsung/ADJ
 kenaikan/NOUN,signifikan/ADJ,besar/ADJ
 kencang/NOUN,murah/ADJ,awet/ADJ
 kencing/NOUN,manis/ADJ,tradisional/ADJ
@@ -1779,6 +1845,7 @@ kerja/NOUN,sama/ADJ,bilateral/ADJ
 kerja/NOUN,sama/ADJ,bilateral/ADJ
 kerja/NOUN,sama/ADJ,bilateral/ADJ
 kerja/NOUN,individual/ADJ,cemerlang/ADJ
+kerja/NOUN,ideal/ADJ,cepat/ADJ
 kerja/NOUN,sama/ADJ,erat/ADJ
 kerja/NOUN,sama/ADJ,formal/ADJ
 kerja/NOUN,sama/ADJ,formal/ADJ
@@ -1872,6 +1939,8 @@ komputer/NOUN,cepat/ADJ,panas/ADJ
 komunikasi/NOUN,efektif/ADJ,baik/ADJ
 komunikasi/NOUN,digital/ADJ,dewasa/ADJ
 komunikasi/NOUN,modern/ADJ,lainnya/ADJ
+komunikasi/NOUN,non/ADJ,verbal/ADJ
+komunikasi/NOUN,non/ADJ,verbal/ADJ
 komunitas/NOUN,metal/ADJ,pertama/ADJ
 komunitas/NOUN,metal/ADJ,pertama/ADJ
 kondisi/NOUN,luar/ADJ,biasa/ADJ
@@ -1885,8 +1954,12 @@ konsep/NOUN,digital/ADJ,setara/ADJ
 konsep/NOUN,cetak/ADJ,tinggi/ADJ
 konsumen/NOUN,penting/ADJ,lainnya/ADJ
 konsumen/NOUN,baik/ADJ,tertulis/ADJ
+kontak/NOUN,penting/ADJ,lainnya/ADJ
+konten/NOUN,khusus/ADJ,dewasa/ADJ
+konten/NOUN,digital/ADJ,tinggi/ADJ
 kontribusi/NOUN,besar/ADJ,berikutnya/ADJ
 kontribusi/NOUN,langsung/ADJ,langsung/ADJ
+kontributor/NOUN,besar/ADJ,lainnya/ADJ
 kontrol/NOUN,sipil/ADJ,obyektif/ADJ
 koperasi/NOUN,sekunder/ADJ,minimal/ADJ
 kopi/NOUN,segar/ADJ,khas/ADJ
@@ -1974,6 +2047,7 @@ lagu/NOUN,terbaru/ADJ,lengkap/ADJ
 lagu/NOUN,terbaru/ADJ,lengkap/ADJ
 lagu/NOUN,terbaru/ADJ,lengkap/ADJ
 lagu/NOUN,slow/ADJ,romantis/ADJ
+lalu-lintas/NOUN,finansial/ADJ,global/ADJ
 lambang/NOUN,kabel/ADJ,hitam/ADJ
 lampu/NOUN,merah/ADJ,hijau/ADJ
 lampu/NOUN,merah/ADJ,hijau/ADJ
@@ -1998,6 +2072,7 @@ latihan/NOUN,mutakhir/ADJ,lengkap/ADJ
 layanan/NOUN,langsung/ADJ,baik/ADJ
 layanan/NOUN,populer/ADJ,lainnya/ADJ
 layar/NOUN,material/ADJ,baru/ADJ
+leher/NOUN,terkenal/ADJ,ganas/ADJ
 lele/NOUN,intensif/ADJ,padat/ADJ
 lele/NOUN,intensif/ADJ,padat/ADJ
 lembaga/NOUN,swasta/ADJ,murni/ADJ
@@ -2146,6 +2221,7 @@ manusia/NOUN,hidup/ADJ,nyaman/ADJ
 manusia/NOUN,khusus/ADJ,perempuan/ADJ
 manusia/NOUN,sama/ADJ,sama/ADJ
 manuskrip/NOUN,kuno/ADJ,terbaru/ADJ
+marah/NOUN,luar/ADJ,biasa/ADJ
 mas/NOUN,baru/ADJ,keluar/ADJ
 masa/NOUN,dewasa/ADJ,awal/ADJ
 masa/NOUN,dewasa/ADJ,awal/ADJ
@@ -2203,8 +2279,10 @@ masalah/NOUN,serius/ADJ,lainnya/ADJ
 masalah/NOUN,umum/ADJ,lainnya/ADJ
 masalah/NOUN,lainnya/ADJ,sama/ADJ
 masalah/NOUN,lainnya/ADJ,sama/ADJ
+masalah/NOUN,didaerah/ADJ,sensitif/ADJ
 masalah/NOUN,standar/ADJ,tengah/ADJ
 masalah/NOUN,global/ADJ,tersendiri/ADJ
+masing-masing/NOUN,hidup/ADJ,terpisah/ADJ
 masjid/NOUN,lainnya/ADJ,keluar/ADJ
 maskapai/NOUN,internasional/ADJ,lainnya/ADJ
 massa/NOUN,lunak/ADJ,lainnya/ADJ
@@ -2378,6 +2456,7 @@ n/NOUN,sama/ADJ,panjang/ADJ
 na/NOUN,panjang/ADJ,bagus/ADJ
 nama/NOUN,patah/ADJ,sendiri/ADJ
 nama/NOUN,kecil/ADJ,tersendiri/ADJ
+nasi/NOUN,putih/ADJ,hangat/ADJ
 nasi/NOUN,putih/ADJ,mudah/ADJ
 nasi/NOUN,putih/ADJ,mudah/ADJ
 nasi/NOUN,putih/ADJ,mudah/ADJ
@@ -2414,11 +2493,14 @@ nilai/NOUN,strategis/ADJ,tersendiri/ADJ
 nilai/NOUN,minimal/ADJ,tertinggi/ADJ
 nilai/NOUN,historis/ADJ,tinggi/ADJ
 nilai/NOUN,komersial/ADJ,tinggi/ADJ
+nilai/NOUN,kompetitif/ADJ,tinggi/ADJ
 nilai/NOUN,positif/ADJ,universal/ADJ
 nomor/NOUN,populer/ADJ,berikutnya/ADJ
 nomor/NOUN,baru/ADJ,sendiri/ADJ
 norma/NOUN,hidup/ADJ,normal/ADJ
 norma/NOUN,hidup/ADJ,sehat/ADJ
+nutrisi/NOUN,penting/ADJ,alami/ADJ
+nutrisi/NOUN,lainnya/ADJ,tipis/ADJ
 nyata/NOUN,baik/ADJ,individual/ADJ
 obat/NOUN,tradisional/ADJ,alami/ADJ
 obat/NOUN,kuat/ADJ,asli/ADJ
@@ -2430,6 +2512,7 @@ obat/NOUN,anti/ADJ,hamil/ADJ
 obat/NOUN,alami/ADJ,lain/ADJ
 obat/NOUN,tradisional/ADJ,lain/ADJ
 obat/NOUN,kuat/ADJ,lainnya/ADJ
+obat/NOUN,anti/ADJ,mual/ADJ
 obat/NOUN,awet/ADJ,muda/ADJ
 obat/NOUN,alami/ADJ,sakit/ADJ
 obat/NOUN,alternatif/ADJ,tradisional/ADJ
@@ -2444,10 +2527,12 @@ olahraga/NOUN,lain/ADJ,gagal/ADJ
 olahraga/NOUN,internasional/ADJ,lainnya/ADJ
 olahraga/NOUN,murah/ADJ,makassar/ADJ
 olahraga/NOUN,sehat/ADJ,ringan/ADJ
+olahragawan/NOUN,muda/ADJ,potensial/ADJ
 operasi/NOUN,lain/ADJ,sebelumnya/ADJ
 operasi/NOUN,militer/ADJ,sepenuhnya/ADJ
 operasi/NOUN,militer/ADJ,terbesar/ADJ
 opsi/NOUN,standar/ADJ,sendiri/ADJ
+orang/NOUN,tua/ADJ,agresif/ADJ
 orang/NOUN,dewasa/ADJ,awal/ADJ
 orang/NOUN,lain/ADJ,bahagia/ADJ
 orang/NOUN,lain/ADJ,bahagia/ADJ
@@ -2511,6 +2596,7 @@ orang/NOUN,lain/ADJ,disekitarnya/ADJ
 orang/NOUN,lain/ADJ,emosional/ADJ
 orang/NOUN,biasa/ADJ,hidup/ADJ
 orang/NOUN,lain/ADJ,hidup/ADJ
+orang/NOUN,tua/ADJ,ideal/ADJ
 orang/NOUN,pasti/ADJ,indah/ADJ
 orang/NOUN,lain/ADJ,internasional/ADJ
 orang/NOUN,lain/ADJ,iri/ADJ
@@ -2671,6 +2757,7 @@ orang/NOUN,tua/ADJ,tunggal/ADJ
 orang/NOUN,tua/ADJ,tunggal/ADJ
 orang/NOUN,tua/ADJ,tunggal/ADJ
 orang/NOUN,tua/ADJ,tunggal/ADJ
+orang/NOUN,tua/ADJ,wajib/ADJ
 organ/NOUN,penting/ADJ,lainnya/ADJ
 organ/NOUN,lainnya/ADJ,utuh/ADJ
 organisasi/NOUN,militer/ADJ,sendiri/ADJ
@@ -2687,6 +2774,8 @@ pacu/NOUN,militer/ADJ,tua/ADJ
 padi/NOUN,organik/ADJ,perdana/ADJ
 paha/NOUN,putih/ADJ,mulus/ADJ
 paha/NOUN,putih/ADJ,mulus/ADJ
+paham/NOUN,lokal/ADJ,setempat/ADJ
+paham/NOUN,lokal/ADJ,setempat/ADJ
 pahlawan/NOUN,nasional/ADJ,asli/ADJ
 pahlawan/NOUN,nasional/ADJ,sekelas/ADJ
 pajak/NOUN,berbeda/ADJ,beda/ADJ
@@ -2755,6 +2844,7 @@ pasukan/NOUN,khusus/ADJ,baru/ADJ
 pasukan/NOUN,khusus/ADJ,baru/ADJ
 pedagang/NOUN,luar/ADJ,biasa/ADJ
 pedagang/NOUN,besar/ADJ,lainnya/ADJ
+pegawai/NOUN,sipil/ADJ,federal/ADJ
 pegawai/NOUN,sipil/ADJ,lain/ADJ
 pejabat/NOUN,tinggi/ADJ,lainnya/ADJ
 pekerjaan/NOUN,baru/ADJ,khususnya/ADJ
@@ -2766,6 +2856,19 @@ pelajaran/NOUN,penting/ADJ,lainnya/ADJ
 pelajaran/NOUN,dasar/ADJ,operasional/ADJ
 pelajaran/NOUN,lainnya/ADJ,tinggi/ADJ
 peliharaan/NOUN,kecil/ADJ,lainnya/ADJ
+pembangunan/NOUN,nasional/ADJ,baik/ADJ
+pembangunan/NOUN,top/ADJ,down/ADJ
+pembangunan/NOUN,nasional/ADJ,khususnya/ADJ
+pembangunan/NOUN,nasional/ADJ,khususnya/ADJ
+pembangunan/NOUN,regional/ADJ,terbesar/ADJ
+pembayaran/NOUN,digital/ADJ,baru/ADJ
+pembayaran/NOUN,finansial/ADJ,lainnya/ADJ
+pembayaran/NOUN,sesuai/ADJ,total/ADJ
+pemerintah/NOUN,tengah/ADJ,aktif/ADJ
+pemerintah/NOUN,sadar/ADJ,benar/ADJ
+pemerintah/NOUN,buka/ADJ,impor/ADJ
+pemerintah/NOUN,jelas/ADJ,jelas/ADJ
+pemerintah/NOUN,senior/ADJ,pribumi/ADJ
 pemuda/NOUN,mandiri/ADJ,profesional/ADJ
 pemuda/NOUN,mandiri/ADJ,professional/ADJ
 pencapaian/NOUN,luar/ADJ,biasa/ADJ
@@ -2826,6 +2929,10 @@ penduduk/NOUN,miskin/ADJ,terbanyak/ADJ
 penduduk/NOUN,miskin/ADJ,tinggi/ADJ
 pendukung/NOUN,alami/ADJ,lainnya/ADJ
 pendukung/NOUN,alami/ADJ,lainnya/ADJ
+penelitian/NOUN,mendalam/ADJ,baru/ADJ
+penelitian/NOUN,kuantitatif/ADJ,cocok/ADJ
+penerapan/NOUN,material/ADJ,khusus/ADJ
+penerbitan/NOUN,pers/ADJ,baru/ADJ
 pengalaman/NOUN,personal/ADJ,langsung/ADJ
 pengantin/NOUN,modern/ADJ,lengkap/ADJ
 pengantin/NOUN,pendek/ADJ,terbaik/ADJ
@@ -2835,11 +2942,15 @@ pengaruh/NOUN,jauh/ADJ,sebelumnya/ADJ
 pengaruh/NOUN,positif/ADJ,signifikan/ADJ
 pengertian/NOUN,timbal/ADJ,balik/ADJ
 pengetahuan/NOUN,baru/ADJ,khususnya/ADJ
+penguatan/NOUN,visual/ADJ,mutlak/ADJ
+pengurangan/NOUN,berat/ADJ,bersih/ADJ
+peningkatan/NOUN,modal/ADJ,dasar/ADJ
 penjelasan/NOUN,panjang/ADJ,lebar/ADJ
 penjual/NOUN,otomatis/ADJ,canggih/ADJ
 penjualan/NOUN,bersih/ADJ,asing/ADJ
 penjualan/NOUN,langsung/ADJ,global/ADJ
 penjualan/NOUN,sendiri/ADJ,sendiri/ADJ
+penurunan/NOUN,kognitif/ADJ,normal/ADJ
 pepohonan/NOUN,besar/ADJ,khas/ADJ
 peradaban/NOUN,maju/ADJ,baru/ADJ
 peralatan/NOUN,militer/ADJ,besar/ADJ
@@ -2920,6 +3031,8 @@ perbedaan/NOUN,tinggi/ADJ,rendah/ADJ
 perdagangan/NOUN,bebas/ADJ,bilateral/ADJ
 perdagangan/NOUN,bebas/ADJ,global/ADJ
 perdagangan/NOUN,bebas/ADJ,jelas/ADJ
+perdagangan/NOUN,multilateral/ADJ,lainnya/ADJ
+perdagangan/NOUN,multilateral/ADJ,lainnya/ADJ
 perdagangan/NOUN,bebas/ADJ,langsung/ADJ
 perdagangan/NOUN,bebas/ADJ,regional/ADJ
 perdagangan/NOUN,bebas/ADJ,sendiri/ADJ
@@ -3034,6 +3147,8 @@ permainan/NOUN,gratis/ADJ,terbanyak/ADJ
 permata/NOUN,merah/ADJ,muda/ADJ
 permintaan/NOUN,terbesar/ADJ,khususnya/ADJ
 pernikahan/NOUN,tradisional/ADJ,besar/ADJ
+pernikahan/NOUN,murah/ADJ,meriah/ADJ
+pernikahan/NOUN,murah/ADJ,meriah/ADJ
 pernikahan/NOUN,modern/ADJ,terbaru/ADJ
 pernyataan/NOUN,benar/ADJ,lainnya/ADJ
 perpajakan/NOUN,internasional/ADJ,ternama/ADJ
@@ -3073,6 +3188,7 @@ perubahan/NOUN,baru/ADJ,cepat/ADJ
 perubahan/NOUN,baru/ADJ,cepat/ADJ
 perubahan/NOUN,baru/ADJ,cepat/ADJ
 perubahan/NOUN,penting/ADJ,lainnya/ADJ
+perundang-undangan/NOUN,nasional/ADJ,lainnya/ADJ
 perusahaan/NOUN,modal/ADJ,asing/ADJ
 perusahaan/NOUN,swasta/ADJ,asing/ADJ
 perusahaan/NOUN,swasta/ADJ,asing/ADJ
@@ -3137,6 +3253,10 @@ pisang/NOUN,terbesar/ADJ,luas/ADJ
 pita/NOUN,putih/ADJ,besar/ADJ
 pita/NOUN,putih/ADJ,tebal/ADJ
 planet/NOUN,lain/ADJ,sama/ADJ
+plastik/NOUN,kecil/ADJ,kecil/ADJ
+plastik/NOUN,putih/ADJ,tipis/ADJ
+plastik/NOUN,putih/ADJ,tipis/ADJ
+plastik/NOUN,putih/ADJ,tipis/ADJ
 pohon/NOUN,besar/ADJ,umumnya/ADJ
 poin/NOUN,tertinggi/ADJ,sama/ADJ
 pola/NOUN,hidup/ADJ,bersih/ADJ
@@ -3222,6 +3342,7 @@ politik/NOUN,bebas/ADJ,aktif/ADJ
 politik/NOUN,bebas/ADJ,aktif/ADJ
 politik/NOUN,bebas/ADJ,aktif/ADJ
 politik/NOUN,pecah/ADJ,belah/ADJ
+polusi/NOUN,penting/ADJ,sukses/ADJ
 pondasi/NOUN,dangkal/ADJ,lainnya/ADJ
 ponsel/NOUN,kosong/ADJ,sekaligus/ADJ
 ponsel/NOUN,cerdas/ADJ,terbaru/ADJ
@@ -3265,6 +3386,7 @@ prioritas/NOUN,utama/ADJ,khususnya/ADJ
 produk/NOUN,akhir/ADJ,bagus/ADJ
 produk/NOUN,lain/ADJ,baru/ADJ
 produk/NOUN,luar/ADJ,biasa/ADJ
+produk/NOUN,impor/ADJ,ilegal/ADJ
 produk/NOUN,unggulan/ADJ,internasional/ADJ
 produk/NOUN,lokal/ADJ,jauh/ADJ
 produk/NOUN,alternatif/ADJ,lain/ADJ
@@ -3273,6 +3395,7 @@ produk/NOUN,terbaru/ADJ,lainnya/ADJ
 produk/NOUN,baru/ADJ,low/ADJ
 produk/NOUN,lokal/ADJ,resmi/ADJ
 produk/NOUN,digital/ADJ,sendiri/ADJ
+produk/NOUN,inovatif/ADJ,terbaru/ADJ
 produk/NOUN,organik/ADJ,terbesar/ADJ
 produk/NOUN,akhir/ADJ,tinggi/ADJ
 produksi/NOUN,utama/ADJ,global/ADJ
@@ -3286,19 +3409,36 @@ program/NOUN,utama/ADJ,lainnya/ADJ
 promosi/NOUN,khusus/ADJ,terbaru/ADJ
 promosi/NOUN,online/ADJ,terbesar/ADJ
 proses/NOUN,berikutnya/ADJ,baru/ADJ
+proses/NOUN,individual/ADJ,logistik/ADJ
 proses/NOUN,cepat/ADJ,non/ADJ
 proses/NOUN,cepat/ADJ,non/ADJ
 proses/NOUN,otomatis/ADJ,terbaru/ADJ
 protein/NOUN,biologis/ADJ,aktif/ADJ
+protein/NOUN,rendah/ADJ,ideal/ADJ
 protein/NOUN,berat/ADJ,kering/ADJ
 protein/NOUN,utama/ADJ,putih/ADJ
 proyek/NOUN,baik/ADJ,langsung/ADJ
 proyek/NOUN,penting/ADJ,selesai/ADJ
+proyek-proyek/NOUN,kecil/ADJ,lainnya/ADJ
 psikologi/NOUN,sendiri/ADJ,baru/ADJ
 publik/NOUN,terbaik/ADJ,lainnya/ADJ
 puisi/NOUN,sama/ADJ,coklat/ADJ
 puisi/NOUN,lisan/ADJ,tersendiri/ADJ
 pukul/NOUN,bersih/ADJ,keras/ADJ
+pupuk/NOUN,dasar/ADJ,bersamaan/ADJ
+pupuk/NOUN,organik/ADJ,cair/ADJ
+pupuk/NOUN,organik/ADJ,cair/ADJ
+pupuk/NOUN,organik/ADJ,cair/ADJ
+pupuk/NOUN,organik/ADJ,cair/ADJ
+pupuk/NOUN,organik/ADJ,cair/ADJ
+pupuk/NOUN,organik/ADJ,cair/ADJ
+pupuk/NOUN,organik/ADJ,cair/ADJ
+pupuk/NOUN,organik/ADJ,cair/ADJ
+pupuk/NOUN,organik/ADJ,cair/ADJ
+pupuk/NOUN,organik/ADJ,cair/ADJ
+pupuk/NOUN,dasar/ADJ,langsung/ADJ
+pupuk/NOUN,cair/ADJ,organik/ADJ
+pusat/NOUN,mendadak/ADJ,sensitif/ADJ
 pustaka/NOUN,online/ADJ,baik/ADJ
 putaran/NOUN,rendah/ADJ,sulit/ADJ
 putra/NOUN,altar/ADJ,baru/ADJ
@@ -3348,9 +3488,12 @@ renang/NOUN,standar/ADJ,internasional/ADJ
 rencana/NOUN,umum/ADJ,nasional/ADJ
 rencana/NOUN,umum/ADJ,nasional/ADJ
 resiko/NOUN,besar/ADJ,lainnya/ADJ
+respons/NOUN,emosional/ADJ,positif/ADJ
 restoran/NOUN,sendiri/ADJ,kecil/ADJ
 rhesus/NOUN,negatif/ADJ,sakit/ADJ
 risiko/NOUN,tradisional/ADJ,lainnya/ADJ
+ritel/NOUN,nasional/ADJ,lainnya/ADJ
+ritel/NOUN,modern/ADJ,terkemuka/ADJ
 riwayat/NOUN,hidup/ADJ,sendiri/ADJ
 riwayat/NOUN,hidup/ADJ,singkat/ADJ
 riwayat/NOUN,hidup/ADJ,singkat/ADJ
@@ -3403,6 +3546,7 @@ rumah/NOUN,murah/ADJ,strategis/ADJ
 rumah/NOUN,murah/ADJ,sulit/ADJ
 rumah/NOUN,modern/ADJ,terbaru/ADJ
 rupa/NOUN,modern/ADJ,berikutnya/ADJ
+rusak/NOUN,dasar/ADJ,hitam/ADJ
 rute/NOUN,internasional/ADJ,lainnya/ADJ
 saat/NOUN,hamil/ADJ,aman/ADJ
 saat/NOUN,hamil/ADJ,muda/ADJ
@@ -3417,6 +3561,7 @@ saham/NOUN,terbesar/ADJ,jelas/ADJ
 saham/NOUN,pasar/ADJ,sekunder/ADJ
 saham/NOUN,tunggal/ADJ,terbesar/ADJ
 saham/NOUN,tunggal/ADJ,terbesar/ADJ
+saing/NOUN,kuat/ADJ,baik/ADJ
 saka/NOUN,merah/ADJ,putih/ADJ
 sakit/NOUN,panas/ADJ,dingin/ADJ
 sakit/NOUN,besar/ADJ,lainnya/ADJ
@@ -3426,6 +3571,7 @@ sakit/NOUN,panas/ADJ,tinggi/ADJ
 sakit/NOUN,panas/ADJ,tinggi/ADJ
 saksi/NOUN,kecil/ADJ,lainnya/ADJ
 salam/NOUN,cerdas/ADJ,kreatif/ADJ
+salam/NOUN,kenal/ADJ,sukses/ADJ
 sambungan/NOUN,langsung/ADJ,internasional/ADJ
 sampah/NOUN,organik/ADJ,basah/ADJ
 sampah/NOUN,organik/ADJ,cepat/ADJ
@@ -3433,6 +3579,7 @@ sampah/NOUN,organik/ADJ,cepat/ADJ
 sampah/NOUN,khusus/ADJ,lainnya/ADJ
 sampah/NOUN,kering/ADJ,sendiri/ADJ
 sampel/NOUN,berat/ADJ,abu/ADJ
+sanksi/NOUN,administratif/ADJ,sesuai/ADJ
 santan/NOUN,kental/ADJ,sendiri/ADJ
 santri/NOUN,lain/ADJ,marah/ADJ
 sapi/NOUN,segar/ADJ,baik/ADJ
@@ -3498,6 +3645,7 @@ sejarah/NOUN,baru/ADJ,lainnya/ADJ
 sejarah/NOUN,militer/ADJ,sesungguhnya/ADJ
 sejati/NOUN,romantis/ADJ,sedih/ADJ
 sekarang/NOUN,aneh/ADJ,aneh/ADJ
+sekian/NOUN,lama/ADJ,baru/ADJ
 sekolah/NOUN,luar/ADJ,biasa/ADJ
 sekolah/NOUN,luar/ADJ,biasa/ADJ
 sekolah/NOUN,standar/ADJ,nasional/ADJ
@@ -3573,6 +3721,7 @@ sistem/NOUN,finansial/ADJ,global/ADJ
 sistem/NOUN,finansial/ADJ,global/ADJ
 sistem/NOUN,otomatis/ADJ,modern/ADJ
 siswa/NOUN,benar/ADJ,benar/ADJ
+siswa/NOUN,baru/ADJ,i/ADJ
 siswa/NOUN,baru/ADJ,online/ADJ
 siswa/NOUN,baru/ADJ,sesuai/ADJ
 situasi/NOUN,nasional/ADJ,dewasa/ADJ
@@ -3588,15 +3737,18 @@ sosial/NOUN,sekunder/ADJ,langsung/ADJ
 sosialisasi/NOUN,cetak/ADJ,biru/ADJ
 sosialisasi/NOUN,sekunder/ADJ,lainnya/ADJ
 souvenir/NOUN,bagus/ADJ,murah/ADJ
+spekulasi/NOUN,pertama/ADJ,jelas/ADJ
 sperma/NOUN,cepat/ADJ,keluar/ADJ
 spesies/NOUN,besar/ADJ,lainnya/ADJ
 spesies/NOUN,dekat/ADJ,lainnya/ADJ
 spesies/NOUN,dekat/ADJ,lainnya/ADJ
 spora/NOUN,sama/ADJ,besar/ADJ
 spora/NOUN,sama/ADJ,besar/ADJ
+stiker/NOUN,bebas/ADJ,fiskal/ADJ
 strategi/NOUN,militer/ADJ,nasional/ADJ
 strategi/NOUN,multi/ADJ,tahunan/ADJ
 struktur/NOUN,kognitif/ADJ,baru/ADJ
+struktur/NOUN,mikro/ADJ,ideal/ADJ
 struktur/NOUN,modal/ADJ,optimal/ADJ
 struktur/NOUN,modal/ADJ,optimal/ADJ
 struktur/NOUN,modal/ADJ,optimal/ADJ
@@ -3617,6 +3769,7 @@ sumber/NOUN,finansial/ADJ,baru/ADJ
 sumber/NOUN,utama/ADJ,karet/ADJ
 sumber/NOUN,panas/ADJ,lainnya/ADJ
 sumber/NOUN,impor/ADJ,terbesar/ADJ
+suntik/NOUN,putih/ADJ,terbaru/ADJ
 surat/NOUN,lengkap/ADJ,merah/ADJ
 susu/NOUN,segar/ADJ,baik/ADJ
 susu/NOUN,putih/ADJ,biasa/ADJ
@@ -3660,9 +3813,13 @@ susu/NOUN,coklat/ADJ,muda/ADJ
 susu/NOUN,online/ADJ,murah/ADJ
 syarat/NOUN,teknis/ADJ,minimal/ADJ
 syarat/NOUN,teknis/ADJ,minimal/ADJ
+tablet/NOUN,cepat/ADJ,basah/ADJ
+tablet/NOUN,murah/ADJ,khusus/ADJ
 tadi/NOUN,benar/ADJ,benar/ADJ
 tadi/NOUN,benar/ADJ,benar/ADJ
 tadi/NOUN,jelas/ADJ,jelas/ADJ
+tahan/NOUN,panas/ADJ,lainnya/ADJ
+tahan/NOUN,lama/ADJ,tengah/ADJ
 tahap/NOUN,nasional/ADJ,demokratis/ADJ
 tahap/NOUN,operasional/ADJ,formal/ADJ
 tahap/NOUN,strategis/ADJ,nasional/ADJ
@@ -3700,6 +3857,7 @@ tangan/NOUN,merah/ADJ,muda/ADJ
 tangan/NOUN,sederhana/ADJ,mudah/ADJ
 tangan/NOUN,murah/ADJ,putih/ADJ
 tangan/NOUN,politis/ADJ,sosial/ADJ
+tante/NOUN,cantik/ADJ,kaya/ADJ
 tari/NOUN,modern/ADJ,lainnya/ADJ
 tari/NOUN,modern/ADJ,mancanegara/ADJ
 tarian/NOUN,khas/ADJ,setempat/ADJ
@@ -3714,6 +3872,7 @@ tas/NOUN,rata/ADJ,rata/ADJ
 tas/NOUN,rata/ADJ,rata/ADJ
 tas/NOUN,baru/ADJ,sekaligus/ADJ
 tegangan/NOUN,rendah/ADJ,lainnya/ADJ
+teh/NOUN,manis/ADJ,hangat/ADJ
 teh/NOUN,manis/ADJ,panas/ADJ
 teh/NOUN,manis/ADJ,sebaik/ADJ
 teh/NOUN,hidup/ADJ,subur/ADJ
@@ -3807,6 +3966,7 @@ tempat/NOUN,suci/ADJ,lain/ADJ
 tempat/NOUN,romantis/ADJ,lainnya/ADJ
 tempat/NOUN,saraf/ADJ,optik/ADJ
 tempat/NOUN,umum/ADJ,sehat/ADJ
+temperamen/NOUN,cepat/ADJ,marah/ADJ
 temuan/NOUN,umum/ADJ,lainnya/ADJ
 temuan/NOUN,negatif/ADJ,palsu/ADJ
 temuan/NOUN,positif/ADJ,palsu/ADJ
@@ -3819,7 +3979,10 @@ tendangan/NOUN,bebas/ADJ,jauh/ADJ
 tendangan/NOUN,bebas/ADJ,langsung/ADJ
 tengah/NOUN,setengah/ADJ,telanjang/ADJ
 tentara/NOUN,nasional/ADJ,sendiri/ADJ
+tentu/NOUN,jelas/ADJ,berbeda/ADJ
 tenunan/NOUN,khas/ADJ,tradisional/ADJ
+teologi/NOUN,historis/ADJ,kritis/ADJ
+teologi/NOUN,historis/ADJ,kritis/ADJ
 teori/NOUN,struktural/ADJ,fungsional/ADJ
 teori/NOUN,pilihan/ADJ,rasional/ADJ
 tepi/NOUN,coklat/ADJ,gelap/ADJ
@@ -3921,11 +4084,14 @@ tujuan/NOUN,hidup/ADJ,pasti/ADJ
 tujuan/NOUN,hidup/ADJ,rohani/ADJ
 tujuan/NOUN,hidup/ADJ,sendiri/ADJ
 tujuan/NOUN,teknis/ADJ,umum/ADJ
+tulis/NOUN,panjang/ADJ,lebar/ADJ
 tulisan/NOUN,standar/ADJ,alternatif/ADJ
 tumbuhan/NOUN,hidup/ADJ,bebas/ADJ
 tunjangan/NOUN,fungsional/ADJ,baru/ADJ
 tv/NOUN,kabel/ADJ,berlangganan/ADJ
 tv/NOUN,khusus/ADJ,dewasa/ADJ
+tv/NOUN,kabel/ADJ,ilegal/ADJ
+tv/NOUN,kabel/ADJ,ilegal/ADJ
 tv/NOUN,swasta/ADJ,nasional/ADJ
 tv/NOUN,swasta/ADJ,nasional/ADJ
 tv/NOUN,swasta/ADJ,nasional/ADJ
@@ -3944,6 +4110,7 @@ uang/NOUN,utama/ADJ,lainnya/ADJ
 uang/NOUN,kuno/ADJ,murah/ADJ
 uang/NOUN,asli/ADJ,nyaman/ADJ
 uang/NOUN,paksa/ADJ,sama/ADJ
+uap/NOUN,panas/ADJ,kuat/ADJ
 ucapan/NOUN,selamat/ADJ,biasa/ADJ
 ucapan/NOUN,selamat/ADJ,malam/ADJ
 udara/NOUN,dingin/ADJ,disekitarnya/ADJ
@@ -3974,12 +4141,14 @@ ukuran/NOUN,besar/ADJ,murah/ADJ
 ukuran/NOUN,besar/ADJ,online/ADJ
 ukuran/NOUN,besar/ADJ,panjang/ADJ
 ukuran/NOUN,besar/ADJ,panjang/ADJ
+ukuran/NOUN,kecil/ADJ,ringkas/ADJ
 ukuran/NOUN,standar/ADJ,tinggi/ADJ
 ulama/NOUN,baru/ADJ,baru/ADJ
 ular/NOUN,sungguh/ADJ,luar/ADJ
 umat/NOUN,khususnya/ADJ,muda/ADJ
 umum/NOUN,swasta/ADJ,nasional/ADJ
 umur/NOUN,rata/ADJ,rata/ADJ
+undang-undang/NOUN,dasar/ADJ,baru/ADJ
 unit/NOUN,operasional/ADJ,terbanyak/ADJ
 universitas/NOUN,baik/ADJ,lokal/ADJ
 universitas/NOUN,swasta/ADJ,terkenal/ADJ
@@ -3995,6 +4164,7 @@ usaha/NOUN,kecil/ADJ,baru/ADJ
 usaha/NOUN,lainnya/ADJ,bersamaan/ADJ
 usaha/NOUN,langsung/ADJ,besar/ADJ
 usaha/NOUN,kecil/ADJ,formal/ADJ
+usaha/NOUN,kecil/ADJ,ideal/ADJ
 usaha/NOUN,kecil/ADJ,informal/ADJ
 usaha/NOUN,makro/ADJ,kecil/ADJ
 usaha/NOUN,mikro/ADJ,kecil/ADJ
@@ -4027,6 +4197,7 @@ usia/NOUN,maksimal/ADJ,khusus/ADJ
 usia/NOUN,lanjut/ADJ,rentan/ADJ
 usia/NOUN,dini/ADJ,sungguh/ADJ
 uskup/NOUN,agung/ADJ,baru/ADJ
+valuta/NOUN,internasional/ADJ,lainnya/ADJ
 variabel/NOUN,lain/ADJ,baik/ADJ
 variasi/NOUN,berbobot/ADJ,besar/ADJ
 video/NOUN,online/ADJ,gratis/ADJ
@@ -4035,6 +4206,9 @@ video/NOUN,pribadi/ADJ,sendiri/ADJ
 video/NOUN,pribadi/ADJ,sendiri/ADJ
 vitamin/NOUN,alami/ADJ,sendiri/ADJ
 volume/NOUN,langsung/ADJ,keras/ADJ
+wabah/NOUN,besar/ADJ,terakhir/ADJ
+wacana/NOUN,lisan/ADJ,sederhana/ADJ
+wacana/NOUN,lisan/ADJ,sederhana/ADJ
 wajah/NOUN,cantik/ADJ,alami/ADJ
 wajah/NOUN,manis/ADJ,cantik/ADJ
 wajah/NOUN,manis/ADJ,cantik/ADJ
@@ -4095,6 +4269,7 @@ warna/NOUN,putih/ADJ,bersih/ADJ
 warna/NOUN,putih/ADJ,bersih/ADJ
 warna/NOUN,dasar/ADJ,biru/ADJ
 warna/NOUN,hijau/ADJ,biru/ADJ
+warna/NOUN,hijau/ADJ,cerah/ADJ
 warna/NOUN,merah/ADJ,cokelat/ADJ
 warna/NOUN,nyata/ADJ,enak/ADJ
 warna/NOUN,dasar/ADJ,hijau/ADJ
@@ -4184,6 +4359,8 @@ dasar/ADJ,herbal/NOUN,alami/ADJ
 kuat/ADJ,seks/NOUN,alami/ADJ
 kuat/ADJ,seks/NOUN,alami/ADJ
 muda/ADJ,tongkol/NOUN,alami/ADJ
+segar/ADJ,cerah/NOUN,alami/ADJ
+otomatis/ADJ,hipotesis/NOUN,alternatif/ADJ
 kaya/ADJ,orang/NOUN,aneh/ADJ
 setia/ADJ,zona/NOUN,aneh/ADJ
 penting/ADJ,negara/NOUN,asing/ADJ
@@ -4219,6 +4396,7 @@ besar/ADJ,dunia/NOUN,baik/ADJ
 dasar/ADJ,listrik/NOUN,baik/ADJ
 dasar/ADJ,pesantren/NOUN,baik/ADJ
 dewasa/ADJ,hari/NOUN,baik/ADJ
+non/ADJ,resep/NOUN,baik/ADJ
 putih/ADJ,kualitas/NOUN,baik/ADJ
 standar/ADJ,performa/NOUN,baik/ADJ
 tebal/ADJ,kualitas/NOUN,baik/ADJ
@@ -4249,6 +4427,7 @@ jauh/ADJ,masalah/NOUN,baru/ADJ
 jauh/ADJ,tipe/NOUN,baru/ADJ
 kaya/ADJ,mobil/NOUN,baru/ADJ
 multi/ADJ,block/NOUN,baru/ADJ
+optimis/ADJ,warna/NOUN,baru/ADJ
 penuh/ADJ,petualangan/NOUN,baru/ADJ
 penuh/ADJ,petualangan/NOUN,baru/ADJ
 sama/ADJ,adik/NOUN,baru/ADJ
@@ -4261,6 +4440,7 @@ sama/ADJ,versi/NOUN,baru/ADJ
 selamat/ADJ,tahun/NOUN,baru/ADJ
 selamat/ADJ,tahun/NOUN,baru/ADJ
 sendiri/ADJ,inovasi/NOUN,baru/ADJ
+standar/ADJ,efisiensi/NOUN,baru/ADJ
 sub/ADJ,domain/NOUN,baru/ADJ
 terbaru/ADJ,harga/NOUN,baru/ADJ
 berat/ADJ,beton/NOUN,basah/ADJ
@@ -4296,6 +4476,7 @@ setengah/ADJ,tahun/NOUN,berikutnya/ADJ
 khusus/ADJ,kulit/NOUN,berminyak/ADJ
 dasar/ADJ,kehidupan/NOUN,bersama/ADJ
 lisan/ADJ,kehidupan/NOUN,bersama/ADJ
+historis/ADJ,ekuitas/NOUN,bersih/ADJ
 jelas/ADJ,jumlah/NOUN,bersih/ADJ
 modal/ADJ,kerja/NOUN,bersih/ADJ
 standar/ADJ,air/NOUN,bersih/ADJ
@@ -4309,6 +4490,7 @@ biasa/ADJ,ujian/NOUN,besar/ADJ
 dekat/ADJ,jalan/NOUN,besar/ADJ
 dekat/ADJ,parabola/NOUN,besar/ADJ
 jelas/ADJ,dosa/NOUN,besar/ADJ
+jelas/ADJ,keliru/NOUN,besar/ADJ
 lama/ADJ,kemungkinan/NOUN,besar/ADJ
 panjang/ADJ,potensi/NOUN,besar/ADJ
 putih/ADJ,kemungkinan/NOUN,besar/ADJ
@@ -4375,6 +4557,7 @@ beruntung/ADJ,kebakaran/NOUN,cepat/ADJ
 cetak/ADJ,undangan/NOUN,cepat/ADJ
 dekat/ADJ,solusi/NOUN,cepat/ADJ
 mudah/ADJ,proses/NOUN,cepat/ADJ
+biru/ADJ,langit/NOUN,cerah/ADJ
 baik/ADJ,media/NOUN,cetak/ADJ
 terbaik/ADJ,media/NOUN,cetak/ADJ
 spesial/ADJ,jagoan/NOUN,cilik/ADJ
@@ -4456,6 +4639,7 @@ sama/ADJ,volume/NOUN,down/ADJ
 dasar/ADJ,memori/NOUN,eksternal/ADJ
 jelas/ADJ,tambang/NOUN,emas/ADJ
 mirip/ADJ,warna/NOUN,emas/ADJ
+optimistis/ADJ,harga/NOUN,emas/ADJ
 utama/ADJ,konsumen/NOUN,emas/ADJ
 sendiri/ADJ,khan/NOUN,enak/ADJ
 umum/ADJ,psikologi/NOUN,forensik/ADJ
@@ -4479,6 +4663,7 @@ khusus/ADJ,ibu/NOUN,hamil/ADJ
 khususnya/ADJ,ibu/NOUN,hamil/ADJ
 lama/ADJ,kambing/NOUN,hamil/ADJ
 mirip/ADJ,wanita/NOUN,hamil/ADJ
+mual/ADJ,saat/NOUN,hamil/ADJ
 mulus/ADJ,ibu/NOUN,hamil/ADJ
 terbaik/ADJ,wanita/NOUN,hamil/ADJ
 beda/ADJ,agama/NOUN,haram/ADJ
@@ -4491,6 +4676,7 @@ dasar/ADJ,pandangan/NOUN,hidup/ADJ
 global/ADJ,lingkungan/NOUN,hidup/ADJ
 mirip/ADJ,monster/NOUN,hidup/ADJ
 sesuai/ADJ,kebutuhan/NOUN,hidup/ADJ
+sungguh/ADJ,indah/NOUN,hidup/ADJ
 terkecil/ADJ,makhluk/NOUN,hidup/ADJ
 terkecil/ADJ,makhluk/NOUN,hidup/ADJ
 terkecil/ADJ,makhluk/NOUN,hidup/ADJ
@@ -4519,6 +4705,49 @@ putih/ADJ,campur/NOUN,hitam/ADJ
 putih/ADJ,celana/NOUN,hitam/ADJ
 sama/ADJ,warna/NOUN,hitam/ADJ
 keras/ADJ,kaum/NOUN,homoseksual/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,badan/NOUN,ideal/ADJ
+berat/ADJ,tubuh/NOUN,ideal/ADJ
+operasional/ADJ,bidang/NOUN,ideal/ADJ
+tinggi/ADJ,badan/NOUN,ideal/ADJ
+tinggi/ADJ,badan/NOUN,ideal/ADJ
+tinggi/ADJ,badan/NOUN,ideal/ADJ
+tinggi/ADJ,badan/NOUN,ideal/ADJ
+tinggi/ADJ,badan/NOUN,ideal/ADJ
+tinggi/ADJ,badan/NOUN,ideal/ADJ
 sesuai/ADJ,disiplin/NOUN,ilmiah/ADJ
 khusus/ADJ,keterampilan/NOUN,intelektual/ADJ
 khusus/ADJ,keterampilan/NOUN,intelektual/ADJ
@@ -4591,7 +4820,9 @@ non/ADJ,zat/NOUN,kimiawi/ADJ
 aktual/ADJ,masa/NOUN,kini/ADJ
 lebar/ADJ,lintasan/NOUN,konsisten/ADJ
 awam/ADJ,seni/NOUN,kontemporer/ADJ
+tipikal/ADJ,tokoh/NOUN,kontroversial/ADJ
 berat/ADJ,bobot/NOUN,kosong/ADJ
+sederhana/ADJ,penelitian/NOUN,kuantitatif/ADJ
 biasa/ADJ,alias/NOUN,kuat/ADJ
 putih/ADJ,basa/NOUN,kuat/ADJ
 tua/ADJ,alias/NOUN,kuno/ADJ
@@ -4630,6 +4861,7 @@ asasi/ADJ,manusia/NOUN,lainnya/ADJ
 bebas/ADJ,gula/NOUN,lainnya/ADJ
 besar/ADJ,dunia/NOUN,lainnya/ADJ
 besar/ADJ,filsafat/NOUN,lainnya/ADJ
+besar/ADJ,kamus/NOUN,lainnya/ADJ
 dasar/ADJ,cabang/NOUN,lainnya/ADJ
 kabel/ADJ,listrik/NOUN,lainnya/ADJ
 kaya/ADJ,energi/NOUN,lainnya/ADJ
@@ -4644,6 +4876,8 @@ non/ADJ,kayu/NOUN,lainnya/ADJ
 non/ADJ,kayu/NOUN,lainnya/ADJ
 non/ADJ,kependidikan/NOUN,lainnya/ADJ
 non/ADJ,muslim/NOUN,lainnya/ADJ
+non/ADJ,pemerintah/NOUN,lainnya/ADJ
+non/ADJ,solar/NOUN,lainnya/ADJ
 operasional/ADJ,sekolah/NOUN,lainnya/ADJ
 penting/ADJ,perusahaan/NOUN,lainnya/ADJ
 penting/ADJ,sel/NOUN,lainnya/ADJ
@@ -4653,6 +4887,7 @@ sama/ADJ,kondisi/NOUN,lainnya/ADJ
 sama/ADJ,penjawab/NOUN,lainnya/ADJ
 sama/ADJ,peserta/NOUN,lainnya/ADJ
 sama/ADJ,varian/NOUN,lainnya/ADJ
+sensitif/ADJ,seksual/NOUN,lainnya/ADJ
 sepihak/ADJ,kelompok/NOUN,lainnya/ADJ
 standar/ADJ,negara/NOUN,lainnya/ADJ
 suci/ADJ,agama/NOUN,lainnya/ADJ
@@ -4722,6 +4957,8 @@ teguh/ADJ,tradisi/NOUN,lama/ADJ
 awal/ADJ,pertumbuhan/NOUN,lambat/ADJ
 baru/ADJ,daftar/NOUN,langsung/ADJ
 jelas/ADJ,demokrasi/NOUN,langsung/ADJ
+non/ADJ,kontak/NOUN,langsung/ADJ
+non/ADJ,kontak/NOUN,langsung/ADJ
 resmi/ADJ,produk/NOUN,langsung/ADJ
 matematis/ADJ,tingkat/NOUN,lanjut/ADJ
 sehat/ADJ,usia/NOUN,lanjut/ADJ
@@ -4850,6 +5087,7 @@ non/ADJ,logam/NOUN,mudah/ADJ
 panas/ADJ,mesin/NOUN,mudah/ADJ
 otomatis/ADJ,logam/NOUN,mulia/ADJ
 umum/ADJ,logam/NOUN,mulia/ADJ
+awal/ADJ,monsun/NOUN,mundur/ADJ
 alternatif/ADJ,biaya/NOUN,murah/ADJ
 jual/ADJ,komputer/NOUN,murah/ADJ
 jual/ADJ,komputer/NOUN,murah/ADJ
@@ -4858,6 +5096,7 @@ jual/ADJ,komputer/NOUN,murah/ADJ
 kabel/ADJ,listrik/NOUN,murah/ADJ
 khas/ADJ,indonesia/NOUN,murah/ADJ
 online/ADJ,harga/NOUN,murah/ADJ
+online/ADJ,jilbab/NOUN,murah/ADJ
 sama/ADJ,harga/NOUN,murah/ADJ
 terbaru/ADJ,harga/NOUN,murah/ADJ
 hidup/ADJ,zaman/NOUN,mutakhir/ADJ
@@ -4872,6 +5111,9 @@ besar/ADJ,pendapatan/NOUN,nasional/ADJ
 besar/ADJ,peringkat/NOUN,nasional/ADJ
 besar/ADJ,taman/NOUN,nasional/ADJ
 besar/ADJ,taman/NOUN,nasional/ADJ
+dasar/ADJ,pembangunan/NOUN,nasional/ADJ
+dasar/ADJ,pembangunan/NOUN,nasional/ADJ
+dasar/ADJ,pembangunan/NOUN,nasional/ADJ
 dasar/ADJ,pendidikan/NOUN,nasional/ADJ
 dasar/ADJ,teknik/NOUN,nasional/ADJ
 formal/ADJ,pahlawan/NOUN,nasional/ADJ
@@ -4882,6 +5124,7 @@ lama/ADJ,ujian/NOUN,nasional/ADJ
 makro/ADJ,pendidikan/NOUN,nasional/ADJ
 makro/ADJ,perekonomian/NOUN,nasional/ADJ
 mikro/ADJ,pendidikan/NOUN,nasional/ADJ
+non/ADJ,migas/NOUN,nasional/ADJ
 radikal/ADJ,pergerakan/NOUN,nasional/ADJ
 segar/ADJ,perfilman/NOUN,nasional/ADJ
 terakhir/ADJ,bantuan/NOUN,nasional/ADJ
@@ -4990,6 +5233,7 @@ dekat/ADJ,tanda/NOUN,penuh/ADJ
 searah/ADJ,gelombang/NOUN,penuh/ADJ
 panjang/ADJ,ganda/NOUN,pertama/ADJ
 umum/ADJ,langkah/NOUN,pertama/ADJ
+biasa/ADJ,maju/NOUN,pesat/ADJ
 dasar/ADJ,karet/NOUN,pilihan/ADJ
 baru/ADJ,muatan/NOUN,politis/ADJ
 negatif/ADJ,dampak/NOUN,positif/ADJ
@@ -5047,6 +5291,8 @@ rendah/ADJ,bunga/NOUN,ringan/ADJ
 selamat/ADJ,malam/NOUN,romantis/ADJ
 selamat/ADJ,malam/NOUN,romantis/ADJ
 spesial/ADJ,tour/NOUN,romantis/ADJ
+rendah/ADJ,tentu/NOUN,rumit/ADJ
+lama/ADJ,mohon/NOUN,sabar/ADJ
 lama/ADJ,menderita/NOUN,sakit/ADJ
 asasi/ADJ,manusia/NOUN,sama/ADJ
 baris/ADJ,perintah/NOUN,sama/ADJ
@@ -5066,6 +5312,7 @@ jauh/ADJ,hari/NOUN,sebelumnya/ADJ
 jauh/ADJ,hari/NOUN,sebelumnya/ADJ
 jauh/ADJ,hari/NOUN,sebelumnya/ADJ
 sama/ADJ,artikel/NOUN,sebelumnya/ADJ
+sama/ADJ,postingan/NOUN,sebelumnya/ADJ
 standar/ADJ,translasi/NOUN,sebelumnya/ADJ
 dasar/ADJ,ekonomi/NOUN,sederhana/ADJ
 sedih/ADJ,n/NOUN,sedih/ADJ
@@ -5208,6 +5455,7 @@ tinggi/ADJ,badan/NOUN,terbaik/ADJ
 besar/ADJ,komisi/NOUN,terbaru/ADJ
 cantik/ADJ,model/NOUN,terbaru/ADJ
 spesial/ADJ,produk/NOUN,terbaru/ADJ
+standar/ADJ,emisi/NOUN,terbaru/ADJ
 non/ADJ,nuklir/NOUN,terbesar/ADJ
 panjang/ADJ,gelombang/NOUN,terbesar/ADJ
 saraf/ADJ,otonom/NOUN,terbesar/ADJ
@@ -5305,11 +5553,13 @@ awal/ADJ,tokoh/NOUN,utama/ADJ
 kabel/ADJ,jalur/NOUN,utama/ADJ
 penuh/ADJ,halaman/NOUN,utama/ADJ
 solid/ADJ,papan/NOUN,utuh/ADJ
+baik/ADJ,simbol/NOUN,verbal/ADJ
 kognitif/ADJ,media/NOUN,visual/ADJ
 tinggi/ADJ,badan/NOUN,visual/ADJ
 awal/ADJ,tanda/NOUN,vital/ADJ
 sama/ADJ,besar/ADJ,b/NOUN
 sama/ADJ,panjang/ADJ,b/NOUN
+pas/ADJ,sama/ADJ,badan/NOUN
 mirip/ADJ,sama/ADJ,bahasa/NOUN
 baru/ADJ,setengah/ADJ,baya/NOUN
 tegak/ADJ,lurus/ADJ,bidang/NOUN
@@ -5324,6 +5574,7 @@ sukses/ADJ,buka/ADJ,hati/NOUN
 biasa/ADJ,murah/ADJ,hati/NOUN
 alami/ADJ,dewasa/ADJ,i/NOUN
 luar/ADJ,biasa/ADJ,ilmu/NOUN
+penuh/ADJ,semangat/ADJ,juang/NOUN
 sesuai/ADJ,sama/ADJ,judul/NOUN
 kering/ADJ,kerap/ADJ,kali/NOUN
 sesuai/ADJ,sama/ADJ,karakter/NOUN

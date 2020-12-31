@@ -499,6 +499,7 @@ charge/NOUN,social/ADJ,inclus/ADJ
 chargeur/NOUN,compact/ADJ,rigide/ADJ
 chatte/NOUN,africain/ADJ,chaud/ADJ
 chaud/NOUN,chaud/ADJ,chaud/ADJ
+chaudronnerie/NOUN,technique/ADJ,complexe/ADJ
 chauffage/NOUN,individuel/ADJ,électrique/ADJ
 chaussure/NOUN,dernier/ADJ,new/ADJ
 chaîne/NOUN,alimentaire/ADJ,intégrer/ADJ
@@ -599,7 +600,6 @@ couleur/NOUN,brun/ADJ,clair/ADJ
 couleur/NOUN,rouge/ADJ,pourpre/ADJ
 couleur/NOUN,vieux/ADJ,rose/ADJ
 couleur/NOUN,blanc/ADJ,rosé/ADJ
-coup/NOUN,full/ADJ,silencieux/ADJ
 cour/NOUN,constitutionnel/ADJ,fédéral/ADJ
 cour/NOUN,pénal/ADJ,international/ADJ
 coureur/NOUN,cycliste/ADJ,colombien/ADJ
@@ -3506,7 +3506,6 @@ militant/NOUN,écologiste/ADJ,local/ADJ
 miracle/NOUN,économique/ADJ,allemand/ADJ
 mission/NOUN,orthodoxe/ADJ,russe/ADJ
 misère/NOUN,littéraire/ADJ,absolu/ADJ
-mn/NOUN,white/ADJ,blond/ADJ
 mobilier/NOUN,marocain/ADJ,gazeux/ADJ
 mobilité/NOUN,urbain/ADJ,inédit/ADJ
 mode/NOUN,simple/ADJ,dernier/ADJ
@@ -5162,7 +5161,6 @@ solaire/ADJ,samedi/NOUN,dernier/ADJ
 transparent/ADJ,samedi/NOUN,dernier/ADJ
 vaginal/ADJ,gel/NOUN,dernier/ADJ
 étrange/ADJ,samedi/NOUN,dernier/ADJ
-anti/ADJ,stress/NOUN,design/ADJ
 premier/ADJ,partie/NOUN,deuxième/ADJ
 principal/ADJ,choix/NOUN,didactique/ADJ
 actuel/ADJ,publicité/NOUN,digital/ADJ
@@ -5345,7 +5343,6 @@ simple/ADJ,citoyen/NOUN,désireux/ADJ
 grand/ADJ,chose/NOUN,désoler/ADJ
 autre/ADJ,argument/NOUN,déterminant/ADJ
 grand/ADJ,capacité/NOUN,efficace/ADJ
-low/ADJ,cost/NOUN,efficace/ADJ
 principal/ADJ,solution/NOUN,efficace/ADJ
 autre/ADJ,lieu/NOUN,emblématique/ADJ
 long/ADJ,femme/NOUN,enceinte/ADJ
@@ -5375,7 +5372,6 @@ ancien/ADJ,société/NOUN,esclavagiste/ADJ
 célèbre/ADJ,poète/NOUN,espagnol/ADJ
 célèbre/ADJ,poète/NOUN,espagnol/ADJ
 jeune/ADJ,réalisateur/NOUN,espagnol/ADJ
-low/ADJ,cost/NOUN,espagnol/ADJ
 premier/ADJ,ministre/NOUN,espagnol/ADJ
 superbe/ADJ,mannequin/NOUN,espagnol/ADJ
 vieux/ADJ,starlette/NOUN,espagnol/ADJ
@@ -5479,8 +5475,6 @@ excellent/ADJ,recette/NOUN,facile/ADJ
 petit/ADJ,ensemble/NOUN,facile/ADJ
 simple/ADJ,pratique/NOUN,facile/ADJ
 simple/ADJ,pratique/NOUN,facile/ADJ
-special/ADJ,repassage/NOUN,facile/ADJ
-special/ADJ,repassage/NOUN,facile/ADJ
 superbe/ADJ,balade/NOUN,facile/ADJ
 lien/ADJ,retour/NOUN,facultatif/ADJ
 autre/ADJ,point/NOUN,faible/ADJ
@@ -5688,7 +5682,6 @@ beau/ADJ,fille/NOUN,gentil/ADJ
 ancien/ADJ,déesse/NOUN,germanique/ADJ
 mobile/ADJ,cellule/NOUN,gestionnaire/ADJ
 autre/ADJ,expression/NOUN,glacé/ADJ
-anti/ADJ,âge/NOUN,global/ADJ
 troisième/ADJ,augmentation/NOUN,global/ADJ
 punk/ADJ,rock/NOUN,goth/ADJ
 splendide/ADJ,ouvrage/NOUN,gothique/ADJ
@@ -6871,7 +6864,6 @@ haut/ADJ,niveau/NOUN,potable/ADJ
 autre/ADJ,application/NOUN,potentiel/ADJ
 autre/ADJ,risque/NOUN,potentiel/ADJ
 autre/ADJ,téléspectateur/NOUN,potentiel/ADJ
-high/ADJ,technologie/NOUN,potentiel/ADJ
 jeune/ADJ,prêtre/NOUN,potentiel/ADJ
 propre/ADJ,énergie/NOUN,potentiel/ADJ
 bon/ADJ,humour/NOUN,pourri/ADJ
@@ -7022,7 +7014,6 @@ supplémentaire/ADJ,comparaison/NOUN,quantitatif/ADJ
 petit/ADJ,scène/NOUN,quotidien/ADJ
 dernier/ADJ,balade/NOUN,québécois/ADJ
 extrême/ADJ,gauche/NOUN,québécois/ADJ
-autre/ADJ,diffuseur/NOUN,radio/ADJ
 autre/ADJ,matière/NOUN,radioactif/ADJ
 gentil/ADJ,président/NOUN,raisonnable/ADJ
 actif/ADJ,livraison/NOUN,rapide/ADJ
@@ -7231,7 +7222,6 @@ aimable/ADJ,hôtel/NOUN,seul/ADJ
 aimable/ADJ,hôtel/NOUN,seul/ADJ
 aimable/ADJ,hôtel/NOUN,seul/ADJ
 compétent/ADJ,hôtel/NOUN,seul/ADJ
-anti/ADJ,vieillissement/NOUN,sexuel/ADJ
 autre/ADJ,partenaire/NOUN,sexuel/ADJ
 autre/ADJ,rôle/NOUN,sexuel/ADJ
 français/ADJ,jouet/NOUN,sexuel/ADJ
@@ -7867,8 +7857,6 @@ beau/ADJ,jeune/ADJ,femme/NOUN
 beau/ADJ,jeune/ADJ,femme/NOUN
 beau/ADJ,jeune/ADJ,femme/NOUN
 beau/ADJ,jeune/ADJ,femme/NOUN
-belle/ADJ,jeune/ADJ,femme/NOUN
-belle/ADJ,jeune/ADJ,femme/NOUN
 beau/ADJ,petit/ADJ,femme/NOUN
 vieux/ADJ,vieux/ADJ,femme/NOUN
 cher/ADJ,jeune/ADJ,fille/NOUN
@@ -7886,6 +7874,7 @@ charmant/ADJ,petit/ADJ,hôtel/NOUN
 quel/ADJ,bon/ADJ,idée/NOUN
 seul/ADJ,petit/ADJ,inconvénient/NOUN
 seul/ADJ,petit/ADJ,inconvénient/NOUN
+autre/ADJ,principale/ADJ,influence/NOUN
 second/ADJ,petit/ADJ,info/NOUN
 capital/ADJ,propre/ADJ,investisseur/NOUN
 autre/ADJ,gros/ADJ,jeu/NOUN
@@ -7899,7 +7888,6 @@ bon/ADJ,petit/ADJ,lecteur/NOUN
 gros/ADJ,gros/ADJ,level/NOUN
 meilleur/ADJ,3e/ADJ,ligne/NOUN
 petit/ADJ,petit/ADJ,lundi/NOUN
-high/ADJ,petit/ADJ,lymphome/NOUN
 beau/ADJ,grand/ADJ,maison/NOUN
 joli/ADJ,petit/ADJ,maison/NOUN
 bon/ADJ,gré/ADJ,mal/NOUN

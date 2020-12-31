@@ -7546,8 +7546,6 @@ romano/ADJ,centro/NOUN,meridionale/ADJ
 strano/ADJ,cilindro/NOUN,metallico/ADJ
 importante/ADJ,attività/NOUN,metallurgico/ADJ
 insolito/ADJ,proprietà/NOUN,metallurgico/ADJ
-italiano/ADJ,lavoratore/NOUN,metalmeccanico/ADJ
-libero/ADJ,lavoratore/NOUN,metalmeccanico/ADJ
 buono/ADJ,condizione/NOUN,meteorologico/ADJ
 altro/ADJ,area/NOUN,metropolitano/ADJ
 diverso/ADJ,area/NOUN,metropolitano/ADJ

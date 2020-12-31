@@ -3538,6 +3538,7 @@ pittoresco/ADJ,villa/NOUN,individuale/ADJ
 pittoresco/ADJ,villa/NOUN,individuale/ADJ
 scarso/ADJ,evoluzione/NOUN,individuale/ADJ
 lungo/ADJ,termine/NOUN,indossabile/ADJ
+scientific/ADJ,sensore/NOUN,indossabile/ADJ
 grigio/ADJ,stile/NOUN,industriale/ADJ
 importare/ADJ,gruppo/NOUN,industriale/ADJ
 largo/ADJ,applicazione/NOUN,industriale/ADJ
@@ -3558,7 +3559,6 @@ alto/ADJ,qualità/NOUN,inferiore/ADJ
 rosso/ADJ,foto/NOUN,inferiore/ADJ
 particolare/ADJ,malattia/NOUN,infettivo/ADJ
 gentile/ADJ,ambiente/NOUN,informale/ADJ
-metalmeccanico/ADJ,ramo/NOUN,informatico/ADJ
 ulteriore/ADJ,risorsa/NOUN,informativo/ADJ
 ulteriore/ADJ,specifica/NOUN,informativo/ADJ
 numeroso/ADJ,postazione/NOUN,informatizzato/ADJ
@@ -4097,8 +4097,6 @@ sottile/ADJ,ago/NOUN,metallico/ADJ
 strano/ADJ,oggetto/NOUN,metallico/ADJ
 italiano/ADJ,operaio/NOUN,metallurgico/ADJ
 vario/ADJ,tecnica/NOUN,metallurgico/ADJ
-generico/ADJ,settore/NOUN,metalmeccanico/ADJ
-multinazionale/ADJ,settore/NOUN,metalmeccanico/ADJ
 originale/ADJ,online/NOUN,microbico/ADJ
 possibile/ADJ,contaminazione/NOUN,microbico/ADJ
 generico/ADJ,online/NOUN,migliore/ADJ

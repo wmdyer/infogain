@@ -4294,7 +4294,6 @@ velký/ADJ,pardubický/ADJ,kůň/NOUN
 potažený/ADJ,perforovaný/ADJ,kůže/NOUN
 bílý/ADJ,syntetický/ADJ,kůže/NOUN
 okolní/ADJ,zdravý/ADJ,kůže/NOUN
-kožený/ADJ,hnědý/ADJ,l`litr/NOUN
 velký/ADJ,mezinárodní/ADJ,label/NOUN
 německý/ADJ,závislý/ADJ,laboratoř/NOUN
 další/ADJ,černý/ADJ,labuť/NOUN
