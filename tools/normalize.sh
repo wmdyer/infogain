@@ -3,8 +3,9 @@ lang="`gawk 'BEGIN{FS="\t"}{if($1=="'$code'") print $2}' ../langcodes.tsv`"
 
 if [ "$lang" == "" ]
 then
-    echo "ERROR: language for code '$code' not found"
-    exit
+    printf "lang code? "
+    read code
+    lang="`gawk 'BEGIN{FS="\t"}{if($1=="'$code'") print $2}' ../langcodes.tsv`"    
 fi
 
 if [ "`ls | grep adjs.ud`" == "" -o "`ls | grep nouns.ud`" == "" ]
