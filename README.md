@@ -81,12 +81,12 @@ python ./src/partition.py -s <file>
 
 **6. evaluate**
 ```{bash}
-python src/regress.py -tr <training_scores>.tsv -te <testing_scores>.tsv [-m <ig_1st_a|ig_uc_pos|ig_c_pos|ig_uc_neg|ig_c_neg>] [--verbose]
+python src/regress.py -tr <training_scores>.tsv -te <testing_scores>.tsv [-m <metric>] [--verbose]
 ```
 *input*
 - -tr: scores file for training regression  
 - -te: scores file for testing  
-- -m: metric (ig_1st_a = first adj; uc = unconditioned; c = conditioned; pos = positive evidence; neg = negative evidence)  
+- -m: metric (ig_1st_a|ig_sum|ig_uc_pos|ig_c_pos|ig_uc_neg|ig_c_neg)  
 
 *output*
 - `triples.gen`: a tab-delimited file containing TEMPLATE, ATTESTED, and GENERATED columns
