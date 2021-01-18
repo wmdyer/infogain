@@ -1,6 +1,6 @@
 if [ "$1" == "" ]
 then
-    echo "Usage: ./extract_conllu_triples.csv <conllu files>"
+    echo "Usage: ./extract_conllu_triples.sh <conllu files>"
     exit
 fi
 
